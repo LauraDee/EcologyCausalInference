@@ -1,0 +1,23 @@
+{
+  "schedule.qmd": {
+    "schedule.html": "20114d40"
+  },
+  "readings.qmd": {
+    "readings.html": "e6a3ca13"
+  },
+  "assignments.qmd": {
+    "assignments.html": "e696b7c6"
+  },
+  "coding_resources.qmd": {
+    "coding_resources.html": "387b5d99"
+  },
+  "policies.qmd": {
+    "policies.html": "43f646ea"
+  },
+  "materials.qmd": {
+    "materials.html": "a26a6fe5"
+  },
+  "exercises/iv_demo.Rmd": {
+    "iv_demo.html": "6677dd08"
+  }
+}
