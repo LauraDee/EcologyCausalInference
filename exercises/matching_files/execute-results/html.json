@@ -1,0 +1,14 @@
+{
+  "hash": "be86b057a641424a72038a81237c6b15",
+  "result": {
+    "markdown": "---\ntitle: \"Matching\"\n---\n\n\n\n\n## Matching demo in R\nIn class on Monday, we will walk through a demonstration of how to use matching in R. \n\nYou can access the R Markdown file for this coding demonstration [here](/files/matching_demo.Rmd), if you'd like to follow along.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

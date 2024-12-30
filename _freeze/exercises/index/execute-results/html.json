@@ -1,0 +1,18 @@
+{
+  "hash": "14029790515039283d4a1f6b69319af3",
+  "result": {
+    "markdown": "---\ntitle: \"Exercises in R\"\n---\n\n::: {.cell}\n::: {.cell-output-display}\n```{=html}\n<a href=\"https://github.com/katherinesiegel/EBIOcausalinference/blob/main/exercises/matching_demo.Rmd\">\n<button class=\"btn btn-default\"><i class=\"fa fa-save\"></i> Download Rmd file</button>\n</a>\n```\n:::\n:::\n\n\n\nThis section has files for the demos and replication exercises that we will do in class. Here, you will find files with annotated code and functions for simulating data, as well as csv files with data for the replication exercises.\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"../site_libs/font-awesome-5.13.0/js/script.js\"></script>\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

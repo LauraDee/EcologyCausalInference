@@ -1,0 +1,211 @@
+---
+title: "Replication exercise for matching methods"
+author: "Katherine Siegel"
+date: "2023-02-21"
+output: html_document
+---
+
+## Description
+In this replication exercise, you will use some of the data from Siegel et al. 2022 (https://doi.org/10.1007/s10113-022-01950-y). The dataset for the entire western US is very large and unwieldy, so you'll work with data from a single state: Colorado. Note: all the code is commented out in this Rmd -- you'll need to uncomment the parts you want to use.
+
+## Set up
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+# ### load libraries
+# library(tidyverse)
+# library(sf)
+# library(MatchIt)
+# library(lme4)
+```
+
+## The data
+There are two data files you can play around with for this exercise: *colo_dat_full.csv* and *colo_data_for_matching.csv*. *colo_dat_full.csv* has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. *colo_data_for_matching.csv* is a file that's ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables. 
+
+### Variable names in colo_dat_full  
+
+* state: the state the sample is from (it should always be Colorado in this file)  
+* UID: a unique identifier for each sample point  
+* year: the year that the fire and climate data is from  
+* burned: whether or not the site burned in that year (0 = unburned, 1 = burned)  
+* prot_cat_recl: the ownership class. 0 = private, 1 = federal  
+* dist_rds_km: distance to the nearest road, in km  
+* slope: slope, in degrees  
+* aspect_srai: aspect  
+* elev_km: elevation, in 1000 m  
+* lon: longitude  
+* lat: latitude  
+* lightning: county-level lightning strikes    
+* pdsi_avg_season: seasonal average Palmer Drought Severity Index value  
+* soil_avg_season: seasonal average soil moisture  
+* tmmn_avg_season: seasonal average minimum temperature
+* tmmx_avg_season: seasonal average maximum temperature  
+* vs_max_season: seasonal average maximum wind speed  
+* total_precip_season: total seasonal precipitation    
+* prev_yr_precip: total precipitation in the previous year
+
+### Variable names in colo_data_for_matching  
+
+All the climate variables are variablename_5 to indicate that they are 5-year average values
+* UID: a unique identifier for each sample point  
+* state: the state the sample is from  
+* prot_cat_recl: the ownership class. 0 = private, 1 = federal  
+* lightning_5: 5 year average for lightning strikes  
+* vs_max_season: seasonal average maximum wind speed  
+* pr_total_season: total seasonal precipitation    
+* tmmx_avg_season: seasonal average maximum temperature  
+* tmmn_avg_season: seasonal average minimum temperature
+* pdsi_avg_season: seasonal average Palmer Drought Severity Index value  
+* soil_avg_season: seasonal average soil moisture  
+* slope: slope, in degrees  
+* aspect_srai: aspect  
+* elev_km: elevation, in 1000 m  
+* lon: longitude  
+* lat: latitude  
+* dist_rds_km: distance to the nearest road, in km  
+* popdens_1990: population density (per km2) in 1990  
+* popdens_2000: population density (per km2) in 2000  
+* popdens_2010: population density (per km2) in 2010  
+
+
+## Prep the data
+```{r}
+
+```
+
+## Check out the full, unmatched dataset
+You might want to make the prot_cat_recl variable a factor.
+```{r}
+### See how many treated (federal) and control (private) sample points we have
+
+
+### You can take a look at the balance of the covariates before matching via data visualizations (boxplots, histograms, density plots)
+
+
+### You can also look at it in table form
+
+
+```
+
+## Match the data  
+Match the data on the observed covariates, using the MatchIt package. You can play around with the settings to see how it affects the matched data you end up with. 
+```{r}
+### Match the data 
+
+
+```
+
+#### Assess match quality
+Take a look at the quality of the matches: how many points were matched? what was the pre-matching covariate balance? what was the covariate balance after matching?
+```{r}
+
+```
+
+#### Visualize the match quality
+```{r}
+### Some easy visualizations through MatchiIt
+# plot(match, interactive = FALSE)
+# plot(match, type = "jitter", interactive = FALSE)
+```
+
+#### Iterate, if necessary
+If you're satisfied with the quality of your matches, you can move on to the analysis. Otherwise, try tweaking the parameters to see what happens.
+```{r}
+
+```
+
+## Analyze the matched dataset
+### Extract the matched data
+First, you'll need to extract the matched data and use the UIDs from the matched data to subset the full dataset for analysis. Here is some code to demonstrate that (you'll likely need to modify this)
+```{r}
+# ### Extract the matches from the MatchIt object
+# matched <- match.data(match)
+# 
+# ### Open the full data (entire time series) 
+# full_data <- read.csv("file_path/colo_dat_full.csv")
+# 
+# ### Filter full_data to just include the UIDs of the matched subset of the data
+# full_data <- full_data %>%
+#   filter(UID %in% matched$UID)
+```
+
+### Add time lag variables
+In my analyses, I used time lag variables to account for recent fire history: if a site burned last year, it usually won't burn this year. So we'll make a variable that accounts for whether or not a site burned in the previous five years. 
+
+Since we used a lag variable, we won't have complete data for the first few years of the time series, so we'll also filter the dataset to just include the years with complete data.
+```{r}
+# ### Add lag variable
+# full_data <- full_data %>%
+#   
+#   ### Group by the UID so you can make a site-specific lag variable
+#   group_by(UID) %>%
+#   
+#   ### Add the lag variable
+#   mutate(burn_prev_5_yr = dplyr::lag(burned, 
+#                                      n = 5, 
+#                                      default = NA,
+#                                      order_by = year)) %>%
+#   ungroup()
+# 
+# ### Drop first years of time series
+# full_data <- full_data %>%
+#   filter(year > 1988)
+```
+
+### Check for correlated variables
+Some of the continuous variables are highly correlated, so we don't want to include them in the regression model.
+```{r}
+### Assess level of correlation
+
+### if you want to use it, here's a function that returns a table with the correlation coefficient and p-value between each pair of variables:
+# cor.prob <- function (X, dfr = nrow(X) - 2) {
+#   R <- cor(X, use="pairwise.complete.obs")
+#   above <- row(R) < col(R)
+#   r2 <- R[above]^2
+#   Fstat <- r2 * dfr/(1 - r2)
+#   R[above] <- 1 - pf(Fstat, 1, dfr)
+#   R[row(R) == col(R)] <- NA
+#   R
+# }
+# flattenSquareMatrix <- function(m) {
+#   if( (class(m) != "matrix") | (nrow(m) != ncol(m))) stop("Must be a square matrix.") 
+#   if(!identical(rownames(m), colnames(m))) stop("Row and column names must be equal.")
+#   ut <- upper.tri(m)
+#   data.frame(i = rownames(m)[row(m)[ut]],
+#              j = rownames(m)[col(m)[ut]],
+#              cor=t(m)[ut],
+#              p=m[ut])
+# }
+
+### Determine which variables to drop
+```
+
+### Model the effect of ownership/management on wildfire probability for a given site in a given year
+This is the exciting part! Here's a basic logistic regression model, but feel free to tweak it.
+```{r}
+# ### Model
+# colo_model <- glmer(burned ~ # covariates you're including + 
+#                       
+#                       ### include an interaction between year and ownership 
+#                       ### don't forget to tell R that prot_cat_recl is a factor
+#                       prot_cat_recl*year + 
+#                       
+#                       ### add the lag variable
+#                       burn_prev_5_yr +
+#                       
+#                       ### and a site-level effect to account for unobservable 
+#                       ### factors unique to each site
+#                       (1|UID),
+#                     
+#                     ### tell it where to get the data from
+#                     data = full_data, 
+#                     
+#                     ### model parameters
+#                     family = binomial(link = "logit"),
+#                     nAGQ = 0,
+#                     control = glmerControl(optimizer = "nloptwrap"))
+
+### Extract the model's coefficient estimates
+
+```
+

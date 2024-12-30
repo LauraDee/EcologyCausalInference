@@ -1,0 +1,8 @@
+---
+title: "Matching"
+---
+
+## Matching demo in R
+In class on Monday, we will walk through a demonstration of how to use matching in R. 
+
+You can access the R Markdown file for this coding demonstration if you'd like to follow along.
