@@ -1,4 +1,4 @@
-# EcologyCausalInference
+# Ecology Causal Inference
 Course website and resource page for 2025 EBIO 5460 (Causal Inference in Ecology) at CU Boulder taught by Laura Dee. 
 
 
