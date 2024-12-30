@@ -4,9 +4,795 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/16)\nNo class\nCourse intro\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations\n\n\nWeek 2 (1/23)\nIntro to causal inference and counterfactual causality\nIntro to the main frameworks for counterfactual causal inference\n• Intro to concepts in causal inference and motivation for applying it to ecology and evolution  • Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 3 (1/30)\nIntro to DAGs (Guest speaker: Dr. Zach Laubach)\nWorkshopping DAGs: come prepared to present and share/discuss your DAG\n• DAGs as a tool from the graphical causal modeling framework  • Students create and workshop DAGs for their own research/study systems\n\n\nWeek 4 (2/6)\nRandomized Controlled Experiments (or RCTs) and experimental design\nDissect experimental design with respect to assumptions required for causal inference\n• Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions\n\n\nWeek 5 (2/13)\nObservational data and counterfactuals\nIntroduction to quasi-experimental methods\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • Get a sense of the landscape of tools for overcoming challenges\n\n\nWeek 6 (2/20)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/27)\nDifference in Difference (DiD)\nPaper discussion\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 8 (3/6)\nPanel methods\nPaper discussion and replication exercise\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 10 (3/13)\nInstrumental Variables\nPaper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 9 (3/20)\nRegression Discontinuity Designs (RDD)\nPaper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (3/27)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (4/3)\nProject work session (in groups)\nOne-on-one consultations on projects\n• Make progress on project and get feedback from class\n\n\nWeek 13 (4/10)\nProject work session\nProject work session\n• Make progress on project and get feedback on proposed research design and challenges so far\n\n\nWeek 14 (4/17)\nBrief presentation on project\nProject work and workshopping\n• Make progress on project and get feedback from class\n\n\nWeek 15 (4/24)\nProject work and workshopping\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\n• Make progress on project and get feedback from class  • Introduction to challenges with generalizability\n\n\nWeek 16 (5/1)\nProject presentations\nProject presentations\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class",
+    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations\n• Intro to concepts in causal inference and motivation for applying it to ecology and evolution \n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\n• Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 3 (1/27)\nIntro to DAGs (Guest speaker: Dr. Zach Laubach)\nWorkshopping DAGs: come prepared to present and share/discuss your DAG\n• DAGs as a tool from the graphical causal modeling framework  • Students create and workshop DAGs for their own research/study systems\n\n\nWeek 4 (2/3)\nRandomized Controlled Experiments (or RCTs) and experimental design\nDissect experimental design with respect to assumptions required for causal inference\n• Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions\n\n\nWeek 5 (2/10)\nObservational data and counterfactuals\nIntroduction to quasi-experimental methods\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • Get a sense of the landscape of tools for overcoming challenges\n\n\nWeek 6 (2/17)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nDifference in Difference (DiD)\nPaper discussion\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 8 (3/3)\nPanel methods\nPaper discussion and replication exercise\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 10 (3/10)\nInstrumental Variables\nPaper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 9 (3/17)\nRegression Discontinuity Designs (RDD)\nPaper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nProject work session (in groups)\nOne-on-one consultations on projects\n• Make progress on project and get feedback from class\n\n\nWeek 13 (4/7)\nProject work session\nProject work session\n• Make progress on project and get feedback on proposed research design and challenges so far\n\n\nWeek 14 (4/14)\nBrief presentation on project\nProject work and workshopping\n• Make progress on project and get feedback from class\n\n\nWeek 15 (4/21)\nProject work and workshopping\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\n• Make progress on project and get feedback from class  • Introduction to challenges with generalizability\n\n\nWeek 16 (4/28)\nProject presentations\nProject presentations\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class",
     "crumbs": [
       "Schedule"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "",
+    "text": "Laura Dee (laura.dee@colorado.edu)",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#instructors",
+    "href": "index.html#instructors",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "",
+    "text": "Laura Dee (laura.dee@colorado.edu)",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#class-meetings",
+    "href": "index.html#class-meetings",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Class Meetings",
+    "text": "Class Meetings\nMondays & Wednesdays 3:35-4:50pm\n\nOffice Hours\nWednesday 2:15-3:15 pm and by appointment",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-description",
+    "href": "index.html#course-description",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Course Description",
+    "text": "Course Description\nHow does biodiversity effect ecosystem functioning? What are the consequences of temperature variability for parasite loads and host populations? How do plant communities respond to drought, and which ecosystems respond most? Do restoration and conservation work? How does climate change affect disturbance regimes? Cause and effect questions like these motivate much of the empirical work in basic and applied ecological and environmental sciences. Does X cause Y? If X causes Y, does it cause Y in all situations? Through what mechanisms does X cause Y? If X causes Y, how large is the effect of X on Y and how does the size compare to other causes of Y? To answer these cause-and-effect questions, a counterfactual model of causality and a unified methodological framework has been developed yet is not often taught or emphasized in ecology and EBIO more generally. Now this framework is the predominant approach for causal inference in a diversity of fields including public health, economics, and computer science (which is also referred to as program evaluation or impact evaluation).\nGiven the increasing access to spatiotemporally large observational datasets (e.g., remotely sensed data, data from long-term ecological monitoring), we have unprecedented opportunities to answer questions about causal relationships and mechanisms outside of the context of traditional ecological approaches to experimental design. Deriving causal inferences from observational data presents its own set of challenges, and this course presents statistical methods to overcome challenges for causal inference in both observational and experimental study designs.\nThis class aims to teach students to apply and interpret the counterfactual causality model and associated methods in answering empirical questions in basic and applied ecology. As a 3-credit graduate course, this course has a corresponding reading load with an emphasis on readings that elucidate the intuition and the application of the core conceptual ideas. We are firm believers that the most fundamental principles can be stated in plain English and conceptual understanding is just as important as the math. Thus the course stresses intuition (in English) over mechanics and proofs. Nevertheless, students will be expected to apply the mechanics in replication exercises in R statistical software and in a final a project related to the students’ thesis.\nWhether you are a student with substantial graduate work in empirical methods or a student with only the basic pre-requisites covered (some introductory statistics or biostatistics is required), you should expect to gain a deeper understanding of approaches to answering causal questions and of the nature of evidence. Importantly, you will see more clearly the conceptual connections among the various approaches to estimating causal effects – experiments and observational analyses. Even for students with substantial coursework in statistics, these connections are often missed.\nWhile most students who will take this class are in EBIO fields, you should expect to do readings outside of EBIO areas and to see examples from other fields – because ecology and evolutionary biology is lagging behind other fields in several areas we will cover. On the bright side, reading beyond the typical EBIO papers will provide you with an entry point into the broader literature on causal inference, stemming from economics, public health, epidemiology, political science, and other fields. Thus, we see the use of broader readings and examples as intentional to meet the course’s learning objectives, and as a potential competitive advantage – and a way to expand your thinking – rather than a distraction from topics that interest you most. In our experience, gaining perspective on methods and language used in other fields will also provide you with skills to foster collaborations across disciplines. We will also invite guest speakers who are experts to showcase applications of the theory and approaches to questions and data in ecology, conservation, and evolution/behavior – and present some of our in-progress research using causal inference approaches applied to EBIO.\nWe have outlined a provisional syllabus below, but we can adapt it based on student interests and background. The main emphasis of the course is like any other graduate course: to encourage students to think critically, to speak and write simply and clearly, collaborate, to own and use a body of facts and ideas that are widely known, to detect errors and fallacies, to resolve intellectual problems, and to advance our collective knowledge through independent research and applied statistics.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-prerequisites",
+    "href": "index.html#course-prerequisites",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Course Prerequisites",
+    "text": "Course Prerequisites\nSome introductory statistics or biostatistics that covers hypothesis testing and regression is required. Some familiarity with R as a programming language is also recommended. This course will be most beneficial to students who have started their thesis work and can incorporate an empirical analysis into the class project, but it is open to all students who meet the pre-requisites. Contact the professors if you are unsure whether your background is sufficient for the course.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#course-objectives",
+    "href": "index.html#course-objectives",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Course Objectives",
+    "text": "Course Objectives\nThrough this course, students will gain:\n\nAn understanding of the main frameworks for counterfactual causal inference and how causal inference differs from other empirical research aims\nFamiliarity with how causal inference is applied in experimental and quasi-experimental study designs in ecology and evolution\nExperience reading the published literature in ecology and evolutionary biology with a critical eye towards appropriate use of methods for identifying causal relationships and mechanisms.\n\nThis course aims for students to learn how to:\n\nSummarize key threats to causal inference and identify these threats when evaluating their own and published study designs\nApply causal inference methods to real world research questions and datasets – either through applications to their thesis work or to other datasets – to mitigate threats to causal inference through research design\nIdentify the most appropriate study design(s) and methodology in non-experimental settings in light of the available data and the research question\nImplement these designs and methods in R and appropriately interpret the results and their potential biases\nWrite and speak clearly about these methods and the results they yield.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#code-data",
+    "href": "index.html#code-data",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Code & Data",
+    "text": "Code & Data\nI will make RMarkdown Files, datasets, and code available on this website and through shared folders for data I can’t post.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#a-note-on-inclusion",
+    "href": "index.html#a-note-on-inclusion",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "A Note on Inclusion",
+    "text": "A Note on Inclusion\nSome of the texts that we will read in class use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there. At the same time, policy decisions are being made based on these and similar analyses, so we need to train people who can use these methods for causal inference and approach this work through a lens of diversity, equity, inclusion, and justice.\nIn this class, we aim to foster discussions of how bias shapes causal models in science, the questions we ask, the analyses we do, who does them, and our interpretation of these results. We are also always open to feedback on these subjects.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "exercises/matching.html",
+    "href": "exercises/matching.html",
+    "title": "Matching",
+    "section": "",
+    "text": "In class on Monday, we will walk through a demonstration of how to use matching in R.\nYou can access the R Markdown file for this coding demonstration if you’d like to follow along."
+  },
+  {
+    "objectID": "exercises/matching.html#matching-demo-in-r",
+    "href": "exercises/matching.html#matching-demo-in-r",
+    "title": "Matching",
+    "section": "",
+    "text": "In class on Monday, we will walk through a demonstration of how to use matching in R.\nYou can access the R Markdown file for this coding demonstration if you’d like to follow along."
+  },
+  {
+    "objectID": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html",
+    "href": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html",
+    "title": "Panel Data and Fixed Effects Designs for Ecology",
+    "section": "",
+    "text": "The data used in this tutorial comes from the Nutrient Network. It has been cleaned and processed and is ready to use. The data correspond to what we use in the paper for the main analysis, and consists of control plots from 43 NutNet sites. Each site includes one or more control plots that we use. We only use plots for which we have at least 5 years of data.\nWe’ll primarily use the fixest package for analysis; the other packages (tidyverse, data.table, lme4) aid data wrangling and comparing research designs.\n\n\nCode\n# library(tidyverse) #v 1.3.2\n# library(data.table) # v 1.14.6\n# library(fixest) # v 0.11\n# library(lme4)  # Need at least version 1.1-26\n# library(knitr) #v1.41\n# library(ggplot2) # v 3.4.0\n# \n# cdir &lt;- getwd()\n# comb &lt;- fread(paste(cdir,\"/cleaned_comb_data.csv\",sep=\"\"),na.strings='NA')\n# comb$V1 = NULL\n# comb$site &lt;- comb$site_code\n# ## Make dummy variables for panel regression ##\n# # make year a character, to be a dummy variable: \n#  comb$year &lt;- as.character(comb$year)\n# #make a factor that is site by year\n# comb[, site.by.yeardummy := paste(site_code, year, sep = \"_\")]\n\n\nThe comb dataset contains a wide number of variables; we’ll mainly be using the variables live_mass and rich. Also important are the site_code, plot, and year variables, which we use to create fixed effects (site-by-year fixed were created with \"r comb[, site.by.yeardummy := paste(site_code, year, sep = \"_\")]\")."
+  },
+  {
+    "objectID": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#simple-correlations-in-single-years",
+    "href": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#simple-correlations-in-single-years",
+    "title": "Panel Data and Fixed Effects Designs for Ecology",
+    "section": "Simple correlations in single years",
+    "text": "Simple correlations in single years\nLet’s begin by looking at simple correlations. We will examine both the overall correlation and correlations within a single year (i.e., using cross-sectional variation). We proceed with a linear regression framework @ref(eq:eq1), using the log of productivity (measured as live aboveground biomass) as the outcome and the log species richness as the explanatory variable. We’ve found that a log-log specification captures the nature of the relationship in our data well (see Figure @ref(fig:graphbiomasssp) below and the paper for details).\nWe initially estimate and report \\(\\beta\\) in: \\[\\begin{equation}\n\\ln(\\text{Live Mass}_{pst}) = \\alpha + \\beta \\ln(\\text{Richness}_{pst}) + e_{pst}\n(\\#eq:eq1)\n\\end{equation}\\] where \\(p\\) indexes plots, \\(s\\) indexes sites, and \\(t\\) indexes years. The unobserved error term is \\(e_{pst}\\). We include a constant \\(\\alpha\\), but do not report estimates of it as it tells us little.\nWe report results below using all years of data first, and then report results using two individual years: 2012 and 2013. Here, as everywhere below, we cluster standard errors by plot to reflect serial correlation in errors terms within a plot across years (we do not assume that errors are iid). Note that when we use only a single year of data, this is equivalent to using heteroskedasticity-robust errors.\n\n\nCode\n# SimpleCorrAll &lt;- feols(log(live_mass) ~ log(rich), comb, cluster = \"newplotid\") \n# \n# SimpleCorr2012 &lt;- comb %&gt;%\n#   filter(year==2012) %&gt;%\n#   feols(log(live_mass) ~ log(rich), ., cluster = \"newplotid\") \n# \n# SimpleCorr2013 &lt;- comb %&gt;%\n#   filter(year==2013) %&gt;%\n#   feols(log(live_mass) ~ log(rich), ., cluster = \"newplotid\") \n# \n# etable(SimpleCorrAll, SimpleCorr2012, SimpleCorr2013, \n#           cluster = \"newplotid\", \n#           drop = \"Intercept\", \n#           subtitles = c(\"Data All Years\", \"Data in 2012\", \"Data in 2013\"))  \n\n\nAs you can see, using all years of data gives a non-significant positive relationship between productivity and richness. In just the 2012 data, the coefficient is larger in magnitude, but still not significant. Finally, just using 2013 data, the coefficient switches signs and becomes significant.\nSo… which one to believe? Well, probably none of these, because they likely do not identify the true causal effect of richness on productivity. Their variability highlights that these estimates, which rely on non-experimental cross-sectional data, are likely contaminated by omitted variable bias.\nWhen does \\(\\hat{\\beta}\\) capture a causal relationship? When there are no unobservables that are correlated with richness that also influence productivity: \\(\\mathbb{E}[e_{pst} \\times \\ln(\\text{Richness}_{pst})]=0\\) (i.e., \\(e_{pst}\\) and \\(\\ln(\\text{Richness}_{pst})\\) aren’t correlated). In the above results, there’s probably stuff in \\(e\\) that is correlated with richness, like precipitation, disturbance, land-use history, soil characteristics, and other characteristics of sites and plots.\nA Directed Acyclic Diagram (DAG) can help us see the challenges of omitted, and potentially confounding, variables more clearly. In the above analyses from equation @ref(eq:eq1), \\(\\beta\\) is only identified if we assume that any variables that matter but that we omitted are uncorrelated with richness. One benefit of a DAG is that it makes transparent the assumptions on which one relies for making causal claims from observable data. A DAG therefore allows the researcher and the reader to better judge the credibility of the causal claims from a specific research design. Another way to view this benefit is that a causal graph helps identify the sources of variation in a causal variable and in its outcome, thereby emphasizing potential sources of bias that must be addressed in a research design and pointing to designs that can address these sources of statistical bias [@morganCounterfactualsCausalInference2014].\nIn our case, many variables that are correlated with biodiversity can also drive productivity (Fig. 1B – main text), creating the possibility for rival explanations and biased estimates for estimated effects from observations. For example, climatic conditions, soil nutrients, evolutionary history, and historic contingency during community assembly are all related to both productivity and biodiversity [@Loreau1998;@fukamiCommunityAssemblyAlternative2011;@graceIntegrativeModellingReveals2016]. With a common driver of both variables that is not included in a model, two variables (i.e., biodiversity and an ecosystem function) may be correlated, even when there is no causal relationship between them. Similarly, no correlation between variables does not imply a lack of causation. Causal relationships can also be masked when examining correlations, due to an omitted variable (e.g., nitrogen addition), which positively affects productivity but negatively affects richness [@isbellNutrientEnrichmentBiodiversity2013]. Models that do not control for that common driver will consequently tend to give estimates that do not correspond to causal effects of biodiversity on productivity (or vice versa).\n\n  \n\nFigure 1B (main text – right panel) is known as a directed acyclic causal graph (DAG) and is a visualization of qualitative causal assumptions ([@pearl2009causality; @pearl2011aspects;@fieberg2012understanding; @schoolmaster2013causal; @schoolmaster2020graphical; @Grace2020]). A DAG encodes knowledge and beliefs about how a system works. The graphical relations depicted in the DAG encode causal claims – not just representations of associations. A directed edge (e.g., R –&gt; P) depicts a claim about the results of many hypothetical experiments, whereby if every other variable represented in the graph is held fixed, R and P will covary if R if manipulated, but not if P is manipulated (note, a DAG assumes that one can isolate the effect of R on P, but does not imply that P can never affect R; another DAG may represent the reverse direction, P –&gt; R).\n\nTAKEAWAY:\nOmitted variable bias is a pervasive feature in observational analysis, and the assumptions that permit identification of causal effects are unlikely to hold when using cross-sectional variation."
+  },
+  {
+    "objectID": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#common-ecological-design---multivariate-regression",
+    "href": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#common-ecological-design---multivariate-regression",
+    "title": "Panel Data and Fixed Effects Designs for Ecology",
+    "section": "Common Ecological Design - Multivariate Regression",
+    "text": "Common Ecological Design - Multivariate Regression\nOf course, in the above correlations, we include plots in sites from across the world, implicitly comparing grasslands in warmer climates with those in cooler ones, or wetter with dryer, or Europe with the Americas. There are a lot of differences between these places!\nA common response to this problem is to try to measure these differences and include them in the model. In the causal inference literature, this is known as “conditioning on observables” or Pearl’s back-door criteria. Conditioning on observables is convenient but makes strong assumptions for causal inference, namely the “Selection on Observables” Assumption. Informally, this assumption implies that confounding variables that could introduce bias into a design are known and observable to the researcher. The bias they introduce into an estimator can be eliminated (controlled, blocked) by conditioning strategies, such as regression, matching, or stratification methods. To read more, see [@morganCounterfactualsCausalInference2014]. We can visualize this assumption by modifying our DAG, and using some examples in R:\n\n  \n\nTo explore the consequences of adding in covariates, we show the results of five models below. The first column repeats the first column from above. The second column adds in soil chemistry covariates, the third column instead adds weather covariates, and the fourth instead adds management variables plus habitat. The last columns adds in everything. For the purposes of this tutorial, we only show coefficient estimates for richness in the following table, even though the other terms are included in the model.\n\n\nCode\n# SoilCovars &lt;- feols(log(live_mass) ~ log(rich) +\n#                       pct_C + pct_N + ppm_P + ppm_K + ppm_Na + ppm_Mg + ppm_S + ppm_Na + ppm_Zn +  ppm_Mn +  ppm_Fe + ppm_Cu + ppm_B +\n#                       pH + PercentSand + PercentSilt + PercentClay, \n#                     comb, cluster = \"newplotid\") \n# \n# WeatherCovars &lt;- feols(log(live_mass) ~ log(rich) +\n#                          elevation + TEMP_VAR_v2 + MIN_TEMP_v2 + MAX_TEMP_v2 + TEMP_WET_Q_v2 + TEMP_DRY_Q_v2 + TEMP_WARM_Q_v2 + \n#                          TEMP_COLD_Q_v2, \n#                        comb, cluster = \"newplotid\") \n# \n# MgmtCovars &lt;- feols(log(live_mass) ~ log(rich) +\n#                       as.factor(habitat) + managed + burned + grazed + anthropogenic, \n#                     comb, cluster = \"newplotid\") \n# \n# AllCovars &lt;- feols(log(live_mass) ~ log(rich) +\n#                      pct_C + pct_N + ppm_P + ppm_K + ppm_Na + ppm_Mg + ppm_S + ppm_Na + ppm_Zn +  ppm_Mn +  ppm_Fe + ppm_Cu + ppm_B +\n#                      pH + PercentSand + PercentSilt + PercentClay +\n#                      elevation + TEMP_VAR_v2 + MIN_TEMP_v2 + MAX_TEMP_v2 + TEMP_WET_Q_v2 + TEMP_DRY_Q_v2 + TEMP_WARM_Q_v2 +\n#                      TEMP_COLD_Q_v2 + as.factor(habitat) + managed + burned + grazed + anthropogenic, \n#                    comb, cluster = \"newplotid\") \n# \n# etable(SimpleCorrAll, SoilCovars, WeatherCovars, MgmtCovars, AllCovars,\n#           cluster = \"newplotid\", \n#           drop = \"!rich\", \n#           subtitles = c(\"Data All Years\", \"+ Soil\", \"+ Weather\", \"+ Management\", \"+ All\")) \n\n\nEstimates jump around depending on which covariates are used! This is likely a sign of some sort of omitted variables bias. Even though we consecutively explain more and more of the variation in the data, we are not necessarily any closer to a causal relationship.\nThere are a few other points to make about the above results that speak the practice of science.\n1.First, the number of observations changes based on which controls we use. Columns 2 and 5, where we only have 675 observations, might be on highly selected and not representative of the overall populations under study. A careful analysis could do any of a number of approaches to control for that, but far too often we just say ``This is what I have (all the) data for, so this what I estimate.’’ It would be nice if there were a way to move forward even if we were unable to collect data on all the variables we wanted.\n2.Second, and more perniciously, is specification hunting. What’s to keep from only displaying results in columns 2 and 5 above, with no mention of the other results. P-hacking is something we should all be concerned about, but it’s really easy to twiddle and play until one gets just the right set of results that agree with ones hypothesis.\n3.Lastly, we assumed that all the covariates entered linearly and did not interact. What if what really matters is the interaction of nitrogen and precipitation? How do we capture that? We could include interactions and quadratics, or splines, but at some point, the number of covariates will exceed our sample size and nothing is identified.\n\nTAKEAWAY:\nIt is hard to assume the we observe and correctly control for all confounding variables when analyzing cross-sectional data"
+  },
+  {
+    "objectID": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#plot-fixed-effects",
+    "href": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#plot-fixed-effects",
+    "title": "Panel Data and Fixed Effects Designs for Ecology",
+    "section": "Plot Fixed Effects",
+    "text": "Plot Fixed Effects\nLet’s ignore sites for a minute, and just think about the plots that lie in a single site. We’re going to estimate the following model: \\[\\begin{equation}\n\\ln(\\text{Live Mass}_{pt}) = \\beta \\ln(\\text{Richness}_{pt}) + \\delta_p + \\mu_t + e_{pt}\n\\end{equation}\\] where we’ve added the term \\(\\delta_p\\). This represents a vector of plot-specific fixed effect—a dummy variable for each plot. We also add time fixed effects (\\(\\mu_t\\), a dummy for each year) to control for the common differences to all plots in a year (in a site). We’ll touch on that more later, but really, the plot fixed effects are of greatest consequence.\nWhat does adding this vector of plot dummy variables do? Two big things. First, it controls for any and all time-invariant features of the plot, whether we observe them or not!!! To see this, imagine putting in a variable \\(x_p\\) into the above equation linearly with the coefficient \\(\\gamma\\). We wouldn’t actually be able to estimate \\(\\gamma x_p\\); it’s already a component of \\(\\delta_p\\). Don’t know what functional for you should use for \\(x_p\\) or whether it should be interacted with another variable? That’s fine, that’s already included in \\(\\delta_p\\)! We get a whole lot for the inclusion of this variable. Let’s see our updated DAG: now we have removed confounding effects from plot-level attributes whether we can measure them or not!\n\n  \n\nSecond, and most importantly conceptually, is that we are no longer directly comparing different plots; we aren’t using cross-sectional variation any more. Instead, we are using variation in richness and productivity within the same plot over time. So, we’re implicitly comparing a plot in year \\(t\\) with this same plot in year \\(t+k\\) for some \\(k\\). Another way to see this is that we could write a very similar equation in differences (ignore the \\(\\mu_t\\) for a moment): \\[\\begin{equation}\n\\left(\\ln(\\text{Live Mass}_{pt})-\\ln(\\text{Live Mass}_{pt-1}) \\right)= \\beta \\left( \\ln(\\text{Richness}_{pt}) - \\ln(\\text{Richness}_{pt-1}) \\right) + \\left( e_{pt} - e_{pt-1}\\right)\n\\end{equation}\\] Where did \\(\\lambda_p\\) go? Well, \\(\\lambda_p-\\lambda_p=0\\), so we don’t need it. (NB: We could also subtract the mean of each variable over time within each plot and arrive at a similar estimator. There are subtle differences between the two approaches that depend on the nature of the error terms \\(e\\), but they draw on the same source of variation).\nWhat do we have to assume for a causal interpretation? There are a couple of different assumptions we could choose; I think it’s easiest to frame it like this: \\(\\mathbb{E}[ (e_{pt} - e_{pt-1}) \\times (\\ln(\\text{Richness}_{pt}) - \\ln(\\text{Richness}_{pt-1}))]=0\\). That is, changes in richness are uncorrelated with changes in unobserved determinants of richness. Because time-invariant unobservable variables do not change, they are no longer a concern! Instead, we’re concerned if movements in some unobserved factor could both be driving our outcome variable and be correlated with richness.\nWhat’s the cost? Well, there are a few to consider, but some really aren’t much of a restriction:\n\nWe use to worry about computational issues. Instead of differencing, we could have including the additional fixed effects as regressors. Were this a large vector, computation could have become difficult. This is rarely a concern thanks to better computers and better techniques.\nWe need longitudinal (panel) data (or repeated cross sections in some special circumstances). This is why economists get so much use out of administrative data! This data is rarer in ecology, but with the growth in LTERs and other multi-year sites, this will be less of a constraint.\nOur target of interest has to be time-varying. Any interesting time-invariant factors have been removed from the equation (literally).\n\nFigures @ref(fig:graphrawvary) and @ref(fig:graphdeplotFE) illustrate graphically what the plot fixed effects do to the outcome variable (productivity). Figures @ref(fig:graphrawvary) is just the raw data, and shows log(live mass) in four plots split between two sites (at the Sedgwick Reserve [sedg.us] and at the Sevilleta LTER [sevi.us]). Sedgwick has higher productivity on average. The productivity at these sites also appear to be following different trajectories through time (e.g., note the dip in productivity at Sevilleta in 2009). The plot fixed effects remove the average productivity in each site, as shown in Figure @ref(fig:graphdeplotFE). They do not remove site-and-year specific sources of confounding variation (e.g., if a more extreme drought happened at Sevilleta than at Sedgwick in 2009 affecting both productivity and richness); we turn to eliminating site and year specific confounding variables below in @ref(fig:graphdeplotsiteyearFE).\nTo the statistical model: We’re first going to estimate the following equation site-by-site on the five sites with the largest number of observations (in terms of the number plot-years we observe; see Table S1). \\[\\begin{equation}\n\\ln(\\text{Live Mass}_{pt}) = \\beta \\ln(\\text{Richness}_{pt}) + \\delta_p + \\mu_t + e_{pt}\n\\end{equation}\\] The year fixed effects \\(\\mu_t\\) control for time-varying factors (observed or unobserved) that affect all plots at the site under consideration. For example, suppose 2007 was a particularly damp and rainy year at the site; \\(\\mu_t\\) controls for the average impact of that across all plots. Because what happens at one site in a year is probably very different from what happens at a different site in the same year, we estimate these separately for each site. This will make the point estimates for each site less precise (especially because we’re clustering by plot), but this is just for illustration’s sake.\n\n\nCode\n# PlotFE_1 &lt;- comb %&gt;%\n#   filter(site_code==\"cdcr.us\") %&gt;%\n#   feols(log(live_mass) ~ log(rich) | newplotid + year, ., cluster = \"newplotid\")\n# \n# PlotFE_2 &lt;- comb %&gt;%\n#   filter(site_code==\"cdpt.us\") %&gt;%\n#   feols(log(live_mass) ~ log(rich) | newplotid + year, ., cluster = \"newplotid\")\n# \n# PlotFE_3 &lt;- comb %&gt;%\n#   filter(site_code==\"koffler.ca\") %&gt;%\n#   feols(log(live_mass) ~ log(rich) | newplotid + year, ., cluster = \"newplotid\")\n# \n# PlotFE_4 &lt;- comb %&gt;%\n#   filter(site_code==\"sedg.us\") %&gt;%\n#   feols(log(live_mass) ~ log(rich) | newplotid + year, ., cluster = \"newplotid\")\n# \n# PlotFE_5 &lt;- comb %&gt;%\n#   filter(site_code==\"sier.us\") %&gt;%\n#   feols(log(live_mass) ~ log(rich) | newplotid + year, ., cluster = \"newplotid\")\n# \n# etable(SimpleCorrAll, PlotFE_1, PlotFE_2, PlotFE_3, PlotFE_4, PlotFE_5,\n#           cluster = \"newplotid\", \n#           drop = \"!rich\", \n#           subtitles = c(\"Data All Years\",\"US - CDCR\", \"US - CDPT\", \"CA - Koffler\", \"US - SEDG\", \"US - SIER\" )) \n\n\nWe again show the bivariate correlation on all sites first (SimpleCorrAll), and then the estimate for each site. Whoa! Now we’re getting some negative coefficients (though mostly insignificant due to smaller effective sample sizes). We’re controlling for lots and lots of things that we couldn’t control for before, either because we didn’t think to include them or we couldn’t collect data on them. The R-squared values confirm that this is the case; we’re generally explaining much more of the data than before (but note: R-squared values are NOT important for causal interpretations generally). Note that, with the plot fixed effects, we do not have much statistical power estimating sites individually.\n\nTAKEAWAY:\nUsing unit fixed effects in panel data shifts the identifying variation from across units to within units over time."
+  },
+  {
+    "objectID": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#bringing-it-all-together-with-site-by-year-fixed-effects",
+    "href": "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.html#bringing-it-all-together-with-site-by-year-fixed-effects",
+    "title": "Panel Data and Fixed Effects Designs for Ecology",
+    "section": "Bringing it all Together with Site-by-Year Fixed Effects",
+    "text": "Bringing it all Together with Site-by-Year Fixed Effects\nWe now combine all sites together to give us more statistical power to detect effects. We do want to account for the fact that different sites experience different conditions in different years. To do so in a flexible way, we include site-by-year fixed effects, \\(\\mu_{st}\\). \\[\\begin{equation}\n\\ln(\\text{Live Mass}_{pst}) = \\beta \\ln(\\text{Richness}_{pst}) + \\delta_p + \\delta_{st} +  e_{pst}\n\\end{equation}\\] These additional fixed effects control for all time-varying effects that impact the site as whole (i.e., that apply to all the plots equally). Thus, they capture the first order effects of weather, among other factors that could shift outcomes for the site as whole. This gives us sufficient power to conduct conservative inference on our estimated average treatment effect.\nTo get a sense for what these site-by-year effects do, first recall Figure @ref(fig:graphdeplotFE). Plots that are in the same site seem to have similar movements in productivity over time, even after controlling for plot fixed effects. The site-by-year fixed effects remove the average of everything that happens across the site in the data in a year (e.g., a drought at a site). Figure @ref(fig:graphdeplotsiteyearFE) removes this variation; see how the big drop in Sevilleta live mass in 2009 is much less Figure in @ref(fig:graphdeplotsiteyearFE).\nTo provide confidence that the results are robust, we will also include a couple of time-varying controls, evenness and lagged richness. NB: To make sure we don’t drop locations with values of zero evenness, we use the inverse hyperbolic sine instead of the natural log. Note that we don’t need to worry about that for productivity or richness because they never take a zero value.\n\n\nCode\n# ihs &lt;- function(x) {\n#   y &lt;- log(x+sqrt(x^2 + 1))\n# }\n# \n# \n# MainMod_Rich     &lt;- feols(log(live_mass) ~ log(rich)  | newplotid + site.by.yeardummy, comb) \n# MainMod_RichEven &lt;- feols(log(live_mass) ~ log(rich) + ihs(even) | newplotid + site.by.yeardummy, comb) \n# MainMod_RichLag  &lt;- feols(log(live_mass) ~ log(rich) + log(laggedrich) | newplotid + site.by.yeardummy, comb) \n# MainMod_RichEvenLag &lt;- feols(log(live_mass) ~ log(rich) + log(laggedrich) + ihs(even) | newplotid + site.by.yeardummy, comb)\n# \n# etable(MainMod_Rich, MainMod_RichEven, MainMod_RichLag, MainMod_RichEvenLag,\n#           cluster = \"newplotid\")\n\n\nAs you can see, estimate on log richness are relatively stable across different specifications. Of special note: the coefficient on lagged richness (richness from the year before) is small and insignificant, given us confidence that our results reflect contemporaneous movement in richness, and not some factor that is also correlated with last year’s richness.\n\nTAKEAWAY:\nFixed effects can alter the research design and control for a wide variety of potentially confounding factors!\n\nOur updated DAG, including both plot and site-by-year fixed effects, show that we can control more flexibly for a broader set of confounding variables in space and time – critically, whether they are measured or not!"
+  },
+  {
+    "objectID": "exercises/matching_demo.html",
+    "href": "exercises/matching_demo.html",
+    "title": "Matching in R",
+    "section": "",
+    "text": "Code to demonstrate matching in R. Adapted from the supplementary materials from Butsic, V. et al. (2017): Quasi-experimental methods enable stronger inferences from observational data in ecology. (c) Matthias Baumann (2017-01-10).\nIn the Butsic et al. paper, they used the example of the impact of wildfire on species richness. Here, we will simulate data with a known treatment effect of fire on species richness. We will then compare the estimated effect we get through a naive ordinary least squares (OLS) regression approach to the effect we estimate when we use matching methods to control for observable confounding variables."
+  },
+  {
+    "objectID": "exercises/matching_demo.html#description",
+    "href": "exercises/matching_demo.html#description",
+    "title": "Matching in R",
+    "section": "",
+    "text": "Code to demonstrate matching in R. Adapted from the supplementary materials from Butsic, V. et al. (2017): Quasi-experimental methods enable stronger inferences from observational data in ecology. (c) Matthias Baumann (2017-01-10).\nIn the Butsic et al. paper, they used the example of the impact of wildfire on species richness. Here, we will simulate data with a known treatment effect of fire on species richness. We will then compare the estimated effect we get through a naive ordinary least squares (OLS) regression approach to the effect we estimate when we use matching methods to control for observable confounding variables."
+  },
+  {
+    "objectID": "exercises/matching_demo.html#set-up",
+    "href": "exercises/matching_demo.html#set-up",
+    "title": "Matching in R",
+    "section": "Set up",
+    "text": "Set up\nLoad required packages. In this demo, we will use the package “MatchIt” for the matching process."
+  },
+  {
+    "objectID": "exercises/matching_demo.html#simulate-data",
+    "href": "exercises/matching_demo.html#simulate-data",
+    "title": "Matching in R",
+    "section": "Simulate data",
+    "text": "Simulate data\nSimulated data is handy because we know the true effect of the treatment variable. Here, we’ll write a function to simulate a dataset where we know the true effect of fire on species richness.\n\n\nCode\n### Function to simulate data and write it as a dataframe\nsimulate_data &lt;- function(){\n  \n  ### Create variables in a dataframe\n  \n  ### Make column for observation ID\n  df &lt;- data.frame(id = seq(1,1000),\n                   \n                   ### Add columns for explanatory variables\n                   \n                   ### Add column for treatment variable\n                   fire = c(rep(0,500), rep(1,500)),\n                   \n                   ### And the rest of the covariates\n                   slope = c(runif(500, min = 50, max = 90), \n                             runif(500, min = 65, max = 150)),\n                   elevation = c(runif(500, min = 150, max = 185), \n                                 runif(500, min = 165, max = 200)),\n                   stream = runif(1000, min = 0, max = 1),\n                   \n                   ### And the error term\n                   error = rnorm(1000, mean = 0, sd = 5))\n  \n  ### Add a slope*slope variable\n  df &lt;- df %&gt;%\n    mutate(slope2 = slope^2)\n  \n  ### Make column for outcome variable (species richness) \n  df &lt;- df %&gt;%\n    mutate(species_richness = 1 + 5*fire + 0.07*slope + 0.05*elevation + 2*stream - 0.005*slope2 + error)\n  return(df)\n}\n\n\nWe know that the true effect of the treatment variable (fire) is a 5x increase in the response variable (species richness)."
+  },
+  {
+    "objectID": "exercises/matching_demo.html#estimate-the-effect-using-ordinary-least-squares",
+    "href": "exercises/matching_demo.html#estimate-the-effect-using-ordinary-least-squares",
+    "title": "Matching in R",
+    "section": "Estimate the effect using ordinary least squares",
+    "text": "Estimate the effect using ordinary least squares\n\n\nCode\n### Write a function to generate data and analyze using OLS \nols_fun &lt;- function(){\n  \n  ### Simulate the dataset\n  data &lt;- simulate_data()\n  \n  ### Run OLS regression\n  ols &lt;- lm(species_richness ~ fire + slope + elevation + stream, \n            data = data)\n  \n  ### Extract model coefficients and standard error\n  fire_coeff &lt;- coef(summary(ols))[\"fire\", \"Estimate\"]\n  fire_se &lt;- coef(summary(ols))[\"fire\", \"Std. Error\"]\n  list &lt;- list(fire_coeff, fire_se)\n}\n\n### Apply the function to 100 replicates\nols_sim &lt;- replicate(100, ols_fun())\n\n### Extract the model estimates\nols_fire_est &lt;- unlist(ols_sim[1, ])\n\n### Print mean, standard deviation, minimum, and maximum values for coefficient estimates\nc(mean(ols_fire_est), sd(ols_fire_est), \n  min(ols_fire_est), max(ols_fire_est))\n\n\n[1] 7.0279435 0.6065381 5.6262475 8.3778838\n\n\nCode\n### Extract the standard deviations\nols_fire_sd &lt;- unlist(ols_sim[2, ])\n\n### Print mean, standard deviation, minimum, and maximum standard deviation of coefficient estimates\nc(mean(ols_fire_sd), sd(ols_fire_sd), \n  min(ols_fire_sd), max(ols_fire_sd))\n\n\n[1] 0.60583817 0.01842916 0.56454731 0.64972060\n\n\nThe effect estimated by OLS is incorrect– it should be 5."
+  },
+  {
+    "objectID": "exercises/matching_demo.html#use-pre-regression-matching-then-run-the-regression",
+    "href": "exercises/matching_demo.html#use-pre-regression-matching-then-run-the-regression",
+    "title": "Matching in R",
+    "section": "Use pre-regression matching, then run the regression",
+    "text": "Use pre-regression matching, then run the regression\n\n\nCode\n### Write a function to generate the data, use matching to subset the data, and run a regression on the matched data\npps_fun &lt;- function(){\n  \n  ### Simulate the dataset\n  data &lt;- simulate_data()\n  \n  ### Match the data on the observed covariates\n  match &lt;- matchit(fire ~ slope + \n                     elevation + \n                     stream, \n                   \n                   ### set method to use for matching\n                   method = \"nearest\", \n                   \n                   ### tell it what data source to draw matches from\n                   data = data, \n                   \n                   ### tell it to use logistic regression for the matching\n                   distance = \"glm\", \n                   link = \"probit\",\n                   \n                   ### specify which order to draw potential points from the full dataset\n                   m.order = \"random\",\n                   \n                   ### set a maximum distance for the matches\n                   caliper = 0.10)\n  \n  ### Extract the matched data from the full dataset\n  matched_data = match.data(match)\n  \n  ### Run OLS on the matched dataset\n  ols &lt;- lm(species_richness ~ fire + slope + \n              elevation + stream, \n            data = matched_data)\n  \n  ### Extract model coefficients\n  fire_coeff &lt;- coef(summary(ols))[\"fire\", \"Estimate\"]\n  fire_se &lt;- coef(summary(ols))[\"fire\", \"Std. Error\"]\n  list &lt;- list(fire_coeff, fire_se) \n}\n\n### Apply the function to 100 replicates\npps_sim &lt;- replicate(100, pps_fun())\n\n### Extract the model estimates\npps_fire_est &lt;- unlist(pps_sim[1,])\n\n### Print mean, standard deviation, minimum, and maximum values for coefficient estimates\nc(mean(pps_fire_est), sd(pps_fire_est), \n  min(pps_fire_est), max(pps_fire_est))\n\n\n[1] 4.8386337 0.7223976 3.5179257 6.8933651\n\n\nCode\n### Extract the standard deviations\npps_fire_sd &lt;- unlist(pps_sim[2,])\n\n### Print mean, standard deviation, minimum, and maximum standard deviation of coefficient estimates\nc(mean(pps_fire_sd), sd(pps_fire_sd), \n  min(pps_fire_sd), max(pps_fire_sd))\n\n\n[1] 0.67701326 0.04671819 0.55414637 0.80191143"
+  },
+  {
+    "objectID": "exercises/matching_demo.html#take-a-closer-look-at-the-matching-process",
+    "href": "exercises/matching_demo.html#take-a-closer-look-at-the-matching-process",
+    "title": "Matching in R",
+    "section": "Take a closer look at the matching process",
+    "text": "Take a closer look at the matching process\n\nPre-matching data\n\n\nCode\n### Simulate a dataset\ndata_for_match &lt;- simulate_data()\n\n### Make fire a factor variable\ndata_for_match &lt;- data_for_match %&gt;%\n  mutate_at(vars(fire), \n            funs(factor))\n\n\nWarning: `funs()` was deprecated in dplyr 0.8.0.\nℹ Please use a list of either functions or lambdas:\n\n# Simple named list: list(mean = mean, median = median)\n\n# Auto named with `tibble::lst()`: tibble::lst(mean, median)\n\n# Using lambdas list(~ mean(., trim = .2), ~ median(., na.rm = TRUE))\n\n\nCode\n### Take a look at the balance of the covariates before matching\ndata_for_match %&gt;%\n  dplyr::select(id, fire, slope, elevation, stream) %&gt;%\n  gather(variable, value, slope:stream, factor_key = TRUE) %&gt;%\n  ggplot(aes(x = variable, y = value, color = fire)) +\n  geom_boxplot() +\n  xlab(\"Variable\") + ylab(\"Value\")\n\n\n\n\n\n\n\n\n\nCode\n### fires: 0 = unburned, 1 = burned\n\n### You can also look at it in table form\ncovariate_summ &lt;- data_for_match %&gt;%\n  group_by(fire) %&gt;%\n  summarise(slope_mean = mean(slope),\n            slope_sd = sd(slope),\n            elevation_mean = mean(elevation),\n            elevation_sd = sd(elevation),\n            stream_mean = mean(stream),\n            stream_sd = sd(stream))\n\n\nWe can see that there are issues with the balance between the burned and unburned sample units. The burned areas are on steeper slopes and higher elevations, on average.\n\n\nMatch the data\n\n\nCode\n### Match the data on the observed covariates\nmatch &lt;- matchit(fire ~ slope + \n                   elevation + \n                   stream, \n                 \n                 ### set method to use for matching\n                 method = \"nearest\", \n                 \n                 ### tell it what data source to draw matches from\n                 data = data_for_match, \n                 \n                 ### tell it to use logistic regression for calculating the propensity scores \n                 distance = \"glm\", \n                 link = \"probit\",\n                 \n                 ### specify which order to draw potential points from the full dataset\n                 m.order = \"random\",\n                 \n                 ### set a maximum distance for the matches\n                 caliper = 0.10)\n\n### Take a look at the quality of the matches\nmatch_quality &lt;- summary(match, \n                         standardize = TRUE)\n\n### Let's see how many points were matched\nmatch_quality_nn &lt;- as.data.frame(match_quality$nn)\n\n### Let's look at the pre-match covariate balance\nmatch_quality_unmatched &lt;- as.data.frame(match_quality$sum.all)\n\n### What does the covariate balance look like after matching?\nmatch_quality_summary &lt;- as.data.frame(match_quality$sum.matched)\n### Ideally, you want the standardized mean differences in the matched dataset to be &lt; 0.25 (reference: Schleicher et al. 2020. Statistical matching for conservation science. Conserv. Biol. 34:538–549. https://doi.org/10.1111/cobi.13448).\n\n### You can also look at the amount of bias *reduction achieved through matching\n# match_quality_reduction &lt;- as.data.frame(match_quality$reduction)\n\n\n\nVisualizing the match quality\n\n\nCode\n### You can also use a fun interactive command to visualize the pre- and post-match covariate spread\n# plot(match, interactive = FALSE)\n\n### And you can compare the propensity scores visually\n# plot(match, type = \"jitter\", interactive = FALSE)\n\n\n\n\n\nAnalyzing the matched subset of data\n\n\nCode\n### First, extract the matches from the full dataset\ndemo_matched &lt;- match.data(match)\n\n### Then run the regression, including the covariates in the model\nfit_matched &lt;- lm(species_richness ~ fire + slope + \n                    elevation + stream, \n                  data = demo_matched)"
+  },
+  {
+    "objectID": "exercises/rdd_demo.html",
+    "href": "exercises/rdd_demo.html",
+    "title": "Regression discontinuity design in R",
+    "section": "",
+    "text": "Code to demonstrate matching in R. Adapted from the supplementary materials from Butsic, V. et al. (2017): Quasi-experimental methods enable stronger inferences from observational data in ecology. (c) Matthias Baumann (2017-01-10).\nIn the Butsic et al. paper, they used the example of the impact of wildfire on species richness. Here, we will simulate data with a known treatment effect of fire on species richness. We will then compare the estimated effect we get through a naive ordinary least squares (OLS) regression approach to the effect we estimate when we use RDD methods ."
+  },
+  {
+    "objectID": "exercises/rdd_demo.html#description",
+    "href": "exercises/rdd_demo.html#description",
+    "title": "Regression discontinuity design in R",
+    "section": "",
+    "text": "Code to demonstrate matching in R. Adapted from the supplementary materials from Butsic, V. et al. (2017): Quasi-experimental methods enable stronger inferences from observational data in ecology. (c) Matthias Baumann (2017-01-10).\nIn the Butsic et al. paper, they used the example of the impact of wildfire on species richness. Here, we will simulate data with a known treatment effect of fire on species richness. We will then compare the estimated effect we get through a naive ordinary least squares (OLS) regression approach to the effect we estimate when we use RDD methods ."
+  },
+  {
+    "objectID": "exercises/rdd_demo.html#set-up",
+    "href": "exercises/rdd_demo.html#set-up",
+    "title": "Regression discontinuity design in R",
+    "section": "Set up",
+    "text": "Set up\nLoad required packages. In this demo, we will use the package “rdrobust” for the matching process."
+  },
+  {
+    "objectID": "exercises/rdd_demo.html#simulate-data",
+    "href": "exercises/rdd_demo.html#simulate-data",
+    "title": "Regression discontinuity design in R",
+    "section": "Simulate data",
+    "text": "Simulate data\nSimulated data is handy because we know the true effect of the treatment variable. Here, we’ll write a function to simulate a dataset where we know the true effect of fire on species richness.\n\n\nCode\n### Function to simulate data and write it as a dataframe\nsimulate_data &lt;- function(){\n  \n  ### Create variables in a dataframe\n  \n  ### Make column for observation ID\n  df &lt;- data.frame(id = seq(1, 1000),\n                   \n                   ### Add columns for explanatory variables\n                   \n                   ### Add column for treatment variable\n                   fire = c(rep(0, 500), rep(1, 500)),\n                   \n                   ### And the rest of the covariates\n                   distance = c(runif(500, min = -100, max = 0), \n                             runif(500, min = 0, max = 100)),\n                   slope = runif(1000, min = 50, max = 100),\n                   elevation = runif(1000, min = 150, max = 185),\n                   stream = runif(1000, min = 0, max = 1),\n                   \n                   ### And the error term\n                   error = rnorm(1000, mean = 0, sd = 2))\n  \n  ### Add land use history variable, depends on outcomes of distance\n  df &lt;- df %&gt;%\n    mutate(land_use = ifelse(distance &gt; -50 & distance &lt; 5, \n                             1, \n                             0))\n  \n  \n  \n  ### Make column for outcome variable (species richness) \n  df &lt;- df %&gt;%\n    mutate(species_richness = 1 + 5*fire + 0.7*slope + 0.05*elevation + 2*stream + 5*land_use + error)\n  return(df)\n}\n\n\nWe know that the true effect of the treatment variable (fire) is a 5x increase in the response variable (species richness)."
+  },
+  {
+    "objectID": "exercises/rdd_demo.html#estimate-the-effect-using-ordinary-least-squares",
+    "href": "exercises/rdd_demo.html#estimate-the-effect-using-ordinary-least-squares",
+    "title": "Regression discontinuity design in R",
+    "section": "Estimate the effect using ordinary least squares",
+    "text": "Estimate the effect using ordinary least squares\n\n\nCode\n### Write a function to generate data and analyze using OLS \nols_fun &lt;- function(){\n  \n  ### Simulate the dataset\n  data &lt;- simulate_data()\n  \n  ### Run OLS regression\n  ols &lt;- lm(species_richness ~ fire + slope + elevation + stream, \n            data = data)\n  \n  ### Extract model coefficients and standard error\n  fire_coeff &lt;- coef(summary(ols))[\"fire\", \"Estimate\"]\n  fire_se &lt;- coef(summary(ols))[\"fire\", \"Std. Error\"]\n  list &lt;- list(fire_coeff, fire_se)\n}\n\n### Apply the function to 100 replicates\nols_sim &lt;- replicate(100, ols_fun())\n\n### Extract the model estimates\nols_fire_est &lt;- unlist(ols_sim[1, ])\n\n### Print mean, standard deviation, minimum, and maximum values for coefficient estimates\nc(mean(ols_fire_est), sd(ols_fire_est), \n  min(ols_fire_est), max(ols_fire_est))\n\n\n[1] 2.7531093 0.1720598 2.3303118 3.1750195\n\n\nCode\n### Extract the standard deviations\nols_fire_sd &lt;- unlist(ols_sim[2, ])\n\n### Print mean, standard deviation, minimum, and maximum standard deviation of coefficient estimates\nc(mean(ols_fire_sd), sd(ols_fire_sd), \n  min(ols_fire_sd), max(ols_fire_sd))\n\n\n[1] 0.176375519 0.003588894 0.168985998 0.186028617\n\n\nThe effect estimated by OLS is incorrect– it should be 5."
+  },
+  {
+    "objectID": "exercises/rdd_demo.html#use-regression-discontinuity",
+    "href": "exercises/rdd_demo.html#use-regression-discontinuity",
+    "title": "Regression discontinuity design in R",
+    "section": "Use regression discontinuity",
+    "text": "Use regression discontinuity\n\n\nCode\n### Simulate the dataset\ndata_rdd &lt;- simulate_data()\n\n### look at the distribution of sample points along the running variable\n# ggplot(data = data_rdd, aes(x = distance)) + \n#   geom_histogram() +\n#   geom_vline(xintercept = 0)\n# \n# ### look at the distribution of the outcome variable along the running variable\n# ggplot(data = data_rdd, aes(x = distance, y = species_richness)) +\n#   geom_point() +\n#   geom_vline(xintercept = 0)"
+  },
+  {
+    "objectID": "exercises/index.html",
+    "href": "exercises/index.html",
+    "title": "Exercises in R",
+    "section": "",
+    "text": "This section has link to the files for the demos and replication exercises that we will do in class. Here, you will find link to files with annotated code and csv files with data for the replication exercises.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#monday-220",
+    "href": "exercises/index.html#monday-220",
+    "title": "Exercises in R",
+    "section": "Monday 2/20",
+    "text": "Monday 2/20\nMatching demo in R. I couldn’t figure out a cute way for you to be able to download this directly as a RMarkdown file (thwarted by quarto…). But this link will take you to the page in the course’s GitHub repository where the RMarkdown file is stored. Click on “Raw,” then you can copy and paste the code into an RMarkdown on your computer.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#wednesday-222",
+    "href": "exercises/index.html#wednesday-222",
+    "title": "Exercises in R",
+    "section": "Wednesday 2/22",
+    "text": "Wednesday 2/22\nMatching replication exercise\nIn this replication exercise, you will use a subset of the data from Siegel et al. 2022 to play around with matching using a real dataset. The data are available for download on the course Canvas page, under the header “IV Quasi Experimental Designs: Matching.” There are two csv files of data: colo_dat_full.csv and colo_data_for_matching.csv. colo_dat_full.csv has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. colo_data_for_matching.csv is a file that’s ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#monday-227",
+    "href": "exercises/index.html#monday-227",
+    "title": "Exercises in R",
+    "section": "Monday 2/27",
+    "text": "Monday 2/27\nDiff-in-Diff regression demo in R Application and interpretation of differences-in-differences to examine effects of the Marshall Fire on vegetation in Boulder, CO. Data file is on Canvas course page.\nOptional: Review of difference-in-difference covered in lecture in RMarkdown, see here",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#monday-36",
+    "href": "exercises/index.html#monday-36",
+    "title": "Exercises in R",
+    "section": "Monday 3/6",
+    "text": "Monday 3/6\nPanel regression demo in R This tutorial replicates the main analyses in Dee et al, contrasted with common approaches in ecology (mixed effect models and conditioning on observable covariates. For the rest of the supplemental analyses in Dee et al, see L.Dee’s GitHub",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#wednesday-315",
+    "href": "exercises/index.html#wednesday-315",
+    "title": "Exercises in R",
+    "section": "Wednesday 3/15",
+    "text": "Wednesday 3/15\nInstrumental variables demo in R. Link to an RMarkdown file that walks through the process of coding an analysis using an instrumental variable.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#wednesday-322",
+    "href": "exercises/index.html#wednesday-322",
+    "title": "Exercises in R",
+    "section": "Wednesday 3/22",
+    "text": "Wednesday 3/22\nRegression discontinuity design demo in R. Link to an RMarkdown file that walks through the process of coding an analysis using regression discontinuity analysis.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/matching_replication.html",
+    "href": "exercises/matching_replication.html",
+    "title": "Replication exercise for matching methods",
+    "section": "",
+    "text": "In this replication exercise, you will use some of the data from Siegel et al. 2022 (https://doi.org/10.1007/s10113-022-01950-y). The dataset for the entire western US is very large and unwieldy, so you’ll work with data from a single state: Colorado. Note: all the code is commented out in this Rmd – you’ll need to uncomment the parts you want to use."
+  },
+  {
+    "objectID": "exercises/matching_replication.html#description",
+    "href": "exercises/matching_replication.html#description",
+    "title": "Replication exercise for matching methods",
+    "section": "",
+    "text": "In this replication exercise, you will use some of the data from Siegel et al. 2022 (https://doi.org/10.1007/s10113-022-01950-y). The dataset for the entire western US is very large and unwieldy, so you’ll work with data from a single state: Colorado. Note: all the code is commented out in this Rmd – you’ll need to uncomment the parts you want to use."
+  },
+  {
+    "objectID": "exercises/matching_replication.html#set-up",
+    "href": "exercises/matching_replication.html#set-up",
+    "title": "Replication exercise for matching methods",
+    "section": "Set up",
+    "text": "Set up"
+  },
+  {
+    "objectID": "exercises/matching_replication.html#the-data",
+    "href": "exercises/matching_replication.html#the-data",
+    "title": "Replication exercise for matching methods",
+    "section": "The data",
+    "text": "The data\nThere are two data files you can play around with for this exercise: colo_dat_full.csv and colo_data_for_matching.csv. colo_dat_full.csv has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. colo_data_for_matching.csv is a file that’s ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables.\n\nVariable names in colo_dat_full\n\nstate: the state the sample is from (it should always be Colorado in this file)\n\nUID: a unique identifier for each sample point\n\nyear: the year that the fire and climate data is from\n\nburned: whether or not the site burned in that year (0 = unburned, 1 = burned)\n\nprot_cat_recl: the ownership class. 0 = private, 1 = federal\n\ndist_rds_km: distance to the nearest road, in km\n\nslope: slope, in degrees\n\naspect_srai: aspect\n\nelev_km: elevation, in 1000 m\n\nlon: longitude\n\nlat: latitude\n\nlightning: county-level lightning strikes\n\npdsi_avg_season: seasonal average Palmer Drought Severity Index value\n\nsoil_avg_season: seasonal average soil moisture\n\ntmmn_avg_season: seasonal average minimum temperature\ntmmx_avg_season: seasonal average maximum temperature\n\nvs_max_season: seasonal average maximum wind speed\n\ntotal_precip_season: total seasonal precipitation\n\nprev_yr_precip: total precipitation in the previous year\n\n\n\nVariable names in colo_data_for_matching\nAll the climate variables are variablename_5 to indicate that they are 5-year average values * UID: a unique identifier for each sample point\n* state: the state the sample is from\n* prot_cat_recl: the ownership class. 0 = private, 1 = federal\n* lightning_5: 5 year average for lightning strikes\n* vs_max_season: seasonal average maximum wind speed\n* pr_total_season: total seasonal precipitation\n* tmmx_avg_season: seasonal average maximum temperature\n* tmmn_avg_season: seasonal average minimum temperature * pdsi_avg_season: seasonal average Palmer Drought Severity Index value\n* soil_avg_season: seasonal average soil moisture\n* slope: slope, in degrees\n* aspect_srai: aspect\n* elev_km: elevation, in 1000 m\n* lon: longitude\n* lat: latitude\n* dist_rds_km: distance to the nearest road, in km\n* popdens_1990: population density (per km2) in 1990\n* popdens_2000: population density (per km2) in 2000\n* popdens_2010: population density (per km2) in 2010"
+  },
+  {
+    "objectID": "exercises/matching_replication.html#prep-the-data",
+    "href": "exercises/matching_replication.html#prep-the-data",
+    "title": "Replication exercise for matching methods",
+    "section": "Prep the data",
+    "text": "Prep the data"
+  },
+  {
+    "objectID": "exercises/matching_replication.html#check-out-the-full-unmatched-dataset",
+    "href": "exercises/matching_replication.html#check-out-the-full-unmatched-dataset",
+    "title": "Replication exercise for matching methods",
+    "section": "Check out the full, unmatched dataset",
+    "text": "Check out the full, unmatched dataset\nYou might want to make the prot_cat_recl variable a factor.\n\n\nCode\n### See how many treated (federal) and control (private) sample points we have\n\n\n### You can take a look at the balance of the covariates before matching via data visualizations (boxplots, histograms, density plots)\n\n\n### You can also look at it in table form"
+  },
+  {
+    "objectID": "exercises/matching_replication.html#match-the-data",
+    "href": "exercises/matching_replication.html#match-the-data",
+    "title": "Replication exercise for matching methods",
+    "section": "Match the data",
+    "text": "Match the data\nMatch the data on the observed covariates, using the MatchIt package. You can play around with the settings to see how it affects the matched data you end up with.\n\n\nCode\n### Match the data \n\n\n\nAssess match quality\nTake a look at the quality of the matches: how many points were matched? what was the pre-matching covariate balance? what was the covariate balance after matching?\n\n\nVisualize the match quality\n\n\nCode\n### Some easy visualizations through MatchiIt\n# plot(match, interactive = FALSE)\n# plot(match, type = \"jitter\", interactive = FALSE)\n\n\n\n\nIterate, if necessary\nIf you’re satisfied with the quality of your matches, you can move on to the analysis. Otherwise, try tweaking the parameters to see what happens."
+  },
+  {
+    "objectID": "exercises/matching_replication.html#analyze-the-matched-dataset",
+    "href": "exercises/matching_replication.html#analyze-the-matched-dataset",
+    "title": "Replication exercise for matching methods",
+    "section": "Analyze the matched dataset",
+    "text": "Analyze the matched dataset\n\nExtract the matched data\nFirst, you’ll need to extract the matched data and use the UIDs from the matched data to subset the full dataset for analysis. Here is some code to demonstrate that (you’ll likely need to modify this)\n\n\nCode\n# ### Extract the matches from the MatchIt object\n# matched &lt;- match.data(match)\n# \n# ### Open the full data (entire time series) \n# full_data &lt;- read.csv(\"file_path/colo_dat_full.csv\")\n# \n# ### Filter full_data to just include the UIDs of the matched subset of the data\n# full_data &lt;- full_data %&gt;%\n#   filter(UID %in% matched$UID)\n\n\n\n\nAdd time lag variables\nIn my analyses, I used time lag variables to account for recent fire history: if a site burned last year, it usually won’t burn this year. So we’ll make a variable that accounts for whether or not a site burned in the previous five years.\nSince we used a lag variable, we won’t have complete data for the first few years of the time series, so we’ll also filter the dataset to just include the years with complete data.\n\n\nCode\n# ### Add lag variable\n# full_data &lt;- full_data %&gt;%\n#   \n#   ### Group by the UID so you can make a site-specific lag variable\n#   group_by(UID) %&gt;%\n#   \n#   ### Add the lag variable\n#   mutate(burn_prev_5_yr = dplyr::lag(burned, \n#                                      n = 5, \n#                                      default = NA,\n#                                      order_by = year)) %&gt;%\n#   ungroup()\n# \n# ### Drop first years of time series\n# full_data &lt;- full_data %&gt;%\n#   filter(year &gt; 1988)\n\n\n\n\nCheck for correlated variables\nSome of the continuous variables are highly correlated, so we don’t want to include them in the regression model.\n\n\nCode\n### Assess level of correlation\n\n### if you want to use it, here's a function that returns a table with the correlation coefficient and p-value between each pair of variables:\n# cor.prob &lt;- function (X, dfr = nrow(X) - 2) {\n#   R &lt;- cor(X, use=\"pairwise.complete.obs\")\n#   above &lt;- row(R) &lt; col(R)\n#   r2 &lt;- R[above]^2\n#   Fstat &lt;- r2 * dfr/(1 - r2)\n#   R[above] &lt;- 1 - pf(Fstat, 1, dfr)\n#   R[row(R) == col(R)] &lt;- NA\n#   R\n# }\n# flattenSquareMatrix &lt;- function(m) {\n#   if( (class(m) != \"matrix\") | (nrow(m) != ncol(m))) stop(\"Must be a square matrix.\") \n#   if(!identical(rownames(m), colnames(m))) stop(\"Row and column names must be equal.\")\n#   ut &lt;- upper.tri(m)\n#   data.frame(i = rownames(m)[row(m)[ut]],\n#              j = rownames(m)[col(m)[ut]],\n#              cor=t(m)[ut],\n#              p=m[ut])\n# }\n\n### Determine which variables to drop\n\n\n\n\nModel the effect of ownership/management on wildfire probability for a given site in a given year\nThis is the exciting part! Here’s a basic logistic regression model, but feel free to tweak it.\n\n\nCode\n# ### Model\n# colo_model &lt;- glmer(burned ~ # covariates you're including + \n#                       \n#                       ### include an interaction between year and ownership \n#                       ### don't forget to tell R that prot_cat_recl is a factor\n#                       prot_cat_recl*year + \n#                       \n#                       ### add the lag variable\n#                       burn_prev_5_yr +\n#                       \n#                       ### and a site-level effect to account for unobservable \n#                       ### factors unique to each site\n#                       (1|UID),\n#                     \n#                     ### tell it where to get the data from\n#                     data = full_data, \n#                     \n#                     ### model parameters\n#                     family = binomial(link = \"logit\"),\n#                     nAGQ = 0,\n#                     control = glmerControl(optimizer = \"nloptwrap\"))\n\n### Extract the model's coefficient estimates"
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "",
+    "text": "Laura Dee (laura.dee@colorado.edu)",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "coding_resources.html",
+    "href": "coding_resources.html",
+    "title": "Coding Resources",
+    "section": "",
+    "text": "Programming in R will be a key part of this course, and as most of you have probably experienced, R can cause headaches and stress! Files go missing, package dependencies spiral out of control, and minor code errors can cost us hours of troubleshooting. The point of this course is not to become an R whiz, and I don’t want code errors or coding anxiety to get in the way of your learning and research progress.\nI encourage you to use online resources for coding help if/when you get stuck. StackOverflow is a great resource for finding solutions to coding issues or asking a specific question, as is the RStudio Community. BlueSky can also be a great resource: if you post a question with the hashtag #rstats, a kind soul might give you an answer. If you’re looking for help via Google, we recommend including in your query the package you’re using and if applicable, the error message you’re getting. Finally, if you are a visual learner, Allison Horst has some great learning tools for various R functions.\nIf you could use some more training and exposure to R, here are some resources to get started:\n\nswirl teaches you R programming and data science interactively, at your own pace, and right in the R console! On this page, swirl will walk you through each of the steps required to begin using R and swirl today!\n\nR for data science (R4DS). R4DS teaches you how to do data science with R: You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualize it and model it. The book is available online, where you can find a practicum of skills for data science from visualization to wrangling and writing functions.\n\nHave a favorite resource? Please send it to Laura and Katherine so we can post it!",
+    "crumbs": [
+      "Coding Resources"
+    ]
+  },
+  {
+    "objectID": "readings.html",
+    "href": "readings.html",
+    "title": "Readings & Additional Materials",
+    "section": "",
+    "text": "We do not expect you to buy any/all of these books. We will provide the sections that are assigned for class. But if you want to explore topics of causal inference further, we recommend these books!\nNote: Some of these texts use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there.\n\nMorgan, SL and C Winship. 2007. Counterfactuals and Causal Inference: methods and principles for social research.\n\nGerber, AS and DP Green. 2012. Field Experiments: design, analysis and interpretation. (especially useful if you plan to do field experiments in your research)\n\nCunningham, S. 2021. Causal Inference: The Mixtape (New Haven, CT: Yale University Press). Available online for free\n\nAngrist, JD and JS Pischke. 2015. Mastering ’Metrics: The Path from Cause to Effect (Princeton, NJ: Princeton University Press).\n\nAngrist, JD and JS Pischke. 2008. Mostly Harmless Econometrics: an empiricist’s companion. (Princeton, NJ: Princeton University Press).\n\nRosenbaum, P. 2010. Observational Studies. Springer.\n\nPearl, J. and D. Mackenzie. 2018. The Book of Why. (New York, NY: Basic Books, Inc.) (A more popular science book)\n\nFor more technical discussions of causality:\n\nHolland 1986, JASA\n\nHeckman 2000, QJE\n\nPearl, J. 2009. Causality. (Cambridge, UK: Cambridge University Press).",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#recommended-textbooks-not-required",
+    "href": "readings.html#recommended-textbooks-not-required",
+    "title": "Readings & Additional Materials",
+    "section": "",
+    "text": "We do not expect you to buy any/all of these books. We will provide the sections that are assigned for class. But if you want to explore topics of causal inference further, we recommend these books!\nNote: Some of these texts use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there.\n\nMorgan, SL and C Winship. 2007. Counterfactuals and Causal Inference: methods and principles for social research.\n\nGerber, AS and DP Green. 2012. Field Experiments: design, analysis and interpretation. (especially useful if you plan to do field experiments in your research)\n\nCunningham, S. 2021. Causal Inference: The Mixtape (New Haven, CT: Yale University Press). Available online for free\n\nAngrist, JD and JS Pischke. 2015. Mastering ’Metrics: The Path from Cause to Effect (Princeton, NJ: Princeton University Press).\n\nAngrist, JD and JS Pischke. 2008. Mostly Harmless Econometrics: an empiricist’s companion. (Princeton, NJ: Princeton University Press).\n\nRosenbaum, P. 2010. Observational Studies. Springer.\n\nPearl, J. and D. Mackenzie. 2018. The Book of Why. (New York, NY: Basic Books, Inc.) (A more popular science book)\n\nFor more technical discussions of causality:\n\nHolland 1986, JASA\n\nHeckman 2000, QJE\n\nPearl, J. 2009. Causality. (Cambridge, UK: Cambridge University Press).",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-123",
+    "href": "readings.html#due-mon.-123",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 1/23",
+    "text": "Due Mon. 1/23\n\nHernan et al. 2019\nAngrist & Pischke 2008, Chapter 1\n\nGerber & Green, Chapter 1 (you can just skim this one)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-125",
+    "href": "readings.html#due-wed.-125",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 1/25",
+    "text": "Due Wed. 1/25\n\nAngrist & Pischke 2008, Chapter 2\n\nHernan 2016",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-130",
+    "href": "readings.html#due-mon.-130",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 1/30",
+    "text": "Due Mon. 1/30\nGuest speaker: Dr. Zach Laubach\n\nRohrer 2018\nLaubach et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-21",
+    "href": "readings.html#due-wed.-21",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 2/1",
+    "text": "Due Wed. 2/1\nCome to class prepared to present and discuss your DAG.\n\nArif & MacNeil 2022\n\nWatch Hernan video: “3. Elements of DAGs” on Canvas\nCheck out DAG software\n\n\nOptional\nFor additional background on DAGs:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas\nCunningham (2021) Ch. 3\n\nOther software for making DAGs:\na) ggdag is a nice R package based on dagitty but tidyverse-compatible and with much better plotting functionality\nb) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nc) TETRAD\nd) DAG program\ne) dagR",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-26",
+    "href": "readings.html#due-mon.-26",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/6",
+    "text": "Due Mon. 2/6\n\nGerber & Green, Chapter 2\nKimmel et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-28-casey",
+    "href": "readings.html#due-wed.-28-casey",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 2/8 [Casey]",
+    "text": "Due Wed. 2/8 [Casey]\n\nNo readings today!",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-213",
+    "href": "readings.html#due-mon.-213",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/13",
+    "text": "Due Mon. 2/13\n\nWatch Imbens video: 2022 Nobel Prize lecture\nFerraro 2009",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-215-brendan-henry",
+    "href": "readings.html#due-wed.-215-brendan-henry",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 2/15 [Brendan & Henry]",
+    "text": "Due Wed. 2/15 [Brendan & Henry]\n\nButsic et al. 2017\n\nLarsen et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-220",
+    "href": "readings.html#due-mon.-220",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/20",
+    "text": "Due Mon. 2/20\n\nRamsey et al. 2018\nStuart 2010",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-222-alec-sam",
+    "href": "readings.html#due-wed.-222-alec-sam",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 2/22 [Alec & Sam]",
+    "text": "Due Wed. 2/22 [Alec & Sam]\n\nSiegel et al. 2022\n\nXu et al. 2022\n\nSiegel et al., submitted (available on Canvas)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-227",
+    "href": "readings.html#due-mon.-227",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/27",
+    "text": "Due Mon. 2/27\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in Mastering ’Metrics)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-31-anna-hilary",
+    "href": "readings.html#due-wed.-31-anna-hilary",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 3/1 [Anna & Hilary]",
+    "text": "Due Wed. 3/1 [Anna & Hilary]\n\nSimler-Williamson & Germino 2022",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-36",
+    "href": "readings.html#due-mon.-36",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/6",
+    "text": "Due Mon. 3/6\n\nAngrist & Pischke 2008, Chapter 5",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-38-meghan-tom",
+    "href": "readings.html#due-wed.-38-meghan-tom",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 3/8 [Meghan & Tom]",
+    "text": "Due Wed. 3/8 [Meghan & Tom]\n\nDee et al., in press, and RMarkdown\n\nByrnes & Dee, in prep and RShiny\n\n\nOptional\n\nMeehan et al. 2011 vs. Larsen 2013\n\nGrace et al. 2016 vs. Dee et al., in press\n\nDudney et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-313",
+    "href": "readings.html#due-mon.-313",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/13",
+    "text": "Due Mon. 3/13\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\n\nKendall book chapter (on Canvas)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-315-max-tyler",
+    "href": "readings.html#due-wed.-315-max-tyler",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 3/15 [Max & Tyler]",
+    "text": "Due Wed. 3/15 [Max & Tyler]\n\nSims 2010\n\nMacDonald & Mordecai 2020",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-320",
+    "href": "readings.html#due-mon.-320",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/20",
+    "text": "Due Mon. 3/20\n\nAngrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-322-aly-john",
+    "href": "readings.html#due-wed.-322-aly-john",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 3/22 [Aly & John]",
+    "text": "Due Wed. 3/22 [Aly & John]\n\nEnglander 2019\n\nNoack et al. 2022\n\nOptional additional paper: Burgess et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-43",
+    "href": "readings.html#due-mon.-43",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 4/3",
+    "text": "Due Mon. 4/3\nNo readings - come prepared with your causal question to begin your project. Check your email for a zoom link for the class.\nIn class, start your projects. We have provided a template to provide some structure and facilitate your small group discussions.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-45",
+    "href": "readings.html#due-wed.-45",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 4/5",
+    "text": "Due Wed. 4/5\n1:1 consultations with Laura and Katherine in lieu of class. Schedule to sign up here",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-410",
+    "href": "readings.html#due-mon.-410",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 4/10",
+    "text": "Due Mon. 4/10\nNo readings - Presenting or discussing your project question and DAG for feedback",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-412",
+    "href": "readings.html#due-wed.-412",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 4/12",
+    "text": "Due Wed. 4/12\nNo readings - Presenting or discussing your project question and DAG for feedback",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-fri.-414",
+    "href": "readings.html#due-fri.-414",
+    "title": "Readings & Additional Materials",
+    "section": "Due Fri. 4/14",
+    "text": "Due Fri. 4/14\nDraft of DAG OR literature review proposal (1 page max.)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-417",
+    "href": "readings.html#due-mon.-417",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 4/17",
+    "text": "Due Mon. 4/17\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-419",
+    "href": "readings.html#due-wed.-419",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 4/19",
+    "text": "Due Wed. 4/19\nNo assignment – continue working on projects",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#fri.-421",
+    "href": "readings.html#fri.-421",
+    "title": "Readings & Additional Materials",
+    "section": "Fri. 4/21",
+    "text": "Fri. 4/21\nRevised DAG + proposed methods OR outline of literature review due",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-424",
+    "href": "readings.html#due-mon.-424",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 4/24",
+    "text": "Due Mon. 4/24\nNo assignment – continue working on projects",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-426",
+    "href": "readings.html#due-wed.-426",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 4/26",
+    "text": "Due Wed. 4/26\n\nGeneralizability in experimental and observational studies\nVisit from Dr. Rebecca Spake\n\nSpake et al. 2022 Improving quantitative synthesis to achieve generality in ecology\n\nOptional\n\nKorell et al. 2019\n\nSpake et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-51",
+    "href": "readings.html#due-mon.-51",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 5/1",
+    "text": "Due Mon. 5/1\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-53",
+    "href": "readings.html#due-wed.-53",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 5/3",
+    "text": "Due Wed. 5/3\nProject presentations, continued",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#fri.-55",
+    "href": "readings.html#fri.-55",
+    "title": "Readings & Additional Materials",
+    "section": "Fri. 5/5",
+    "text": "Fri. 5/5\nFinal project write-ups due (see Assignments tab for descriptions of the requirements for the write-up)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#potential-additional-units",
+    "href": "readings.html#potential-additional-units",
+    "title": "Readings & Additional Materials",
+    "section": "Potential additional units",
+    "text": "Potential additional units\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\n\nSpake et al. 2022\n\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects\n\n\nReplication/Reproducibility/Pre-registration\n\nKimmel et al., in press\n\n\n\nDeeper dive into mechanisms and mediation analysis",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "Assignments & Evaluation",
+    "section": "",
+    "text": "As a 3-credit graduate course, my expectation is that you are here to learn, which involves following along with the course through doing the reading and attending class meetings. I am less interested in grades and more interested in providing a venue to hold you accountable for learning the material. I will provide many opportunities for feedback and workshopping, so completing your assignments and making progress on your project will benefit your learning (and hopefully contribute to your progress on your thesis/dissertation). As such, attendance and participation is 25%, leading of paper discussion/presentation is 25%, and the final report and presentation are worth the remaining 50%.",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#overview",
+    "href": "assignments.html#overview",
+    "title": "Assignments & Evaluation",
+    "section": "",
+    "text": "As a 3-credit graduate course, my expectation is that you are here to learn, which involves following along with the course through doing the reading and attending class meetings. I am less interested in grades and more interested in providing a venue to hold you accountable for learning the material. I will provide many opportunities for feedback and workshopping, so completing your assignments and making progress on your project will benefit your learning (and hopefully contribute to your progress on your thesis/dissertation). As such, attendance and participation is 25%, leading of paper discussion/presentation is 25%, and the final report and presentation are worth the remaining 50%.",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#main-assignment",
+    "href": "assignments.html#main-assignment",
+    "title": "Assignments & Evaluation",
+    "section": "Main assignment",
+    "text": "Main assignment\nThe main assignment will be either to complete and write up a data analysis or to do a literature review and deep dive on a particular subtopic (ideas listed below). The project or literature review will culminate in a presentation the last week of classes and a final written report.\nMany students in the past have used this course as an opportunity to advance their thesis research or pursue and publish a paper based on their analyses or literature review!\n\nFinal Project Option 1: Data analysis project\nFor the final project that takes the form of a data analysis, each student will complete a project according to the following process: identifying a research question, creating a DAG, choosing and applying a data analysis, and writing up a methods and results section that 1) articulates the causal relationship of interest, 2) describes the causal identification strategy and choice of study design/methods, 3) describes the implicit assumptions on which this strategy rests, and 4) interprets the results and their potential biases. I encourage students to base this analysis on their thesis research to get the most out of the class.\n\n\nFinal Project Option 2: Literature review\nAlternatively, students can complete a literature review that provides a deeper dive on a topic we do not cover in detail in this course (*some ideas are listed below). This direction may be more appropriate for students who are not at a stage of performing analyses for their thesis, who do not have a relevant project that is tackling an empirical causal question, or who are interested in learning more about a topic not covered under our guidance.\n\nFinal project presentation\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods\n\n\n\nFinal project write up\nFor data analysis projects: ~ 5 pages (plus figures, but don’t stress over the page count)\nFor literature review projects: ~ 10 pages, but don’t stress over the page count – focus on what you need to include to write a compelling paper",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#additional-assignments",
+    "href": "assignments.html#additional-assignments",
+    "title": "Assignments & Evaluation",
+    "section": "Additional assignments",
+    "text": "Additional assignments\nIn addition to the project/literature review, each student will also lead a paper(s) discussion during the semester, which will be either a discussion of a paper describing or applying a study design or a critique of a paper aiming to address a causal question. When leading the paper discussions, we recommend starting off with drawing a diagram of the causal relationships in question in the paper.",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#readings",
+    "href": "assignments.html#readings",
+    "title": "Assignments & Evaluation",
+    "section": "Readings",
+    "text": "Readings\nThe course reading list will include journal articles and book chapters that we will make available to you on our course website. Throughout the semester, the class will compile a running glossary of “jargon” and terms and concepts in causal inference to provide notes as reference. We (the instructors) will provide a bibliography of additional readings and coding resources on various topics for students as reference.\nThe readings differ in their depth and use of math and notation. You do not need to understand all the equations and notation to gain intuition about the material and concepts. Try to learn it but try not to be too stressed by it.",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#course-glossary",
+    "href": "assignments.html#course-glossary",
+    "title": "Assignments & Evaluation",
+    "section": "Course glossary",
+    "text": "Course glossary\nAs noted above, as a class we will compile a running glossary of “jargon” and terms and concepts in causal inference to provide notes as reference.\n\nGlossary assignments:\n\nWeek 2:\nWeek 3:\n\nWeek 4:\nWeek 5:\nWeek 6:\nWeek 7:\nWeek 8:\nWeek 9:\nWeek 10:\nWeek 12:",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#ideas-for-literature-review-topics-final-project-option-2",
+    "href": "assignments.html#ideas-for-literature-review-topics-final-project-option-2",
+    "title": "Assignments & Evaluation",
+    "section": "Ideas for literature review topics (Final project option 2)",
+    "text": "Ideas for literature review topics (Final project option 2)\nYou are not limited to these topics, but here are some ideas:\n\nChallenges and solutions for experimental designs and interpretation (choose one):\n\nNon-compliance and attrition (this is a rich area!)\n\nInterference between experimental units and spillovers (G&G Ch8)\n\nPartial identification (excludability violations)\n\nMechanisms and mediation analysis (G&G Ch 10)\n\nLimits to what experiments tell us about heterogenous treatment effects\n\nIntegration of experimental findings (e.g., meta-analyses and extrapolation)\n\n\nNew issues for difference-in-difference and two-way fixed effects estimators (e.g., staggered treatments and heterogeneity\n\nSynthetic control methods (https://mixtape.scunning.com/10-synthetic_control)\n\nMachine learning and causal inference\n\nSensitivity analyses and/or placebo designs\n\nMechanism (Mediation) Analysis; Sequential G estimation\n\nRemote sensing and causal inference (e.g. what to do with systematic measurement error !)\nCausal identification in time series\n\nInferences in observational designs and networks\n\nMeta-analyses using observational data",
+    "crumbs": [
+      "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "assignments.html#deadlines",
+    "href": "assignments.html#deadlines",
+    "title": "Assignments & Evaluation",
+    "section": "Deadlines",
+    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nFriday 1/20\n\n\nStudents create and workshop DAGs for their own research/study. Come to class prepared to present and share/discuss your DAG\nWednesday 2/1\n\n\nDraft of DAG OR literature review proposal (1 page max)\nFriday 4/14 (by email)\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + some potential applications\nMonday 4/17 (in class)\n\n\nRevised DAG + proposed methods OR literature review outline\nFriday 4/21\n\n\nPresentation of final project\nMonday 5/1 and Wednesday 5/3 (in class)\n\n\nFinal project write-up\nFriday 5/5",
+    "crumbs": [
+      "Assignments & Evaluation"
     ]
   }
 ]

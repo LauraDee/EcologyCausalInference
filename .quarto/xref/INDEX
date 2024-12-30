@@ -19,5 +19,26 @@
   },
   "exercises/iv_demo.Rmd": {
     "iv_demo.html": "6677dd08"
+  },
+  "index.qmd": {
+    "index.html": "02ce839e"
+  },
+  "exercises/rdd_demo.Rmd": {
+    "rdd_demo.html": "097b9bca"
+  },
+  "exercises/matching_demo.Rmd": {
+    "matching_demo.html": "8fee8be7"
+  },
+  "exercises/index.qmd": {
+    "index.html": "eddf72d2"
+  },
+  "exercises/Panel_demo/RMarkdown_panel_designs_Dee_and_Severen.Rmd": {
+    "RMarkdown_panel_designs_Dee_and_Severen.html": "022e0e54"
+  },
+  "exercises/matching_replication.Rmd": {
+    "matching_replication.html": "2dadbe7a"
+  },
+  "exercises/matching.qmd": {
+    "matching.html": "70916858"
   }
 }
