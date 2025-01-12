@@ -1,0 +1,45 @@
+---
+title: "DAGs"
+author: "Laura Dee"
+editor: visual
+---
+
+## Resources of creating and analyzing Directed Acyclic Graphs
+
+## Useful Videos
+
+#### Conceptual
+
+-   Discussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: <https://www.youtube.com/watch?v=_qs_1B4ySWY>
+
+-   Watch Hernan video: "3. Elements of DAGs"
+
+#### Implementation
+
+-   How to build and begin to analyze them it in ggdag by A. Heiss: <https://www.youtube.com/watch?v=uoAjyyToUTE>
+
+-   Drawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c
+
+-   Intro to DAGitty for identifying confounding variables: <https://www.youtube.com/watch?v=sI_w9uVLdCg>
+
+## Software for DAG construction and analysis
+
+a\) Daggitity -
+
+b\) [ggdag](https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html) is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\
+c) [shinydag](https://www.gerkelab.com/project/shinydag/) is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\
+d) [TETRAD](https://sites.google.com/view/tetradcausal)\
+e) [DAG program](https://hsz.dife.de/dag/)\
+f) [dagR](https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx)
+
+#### Additional Background Readings
+
+For additional background on DAGs:
+
+-   Morgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)
+
+<!-- -->
+
+-   [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)
+
+-   Heiss, A. [Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand](https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus)\

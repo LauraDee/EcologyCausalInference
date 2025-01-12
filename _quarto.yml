@@ -29,6 +29,8 @@ website:
         text: Exercises
       - href: coding_resources.qmd
         text: Coding Resources
+      - href: DAGs.qmd
+        text: DAG resources
       - href: policies.qmd
         text: University Policies
 

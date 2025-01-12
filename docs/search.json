@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations\n• Intro to concepts in causal inference and motivation for applying it to ecology and evolution \n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\n• Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 3 (1/27)\nIntro to DAGs (Guest speaker: Dr. Zach Laubach)\nWorkshopping DAGs: come prepared to present and share/discuss your DAG\n• DAGs as a tool from the graphical causal modeling framework  • Students create and workshop DAGs for their own research/study systems\n\n\nWeek 4 (2/3)\nRandomized Controlled Experiments (or RCTs) and experimental design\nDissect experimental design with respect to assumptions required for causal inference\n• Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions\n\n\nWeek 5 (2/10)\nObservational data and counterfactuals\nIntroduction to quasi-experimental methods\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • Get a sense of the landscape of tools for overcoming challenges\n\n\nWeek 6 (2/17)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nDifference in Difference (DiD)\nPaper discussion\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 8 (3/3)\nPanel methods\nPaper discussion and replication exercise\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 10 (3/10)\nInstrumental Variables\nPaper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 9 (3/17)\nRegression Discontinuity Designs (RDD)\nPaper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nProject work session (in groups)\nOne-on-one consultations on projects\n• Make progress on project and get feedback from class\n\n\nWeek 13 (4/7)\nProject work session\nProject work session\n• Make progress on project and get feedback on proposed research design and challenges so far\n\n\nWeek 14 (4/14)\nBrief presentation on project\nProject work and workshopping\n• Make progress on project and get feedback from class\n\n\nWeek 15 (4/21)\nProject work and workshopping\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\n• Make progress on project and get feedback from class  • Introduction to challenges with generalizability\n\n\nWeek 16 (4/28)\nProject presentations\nProject presentations\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class",
+    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations  • Intro to concepts in causal inference and motivation for applying it to ecology and evolution \n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\nIntro to DAGs (Guest speaker: Dr. Zach Laubach)\n• Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 3 (1/27)\nIntro to the main frameworks for counterfactual causal inference\nRandomized Controlled Experiments (or RCTs) and experimental design\n• Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks) continued  • Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions  • Dissect experimental design with respect to assumptions required for causal inference\n\n\nWeek 4 (2/3)\nObservational data and counterfactuals; Introduction to quasi-experimental methods\nCreating and Analyzing DAGs (Asynchronous Class; Laura Away)\nDue: first draft of research question, or lit review proposal, and DAG analysis\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • DAGs as a tool from the graphical causal modeling framework  • Students create and workshop DAGs for their own research/study systems\n\n\nWeek 5 (2/10)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 6 (2/17)\nDifference in Difference (DiD)\nPaper discussion and replication exercise\nDue Draft of DAG OR literature review proposal (2 page max.)\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nPanel methods continued\nPaper discussion and replication exercise (Laura away)\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 8 (3/3)\nSynthetic Control (Asia Kaiser)\nIssues and extensions of diff-erence in difference and replication exercise\n\n\n\nWeek 10 (3/10)\nInstrumental Variables\nPaper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 9 (3/17)\nRegression Discontinuity Designs (RDD)\nPaper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nComparison of study designs\nComparison of study designs; sensitivity tests\n• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs  • Intro to Sensitivity Tests\n\n\nWeek 13 (4/7)\nDUE: Brief presentation on project\nOne-on-one consultations on projects\n• Make progress on project and get feedback on proposed research design and challenges so far\n\n\nWeek 14 (4/14)\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\nPower, Inference, and Standard Errors\n• Introduction to challenges with generalizability  • Standard errors, power, and inference with quasi-experimental methods\n\n\nWeek 15 (4/21)\nSpecial topic or Project\nSpecial topic or Project\nTBD based on surveying the class - see ideas for additional topics below. Opportunity for guest speaker.\n\n\nWeek 16 (4/28)\nProject presentations\nProject presentations\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\nEnd of semester\nMay 2nd: Final Write up due by email\n\n\n\n\n\n\nPotential additional topics/units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\n\nSpake et al. 2022\n\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects\ne.g. Causal Forests\n\n\nReplication/Reproducibility/Pre-registration\n\n\nDeeper dive into mechanisms and mediation analysis\n\n\nDeeper dive into Sensitivity Tests",
     "crumbs": [
       "Schedule"
     ]
@@ -378,9 +378,9 @@
   {
     "objectID": "readings.html",
     "href": "readings.html",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "",
-    "text": "We do not expect you to buy any/all of these books. We will provide the sections that are assigned for class. But if you want to explore topics of causal inference further, we recommend these books!\nNote: Some of these texts use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there.\n\nMorgan, SL and C Winship. 2007. Counterfactuals and Causal Inference: methods and principles for social research.\n\nGerber, AS and DP Green. 2012. Field Experiments: design, analysis and interpretation. (especially useful if you plan to do field experiments in your research)\n\nCunningham, S. 2021. Causal Inference: The Mixtape (New Haven, CT: Yale University Press). Available online for free\n\nAngrist, JD and JS Pischke. 2015. Mastering ’Metrics: The Path from Cause to Effect (Princeton, NJ: Princeton University Press).\n\nAngrist, JD and JS Pischke. 2008. Mostly Harmless Econometrics: an empiricist’s companion. (Princeton, NJ: Princeton University Press).\n\nRosenbaum, P. 2010. Observational Studies. Springer.\n\nPearl, J. and D. Mackenzie. 2018. The Book of Why. (New York, NY: Basic Books, Inc.) (A more popular science book)\n\nFor more technical discussions of causality:\n\nHolland 1986, JASA\n\nHeckman 2000, QJE\n\nPearl, J. 2009. Causality. (Cambridge, UK: Cambridge University Press).",
+    "text": "First class; Complete pre-course survey in class; Review Syllabus",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -430,7 +430,7 @@
     "href": "readings.html#due-wed.-21",
     "title": "Readings & Additional Materials",
     "section": "Due Wed. 2/1",
-    "text": "Due Wed. 2/1\nCome to class prepared to present and discuss your DAG.\n\nArif & MacNeil 2022\n\nWatch Hernan video: “3. Elements of DAGs” on Canvas\nCheck out DAG software\n\n\nOptional\nFor additional background on DAGs:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas\nCunningham (2021) Ch. 3\n\nOther software for making DAGs:\na) ggdag is a nice R package based on dagitty but tidyverse-compatible and with much better plotting functionality\nb) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nc) TETRAD\nd) DAG program\ne) dagR",
+    "text": "Due Wed. 2/1\nCome to class prepared to present and discuss your DAG.\n\nArif & MacNeil 2022\n\nWatch Hernan video: “3. Elements of DAGs” on Canvas\nCheck out DAG software\n\n\nOptional\nFor additional background on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas 5) Cunningham (2021) Ch. 3\nOther software for making DAGs:\na) ggdag is a nice R package based on dagitty but tidyverse-compatible and with much better plotting functionality\nb) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nc) TETRAD\nd) DAG program\ne) dagR",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -500,7 +500,7 @@
     "href": "readings.html#due-mon.-227",
     "title": "Readings & Additional Materials",
     "section": "Due Mon. 2/27",
-    "text": "Due Mon. 2/27\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in Mastering ’Metrics)",
+    "text": "Due Mon. 2/27\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -528,9 +528,9 @@
   {
     "objectID": "readings.html#due-wed.-38-meghan-tom",
     "href": "readings.html#due-wed.-38-meghan-tom",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 3/8 [Meghan & Tom]",
-    "text": "Due Wed. 3/8 [Meghan & Tom]\n\nDee et al., in press, and RMarkdown\n\nByrnes & Dee, in prep and RShiny\n\n\nOptional\n\nMeehan et al. 2011 vs. Larsen 2013\n\nGrace et al. 2016 vs. Dee et al., in press\n\nDudney et al. 2021",
+    "text": "Due Wed. 3/8 [Meghan & Tom]\n\nDee et al., in press, and RMarkdown\n\nByrnes & Dee, in prep and RShiny\n\n\nOptional\n\nMeehan et al. 2011 vs. Larsen 2013\n\nGrace et al. 2016 vs. Dee et al., in press\nDudney et al. 2021",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -578,7 +578,7 @@
   {
     "objectID": "readings.html#due-mon.-43",
     "href": "readings.html#due-mon.-43",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/3",
     "text": "Due Mon. 4/3\nNo readings - come prepared with your causal question to begin your project. Check your email for a zoom link for the class.\nIn class, start your projects. We have provided a template to provide some structure and facilitate your small group discussions.",
     "crumbs": [
@@ -588,9 +588,9 @@
   {
     "objectID": "readings.html#due-wed.-45",
     "href": "readings.html#due-wed.-45",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/5",
-    "text": "Due Wed. 4/5\n1:1 consultations with Laura and Katherine in lieu of class. Schedule to sign up here",
+    "text": "Due Wed. 4/5\n1:1 consultations with Laura in lieu of class. Schedule to sign up here",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -598,7 +598,7 @@
   {
     "objectID": "readings.html#due-mon.-410",
     "href": "readings.html#due-mon.-410",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/10",
     "text": "Due Mon. 4/10\nNo readings - Presenting or discussing your project question and DAG for feedback",
     "crumbs": [
@@ -608,7 +608,7 @@
   {
     "objectID": "readings.html#due-wed.-412",
     "href": "readings.html#due-wed.-412",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/12",
     "text": "Due Wed. 4/12\nNo readings - Presenting or discussing your project question and DAG for feedback",
     "crumbs": [
@@ -618,7 +618,7 @@
   {
     "objectID": "readings.html#due-fri.-414",
     "href": "readings.html#due-fri.-414",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Fri. 4/14",
     "text": "Due Fri. 4/14\nDraft of DAG OR literature review proposal (1 page max.)",
     "crumbs": [
@@ -628,7 +628,7 @@
   {
     "objectID": "readings.html#due-mon.-417",
     "href": "readings.html#due-mon.-417",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/17",
     "text": "Due Mon. 4/17\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A",
     "crumbs": [
@@ -638,7 +638,7 @@
   {
     "objectID": "readings.html#due-wed.-419",
     "href": "readings.html#due-wed.-419",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/19",
     "text": "Due Wed. 4/19\nNo assignment – continue working on projects",
     "crumbs": [
@@ -648,7 +648,7 @@
   {
     "objectID": "readings.html#fri.-421",
     "href": "readings.html#fri.-421",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Fri. 4/21",
     "text": "Fri. 4/21\nRevised DAG + proposed methods OR outline of literature review due",
     "crumbs": [
@@ -658,7 +658,7 @@
   {
     "objectID": "readings.html#due-mon.-424",
     "href": "readings.html#due-mon.-424",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/24",
     "text": "Due Mon. 4/24\nNo assignment – continue working on projects",
     "crumbs": [
@@ -668,7 +668,7 @@
   {
     "objectID": "readings.html#due-wed.-426",
     "href": "readings.html#due-wed.-426",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/26",
     "text": "Due Wed. 4/26\n\nGeneralizability in experimental and observational studies\nVisit from Dr. Rebecca Spake\n\nSpake et al. 2022 Improving quantitative synthesis to achieve generality in ecology\n\nOptional\n\nKorell et al. 2019\n\nSpake et al. 2021",
     "crumbs": [
@@ -678,9 +678,9 @@
   {
     "objectID": "readings.html#due-mon.-51",
     "href": "readings.html#due-mon.-51",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 5/1",
-    "text": "Due Mon. 5/1\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "text": "Due Mon. 5/1",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -688,7 +688,7 @@
   {
     "objectID": "readings.html#due-wed.-53",
     "href": "readings.html#due-wed.-53",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 5/3",
     "text": "Due Wed. 5/3\nProject presentations, continued",
     "crumbs": [
@@ -698,7 +698,7 @@
   {
     "objectID": "readings.html#fri.-55",
     "href": "readings.html#fri.-55",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Fri. 5/5",
     "text": "Fri. 5/5\nFinal project write-ups due (see Assignments tab for descriptions of the requirements for the write-up)",
     "crumbs": [
@@ -708,7 +708,7 @@
   {
     "objectID": "readings.html#potential-additional-units",
     "href": "readings.html#potential-additional-units",
-    "title": "Readings & Additional Materials",
+    "title": "Readings by Class & Additional Materials",
     "section": "Potential additional units",
     "text": "Potential additional units\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\n\nSpake et al. 2022\n\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects\n\n\nReplication/Reproducibility/Pre-registration\n\nKimmel et al., in press\n\n\n\nDeeper dive into mechanisms and mediation analysis",
     "crumbs": [
@@ -740,7 +740,7 @@
     "href": "assignments.html#main-assignment",
     "title": "Assignments & Evaluation",
     "section": "Main assignment",
-    "text": "Main assignment\nThe main assignment will be either to complete and write up a data analysis or to do a literature review and deep dive on a particular subtopic (ideas listed below). The project or literature review will culminate in a presentation the last week of classes and a final written report.\nMany students in the past have used this course as an opportunity to advance their thesis research or pursue and publish a paper based on their analyses or literature review!\n\nFinal Project Option 1: Data analysis project\nFor the final project that takes the form of a data analysis, each student will complete a project according to the following process: identifying a research question, creating a DAG, choosing and applying a data analysis, and writing up a methods and results section that 1) articulates the causal relationship of interest, 2) describes the causal identification strategy and choice of study design/methods, 3) describes the implicit assumptions on which this strategy rests, and 4) interprets the results and their potential biases. I encourage students to base this analysis on their thesis research to get the most out of the class.\n\n\nFinal Project Option 2: Literature review\nAlternatively, students can complete a literature review that provides a deeper dive on a topic we do not cover in detail in this course (*some ideas are listed below). This direction may be more appropriate for students who are not at a stage of performing analyses for their thesis, who do not have a relevant project that is tackling an empirical causal question, or who are interested in learning more about a topic not covered under our guidance.\n\nFinal project presentation\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods\n\n\n\nFinal project write up\nFor data analysis projects: ~ 5 pages (plus figures, but don’t stress over the page count)\nFor literature review projects: ~ 10 pages, but don’t stress over the page count – focus on what you need to include to write a compelling paper",
+    "text": "Main assignment\nThe main assignment will be either to complete and write up a data analysis or to do a literature review and deep dive on a particular subtopic (ideas listed below). The project or literature review will culminate in a presentation the last week of classes and a final written report.\nMany students in the past have used this course as an opportunity to advance their thesis research or pursue and publish a paper based on their analyses or literature review!\n\nFinal Project Option 1: Data analysis project\nFor the final project that takes the form of a data analysis, each student will complete a project according to the following process: identifying a research question, creating a DAG, choosing and applying a data analysis, and writing up a methods and results section that 1) articulates the causal relationship of interest, 2) describes the causal identification strategy and choice of study design/methods, 3) describes the implicit assumptions on which this strategy rests, and 4) interprets the results and their potential biases. I encourage students to base this analysis on their thesis research to get the most out of the class.\n\n\nFinal Project Option 2: Literature review\nAlternatively, students can complete a literature review that provides a deeper dive on a topic we do not cover in detail in this course (*some ideas are listed below). This direction may be more appropriate for students who are not at a stage of performing analyses for their thesis, who do not have a relevant project that is tackling an empirical causal question, or who are interested in learning more about a topic not covered under our guidance.\n\nFinal project presentation\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\nSpecific guidelines for literature review presentations:\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods\n\n\n\nFinal project write up\nFor data analysis projects: ~ 5 pages (plus figures, but don’t stress over the page count)\nFor literature review projects: ~ 10 pages, but don’t stress over the page count – focus on what you need to include to write a compelling paper",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -750,7 +750,7 @@
     "href": "assignments.html#additional-assignments",
     "title": "Assignments & Evaluation",
     "section": "Additional assignments",
-    "text": "Additional assignments\nIn addition to the project/literature review, each student will also lead a paper(s) discussion during the semester, which will be either a discussion of a paper describing or applying a study design or a critique of a paper aiming to address a causal question. When leading the paper discussions, we recommend starting off with drawing a diagram of the causal relationships in question in the paper.",
+    "text": "Additional assignments\nIn addition to the project/literature review, each student will also lead at least one paper discussion during the semester, which will be either a discussion of a paper describing or applying a study design or a critique of a paper aiming to address a causal question. When leading the paper discussions, we recommend starting off with drawing a diagram of the causal relationships in question in the paper.\nWhy is this important? Part of learning this material well is learning it to the point where you can explain it to other people. This is true in general in graduate or post-graduate school as you move towards becoming experts and in this class when presenting technical things. The presentations offer an opportunity to practice these skills in a friendly setting.\nPresentation Sign Ups",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -770,7 +770,7 @@
     "href": "assignments.html#course-glossary",
     "title": "Assignments & Evaluation",
     "section": "Course glossary",
-    "text": "Course glossary\nAs noted above, as a class we will compile a running glossary of “jargon” and terms and concepts in causal inference to provide notes as reference.\n\nGlossary assignments:\n\nWeek 2:\nWeek 3:\n\nWeek 4:\nWeek 5:\nWeek 6:\nWeek 7:\nWeek 8:\nWeek 9:\nWeek 10:\nWeek 12:",
+    "text": "Course glossary\nAs noted above, as a class we will compile a running glossary of “jargon” and terms and concepts in causal inference to provide notes as reference.",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -780,7 +780,7 @@
     "href": "assignments.html#ideas-for-literature-review-topics-final-project-option-2",
     "title": "Assignments & Evaluation",
     "section": "Ideas for literature review topics (Final project option 2)",
-    "text": "Ideas for literature review topics (Final project option 2)\nYou are not limited to these topics, but here are some ideas:\n\nChallenges and solutions for experimental designs and interpretation (choose one):\n\nNon-compliance and attrition (this is a rich area!)\n\nInterference between experimental units and spillovers (G&G Ch8)\n\nPartial identification (excludability violations)\n\nMechanisms and mediation analysis (G&G Ch 10)\n\nLimits to what experiments tell us about heterogenous treatment effects\n\nIntegration of experimental findings (e.g., meta-analyses and extrapolation)\n\n\nNew issues for difference-in-difference and two-way fixed effects estimators (e.g., staggered treatments and heterogeneity\n\nSynthetic control methods (https://mixtape.scunning.com/10-synthetic_control)\n\nMachine learning and causal inference\n\nSensitivity analyses and/or placebo designs\n\nMechanism (Mediation) Analysis; Sequential G estimation\n\nRemote sensing and causal inference (e.g. what to do with systematic measurement error !)\nCausal identification in time series\n\nInferences in observational designs and networks\n\nMeta-analyses using observational data",
+    "text": "Ideas for literature review topics (Final project option 2)\nYou are not limited to these topics, but here are some ideas:\n\nChallenges and solutions for experimental designs and interpretation (choose one):\n\nNon-compliance and attrition (this is a rich area!)\n\nInterference between experimental units and spillovers (G&G Ch8)\n\nPartial identification (excludability violations)\n\nMechanisms and mediation analysis (G&G Ch 10)\n\nLimits to what experiments tell us about heterogenous treatment effects\n\nIntegration of experimental findings (e.g., meta-analyses and extrapolation)\n\n\nNew issues for difference-in-difference and two-way fixed effects estimators (e.g., staggered treatments and heterogeneity\n\nSynthetic control methods (i.e. see https://mixtape.scunning.com/10-synthetic_control)\n\nMachine learning and causal inference\n\nSensitivity analyses and/or placebo designs\n\nMechanism (Mediation) Analysis; Sequential G estimation\n\nRemote sensing and causal inference (e.g. what to do with systematic measurement error !)\nCausal identification in time series\n\nInferences in observational designs and networks\n\nMeta-analyses using observational data",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -790,9 +790,953 @@
     "href": "assignments.html#deadlines",
     "title": "Assignments & Evaluation",
     "section": "Deadlines",
-    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nFriday 1/20\n\n\nStudents create and workshop DAGs for their own research/study. Come to class prepared to present and share/discuss your DAG\nWednesday 2/1\n\n\nDraft of DAG OR literature review proposal (1 page max)\nFriday 4/14 (by email)\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + some potential applications\nMonday 4/17 (in class)\n\n\nRevised DAG + proposed methods OR literature review outline\nFriday 4/21\n\n\nPresentation of final project\nMonday 5/1 and Wednesday 5/3 (in class)\n\n\nFinal project write-up\nFriday 5/5",
+    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nTuesday 1/14\n\n\nIdentify project focus (option 1 or 2). Identify research questions + create and workshop DAGs for it.\nWednesday 2/5 (by email)\n\n\nRevised draft of Project Question and revised DAG OR literature review proposal (2 page max)\n2/19 (by email)\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results)\nMonday 4/17 (in class)\n\n\nPresentation of final project\nApril 28th & 30th (in class)\n\n\nFinal project write-up due\nFriday 5/2",
     "crumbs": [
       "Assignments & Evaluation"
+    ]
+  },
+  {
+    "objectID": "materials.html",
+    "href": "materials.html",
+    "title": "Course Materials",
+    "section": "",
+    "text": "Core Readings\nSlides\nDatasets"
+  },
+  {
+    "objectID": "policies.html",
+    "href": "policies.html",
+    "title": "University and Course Policies",
+    "section": "",
+    "text": "Students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote, or online. Failure to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, marital status, political affiliation, or political philosophy.\nFor more information, see the classroom behavior policy, the Student Code of Conduct, and the Office of Institutional Equity and Compliance.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#classroom-behavior",
+    "href": "policies.html#classroom-behavior",
+    "title": "University and Course Policies",
+    "section": "",
+    "text": "Students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote, or online. Failure to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, marital status, political affiliation, or political philosophy.\nFor more information, see the classroom behavior policy, the Student Code of Conduct, and the Office of Institutional Equity and Compliance.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#requirements-for-covid-19",
+    "href": "policies.html#requirements-for-covid-19",
+    "title": "University Policies",
+    "section": "Requirements for COVID-19",
+    "text": "Requirements for COVID-19\nAs a matter of public health and safety, all members of the CU Boulder community and all visitors to campus must follow university, department and building requirements and all public health orders in place to reduce the risk of spreading infectious disease. CU Boulder currently requires COVID-19 vaccination and boosters for all faculty, staff and students. Students, faculty and staff must upload proof of vaccination and boosters or file for an exemption based on medical, ethical or moral grounds through the MyCUHealth portal.\nThe CU Boulder campus is currently mask-optional. However, if public health conditions change and masks are again required in classrooms, students who fail to adhere to masking requirements will be asked to leave class, and students who do not leave class when asked or who refuse to comply with these requirements will be referred to Student Conduct and Conflict Resolution. For more information, see the policy on classroom behavior and the Student Code of Conduct. If you require accommodation because a disability prevents you from fulfilling these safety measures, please follow the steps in the “Accommodation for Disabilities” statement on this syllabus.\nIf you feel ill and think you might have COVID-19, if you have tested positive for COVID-19, or if you are unvaccinated or partially vaccinated and have been in close contact with someone who has COVID-19, you should stay home and follow the further guidance of the Public Health Office (contacttracing@colorado.edu). If you are fully vaccinated and have been in close contact with someone who has COVID-19, you do not need to stay home; rather, you should self-monitor for symptoms and follow the further guidance of the Public Health Office (contacttracing@colorado.edu).",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#accommodation-for-disabilities",
+    "href": "policies.html#accommodation-for-disabilities",
+    "title": "University Policies",
+    "section": "Accommodation for Disabilities",
+    "text": "Accommodation for Disabilities\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the Disability Services website. Contact Disability Services at 303-492-8671 or dsinfo@colorado.edu for further assistance. If you have a temporary medical condition, see Temporary Medical Conditions on the Disability Services website.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#preferred-student-names-and-pronouns",
+    "href": "policies.html#preferred-student-names-and-pronouns",
+    "title": "University and Course Policies",
+    "section": "Preferred Student Names and Pronouns",
+    "text": "Preferred Student Names and Pronouns\nCU Boulder recognizes that students’ legal information doesn’t always align with how they identify. Students may update their preferred names and pronouns via the student portal; those preferred names and pronouns are listed on instructors’ class rosters. In the absence of such updates, the name that appears on the class roster is the student’s legal name.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#honor-code",
+    "href": "policies.html#honor-code",
+    "title": "University and Course Policies",
+    "section": "Honor Code",
+    "text": "Honor Code\nAll students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code. Violations of the Honor Code may include but are not limited to: plagiarism (including use of paper writing services or technology [such as essay bots]), cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. Understanding the course’s syllabus is a vital part in adhering to the Honor Code.\nAll incidents of academic misconduct will be reported to Student Conduct & Conflict Resolution: StudentConduct@colorado.edu. Students found responsible for violating the Honor Code will be assigned resolution outcomes from the Student Conduct & Conflict Resolution as well as be subject to academic sanctions from the faculty member. Visit Honor Code for more information on the academic integrity policy.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#sexual-misconduct-discrimination-harassment-andor-related-retaliation",
+    "href": "policies.html#sexual-misconduct-discrimination-harassment-andor-related-retaliation",
+    "title": "University and Course Policies",
+    "section": "Sexual Misconduct, Discrimination, Harassment and/or Related Retaliation",
+    "text": "Sexual Misconduct, Discrimination, Harassment and/or Related Retaliation\nCU Boulder is committed to fostering an inclusive and welcoming learning, working, and living environment. University policy prohibits protected-class discrimination and harassment, sexual misconduct (harassment, exploitation, and assault), intimate partner abuse (dating or domestic violence), stalking, and related retaliation by or against members of our community on- and off-campus. The Office of Institutional Equity and Compliance (OIEC) addresses these concerns, and individuals who have been subjected to misconduct can contact OIEC at 303-492-2127 or email CUreport@colorado.edu. Information about university policies, reporting options, and OIEC support resources including confidential services can be found on the OIEC website.\nPlease know that faculty and graduate instructors are required to inform OIEC when they are made aware of incidents related to these concerns regardless of when or where something occurred. This is to ensure that individuals impacted receive outreach from OIEC about their options and support resources. To learn more about reporting and support for a variety of concerns, visit the Don’t Ignore It page.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#religious-holidays",
+    "href": "policies.html#religious-holidays",
+    "title": "University and Course Policies",
+    "section": "Religious Holidays",
+    "text": "Religious Holidays\nCampus policy regarding religious observances requires that faculty make every effort to deal reasonably and fairly with all students who, because of religious obligations, have conflicts with scheduled exams, assignments or required attendance. See the campus policy regarding religious observances for full details.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "DAGs.html",
+    "href": "DAGs.html",
+    "title": "DAGs",
+    "section": "",
+    "text": "Discussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: https://www.youtube.com/watch?v=_qs_1B4ySWY\nWatch Hernan video: “3. Elements of DAGs”\n\n\n\n\n\nHow to build and begin to analyze them it in ggdag by A. Heiss: https://www.youtube.com/watch?v=uoAjyyToUTE"
+  },
+  {
+    "objectID": "DAGs.html#useful-videos",
+    "href": "DAGs.html#useful-videos",
+    "title": "DAGs",
+    "section": "Useful Videos",
+    "text": "Useful Videos\n\nConceptual\n\nDiscussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: https://www.youtube.com/watch?v=_qs_1B4ySWY\nWatch Hernan video: “3. Elements of DAGs”\n\n\n\nImplementation\n\nHow to build and begin to analyze them it in ggdag by A. Heiss: https://www.youtube.com/watch?v=uoAjyyToUTE\nDrawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c\nIntro to DAGitty for identifying confounding variables: https://www.youtube.com/watch?v=sI_w9uVLdCg",
+    "crumbs": [
+      "DAG resources"
+    ]
+  },
+  {
+    "objectID": "DAGs.html#software-for-dag-construction-and-analysis",
+    "href": "DAGs.html#software-for-dag-construction-and-analysis",
+    "title": "DAGs",
+    "section": "Software for DAG construction and analysis",
+    "text": "Software for DAG construction and analysis\na) Daggitity -\nb) ggdag is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\nc) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nd) TETRAD\ne) DAG program\nf) dagR\n\nAdditional Background Readings\nFor additional background on DAGs:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)\n\n\n\nCunningham (2021) Ch. 3\nHeiss, A. Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand",
+    "crumbs": [
+      "DAG resources"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-113",
+    "href": "readings.html#due-mon.-113",
+    "title": "Readings by Class & Additional Materials",
+    "section": "",
+    "text": "First class; Complete pre-course survey in class; Review Syllabus",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-115-introduction-continued",
+    "href": "readings.html#due-wed.-115-introduction-continued",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 1/15 Introduction Continued",
+    "text": "Due Wed. 1/15 Introduction Continued\n\nHernan et al. 2019\nAngrist & Pischke 2008, Chapter 1\n\nGerber & Green, Chapter 1 (you can just skim this one)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-120--no-class-mlk-day",
+    "href": "readings.html#due-mon.-120--no-class-mlk-day",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 1/20- No Class MLK day",
+    "text": "Due Mon. 1/20- No Class MLK day\nPotential Outcomes 1) Angrist & Pischke 2008, Chapter 2",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-122-structual-causal-model",
+    "href": "readings.html#due-mon.-122-structual-causal-model",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 1/22 Structual Causal Model",
+    "text": "Due Mon. 1/22 Structual Causal Model\nGuest speaker: Dr. Zach Laubach\n\nRohrer 2018\nLaubach et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-120---no-class-mlk-day",
+    "href": "readings.html#due-mon.-120---no-class-mlk-day",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 1/20 - No Class MLK day",
+    "text": "Due Mon. 1/20 - No Class MLK day",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-122-potential-outcomes",
+    "href": "readings.html#due-wed.-122-potential-outcomes",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 1/22 Potential Outcomes",
+    "text": "Due Wed. 1/22 Potential Outcomes\n\nAngrist & Pischke 2008, Chapter 2\nOR ## Due Mon. 1/22 Structual Causal Model and Directed Acyclic Graphs (DAG) Guest speaker: Dr. Zach Laubach\nRohrer 2018\nLaubach et al. 2021\n\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas 5) Cunningham (2021) Ch. 3",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-127-scm-or-po",
+    "href": "readings.html#due-mon.-127-scm-or-po",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 1/27 SCM or PO",
+    "text": "Due Mon. 1/27 SCM or PO",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-129-experiments-and-randomization",
+    "href": "readings.html#due-wed.-129-experiments-and-randomization",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 1/29 Experiments and Randomization",
+    "text": "Due Wed. 1/29 Experiments and Randomization\n\nGerber & Green, Chapter 2 (see GDrive)\nKimmel et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-23-introduction-to-challenges-of-observational-data",
+    "href": "readings.html#due-mon.-23-introduction-to-challenges-of-observational-data",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 2/3 Introduction to Challenges of Observational Data",
+    "text": "Due Mon. 2/3 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nFerraro 2009\n\nButsic et al. 2017\nLarsen et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-25---laura-away-class-is-asynchronous",
+    "href": "readings.html#due-wed.-25---laura-away-class-is-asynchronous",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/5 - Laura Away; Class is asynchronous",
+    "text": "Due Wed. 2/5 - Laura Away; Class is asynchronous\nDuring the class period, start your projects and make a first DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.\nReview the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.\n\nArif & MacNeil 2022\n\nWatch Hernan video: “3. Elements of DAGs” on Canvas\nCheck out DAG software and website tab on DAGs",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-210-matching",
+    "href": "readings.html#due-mon.-210-matching",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/10 Matching",
+    "text": "Due Mon. 2/10 Matching\n\nRamsey et al. 2018\nStuart 2010",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-212-discussion-leads-____",
+    "href": "readings.html#due-wed.-212-discussion-leads-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/12 [Discussion lead(s): ____ ]",
+    "text": "Due Wed. 2/12 [Discussion lead(s): ____ ]\n\nSiegel et al. 2022\n\nXu et al. 2022\n\ndemo RMarkdowns from Siegel & Dee (2025) for weighting and matching on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-217",
+    "href": "readings.html#due-mon.-217",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/17",
+    "text": "Due Mon. 2/17",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-219",
+    "href": "readings.html#due-wed.-219",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. 2/19",
+    "text": "Due Wed. 2/19",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-227-difference-in-difference",
+    "href": "readings.html#due-mon.-227-difference-in-difference",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/27 Difference-in-Difference",
+    "text": "Due Mon. 2/27 Difference-in-Difference",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-36-two-way-fixed-effects",
+    "href": "readings.html#due-mon.-36-two-way-fixed-effects",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/6 Two-way Fixed Effects",
+    "text": "Due Mon. 3/6 Two-way Fixed Effects\n\nAngrist & Pischke 2008, Chapter 5",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-313-instrumental-variables",
+    "href": "readings.html#due-mon.-313-instrumental-variables",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/13 Instrumental Variables",
+    "text": "Due Mon. 3/13 Instrumental Variables\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\n\nKendall book chapter (on Canvas)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-36-two-way-fixed-effects-or-synthetic-control-asia-kaiser",
+    "href": "readings.html#due-mon.-36-two-way-fixed-effects-or-synthetic-control-asia-kaiser",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/6 Two-way Fixed Effects or Synthetic Control (Asia Kaiser)",
+    "text": "Due Mon. 3/6 Two-way Fixed Effects or Synthetic Control (Asia Kaiser)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-320-rdd",
+    "href": "readings.html#due-mon.-320-rdd",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 3/20 RDD",
+    "text": "Due Mon. 3/20 RDD\n\nAngrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-217-difference-in-difference",
+    "href": "readings.html#due-mon.-217-difference-in-difference",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 2/17 Difference-in-Difference",
+    "text": "Due Mon. 2/17 Difference-in-Difference\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)\n\nThe Effect Ch. 16 - Fixed Effects up until 16.2.2 Multiple Sets of Fixed Effects.\nThe Effect Ch. 18 up until 18.2.5 Rollout Designs and Multiple Treatment Periods.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-219-discussion-leads-____",
+    "href": "readings.html#due-wed.-219-discussion-leads-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/19 [Discussion lead(s): ____ ]",
+    "text": "Due Wed. 2/19 [Discussion lead(s): ____ ]\nDUE Draft of DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.",
+    "href": "readings.html#due-mon.",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon.",
+    "text": "Due Mon.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.",
+    "href": "readings.html#due-wed.",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed.",
+    "text": "Due Wed.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-210-matching-and-weighting",
+    "href": "readings.html#due-mon.-210-matching-and-weighting",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 2/10 Matching (and weighting)",
+    "text": "Due Mon. 2/10 Matching (and weighting)\n\nRamsey et al. 2018\nStuart 2010",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-224-two-way-fixed-effects",
+    "href": "readings.html#due-mon.-224-two-way-fixed-effects",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. 2/24 Two-way fixed effects",
+    "text": "Due Mon. 2/24 Two-way fixed effects\n\nAngrist & Pischke 2008, Chapter 5",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226---synthetic-control-asia-kaiser-laura-away",
+    "href": "readings.html#due-wed.-226---synthetic-control-asia-kaiser-laura-away",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 - Synthetic Control (Asia Kaiser); Laura away",
+    "text": "Due Wed. 2/26 - Synthetic Control (Asia Kaiser); Laura away",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-224-two-way-fixed-effects-part-1-or-recent-did-extensions",
+    "href": "readings.html#due-mon.-224-two-way-fixed-effects-part-1-or-recent-did-extensions",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 2/24 Two-way fixed effects, Part 1 (or recent DiD extensions)",
+    "text": "Due Mon. 2/24 Two-way fixed effects, Part 1 (or recent DiD extensions)\n\nAngrist & Pischke 2008, Chapter 5\nThe Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects\nBrynes and Dee (2025 Ecology Letters)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-33-two-way-fixed-effects",
+    "href": "readings.html#due-mon.-33-two-way-fixed-effects",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/3 Two-way fixed effects",
+    "text": "Due Mon. 3/3 Two-way fixed effects",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-35-draft-of-dag-or-literature-review-proposal-1-page-max.",
+    "href": "readings.html#due-wed.-35-draft-of-dag-or-literature-review-proposal-1-page-max.",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/5 Draft of DAG OR literature review proposal (1 page max.)",
+    "text": "Due Wed. 3/5 Draft of DAG OR literature review proposal (1 page max.)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-310-instrumental-variables",
+    "href": "readings.html#due-mon.-310-instrumental-variables",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/10 Instrumental Variables",
+    "text": "Due Mon. 3/10 Instrumental Variables\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\n\nKendall book chapter (in GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-312-instrumental-variables-applications-discussion-leads-____",
+    "href": "readings.html#due-wed.-312-instrumental-variables-applications-discussion-leads-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/12 Instrumental Variables Applications [Discussion lead(s): ____ ]",
+    "text": "Due Wed. 3/12 Instrumental Variables Applications [Discussion lead(s): ____ ]\n\nSims 2010\n\nMacDonald & Mordecai 2020\ndemo ## Due Mon. 3/17 Regression Discontinuity Designs\nThe Effect Ch. 20 Optional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-317-regression-discontinuity-designs",
+    "href": "readings.html#due-mon.-317-regression-discontinuity-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/17 Regression Discontinuity Designs",
+    "text": "Due Mon. 3/17 Regression Discontinuity Designs\n\nThe Effect Ch. 20 Optional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-319-rdd-applications-discussion-leads-____",
+    "href": "readings.html#due-wed.-319-rdd-applications-discussion-leads-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/19 RDD Applications [Discussion lead(s): ____ ]",
+    "text": "Due Wed. 3/19 RDD Applications [Discussion lead(s): ____ ]\n\nEnglander 2019\n\nNoack et al. 2022\nOptional paper: Burgess et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#week-of-march-24th---spring-break-no-classes-this-week",
+    "href": "readings.html#week-of-march-24th---spring-break-no-classes-this-week",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Week of March 24th - Spring Break, No Classes this week",
+    "text": "Week of March 24th - Spring Break, No Classes this week",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-monday-331-comparison-of-designs",
+    "href": "readings.html#due-monday-331-comparison-of-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Monday 3/31 Comparison of Designs",
+    "text": "Due Monday 3/31 Comparison of Designs\n\nSiegel & Dee (2025) Ecology Letters",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-42-discussion-leads-____",
+    "href": "readings.html#due-wed.-42-discussion-leads-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/2 [Discussion lead(s): ____ ]",
+    "text": "Due Wed. 4/2 [Discussion lead(s): ____ ]\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-project",
+    "href": "readings.html#due-mon.-project",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. Project",
+    "text": "Due Mon. Project\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-project",
+    "href": "readings.html#due-wed.-project",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. Project",
+    "text": "Due Wed. Project",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-generalizability",
+    "href": "readings.html#due-mon.-generalizability",
+    "title": "Readings & Additional Materials",
+    "section": "Due Mon. Generalizability",
+    "text": "Due Mon. Generalizability",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-inference",
+    "href": "readings.html#due-wed.-inference",
+    "title": "Readings & Additional Materials",
+    "section": "Due Wed. Inference",
+    "text": "Due Wed. Inference",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-sensitivity-analyses-project-consultations",
+    "href": "readings.html#due-wed.-sensitivity-analyses-project-consultations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. Sensitivity Analyses – Project Consultations",
+    "text": "Due Wed. Sensitivity Analyses – Project Consultations",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-generalizability-in-experimental-and-observational-studies",
+    "href": "readings.html#due-mon.-generalizability-in-experimental-and-observational-studies",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. Generalizability in experimental and observational studies",
+    "text": "Due Mon. Generalizability in experimental and observational studies",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-inference-and-standard-error-estimation",
+    "href": "readings.html#due-wed.-inference-and-standard-error-estimation",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. Inference and standard error estimation",
+    "text": "Due Wed. Inference and standard error estimation\nRevised DAG + proposed methods OR outline of literature review due",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-33-two-way-fixed-effects-did-extensions-and-issues",
+    "href": "readings.html#due-mon.-33-two-way-fixed-effects-did-extensions-and-issues",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/3 Two-way fixed effects / DiD extensions and issues",
+    "text": "Due Mon. 3/3 Two-way fixed effects / DiD extensions and issues",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-power-standard-error-estimation-and-inference",
+    "href": "readings.html#due-wed.-power-standard-error-estimation-and-inference",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. Power, standard error estimation, and inference",
+    "text": "Due Wed. Power, standard error estimation, and inference\nRevised DAG + proposed methods OR outline of literature review due",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-monday-331-comparison-of-designs-sensitivity-tests",
+    "href": "readings.html#due-monday-331-comparison-of-designs-sensitivity-tests",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Monday 3/31 Comparison of Designs & Sensitivity Tests",
+    "text": "Due Monday 3/31 Comparison of Designs & Sensitivity Tests\n\nSiegel & Dee (2025) Ecology Letters",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-project-consultations",
+    "href": "readings.html#due-wed.-project-consultations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. Project Consultations",
+    "text": "Due Wed. Project Consultations\n1:1 consultations with Laura in lieu of class. Schedule to sign up here",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-35",
+    "href": "readings.html#due-wed.-35",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/5",
+    "text": "Due Wed. 3/5",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-heterogeniety-generalizability-in-experimental-and-observational-studies",
+    "href": "readings.html#due-mon.-heterogeniety-generalizability-in-experimental-and-observational-studies",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. Heterogeniety & Generalizability in experimental and observational studies",
+    "text": "Due Mon. Heterogeniety & Generalizability in experimental and observational studies",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-first-project-presentations",
+    "href": "readings.html#due-mon.-first-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. First Project Presentations",
+    "text": "Due Mon. First Project Presentations\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226---synthetic-control-asia-kaiser-laura-away-or-twfe-papers-discussion",
+    "href": "readings.html#due-wed.-226---synthetic-control-asia-kaiser-laura-away-or-twfe-papers-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 - Synthetic Control (Asia Kaiser); Laura away or TWFE papers discussion",
+    "text": "Due Wed. 2/26 - Synthetic Control (Asia Kaiser); Laura away or TWFE papers discussion",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-33-two-way-fixed-effects-discussion-or-synth-control-did-extensions-and-issues",
+    "href": "readings.html#due-mon.-33-two-way-fixed-effects-discussion-or-synth-control-did-extensions-and-issues",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/3 Two-way fixed effects discussion or Synth control / DiD extensions and issues",
+    "text": "Due Mon. 3/3 Two-way fixed effects discussion or Synth control / DiD extensions and issues\n\nDudney et al. 2021",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-35-two-way-fixed-effects-did-extensions-and-issues",
+    "href": "readings.html#due-wed.-35-two-way-fixed-effects-did-extensions-and-issues",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/5 Two-way fixed effects / DiD extensions and issues",
+    "text": "Due Wed. 3/5 Two-way fixed effects / DiD extensions and issues",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226--laura-away-synthetic-control-asia-kaiser-or-twfe-papers-discussion",
+    "href": "readings.html#due-wed.-226--laura-away-synthetic-control-asia-kaiser-or-twfe-papers-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 -Laura away: Synthetic Control (Asia Kaiser); or TWFE papers discussion",
+    "text": "Due Wed. 2/26 -Laura away: Synthetic Control (Asia Kaiser); or TWFE papers discussion",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion",
+    "href": "readings.html#due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/3 Synthetic Control (Asia Kaiser); or TWFE papers discussion",
+    "text": "Due Mon. 3/3 Synthetic Control (Asia Kaiser); or TWFE papers discussion\n\nDudney et al. 2021\n\nDee et al., 2023",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226--laura-away-fixed-effects-discussion",
+    "href": "readings.html#due-wed.-226--laura-away-fixed-effects-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 -Laura away: Fixed Effects Discussion",
+    "text": "Due Wed. 2/26 -Laura away: Fixed Effects Discussion\n\nBrief Review – Brynes and Dee (2025 Ecology Letters)\nDudney et al. 2021\n\nDee et al., 2023\nMeehan et al. 2011 vs. Larsen 2013\n\ndemo Dee et al. Rmarkdown on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-35-did-extensions-and-issues",
+    "href": "readings.html#due-wed.-35-did-extensions-and-issues",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/5 DiD extensions and issues",
+    "text": "Due Wed. 3/5 DiD extensions and issues\n\nThe Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\n\ndemo Brynes & Dee Rmarkdow non course GitHub\nOptional: 1) Roth et al. (2023). What’s trending in difference in difference? 2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-47-first-project-presentations",
+    "href": "readings.html#due-mon.-47-first-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/7 First Project Presentations",
+    "text": "Due Mon. 4/7 First Project Presentations\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-49-project-consultations",
+    "href": "readings.html#due-wed.-49-project-consultations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/9 Project Consultations",
+    "text": "Due Wed. 4/9 Project Consultations\n1:1 consultations with Laura in lieu of class. Schedule to sign up here",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies",
+    "href": "readings.html#due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/14 Heterogeniety & Generalizability in experimental and observational studies",
+    "text": "Due Mon. 4/14 Heterogeniety & Generalizability in experimental and observational studies",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-4-16-power-standard-error-estimation-and-inference",
+    "href": "readings.html#due-wed.-4-16-power-standard-error-estimation-and-inference",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/ 16 Power, standard error estimation, and inference",
+    "text": "Due Wed. 4/ 16 Power, standard error estimation, and inference\nRevised DAG + proposed methods OR outline of literature review due",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-421",
+    "href": "readings.html#due-mon.-421",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/21",
+    "text": "Due Mon. 4/21",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-423",
+    "href": "readings.html#due-wed-423",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/23",
+    "text": "Due Wed 4/23",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-428",
+    "href": "readings.html#due-mon.-428",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/28",
+    "text": "Due Mon. 4/28",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-430",
+    "href": "readings.html#due-wed-430",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/30",
+    "text": "Due Wed 4/30",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-55",
+    "href": "readings.html#due-mon.-55",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 5/5",
+    "text": "Due Mon. 5/5",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-57",
+    "href": "readings.html#due-wed.-57",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 5/7",
+    "text": "Due Wed. 5/7",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-55-project-presentations",
+    "href": "readings.html#due-mon.-55-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 5/5 Project Presentations",
+    "text": "Due Mon. 5/5 Project Presentations\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-57-project-presentations",
+    "href": "readings.html#due-wed.-57-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 5/7 Project Presentations",
+    "text": "Due Wed. 5/7 Project Presentations\nProject Presentations Continued",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-421-special-topics",
+    "href": "readings.html#due-mon.-421-special-topics",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/21 Special topics",
+    "text": "Due Mon. 4/21 Special topics",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-423-special-topics-discussion",
+    "href": "readings.html#due-wed-423-special-topics-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/23 Special topics discussion",
+    "text": "Due Wed 4/23 Special topics discussion",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-428-special-topics-or-project-work",
+    "href": "readings.html#due-mon.-428-special-topics-or-project-work",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/28 Special topics or Project Work",
+    "text": "Due Mon. 4/28 Special topics or Project Work",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-430-special-topics-or-project-work",
+    "href": "readings.html#due-wed-430-special-topics-or-project-work",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/30 Special topics or Project Work",
+    "text": "Due Wed 4/30 Special topics or Project Work\nProject Presentations Continued",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-421-special-topics-or-project-work",
+    "href": "readings.html#due-mon.-421-special-topics-or-project-work",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/21 Special topics or Project Work",
+    "text": "Due Mon. 4/21 Special topics or Project Work",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-423-special-topics-discussion-or-project-work",
+    "href": "readings.html#due-wed-423-special-topics-discussion-or-project-work",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/23 Special topics discussion or Project Work",
+    "text": "Due Wed 4/23 Special topics discussion or Project Work",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-428-project-presentations",
+    "href": "readings.html#due-mon.-428-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/28 Project Presentations",
+    "text": "Due Mon. 4/28 Project Presentations\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#may-1-is-last-day-of-class---projects-due-friday-may-2",
+    "href": "readings.html#may-1-is-last-day-of-class---projects-due-friday-may-2",
+    "title": "Readings by Class & Additional Materials",
+    "section": "May 1 is last day of class - Projects Due Friday May 2",
+    "text": "May 1 is last day of class - Projects Due Friday May 2\nSee Assignments & Evaluation tab for more information",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#potential-additional-units-to-be-voted-on-by-the-class",
+    "href": "readings.html#potential-additional-units-to-be-voted-on-by-the-class",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Potential additional units to be voted on by the class:",
+    "text": "Potential additional units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\n\nSpake et al. 2022\n\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects\n\n\nReplication/Reproducibility/Pre-registration\n\nKimmel et al., in press\n\n\n\nDeeper dive into mechanisms and mediation analysis",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-25---laura-away-class-is-asynchronousflipped",
+    "href": "readings.html#due-wed.-25---laura-away-class-is-asynchronousflipped",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/5 - Laura Away; Class is asynchronous/flipped",
+    "text": "Due Wed. 2/5 - Laura Away; Class is asynchronous/flipped\n\nArif & MacNeil 2022\n\nWatch Hernan video: “3. Elements of DAGs” on Canvas\nCheck out DAG software and website tab on DAGs\n\nDuring the class period, start your projects and make a first DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.\nReview the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "policies.html#accommodation-for-disabilities-temporary-medical-conditions-and-medical-isolation",
+    "href": "policies.html#accommodation-for-disabilities-temporary-medical-conditions-and-medical-isolation",
+    "title": "University and Course Policies",
+    "section": "Accommodation for Disabilities, Temporary Medical Conditions, and Medical Isolation",
+    "text": "Accommodation for Disabilities, Temporary Medical Conditions, and Medical Isolation\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the Disability Services website. Contact Disability Services at 303-492-8671 or DSinfo@colorado.edu for further assistance. If you have a temporary medical condition, see Temporary Medical Conditions on the Disability Services website.\nIf you have a temporary illness, injury or required medical isolation for which you require adjustment, contact the instructor to make a plan. Because of FERPA student privacy laws, you do not need to state the nature of their illness when alerting me.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#mental-health-and-wellness",
+    "href": "policies.html#mental-health-and-wellness",
+    "title": "University and Course Policies",
+    "section": "Mental Health and Wellness",
+    "text": "Mental Health and Wellness\nThe University of Colorado Boulder is committed to the well-being of all students. If you are struggling with personal stressors, mental health or substance use concerns that are impacting academic or daily life, please contact Counseling and Psychiatric Services (CAPS) located in C4C or call (303) 492-2277, 24/7.\nFree and unlimited telehealth is also available through Academic Live Care. The Academic Live Care site also provides information about additional wellness services on campus that are available to students.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "policies.html#acceptable-use-of-ai-in-this-class",
+    "href": "policies.html#acceptable-use-of-ai-in-this-class",
+    "title": "University and Course Policies",
+    "section": "Acceptable Use of AI in this Class",
+    "text": "Acceptable Use of AI in this Class\nThe acceptable use of AI in this class is to help you write and trouble shoot code for implementing designs and models in this course, or from translating across programming languages (e.g. R to Python).\nUnacceptable uses include 1) using AI instead of reading papers, 2) using AI instead of writing or preparing your own slides or discussion materials. These uses will be regarded as academic dishonesty. They are also cheating yourself from learning.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-224-panel-methods-continued-two-way-fixed-effects",
+    "href": "readings.html#due-mon.-224-panel-methods-continued-two-way-fixed-effects",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 2/24 Panel methods continued; Two-way fixed effects",
+    "text": "Due Mon. 2/24 Panel methods continued; Two-way fixed effects\n\nAngrist & Pischke 2008, Chapter 5\nThe Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects\nBrynes and Dee (2025 Ecology Letters)",
+    "crumbs": [
+      "Readings & Additional Materials"
     ]
   }
 ]

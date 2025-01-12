@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Laura Dee">
 
-<title>Course Materials – EBIO 5460: Causal Inference in Ecology</title>
+<title>DAGs – EBIO 5460: Causal Inference in Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -78,9 +79,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
-      EBIO 5460: Causal Inference in Ecology
-      </li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./DAGs.html">DAG resources</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -146,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./DAGs.html" class="sidebar-item-text sidebar-link">
+  <a href="./DAGs.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">DAG resources</span></a>
   </div>
 </li>
@@ -161,21 +160,35 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#resources-of-creating-and-analyzing-directed-acyclic-graphs" id="toc-resources-of-creating-and-analyzing-directed-acyclic-graphs" class="nav-link active" data-scroll-target="#resources-of-creating-and-analyzing-directed-acyclic-graphs">Resources of creating and analyzing Directed Acyclic Graphs</a></li>
+  <li><a href="#useful-videos" id="toc-useful-videos" class="nav-link" data-scroll-target="#useful-videos">Useful Videos</a></li>
+  <li><a href="#software-for-dag-construction-and-analysis" id="toc-software-for-dag-construction-and-analysis" class="nav-link" data-scroll-target="#software-for-dag-construction-and-analysis">Software for DAG construction and analysis</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Course Materials</h1>
+<h1 class="title">DAGs</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Laura Dee </p>
+          </div>
+  </div>
     
   
     
@@ -186,11 +199,51 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><a href="reading/">Core Readings</a></p>
-<p><a href="slides/">Slides</a></p>
-<p><a href="data/">Datasets</a></p>
+<section id="resources-of-creating-and-analyzing-directed-acyclic-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="resources-of-creating-and-analyzing-directed-acyclic-graphs">Resources of creating and analyzing Directed Acyclic Graphs</h2>
+</section>
+<section id="useful-videos" class="level2">
+<h2 class="anchored" data-anchor-id="useful-videos">Useful Videos</h2>
+<section id="conceptual" class="level4">
+<h4 class="anchored" data-anchor-id="conceptual">Conceptual</h4>
+<ul>
+<li><p>Discussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: <a href="https://www.youtube.com/watch?v=_qs_1B4ySWY" class="uri">https://www.youtube.com/watch?v=_qs_1B4ySWY</a></p></li>
+<li><p>Watch Hernan video: “3. Elements of DAGs”</p></li>
+</ul>
+</section>
+<section id="implementation" class="level4">
+<h4 class="anchored" data-anchor-id="implementation">Implementation</h4>
+<ul>
+<li><p>How to build and begin to analyze them it in ggdag by A. Heiss: <a href="https://www.youtube.com/watch?v=uoAjyyToUTE" class="uri">https://www.youtube.com/watch?v=uoAjyyToUTE</a></p></li>
+<li><p>Drawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c</p></li>
+<li><p>Intro to DAGitty for identifying confounding variables: <a href="https://www.youtube.com/watch?v=sI_w9uVLdCg" class="uri">https://www.youtube.com/watch?v=sI_w9uVLdCg</a></p></li>
+</ul>
+</section>
+</section>
+<section id="software-for-dag-construction-and-analysis" class="level2">
+<h2 class="anchored" data-anchor-id="software-for-dag-construction-and-analysis">Software for DAG construction and analysis</h2>
+<p>a) Daggitity -</p>
+<p>b) <a href="https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html">ggdag</a> is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality<br>
+c) <a href="https://www.gerkelab.com/project/shinydag/">shinydag</a> is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats<br>
+d) <a href="https://sites.google.com/view/tetradcausal">TETRAD</a><br>
+e) <a href="https://hsz.dife.de/dag/">DAG program</a><br>
+f) <a href="https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx">dagR</a></p>
+<section id="additional-background-readings" class="level4">
+<h4 class="anchored" data-anchor-id="additional-background-readings">Additional Background Readings</h4>
+<p>For additional background on DAGs:</p>
+<ul>
+<li>Morgan &amp; Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)</li>
+</ul>
+<!-- -->
+<ul>
+<li><p><a href="https://mixtape.scunning.com/03-directed_acyclical_graphs">Cunningham (2021) Ch. 3</a></p></li>
+<li><p>Heiss, A. <a href="https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus">Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand</a><br>
+</p></li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

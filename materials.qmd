@@ -4,9 +4,7 @@ title: "Course Materials"
 
 [Core Readings](reading/)
 
-
 [Slides](slides/)
-
 
 [Datasets](data/)
 

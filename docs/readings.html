@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Readings &amp; Additional Materials – EBIO 5460: Causal Inference in Ecology</title>
+<title>Readings by Class &amp; Additional Materials – EBIO 5460: Causal Inference in Ecology</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -95,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">EBIO 5460: Causal Inference in Ecology</a> 
         <div class="sidebar-tools-main">
-    <a href="https://github.com/katherinesiegel/EBIOcausalinference" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://github.com/LauraDee/EcologyCausalInference" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
 </div>
     </div>
       </div>
@@ -144,6 +144,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./DAGs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DAG resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./policies.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">University Policies</span></a>
   </div>
@@ -158,48 +164,38 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#recommended-textbooks-not-required" id="toc-recommended-textbooks-not-required" class="nav-link active" data-scroll-target="#recommended-textbooks-not-required">Recommended Textbooks (not required)</a></li>
-  <li><a href="#due-mon.-123" id="toc-due-mon.-123" class="nav-link" data-scroll-target="#due-mon.-123">Due Mon. 1/23</a></li>
-  <li><a href="#due-wed.-125" id="toc-due-wed.-125" class="nav-link" data-scroll-target="#due-wed.-125">Due Wed. 1/25</a></li>
-  <li><a href="#due-mon.-130" id="toc-due-mon.-130" class="nav-link" data-scroll-target="#due-mon.-130">Due Mon. 1/30</a></li>
-  <li><a href="#due-wed.-21" id="toc-due-wed.-21" class="nav-link" data-scroll-target="#due-wed.-21">Due Wed. 2/1</a></li>
-  <li><a href="#due-mon.-26" id="toc-due-mon.-26" class="nav-link" data-scroll-target="#due-mon.-26">Due Mon. 2/6</a></li>
-  <li><a href="#due-wed.-28-casey" id="toc-due-wed.-28-casey" class="nav-link" data-scroll-target="#due-wed.-28-casey">Due Wed. 2/8 [Casey]</a></li>
-  <li><a href="#due-mon.-213" id="toc-due-mon.-213" class="nav-link" data-scroll-target="#due-mon.-213">Due Mon. 2/13</a></li>
-  <li><a href="#due-wed.-215-brendan-henry" id="toc-due-wed.-215-brendan-henry" class="nav-link" data-scroll-target="#due-wed.-215-brendan-henry">Due Wed. 2/15 [Brendan &amp; Henry]</a></li>
-  <li><a href="#due-mon.-220" id="toc-due-mon.-220" class="nav-link" data-scroll-target="#due-mon.-220">Due Mon. 2/20</a></li>
-  <li><a href="#due-wed.-222-alec-sam" id="toc-due-wed.-222-alec-sam" class="nav-link" data-scroll-target="#due-wed.-222-alec-sam">Due Wed. 2/22 [Alec &amp; Sam]</a></li>
-  <li><a href="#due-mon.-227" id="toc-due-mon.-227" class="nav-link" data-scroll-target="#due-mon.-227">Due Mon. 2/27</a></li>
-  <li><a href="#due-wed.-31-anna-hilary" id="toc-due-wed.-31-anna-hilary" class="nav-link" data-scroll-target="#due-wed.-31-anna-hilary">Due Wed. 3/1 [Anna &amp; Hilary]</a></li>
-  <li><a href="#due-mon.-36" id="toc-due-mon.-36" class="nav-link" data-scroll-target="#due-mon.-36">Due Mon. 3/6</a></li>
-  <li><a href="#due-wed.-38-meghan-tom" id="toc-due-wed.-38-meghan-tom" class="nav-link" data-scroll-target="#due-wed.-38-meghan-tom">Due Wed. 3/8 [Meghan &amp; Tom]</a></li>
-  <li><a href="#due-mon.-313" id="toc-due-mon.-313" class="nav-link" data-scroll-target="#due-mon.-313">Due Mon. 3/13</a></li>
-  <li><a href="#due-wed.-315-max-tyler" id="toc-due-wed.-315-max-tyler" class="nav-link" data-scroll-target="#due-wed.-315-max-tyler">Due Wed. 3/15 [Max &amp; Tyler]</a></li>
-  <li><a href="#due-mon.-320" id="toc-due-mon.-320" class="nav-link" data-scroll-target="#due-mon.-320">Due Mon. 3/20</a></li>
-  <li><a href="#due-wed.-322-aly-john" id="toc-due-wed.-322-aly-john" class="nav-link" data-scroll-target="#due-wed.-322-aly-john">Due Wed. 3/22 [Aly &amp; John]</a></li>
-  <li><a href="#due-mon.-43" id="toc-due-mon.-43" class="nav-link" data-scroll-target="#due-mon.-43">Due Mon. 4/3</a></li>
-  <li><a href="#due-wed.-45" id="toc-due-wed.-45" class="nav-link" data-scroll-target="#due-wed.-45">Due Wed. 4/5</a></li>
-  <li><a href="#due-mon.-410" id="toc-due-mon.-410" class="nav-link" data-scroll-target="#due-mon.-410">Due Mon. 4/10</a></li>
-  <li><a href="#due-wed.-412" id="toc-due-wed.-412" class="nav-link" data-scroll-target="#due-wed.-412">Due Wed. 4/12</a></li>
-  <li><a href="#due-fri.-414" id="toc-due-fri.-414" class="nav-link" data-scroll-target="#due-fri.-414">Due Fri. 4/14</a></li>
-  <li><a href="#due-mon.-417" id="toc-due-mon.-417" class="nav-link" data-scroll-target="#due-mon.-417">Due Mon. 4/17</a></li>
-  <li><a href="#due-wed.-419" id="toc-due-wed.-419" class="nav-link" data-scroll-target="#due-wed.-419">Due Wed. 4/19</a></li>
-  <li><a href="#fri.-421" id="toc-fri.-421" class="nav-link" data-scroll-target="#fri.-421">Fri. 4/21</a></li>
-  <li><a href="#due-mon.-424" id="toc-due-mon.-424" class="nav-link" data-scroll-target="#due-mon.-424">Due Mon. 4/24</a></li>
-  <li><a href="#due-wed.-426" id="toc-due-wed.-426" class="nav-link" data-scroll-target="#due-wed.-426">Due Wed. 4/26</a>
-  <ul class="collapse">
-  <li><a href="#generalizability-in-experimental-and-observational-studies" id="toc-generalizability-in-experimental-and-observational-studies" class="nav-link" data-scroll-target="#generalizability-in-experimental-and-observational-studies">Generalizability in experimental and observational studies</a></li>
-  </ul></li>
-  <li><a href="#due-mon.-51" id="toc-due-mon.-51" class="nav-link" data-scroll-target="#due-mon.-51">Due Mon. 5/1</a></li>
-  <li><a href="#due-wed.-53" id="toc-due-wed.-53" class="nav-link" data-scroll-target="#due-wed.-53">Due Wed. 5/3</a></li>
-  <li><a href="#fri.-55" id="toc-fri.-55" class="nav-link" data-scroll-target="#fri.-55">Fri. 5/5</a></li>
-  <li><a href="#potential-additional-units" id="toc-potential-additional-units" class="nav-link" data-scroll-target="#potential-additional-units">Potential additional units</a>
-  <ul class="collapse">
-  <li><a href="#generalizability-in-experimental-and-observational-studies-1" id="toc-generalizability-in-experimental-and-observational-studies-1" class="nav-link" data-scroll-target="#generalizability-in-experimental-and-observational-studies-1">Generalizability in experimental and observational studies</a></li>
-  <li><a href="#heterogeneous-treatment-effects" id="toc-heterogeneous-treatment-effects" class="nav-link" data-scroll-target="#heterogeneous-treatment-effects">Heterogeneous treatment effects</a></li>
-  <li><a href="#replicationreproducibilitypre-registration" id="toc-replicationreproducibilitypre-registration" class="nav-link" data-scroll-target="#replicationreproducibilitypre-registration">Replication/Reproducibility/Pre-registration</a></li>
-  <li><a href="#deeper-dive-into-mechanisms-and-mediation-analysis" id="toc-deeper-dive-into-mechanisms-and-mediation-analysis" class="nav-link" data-scroll-target="#deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into mechanisms and mediation analysis</a></li>
-  </ul></li>
+  <li><a href="#due-mon.-113" id="toc-due-mon.-113" class="nav-link active" data-scroll-target="#due-mon.-113">Due Mon. 1/13</a></li>
+  <li><a href="#due-wed.-115-introduction-continued" id="toc-due-wed.-115-introduction-continued" class="nav-link" data-scroll-target="#due-wed.-115-introduction-continued">Due Wed. 1/15 Introduction Continued</a></li>
+  <li><a href="#due-mon.-120---no-class-mlk-day" id="toc-due-mon.-120---no-class-mlk-day" class="nav-link" data-scroll-target="#due-mon.-120---no-class-mlk-day">Due Mon. 1/20 - No Class MLK day</a></li>
+  <li><a href="#due-wed.-122-potential-outcomes" id="toc-due-wed.-122-potential-outcomes" class="nav-link" data-scroll-target="#due-wed.-122-potential-outcomes">Due Wed. 1/22 Potential Outcomes</a></li>
+  <li><a href="#due-mon.-127-scm-or-po" id="toc-due-mon.-127-scm-or-po" class="nav-link" data-scroll-target="#due-mon.-127-scm-or-po">Due Mon. 1/27 SCM or PO</a></li>
+  <li><a href="#due-wed.-129-experiments-and-randomization" id="toc-due-wed.-129-experiments-and-randomization" class="nav-link" data-scroll-target="#due-wed.-129-experiments-and-randomization">Due Wed. 1/29 Experiments and Randomization</a></li>
+  <li><a href="#due-mon.-23-introduction-to-challenges-of-observational-data" id="toc-due-mon.-23-introduction-to-challenges-of-observational-data" class="nav-link" data-scroll-target="#due-mon.-23-introduction-to-challenges-of-observational-data">Due Mon. 2/3 Introduction to Challenges of Observational Data</a></li>
+  <li><a href="#due-wed.-25---laura-away-class-is-asynchronousflipped" id="toc-due-wed.-25---laura-away-class-is-asynchronousflipped" class="nav-link" data-scroll-target="#due-wed.-25---laura-away-class-is-asynchronousflipped">Due Wed. 2/5 - Laura Away; Class is asynchronous/flipped</a></li>
+  <li><a href="#due-mon.-210-matching-and-weighting" id="toc-due-mon.-210-matching-and-weighting" class="nav-link" data-scroll-target="#due-mon.-210-matching-and-weighting">Due Mon. 2/10 Matching (and weighting)</a></li>
+  <li><a href="#due-wed.-212-discussion-leads-____" id="toc-due-wed.-212-discussion-leads-____" class="nav-link" data-scroll-target="#due-wed.-212-discussion-leads-____">Due Wed. 2/12 [Discussion lead(s): ____ ]</a></li>
+  <li><a href="#due-mon.-217-difference-in-difference" id="toc-due-mon.-217-difference-in-difference" class="nav-link" data-scroll-target="#due-mon.-217-difference-in-difference">Due Mon. 2/17 Difference-in-Difference</a></li>
+  <li><a href="#due-wed.-219-discussion-leads-____" id="toc-due-wed.-219-discussion-leads-____" class="nav-link" data-scroll-target="#due-wed.-219-discussion-leads-____">Due Wed. 2/19 [Discussion lead(s): ____ ]</a></li>
+  <li><a href="#due-mon.-224-panel-methods-continued-two-way-fixed-effects" id="toc-due-mon.-224-panel-methods-continued-two-way-fixed-effects" class="nav-link" data-scroll-target="#due-mon.-224-panel-methods-continued-two-way-fixed-effects">Due Mon. 2/24 Panel methods continued; Two-way fixed effects</a></li>
+  <li><a href="#due-wed.-226--laura-away-fixed-effects-discussion" id="toc-due-wed.-226--laura-away-fixed-effects-discussion" class="nav-link" data-scroll-target="#due-wed.-226--laura-away-fixed-effects-discussion">Due Wed. 2/26 -Laura away: Fixed Effects Discussion</a></li>
+  <li><a href="#due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion" id="toc-due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion" class="nav-link" data-scroll-target="#due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion">Due Mon. 3/3 Synthetic Control (Asia Kaiser); or TWFE papers discussion</a></li>
+  <li><a href="#due-wed.-35-did-extensions-and-issues" id="toc-due-wed.-35-did-extensions-and-issues" class="nav-link" data-scroll-target="#due-wed.-35-did-extensions-and-issues">Due Wed. 3/5 DiD extensions and issues</a></li>
+  <li><a href="#due-mon.-310-instrumental-variables" id="toc-due-mon.-310-instrumental-variables" class="nav-link" data-scroll-target="#due-mon.-310-instrumental-variables">Due Mon. 3/10 Instrumental Variables</a></li>
+  <li><a href="#due-wed.-312-instrumental-variables-applications-discussion-leads-____" id="toc-due-wed.-312-instrumental-variables-applications-discussion-leads-____" class="nav-link" data-scroll-target="#due-wed.-312-instrumental-variables-applications-discussion-leads-____">Due Wed. 3/12 Instrumental Variables Applications [Discussion lead(s): ____ ]</a></li>
+  <li><a href="#due-wed.-319-rdd-applications-discussion-leads-____" id="toc-due-wed.-319-rdd-applications-discussion-leads-____" class="nav-link" data-scroll-target="#due-wed.-319-rdd-applications-discussion-leads-____">Due Wed. 3/19 RDD Applications [Discussion lead(s): ____ ]</a></li>
+  <li><a href="#week-of-march-24th---spring-break-no-classes-this-week" id="toc-week-of-march-24th---spring-break-no-classes-this-week" class="nav-link" data-scroll-target="#week-of-march-24th---spring-break-no-classes-this-week">Week of March 24th - Spring Break, No Classes this week</a></li>
+  <li><a href="#due-monday-331-comparison-of-designs-sensitivity-tests" id="toc-due-monday-331-comparison-of-designs-sensitivity-tests" class="nav-link" data-scroll-target="#due-monday-331-comparison-of-designs-sensitivity-tests">Due Monday 3/31 Comparison of Designs &amp; Sensitivity Tests</a></li>
+  <li><a href="#due-wed.-42-discussion-leads-____" id="toc-due-wed.-42-discussion-leads-____" class="nav-link" data-scroll-target="#due-wed.-42-discussion-leads-____">Due Wed. 4/2 [Discussion lead(s): ____ ]</a></li>
+  <li><a href="#due-mon.-47-first-project-presentations" id="toc-due-mon.-47-first-project-presentations" class="nav-link" data-scroll-target="#due-mon.-47-first-project-presentations">Due Mon. 4/7 First Project Presentations</a></li>
+  <li><a href="#due-wed.-49-project-consultations" id="toc-due-wed.-49-project-consultations" class="nav-link" data-scroll-target="#due-wed.-49-project-consultations">Due Wed. 4/9 Project Consultations</a></li>
+  <li><a href="#due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies" id="toc-due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies" class="nav-link" data-scroll-target="#due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies">Due Mon. 4/14 Heterogeniety &amp; Generalizability in experimental and observational studies</a></li>
+  <li><a href="#due-wed.-4-16-power-standard-error-estimation-and-inference" id="toc-due-wed.-4-16-power-standard-error-estimation-and-inference" class="nav-link" data-scroll-target="#due-wed.-4-16-power-standard-error-estimation-and-inference">Due Wed. 4/ 16 Power, standard error estimation, and inference</a></li>
+  <li><a href="#due-mon.-421-special-topics-or-project-work" id="toc-due-mon.-421-special-topics-or-project-work" class="nav-link" data-scroll-target="#due-mon.-421-special-topics-or-project-work">Due Mon. 4/21 Special topics or Project Work</a></li>
+  <li><a href="#due-wed-423-special-topics-discussion-or-project-work" id="toc-due-wed-423-special-topics-discussion-or-project-work" class="nav-link" data-scroll-target="#due-wed-423-special-topics-discussion-or-project-work">Due Wed 4/23 Special topics discussion or Project Work</a></li>
+  <li><a href="#due-mon.-428-project-presentations" id="toc-due-mon.-428-project-presentations" class="nav-link" data-scroll-target="#due-mon.-428-project-presentations">Due Mon. 4/28 Project Presentations</a></li>
+  <li><a href="#due-wed-430-special-topics-or-project-work" id="toc-due-wed-430-special-topics-or-project-work" class="nav-link" data-scroll-target="#due-wed-430-special-topics-or-project-work">Due Wed 4/30 Special topics or Project Work</a></li>
+  <li><a href="#may-1-is-last-day-of-class---projects-due-friday-may-2" id="toc-may-1-is-last-day-of-class---projects-due-friday-may-2" class="nav-link" data-scroll-target="#may-1-is-last-day-of-class---projects-due-friday-may-2">May 1 is last day of class - Projects Due Friday May 2</a></li>
+  <li><a href="#recommended-textbooks-not-required" id="toc-recommended-textbooks-not-required" class="nav-link" data-scroll-target="#recommended-textbooks-not-required">Recommended Textbooks (not required)</a></li>
   </ul>
 </nav>
     </div>
@@ -208,7 +204,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Readings &amp; Additional Materials</h1>
+<h1 class="title">Readings by Class &amp; Additional Materials</h1>
 </div>
 
 
@@ -225,37 +221,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="recommended-textbooks-not-required" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-textbooks-not-required">Recommended Textbooks (not required)</h2>
-<p>We do not expect you to buy any/all of these books. We will provide the sections that are assigned for class. But if you want to explore topics of causal inference further, we recommend these books!</p>
-<p><em>Note: Some of these texts use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there.</em></p>
-<ul>
-<li>Morgan, SL and C Winship. 2007. <a href="https://doi.org/10.1017/CBO9781107587991"><em>Counterfactuals and Causal Inference: methods and principles for social research</em></a>.<br>
-</li>
-<li>Gerber, AS and DP Green. 2012. <a href="https://wwnorton.com/books/9780393979954"><em>Field Experiments: design, analysis and interpretation</em></a>. (especially useful if you plan to do field experiments in your research)<br>
-</li>
-<li>Cunningham, S. 2021. <a href="https://mixtape.scunning.com/"><em>Causal Inference: The Mixtape</em></a> (New Haven, CT: Yale University Press). <a href="https://mixtape.scunning.com/">Available online for free</a><br>
-</li>
-<li>Angrist, JD and JS Pischke. 2015. <a href="https://www.masteringmetrics.com/"><em>Mastering ’Metrics: The Path from Cause to Effect</em></a> (Princeton, NJ: Princeton University Press).<br>
-</li>
-<li>Angrist, JD and JS Pischke. 2008. <a href="https://www.mostlyharmlesseconometrics.com/"><em>Mostly Harmless Econometrics: an empiricist’s companion</em></a>. (Princeton, NJ: Princeton University Press).<br>
-</li>
-<li>Rosenbaum, P. 2010. <a href="https://doi.org/10.1007/978-1-4757-3692-2"><em>Observational Studies</em></a>. Springer.<br>
-</li>
-<li>Pearl, J. and D. Mackenzie. 2018. <a href="https://dl.acm.org/doi/10.5555/3238230"><em>The Book of Why</em></a>. (New York, NY: Basic Books, Inc.) (A more popular science book)<br>
-</li>
-<li>For more technical discussions of causality:
-<ul>
-<li><a href="https://doi.org/10.2307/2289064">Holland 1986, JASA</a><br>
-</li>
-<li><a href="https://www.jstor.org/stable/2586935">Heckman 2000, QJE</a><br>
-</li>
-<li>Pearl, J. 2009. <a href="https://doi.org/10.1017/CBO9780511803161"><em>Causality</em></a>. (Cambridge, UK: Cambridge University Press).</li>
-</ul></li>
-</ul>
+<section id="due-mon.-113" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-113">Due Mon. 1/13</h2>
+<p>First class; Complete <a href="https://forms.gle/RMQfEYqwvuioHab58">pre-course survey</a> in class; Review Syllabus</p>
 </section>
-<section id="due-mon.-123" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-123">Due Mon. 1/23</h2>
+<section id="due-wed.-115-introduction-continued" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-115-introduction-continued">Due Wed. 1/15 Introduction Continued</h2>
 <ol type="1">
 <li><a href="https://doi.org/10.1080/09332480.2019.1579578">Hernan et al.&nbsp;2019</a></li>
 <li>Angrist &amp; Pischke 2008, Chapter 1<br>
@@ -263,214 +234,181 @@ ul.task-list li input[type="checkbox"] {
 <li>Gerber &amp; Green, Chapter 1 (you can just skim this one)</li>
 </ol>
 </section>
-<section id="due-wed.-125" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-125">Due Wed. 1/25</h2>
+<section id="due-mon.-120---no-class-mlk-day" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-120---no-class-mlk-day">Due Mon. 1/20 - No Class MLK day</h2>
+</section>
+<section id="due-wed.-122-potential-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-122-potential-outcomes">Due Wed. 1/22 Potential Outcomes</h2>
 <ol type="1">
 <li>Angrist &amp; Pischke 2008, Chapter 2<br>
-</li>
-<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5207342/">Hernan 2016</a></li>
-</ol>
-<p></p>
-</section>
-<section id="due-mon.-130" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-130">Due Mon. 1/30</h2>
-<p>Guest speaker: Dr.&nbsp;Zach Laubach</p>
-<ol type="1">
+OR ## Due Mon. 1/22 Structual Causal Model and Directed Acyclic Graphs (DAG) Guest speaker: Dr.&nbsp;Zach Laubach</li>
 <li><a href="https://journals.sagepub.com/doi/epub/10.1177/2515245917745629">Rohrer 2018</a></li>
 <li><a href="https://doi.org/10.1098/rspb.2020.2815">Laubach et al.&nbsp;2021</a></li>
 </ol>
+<p>Optional; additional background reading on DAGs:<br>
+4) Morgan &amp; Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas 5) <a href="https://mixtape.scunning.com/03-directed_acyclical_graphs">Cunningham (2021) Ch. 3</a></p>
 </section>
-<section id="due-wed.-21" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-21">Due Wed. 2/1</h2>
-<p>Come to class prepared to present and discuss your DAG.</p>
+<section id="due-mon.-127-scm-or-po" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-127-scm-or-po">Due Mon. 1/27 SCM or PO</h2>
+</section>
+<section id="due-wed.-129-experiments-and-randomization" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-129-experiments-and-randomization">Due Wed. 1/29 Experiments and Randomization</h2>
+<ol type="1">
+<li>Gerber &amp; Green, Chapter 2 (see GDrive)</li>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/34538502/">Kimmel et al.&nbsp;2021</a></li>
+</ol>
+</section>
+<section id="due-mon.-23-introduction-to-challenges-of-observational-data" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-23-introduction-to-challenges-of-observational-data">Due Mon. 2/3 Introduction to Challenges of Observational Data</h2>
+<ol type="1">
+<li>Watch Imbens video: <a href="https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/">2022 Nobel Prize lecture</a></li>
+<li><a href="https://doi.org/10.1002/ev.297">Ferraro 2009</a><br>
+</li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S1439179116301323">Butsic et al.&nbsp;2017</a></li>
+<li><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190">Larsen et al.&nbsp;2019</a></li>
+</ol>
+</section>
+<section id="due-wed.-25---laura-away-class-is-asynchronousflipped" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-25---laura-away-class-is-asynchronousflipped">Due Wed. 2/5 - Laura Away; Class is asynchronous/flipped</h2>
 <ol type="1">
 <li><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1554">Arif &amp; MacNeil 2022</a><br>
 </li>
 <li>Watch Hernan video: “3. Elements of DAGs” on Canvas</li>
-<li>Check out <a href="http://dagitty.net">DAG software</a></li>
+<li>Check out <a href="http://dagitty.net">DAG software</a> and website tab on DAGs</li>
 </ol>
-<section id="optional" class="level4">
-<h4 class="anchored" data-anchor-id="optional">Optional</h4>
-<p>For additional background on DAGs:</p>
-<ol start="4" type="1">
-<li>Morgan &amp; Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas</li>
-<li><a href="https://mixtape.scunning.com/03-directed_acyclical_graphs">Cunningham (2021) Ch. 3</a></li>
-</ol>
-<p>Other software for making DAGs:<br>
-a) <a href="https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html">ggdag</a> is a nice R package based on dagitty but tidyverse-compatible and with much better plotting functionality<br>
-b) <a href="https://www.gerkelab.com/project/shinydag/">shinydag</a> is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats<br>
-c) <a href="https://sites.google.com/view/tetradcausal">TETRAD</a><br>
-d) <a href="https://hsz.dife.de/dag/">DAG program</a><br>
-e) <a href="https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx">dagR</a></p>
+<p>During the class period, start your projects and make a first DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.</p>
+<p>Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.</p>
 </section>
-</section>
-<section id="due-mon.-26" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-26">Due Mon. 2/6</h2>
-<ol type="1">
-<li>Gerber &amp; Green, Chapter 2</li>
-<li><a href="https://pubmed.ncbi.nlm.nih.gov/34538502/">Kimmel et al.&nbsp;2021</a></li>
-</ol>
-</section>
-<section id="due-wed.-28-casey" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-28-casey">Due Wed. 2/8 [Casey]</h2>
-<ol type="1">
-<li>No readings today!</li>
-</ol>
-</section>
-<section id="due-mon.-213" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-213">Due Mon. 2/13</h2>
-<ol type="1">
-<li>Watch Imbens video: <a href="https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/">2022 Nobel Prize lecture</a></li>
-<li><a href="https://doi.org/10.1002/ev.297">Ferraro 2009</a></li>
-</ol>
-</section>
-<section id="due-wed.-215-brendan-henry" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-215-brendan-henry">Due Wed. 2/15 [Brendan &amp; Henry]</h2>
-<ol type="1">
-<li><a href="https://www.sciencedirect.com/science/article/pii/S1439179116301323">Butsic et al.&nbsp;2017</a><br>
-</li>
-<li><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190">Larsen et al.&nbsp;2019</a></li>
-</ol>
-</section>
-<section id="due-mon.-220" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-220">Due Mon. 2/20</h2>
+<section id="due-mon.-210-matching-and-weighting" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-210-matching-and-weighting">Due Mon. 2/10 Matching (and weighting)</h2>
 <ol type="1">
 <li><a href="https://doi.org/10.1111/2041-210X.13111">Ramsey et al.&nbsp;2018</a></li>
 <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2943670/">Stuart 2010</a></li>
 </ol>
 </section>
-<section id="due-wed.-222-alec-sam" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-222-alec-sam">Due Wed. 2/22 [Alec &amp; Sam]</h2>
+<section id="due-wed.-212-discussion-leads-____" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-212-discussion-leads-____">Due Wed. 2/12 [Discussion lead(s): ____ ]</h2>
 <ol type="1">
 <li><a href="https://doi.org/10.1007/s10113-022-01950-y">Siegel et al.&nbsp;2022</a><br>
 </li>
-<li><a href="https://www.science.org/doi/10.1126/sciadv.abo0119">Xu et al.&nbsp;2022</a><br>
+<li><a href="https://www.science.org/doi/10.1126/sciadv.abo0119">Xu et al.&nbsp;2022</a></li>
+</ol>
+<p><em>demo</em> RMarkdowns from Siegel &amp; Dee (2025) for weighting and matching on course GitHub</p>
+</section>
+<section id="due-mon.-217-difference-in-difference" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-217-difference-in-difference">Due Mon. 2/17 Difference-in-Difference</h2>
+<ol type="1">
+<li>Angrist &amp; Pischke <strong>2015</strong>, Chapter 5 (note: this is in the book <em>Mastering ’Metrics</em>)<br>
 </li>
-<li>Siegel et al., submitted (available on Canvas)</li>
+<li>The Effect <a href="https://theeffectbook.net/ch-FixedEffects.html">Ch. 16 - Fixed Effects</a> up until 16.2.2 Multiple Sets of Fixed Effects.</li>
+<li>The Effect <a href="https://theeffectbook.net/ch-DifferenceinDifference.html">Ch. 18</a> up until 18.2.5 Rollout Designs and Multiple Treatment Periods.</li>
 </ol>
 </section>
-<section id="due-mon.-227" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-227">Due Mon. 2/27</h2>
-<ol type="1">
-<li>Angrist &amp; Pischke <strong>2015</strong>, Chapter 5 (note: this is in <em>Mastering ’Metrics</em>)</li>
-</ol>
+<section id="due-wed.-219-discussion-leads-____" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-219-discussion-leads-____">Due Wed. 2/19 [Discussion lead(s): ____ ]</h2>
+<p><em>DUE Draft of DAG OR literature review proposal (1 page max.)</em><br>
+1) <a href="https://www.nature.com/articles/s41467-022-31102-z">Simler-Williamson &amp; Germino 2022</a><br>
+<em>demo</em> RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)</p>
 </section>
-<section id="due-wed.-31-anna-hilary" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-31-anna-hilary">Due Wed. 3/1 [Anna &amp; Hilary]</h2>
-<ol type="1">
-<li><a href="https://www.nature.com/articles/s41467-022-31102-z">Simler-Williamson &amp; Germino 2022</a></li>
-</ol>
-</section>
-<section id="due-mon.-36" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-36">Due Mon. 3/6</h2>
+<section id="due-mon.-224-panel-methods-continued-two-way-fixed-effects" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-224-panel-methods-continued-two-way-fixed-effects">Due Mon. 2/24 Panel methods continued; Two-way fixed effects</h2>
 <ol type="1">
 <li>Angrist &amp; Pischke <strong>2008</strong>, Chapter 5</li>
+<li>The Effect <a href="https://theeffectbook.net/ch-FixedEffects.html">Ch. 16 - Fixed Effects</a> starting at 16.2.2 Multiple Sets of Fixed Effects</li>
+<li>Brynes and Dee (2025 Ecology Letters)</li>
 </ol>
 </section>
-<section id="due-wed.-38-meghan-tom" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-38-meghan-tom">Due Wed. 3/8 [Meghan &amp; Tom]</h2>
+<section id="due-wed.-226--laura-away-fixed-effects-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-226--laura-away-fixed-effects-discussion">Due Wed. 2/26 -Laura away: Fixed Effects Discussion</h2>
 <ol type="1">
-<li>Dee et al., in press, and RMarkdown<br>
+<li>Brief Review – Brynes and Dee (2025 Ecology Letters)</li>
+<li><a href="https://www.nature.com/articles/s41467-021-25182-6">Dudney et al.&nbsp;2021</a><br>
 </li>
-<li>Byrnes &amp; Dee, in prep and RShiny</li>
+<li><a href="https://www.nature.com/articles/s41467-023-37194-5">Dee et al., 2023</a></li>
+<li><a href="https://doi.org/10.1073/pnas.1100751108">Meehan et al.&nbsp;2011</a> vs.&nbsp;<a href="https://doi.org/10.1073/pnas.1301900110">Larsen 2013</a></li>
 </ol>
-<section id="optional-1" class="level4">
-<h4 class="anchored" data-anchor-id="optional-1">Optional</h4>
-<ol start="3" type="1">
-<li><a href="https://doi.org/10.1073/pnas.1100751108">Meehan et al.&nbsp;2011</a> vs.&nbsp;<a href="https://doi.org/10.1073/pnas.1301900110">Larsen 2013</a><br>
+<p><em>demo</em> Dee et al.&nbsp;Rmarkdown on course GitHub</p>
+</section>
+<section id="due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-33-synthetic-control-asia-kaiser-or-twfe-papers-discussion">Due Mon. 3/3 Synthetic Control (Asia Kaiser); or TWFE papers discussion</h2>
+<ol type="1">
+<li><a href="https://www.nature.com/articles/s41467-021-25182-6">Dudney et al.&nbsp;2021</a><br>
 </li>
-<li><a href="https://www.nature.com/articles/nature16524">Grace et al.&nbsp;2016</a> vs.&nbsp;Dee et al., in press<br>
-</li>
-<li><a href="https://www.nature.com/articles/s41467-021-25182-6">Dudney et al.&nbsp;2021</a></li>
+<li><a href="https://www.nature.com/articles/s41467-023-37194-5">Dee et al., 2023</a></li>
 </ol>
 </section>
+<section id="due-wed.-35-did-extensions-and-issues" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-35-did-extensions-and-issues">Due Wed. 3/5 DiD extensions and issues</h2>
+<ol type="1">
+<li>The Effect <a href="https://theeffectbook.net/ch-DifferenceinDifference.html">Ch. 18</a> starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.</li>
+</ol>
+<p><em>demo</em> Brynes &amp; Dee Rmarkdow non course GitHub</p>
+<p>Optional: 1) <a href="https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318">Roth et al.&nbsp;(2023). What’s trending in difference in difference?</a> 2) Pedro Sant’Anna’s DiD resources and <a href="https://psantanna.com/did-resources/"><em>Comprehensive Course on DiD</em></a></p>
 </section>
-<section id="due-mon.-313" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-313">Due Mon. 3/13</h2>
+<section id="due-mon.-310-instrumental-variables" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-310-instrumental-variables">Due Mon. 3/10 Instrumental Variables</h2>
 <ol type="1">
 <li>Angrist &amp; Pischke <strong>2015</strong>, Chapter 3 (note: this is in <em>Mastering ’Metrics</em>)<br>
 </li>
-<li>Kendall book chapter (on Canvas)</li>
+<li>Kendall book chapter (in GDrive)</li>
 </ol>
 </section>
-<section id="due-wed.-315-max-tyler" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-315-max-tyler">Due Wed. 3/15 [Max &amp; Tyler]</h2>
+<section id="due-wed.-312-instrumental-variables-applications-discussion-leads-____" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-312-instrumental-variables-applications-discussion-leads-____">Due Wed. 3/12 Instrumental Variables Applications [Discussion lead(s): ____ ]</h2>
 <ol type="1">
 <li><a href="https://www.sciencedirect.com/science/article/pii/S0095069610000586">Sims 2010</a><br>
 </li>
-<li><a href="https://www.pnas.org/doi/10.1073/pnas.1905315116">MacDonald &amp; Mordecai 2020</a></li>
+<li><a href="https://www.pnas.org/doi/10.1073/pnas.1905315116">MacDonald &amp; Mordecai 2020</a><br>
+<em>demo</em> ## Due Mon. 3/17 Regression Discontinuity Designs</li>
+<li><a href="https://theeffectbook.net/ch-RegressionDiscontinuity.html">The Effect Ch. 20</a> Optional: Angrist &amp; Pischke <strong>2015</strong>, Chapter 4 (note: this is in <em>Mastering ’Metrics</em> in the GDrive)</li>
 </ol>
 </section>
-<section id="due-mon.-320" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-320">Due Mon. 3/20</h2>
-<ol type="1">
-<li>Angrist &amp; Pischke <strong>2015</strong>, Chapter 4 (note: this is in <em>Mastering ’Metrics</em>)</li>
-</ol>
-</section>
-<section id="due-wed.-322-aly-john" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-322-aly-john">Due Wed. 3/22 [Aly &amp; John]</h2>
+<section id="due-wed.-319-rdd-applications-discussion-leads-____" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-319-rdd-applications-discussion-leads-____">Due Wed. 3/19 RDD Applications [Discussion lead(s): ____ ]</h2>
 <ol type="1">
 <li><a href="https://doi.org/10.1038/s41893-019-0389-9">Englander 2019</a><br>
 </li>
-<li><a href="https://doi.org/10.1111/ajae.12274">Noack et al.&nbsp;2022</a></li>
+<li><a href="https://doi.org/10.1111/ajae.12274">Noack et al.&nbsp;2022</a><br>
+Optional paper: <a href="https://osf.io/preprints/socarxiv/67xg5/">Burgess et al.&nbsp;2019</a></li>
 </ol>
-<p>Optional additional paper: <a href="https://osf.io/preprints/socarxiv/67xg5/">Burgess et al.&nbsp;2019</a></p>
 </section>
-<section id="due-mon.-43" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-43">Due Mon. 4/3</h2>
-<p>No readings - come prepared with your causal question to begin your project. Check your email for a zoom link for the class.</p>
-<p>In class, start your projects. We have provided a <a href="https://docs.google.com/presentation/d/1hyi58he1UIxFMMv7LF-HKWMphYNofOUQbtD_Ui_i3Gw/edit?usp=sharing">template</a> to provide some structure and facilitate your small group discussions.</p>
+<section id="week-of-march-24th---spring-break-no-classes-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="week-of-march-24th---spring-break-no-classes-this-week">Week of March 24th - Spring Break, No Classes this week</h2>
 </section>
-<section id="due-wed.-45" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-45">Due Wed. 4/5</h2>
-<p>1:1 consultations with Laura and Katherine in lieu of class. Schedule to sign up <a href="https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing">here</a></p>
+<section id="due-monday-331-comparison-of-designs-sensitivity-tests" class="level2">
+<h2 class="anchored" data-anchor-id="due-monday-331-comparison-of-designs-sensitivity-tests">Due Monday 3/31 Comparison of Designs &amp; Sensitivity Tests</h2>
+<ol type="1">
+<li>Siegel &amp; Dee (2025) Ecology Letters</li>
+</ol>
 </section>
-<section id="due-mon.-410" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-410">Due Mon. 4/10</h2>
-<p>No readings - Presenting or discussing your project question and DAG for feedback</p>
+<section id="due-wed.-42-discussion-leads-____" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-42-discussion-leads-____">Due Wed. 4/2 [Discussion lead(s): ____ ]</h2>
+<p>Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:&nbsp; - <a href="https://www.nature.com/articles/s41467-022-31102-z">Simler-Williamson &amp; Germino 2022</a><br>
+- <a href="https://www.nature.com/articles/s41467-023-37194-5">Dee et al., 2023</a></p>
 </section>
-<section id="due-wed.-412" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-412">Due Wed. 4/12</h2>
-<p>No readings - Presenting or discussing your project question and DAG for feedback</p>
-</section>
-<section id="due-fri.-414" class="level2">
-<h2 class="anchored" data-anchor-id="due-fri.-414">Due Fri. 4/14</h2>
-<p>Draft of DAG OR literature review proposal (1 page max.)</p>
-</section>
-<section id="due-mon.-417" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-417">Due Mon. 4/17</h2>
+<section id="due-mon.-47-first-project-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-47-first-project-presentations">Due Mon. 4/7 First Project Presentations</h2>
 <p>Brief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&amp;A</p>
 </section>
-<section id="due-wed.-419" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-419">Due Wed. 4/19</h2>
-<p>No assignment – continue working on projects</p>
+<section id="due-wed.-49-project-consultations" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-49-project-consultations">Due Wed. 4/9 Project Consultations</h2>
+<p>1:1 consultations with Laura in lieu of class. Schedule to sign up <a href="https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing">here</a></p>
 </section>
-<section id="fri.-421" class="level2">
-<h2 class="anchored" data-anchor-id="fri.-421">Fri. 4/21</h2>
+<section id="due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-414-heterogeniety-generalizability-in-experimental-and-observational-studies">Due Mon. 4/14 Heterogeniety &amp; Generalizability in experimental and observational studies</h2>
+</section>
+<section id="due-wed.-4-16-power-standard-error-estimation-and-inference" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed.-4-16-power-standard-error-estimation-and-inference">Due Wed. 4/ 16 Power, standard error estimation, and inference</h2>
 <p>Revised DAG + proposed methods OR outline of literature review due</p>
 </section>
-<section id="due-mon.-424" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-424">Due Mon. 4/24</h2>
-<p>No assignment – continue working on projects</p>
+<section id="due-mon.-421-special-topics-or-project-work" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-421-special-topics-or-project-work">Due Mon. 4/21 Special topics or Project Work</h2>
 </section>
-<section id="due-wed.-426" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-426">Due Wed. 4/26</h2>
-<section id="generalizability-in-experimental-and-observational-studies" class="level3">
-<h3 class="anchored" data-anchor-id="generalizability-in-experimental-and-observational-studies">Generalizability in experimental and observational studies</h3>
-<p>Visit from Dr.&nbsp;<a href="https://www.reading.ac.uk/ecology/staff/rebecca-spake">Rebecca Spake</a></p>
-<ol type="1">
-<li><a href="https://www.nature.com/articles/s41559-022-01891-z">Spake et al.&nbsp;2022 Improving quantitative synthesis to achieve generality in ecology</a></li>
-</ol>
-<p>Optional</p>
-<ol type="1">
-<li><a href="https://doi.org/10.1111/gcb.14797">Korell et al.&nbsp;2019</a><br>
-</li>
-<li><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.13641">Spake et al.&nbsp;2021</a></li>
-</ol>
+<section id="due-wed-423-special-topics-discussion-or-project-work" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed-423-special-topics-discussion-or-project-work">Due Wed 4/23 Special topics discussion or Project Work</h2>
 </section>
-</section>
-<section id="due-mon.-51" class="level2">
-<h2 class="anchored" data-anchor-id="due-mon.-51">Due Mon. 5/1</h2>
+<section id="due-mon.-428-project-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="due-mon.-428-project-presentations">Due Mon. 4/28 Project Presentations</h2>
 <p>Project Presentations</p>
 <p>Guidelines for all presentations:</p>
 <ul>
@@ -499,40 +437,46 @@ e) <a href="https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of
 <li>Present your ideas for how the field could better incorporate causal inference methods</li>
 </ul>
 </section>
-<section id="due-wed.-53" class="level2">
-<h2 class="anchored" data-anchor-id="due-wed.-53">Due Wed. 5/3</h2>
-<p>Project presentations, continued</p>
+<section id="due-wed-430-special-topics-or-project-work" class="level2">
+<h2 class="anchored" data-anchor-id="due-wed-430-special-topics-or-project-work">Due Wed 4/30 Special topics or Project Work</h2>
+<p>Project Presentations Continued</p>
 </section>
-<section id="fri.-55" class="level2">
-<h2 class="anchored" data-anchor-id="fri.-55">Fri. 5/5</h2>
-<p>Final project write-ups due (see <a href="https://katherinesiegel.github.io/EBIOcausalinference/assignments.html#final-project-option-1-data-analysis-project">Assignments</a> tab for descriptions of the requirements for the write-up)</p>
+<section id="may-1-is-last-day-of-class---projects-due-friday-may-2" class="level2">
+<h2 class="anchored" data-anchor-id="may-1-is-last-day-of-class---projects-due-friday-may-2">May 1 is last day of class - Projects Due Friday May 2</h2>
+<p>See Assignments &amp; Evaluation tab for more information</p>
 </section>
-<section id="potential-additional-units" class="level2">
-<h2 class="anchored" data-anchor-id="potential-additional-units">Potential additional units</h2>
-<section id="generalizability-in-experimental-and-observational-studies-1" class="level3">
-<h3 class="anchored" data-anchor-id="generalizability-in-experimental-and-observational-studies-1">Generalizability in experimental and observational studies</h3>
-<ol type="1">
-<li><a href="https://doi.org/10.1111/gcb.14797">Korell et al.&nbsp;2019</a><br>
+<section id="recommended-textbooks-not-required" class="level1">
+<h1>Recommended Textbooks (not required)</h1>
+<p>I do not expect you to buy any/all of these books. I will provide the sections that are assigned for class. But if you want to explore topics of causal inference further, I recommend these books!</p>
+<p><em>Note: Some of these texts use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there.</em></p>
+<ul>
+<li>Huntinton-Klein, N. <a href="https://theeffectbook.net"><em>The Effect</em></a> free online</li>
+<li>Morgan, SL and C Winship. 2007. <a href="https://doi.org/10.1017/CBO9781107587991"><em>Counterfactuals and Causal Inference: methods and principles for social research</em></a>.<br>
 </li>
-<li><a href="https://www.nature.com/articles/s41559-022-01891-z">Spake et al.&nbsp;2022</a><br>
+<li>Gerber, AS and DP Green. 2012. <a href="https://wwnorton.com/books/9780393979954"><em>Field Experiments: design, analysis and interpretation</em></a>. (especially useful if you plan to do field experiments in your research)<br>
 </li>
-<li><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.13641">Spake et al.&nbsp;2021</a></li>
-</ol>
-</section>
-<section id="heterogeneous-treatment-effects" class="level3">
-<h3 class="anchored" data-anchor-id="heterogeneous-treatment-effects">Heterogeneous treatment effects</h3>
-</section>
-<section id="replicationreproducibilitypre-registration" class="level3">
-<h3 class="anchored" data-anchor-id="replicationreproducibilitypre-registration">Replication/Reproducibility/Pre-registration</h3>
-<ol type="1">
-<li>Kimmel et al., in press</li>
-</ol>
-</section>
-<section id="deeper-dive-into-mechanisms-and-mediation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into mechanisms and mediation analysis</h3>
+<li>Cunningham, S. 2021. <a href="https://mixtape.scunning.com/"><em>Causal Inference: The Mixtape</em></a> (New Haven, CT: Yale University Press). <a href="https://mixtape.scunning.com/">Available online for free</a><br>
+</li>
+<li>Angrist, JD and JS Pischke. 2015. <a href="https://www.masteringmetrics.com/"><em>Mastering ’Metrics: The Path from Cause to Effect</em></a> (Princeton, NJ: Princeton University Press).<br>
+</li>
+<li>Angrist, JD and JS Pischke. 2008. <a href="https://www.mostlyharmlesseconometrics.com/"><em>Mostly Harmless Econometrics: an empiricist’s companion</em></a>. (Princeton, NJ: Princeton University Press).<br>
+</li>
+<li>Rosenbaum, P. 2010. <a href="https://doi.org/10.1007/978-1-4757-3692-2"><em>Observational Studies</em></a>. Springer.<br>
+</li>
+<li>Pearl, J. and D. Mackenzie. 2018. <a href="https://dl.acm.org/doi/10.5555/3238230"><em>The Book of Why</em></a>. (New York, NY: Basic Books, Inc.) (A more popular science book)<br>
+</li>
+<li>For more technical discussions of causality:
+<ul>
+<li><a href="https://doi.org/10.2307/2289064">Holland 1986, JASA</a><br>
+</li>
+<li><a href="https://www.jstor.org/stable/2586935">Heckman 2000, QJE</a><br>
+</li>
+<li>Pearl, J. 2009. <a href="https://doi.org/10.1017/CBO9780511803161"><em>Causality</em></a>. (Cambridge, UK: Cambridge University Press).<br>
+*Ding, P. <a href="https://arxiv.org/pdf/2305.18793"><em>A First Course in Causal Inference.</em></a> online.</li>
+</ul></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

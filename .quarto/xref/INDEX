@@ -40,5 +40,8 @@
   },
   "exercises/matching.qmd": {
     "matching.html": "70916858"
+  },
+  "DAGs.qmd": {
+    "DAGs.html": "0c6927cf"
   }
 }
