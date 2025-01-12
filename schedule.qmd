@@ -54,16 +54,18 @@ The tentative schedule of content, subject to change based on student interests,
 
 ### Generalizability in experimental and observational studies
 
-1)  [Korell et al. 2019](https://doi.org/10.1111/gcb.14797)\
-2)  [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)\
+1)  [Korell et al. 2019](https://doi.org/10.1111/gcb.14797)
+2)  [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)
 3)  [Spake et al. 2021](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.13641)
 
-### Heterogeneous treatment effects
+### Heterogeneous treatment effects and conditional average effects
 
 e.g. Causal Forests
-
-### Replication/Reproducibility/Pre-registration
 
 ### Deeper dive into mechanisms and mediation analysis
 
 ### Deeper dive into Sensitivity Tests
+
+### Replication/Reproducibility/Pre-registration
+
+e.g. [Kimmel et al. 2023 Empirical evidence of widespread exaggeration bias and selective reporting in ecology](https://www.nature.com/articles/s41559-023-02144-3)
