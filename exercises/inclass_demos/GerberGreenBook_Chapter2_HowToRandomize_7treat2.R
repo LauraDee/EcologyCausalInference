@@ -11,9 +11,10 @@ Tr[1:m]             # the first m indexes are treated units
 # clear workspace
 rm(list = ls())
 
-#with a dataset
+#with a dataset - but commented out because the Gerber and Green link no longer works
+
   # set.seed(1234567)      # set random seed
-  # load(url("http://hdl.handle.net/10079/nzs7hfg"))   # load object data1 from website or your file - this link no longer works
+  # load(url("http://hdl.handle.net/10079/nzs7hfg"))   # load object data1 from website or your file
   # N <- nrow(data1)        # number of units
   # m <- 2                  # number of treated units
   # sel <- rnorm(N)         # N standard Normal deviates
