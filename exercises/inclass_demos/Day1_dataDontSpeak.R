@@ -8,6 +8,7 @@ library(quartets)
 library(datasauRus)
 library(tidyverse)
 
+#Anscombe
 anscombe_quartet |>
   ggplot(aes(x, y)) +
   geom_point() +
