@@ -13,5 +13,5 @@ I encourage you to use online resources for coding help if/when you get stuck. [
 * [R for data science (R4DS)](https://r4ds.had.co.nz/). R4DS teaches you how to do data science with R: You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualize it and model it. The book is available online, where you can find a practicum of skills for data science from visualization to wrangling and writing functions.  
 * Have a favorite resource? Please send it to Laura to post! 
 
-**If you use Python instead, many of the books (The Effect, Causal MixTape, etc.) have code snippets in both R and Python**  
+**If you use Python instead, many of the free, online books we will use (The Effect, Causal MixTape, etc.) have code snippets in both R and Python**  
 
