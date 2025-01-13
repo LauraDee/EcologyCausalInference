@@ -15,7 +15,6 @@ anscombe_quartet |>
   geom_smooth(method = "lm", se = FALSE) +
   facet_wrap(~dataset)
 
-
 # roughly the same correlation in each dataset
 datasaurus_dozen |>
   group_by(dataset) |>
