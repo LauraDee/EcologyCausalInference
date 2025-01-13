@@ -1,33 +1,34 @@
 ---
 title: "Readings by Class & Additional Materials"
 ---
+Note: book chapters can be found on the course Google Drive, as well as pdfs of the papers. Demos will be in RMarkdown and on the [course GitHub page in the exercises folder](https://github.com/LauraDee/EcologyCausalInference).
 
 ## Due Mon. 1/13 
 First class; Complete [pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) in class; Review Syllabus
 
 ## Due Wed. 1/15 Introduction Continued
 1) [Hernan et al. 2019](https://doi.org/10.1080/09332480.2019.1579578)
-2) Angrist & Pischke 2008, Chapter 1  
+2) Angrist & Pischke 2008, Chapter 1  (from *Mostly Harmless Econometrics*) 
 3) Gerber & Green, Chapter 1 (you can just skim this one)    
 
 ## Due Mon. 1/20 - No Class MLK day 
 
 ## Due Wed. 1/22 Potential Outcomes 
-1) Angrist & Pischke 2008, Chapter 2  
+1) Angrist & Pischke 2008, Chapter 2 (from *Mostly Harmless Econometrics*)  
 OR
-## Due Mon. 1/22 Structual Causal Model and Directed Acyclic Graphs (DAG)
+## Due Mon. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)
 Guest speaker: Dr. Zach Laubach
 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
 2) [Laubach et al. 2021](https://doi.org/10.1098/rspb.2020.2815)
 
 Optional; additional background reading on DAGs:  
-4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas
+4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 
 5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)  
 
 ## Due Mon. 1/27 SCM or PO
 
 ## Due Wed. 1/29 Experiments and Randomization
-1) Gerber & Green, Chapter 2 (see GDrive)
+1) Gerber & Green, Chapter 2 
 2) [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)  
 
 ## Due Mon. 2/3  Introduction to Challenges of Observational Data
@@ -36,14 +37,12 @@ Optional; additional background reading on DAGs:
 1) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
 2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190)  
 
-## Due Wed. 2/5 - Laura Away; Class is asynchronous/flipped 
+## Due Wed. 2/5 - Laura Away; Class is online
 1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1554)  
-2) Watch Hernan video: "3. Elements of DAGs" on Canvas
-3) Check out [DAG software](http://dagitty.net) and website tab on DAGs
+2) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
+3) Review DAG resources and [DAG software](http://dagitty.net) on the website's [DAGs resources tab](https://lauradee.github.io/EcologyCausalInference/DAGs.html)
 
-During the class period, start your projects and make a first DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG. 
-
-Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.
+Prior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. *Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.* 
 
 ## Due Mon. 2/10 Matching (and weighting)
 1) [Ramsey et al. 2018](https://doi.org/10.1111/2041-210X.13111)

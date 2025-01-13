@@ -380,7 +380,7 @@
     "href": "readings.html",
     "title": "Readings by Class & Additional Materials",
     "section": "",
-    "text": "First class; Complete pre-course survey in class; Review Syllabus",
+    "text": "Note: book chapters can be found on the course Google Drive, as well as pdfs of the papers. Demos will be in RMarkdown and on the course GitHub page in the exercises folder.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -913,8 +913,8 @@
     "objectID": "readings.html#due-mon.-113",
     "href": "readings.html#due-mon.-113",
     "title": "Readings by Class & Additional Materials",
-    "section": "",
-    "text": "First class; Complete pre-course survey in class; Review Syllabus",
+    "section": "Due Mon. 1/13",
+    "text": "Due Mon. 1/13\nFirst class; Complete pre-course survey in class; Review Syllabus",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -924,7 +924,7 @@
     "href": "readings.html#due-wed.-115-introduction-continued",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/15 Introduction Continued",
-    "text": "Due Wed. 1/15 Introduction Continued\n\nHernan et al. 2019\nAngrist & Pischke 2008, Chapter 1\n\nGerber & Green, Chapter 1 (you can just skim this one)",
+    "text": "Due Wed. 1/15 Introduction Continued\n\nHernan et al. 2019\nAngrist & Pischke 2008, Chapter 1 (from Mostly Harmless Econometrics)\nGerber & Green, Chapter 1 (you can just skim this one)",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -964,7 +964,7 @@
     "href": "readings.html#due-wed.-122-potential-outcomes",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/22 Potential Outcomes",
-    "text": "Due Wed. 1/22 Potential Outcomes\n\nAngrist & Pischke 2008, Chapter 2\nOR ## Due Mon. 1/22 Structual Causal Model and Directed Acyclic Graphs (DAG) Guest speaker: Dr. Zach Laubach\nRohrer 2018\nLaubach et al. 2021\n\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 - see Canvas 5) Cunningham (2021) Ch. 3",
+    "text": "Due Wed. 1/22 Potential Outcomes\n\nAngrist & Pischke 2008, Chapter 2 (from Mostly Harmless Econometrics)\nOR ## Due Mon. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG) Guest speaker: Dr. Zach Laubach\nRohrer 2018\nLaubach et al. 2021\n\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 5) Cunningham (2021) Ch. 3",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -984,7 +984,7 @@
     "href": "readings.html#due-wed.-129-experiments-and-randomization",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/29 Experiments and Randomization",
-    "text": "Due Wed. 1/29 Experiments and Randomization\n\nGerber & Green, Chapter 2 (see GDrive)\nKimmel et al. 2021",
+    "text": "Due Wed. 1/29 Experiments and Randomization\n\nGerber & Green, Chapter 2\nKimmel et al. 2021",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1735,6 +1735,16 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 2/24 Panel methods continued; Two-way fixed effects",
     "text": "Due Mon. 2/24 Panel methods continued; Two-way fixed effects\n\nAngrist & Pischke 2008, Chapter 5\nThe Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects\nBrynes and Dee (2025 Ecology Letters)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-25---laura-away-class-is-online",
+    "href": "readings.html#due-wed.-25---laura-away-class-is-online",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/5 - Laura Away; Class is online",
+    "text": "Due Wed. 2/5 - Laura Away; Class is online\n\nArif & MacNeil 2022\n\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
