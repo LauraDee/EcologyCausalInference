@@ -264,7 +264,7 @@
     "href": "exercises/index.html#monday-227",
     "title": "Exercises in R",
     "section": "Monday 2/27",
-    "text": "Monday 2/27\nDiff-in-Diff regression demo in R Application and interpretation of differences-in-differences to examine effects of the Marshall Fire on vegetation in Boulder, CO. Data file is on Canvas course page.\nOptional: Review of difference-in-difference covered in lecture in RMarkdown, see here",
+    "text": "Monday 2/27\nDiff-in-Diff regression demo in R Application and interpretation of differences-in-differences to examine effects of the Marshall Fire on vegetation in Boulder, CO. Data file is on GDrive.\nOptional: Review of difference-in-difference covered in lecture in RMarkdown, see here",
     "crumbs": [
       "Exercises"
     ]
@@ -1774,9 +1774,59 @@
     "href": "index.html#acknowledgements",
     "title": "EBIO 5460: Causal Inference in Ecology",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nWebsite for EBIO 5460: Causal Inference in Ecology for Spring 2025 taught by Laura Dee. The course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/) and based on the course and page of EBIO 5460 course, developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. Link to that site: https://katherinesiegel.github.io/EBIOcausalinference",
+    "text": "Acknowledgements\nWebsite for EBIO 5460: Causal Inference in Ecology for Spring 2025 taught by Laura Dee. The course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/), Paul Ferraro’s syllabus, and based on the course and page of EBIO 5460 course, developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. Link to that site: https://katherinesiegel.github.io/EBIOcausalinference",
     "crumbs": [
       "Course Overview"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#wednesday-25",
+    "href": "exercises/index.html#wednesday-25",
+    "title": "Exercises in R",
+    "section": "Wednesday 2/5",
+    "text": "Wednesday 2/5\nCreating and Analyzing DAGs in ggdag (or Daggity).",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#measurement-error",
+    "href": "exercises/index.html#measurement-error",
+    "title": "Exercises in R",
+    "section": "Measurement Error",
+    "text": "Measurement Error",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#sims",
+    "href": "exercises/index.html#sims",
+    "title": "Exercises in R",
+    "section": "Sims",
+    "text": "Sims",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#day-1-data-dont-speak",
+    "href": "exercises/index.html#day-1-data-dont-speak",
+    "title": "Exercises in R",
+    "section": "Day 1: Data Don’t Speak",
+    "text": "Day 1: Data Don’t Speak\nAn example of from the online book, Causal inference in R Ch 5, that demonstrates that summary statistics and data visualization are insufficient to untangle causal effects. Instead, prior knowledge, theory, and assumptions are necessary.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#intro-data-dont-speak",
+    "href": "exercises/index.html#intro-data-dont-speak",
+    "title": "Exercises in R",
+    "section": "Intro: Data Don’t Speak",
+    "text": "Intro: Data Don’t Speak\nCode An example of from the online book, Causal inference in R Ch 5, that demonstrates that summary statistics and data visualization are insufficient to untangle causal effects. Instead, prior knowledge, theory, and assumptions are necessary.",
+    "crumbs": [
+      "Exercises"
     ]
   }
 ]

@@ -33,6 +33,9 @@ This tutorial replicates the main analyses in Dee et al, contrasted with common 
 
 # Extra Code Resources - Optional Exercises
 
+## Intro: Data Don't Speak
+[Code](https://github.com/LauraDee/EcologyCausalInference/blob/main/exercises/inclass_demos/Day1_dataDontSpeak.R) An example of from the online book, [Causal inference in R Ch 5](https://www.r-causal.org/chapters/01-casual-to-causal), that demonstrates that summary statistics and data visualization are insufficient to untangle causal effects. Instead, prior knowledge, theory, and assumptions are necessary. 
+
 ## Measurement Error 
 
 ## Sims 
