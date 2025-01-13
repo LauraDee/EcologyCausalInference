@@ -69,17 +69,17 @@ Prior to and during the class period, you will start your projects and make a fi
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
 3) Brynes and Dee (2025 Ecology Letters)
 
-## Due Wed. 2/26 -Laura away: Fixed Effects Discussion
+## Due Wed. 2/26 - Laura away: Fixed Effects Discussion
 1) Brief Review -- Brynes and Dee (2025 Ecology Letters)
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
 2) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
-3) [Meehan et al. 2011](https://doi.org/10.1073/pnas.1100751108) vs. [Larsen 2013](https://doi.org/10.1073/pnas.1301900110)
+
+Optional (but good for the discussants!) 3) [Meehan et al. 2011](https://doi.org/10.1073/pnas.1100751108) vs. [Larsen 2013](https://doi.org/10.1073/pnas.1301900110)
 
 *demo* Dee et al. Rmarkdown on course GitHub
 
-## Due Mon. 3/3  Synthetic Control (Asia Kaiser);  or TWFE papers discussion
-1) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
-2) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
+## Due Mon. 3/3  Synthetic Control (Asia Kaiser)
+Tenative reading: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
 
 ## Due Wed. 3/5 DiD extensions and issues
 1) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) starting at 18.2.5 Rollout Designs and Multiple Treatment Periods. 
@@ -110,12 +110,14 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 ## Week of March 24th - Spring Break, No Classes this week
 
 ## Due Monday 3/31 Comparison of Designs & Sensitivity Tests
-1) Siegel & Dee (2025) Ecology Letters
+1) [Siegel & Dee (2025) Ecology Letters](https://ecoevorxiv.org/repository/view/8208/)
+2) TBD on sensitivity tests 
 
 ## Due Wed. 4/2 [Discussion lead(s): ____ ]
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 - [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
+- TBD on sensitivity and placebo tests 
 
 ## Due Mon. 4/7  First Project Presentations 
 Brief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A
@@ -147,7 +149,6 @@ Specific guidelines for data analysis project presentations:
 * Briefly describe the data you used  
 * Share your results AND contextualize them with the important limitations and assumptions of the method(s) you used  
 * Outline possible next steps you could take to make your analysis more robust in the future  
-
 Specific guidelines for literature review  presentations:  
 
 * Describe the challenge for causal inference  
@@ -178,6 +179,5 @@ I do not expect you to buy any/all of these books. I will provide the sections t
     + [Heckman 2000, QJE](https://www.jstor.org/stable/2586935)    
     + Pearl, J. 2009. [*Causality*](https://doi.org/10.1017/CBO9780511803161). (Cambridge, UK: Cambridge University Press).  
 *Ding, P. [*A First Course in Causal Inference.*](https://arxiv.org/pdf/2305.18793) online.
-
 
 

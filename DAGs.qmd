@@ -24,7 +24,7 @@ editor: visual
 
 ## Software for DAG construction and analysis
 
-a\) Daggitity -
+a\) [Daggitity](https://www.dagitty.net)
 
 b\) [ggdag](https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html) is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\
 c) [shinydag](https://www.gerkelab.com/project/shinydag/) is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\

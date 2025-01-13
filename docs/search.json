@@ -370,7 +370,7 @@
     "href": "coding_resources.html",
     "title": "Coding Resources",
     "section": "",
-    "text": "Programming in R will be a key part of this course, and as most of you have probably experienced, R can cause headaches and stress! Files go missing, package dependencies spiral out of control, and minor code errors can cost us hours of troubleshooting. The point of this course is not to become an R whiz, and I don’t want code errors or coding anxiety to get in the way of your learning and research progress.\nI encourage you to use online resources for coding help if/when you get stuck. StackOverflow is a great resource for finding solutions to coding issues or asking a specific question, as is the RStudio Community. BlueSky can also be a great resource: if you post a question with the hashtag #rstats, a kind soul might give you an answer. If you’re looking for help via Google, we recommend including in your query the package you’re using and if applicable, the error message you’re getting. Finally, if you are a visual learner, Allison Horst has some great learning tools for various R functions.\nIf you could use some more training and exposure to R, here are some resources to get started:\n\nswirl teaches you R programming and data science interactively, at your own pace, and right in the R console! On this page, swirl will walk you through each of the steps required to begin using R and swirl today!\n\nR for data science (R4DS). R4DS teaches you how to do data science with R: You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualize it and model it. The book is available online, where you can find a practicum of skills for data science from visualization to wrangling and writing functions.\n\nHave a favorite resource? Please send it to Laura and Katherine so we can post it!",
+    "text": "Programming in R will be a key part of this course, and as most of you have probably experienced, R can cause headaches and stress! Files go missing, package dependencies spiral out of control, and minor code errors can cost us hours of troubleshooting. The point of this course is not to become an R whiz, and I don’t want code errors or coding anxiety to get in the way of your learning and research progress.\nI encourage you to use online resources for coding help if/when you get stuck. StackOverflow is a great resource for finding solutions to coding issues or asking a specific question, as is the RStudio Community. BlueSky can also be a great resource: if you post a question with the hashtag #rstats, a kind soul might give you an answer. If you’re looking for help via Google, we recommend including in your query the package you’re using and if applicable, the error message you’re getting. Finally, if you are a visual learner, Allison Horst has some great learning tools for various R functions.\nIf you could use some more training and exposure to R, here are some resources to get started:\n\nswirl teaches you R programming and data science interactively, at your own pace, and right in the R console! On this page, swirl will walk you through each of the steps required to begin using R and swirl today!\n\nR for data science (R4DS). R4DS teaches you how to do data science with R: You’ll learn how to get your data into R, get it into the most useful structure, transform it, visualize it and model it. The book is available online, where you can find a practicum of skills for data science from visualization to wrangling and writing functions.\n\nHave a favorite resource? Please send it to Laura to post!\n\nIf you use Python instead, many of the free, online books we will use (The Effect, Causal MixTape, etc.) have code snippets in both R and Python",
     "crumbs": [
       "Coding Resources"
     ]
@@ -904,7 +904,7 @@
     "href": "DAGs.html#software-for-dag-construction-and-analysis",
     "title": "DAGs",
     "section": "Software for DAG construction and analysis",
-    "text": "Software for DAG construction and analysis\na) Daggitity -\nb) ggdag is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\nc) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nd) TETRAD\ne) DAG program\nf) dagR\n\nAdditional Background Readings\nFor additional background on DAGs:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)\n\n\n\nCunningham (2021) Ch. 3\nHeiss, A. Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand",
+    "text": "Software for DAG construction and analysis\na) Daggitity\nb) ggdag is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\nc) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nd) TETRAD\ne) DAG program\nf) dagR\n\nAdditional Background Readings\nFor additional background on DAGs:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)\n\n\n\nCunningham (2021) Ch. 3\nHeiss, A. Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand",
     "crumbs": [
       "DAG resources"
     ]
@@ -1264,7 +1264,7 @@
     "href": "readings.html#due-wed.-42-discussion-leads-____",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/2 [Discussion lead(s): ____ ]",
-    "text": "Due Wed. 4/2 [Discussion lead(s): ____ ]\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023",
+    "text": "Due Wed. 4/2 [Discussion lead(s): ____ ]\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023 - TBD on sensitivity and placebo tests",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1364,7 +1364,7 @@
     "href": "readings.html#due-monday-331-comparison-of-designs-sensitivity-tests",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Monday 3/31 Comparison of Designs & Sensitivity Tests",
-    "text": "Due Monday 3/31 Comparison of Designs & Sensitivity Tests\n\nSiegel & Dee (2025) Ecology Letters",
+    "text": "Due Monday 3/31 Comparison of Designs & Sensitivity Tests\n\nSiegel & Dee (2025) Ecology Letters\nTBD on sensitivity tests",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1664,7 +1664,7 @@
     "href": "readings.html#due-mon.-428-project-presentations",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/28 Project Presentations",
-    "text": "Due Mon. 4/28 Project Presentations\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\nSpecific guidelines for literature review presentations:\n\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "text": "Due Mon. 4/28 Project Presentations\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\nSpecific guidelines for literature review presentations:\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1745,6 +1745,26 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 2/5 - Laura Away; Class is online",
     "text": "Due Wed. 2/5 - Laura Away; Class is online\n\nArif & MacNeil 2022\n\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226---laura-away-fixed-effects-discussion",
+    "href": "readings.html#due-wed.-226---laura-away-fixed-effects-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 - Laura away: Fixed Effects Discussion",
+    "text": "Due Wed. 2/26 - Laura away: Fixed Effects Discussion\n\nBrief Review – Brynes and Dee (2025 Ecology Letters)\nDudney et al. 2021\n\nDee et al., 2023\n\nOptional (but good for the discussants!) 3) Meehan et al. 2011 vs. Larsen 2013\ndemo Dee et al. Rmarkdown on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-33-synthetic-control-asia-kaiser",
+    "href": "readings.html#due-mon.-33-synthetic-control-asia-kaiser",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/3 Synthetic Control (Asia Kaiser)",
+    "text": "Due Mon. 3/3 Synthetic Control (Asia Kaiser)\nTenative reading: Mixtape Ch. 10",
     "crumbs": [
       "Readings & Additional Materials"
     ]
