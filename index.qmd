@@ -3,7 +3,7 @@ title: "EBIO 5460: Causal Inference in Ecology"
 ---
 
 ## Instructor
-[Laura Dee](https://www.colorado.edu/ebio/laura-dee) (laura.dee@colorado.edu)   
+[Laura Dee, Associate Professor, CU Boulder](https://www.colorado.edu/ebio/laura-dee) (laura.dee@colorado.edu)   
 
 ## Class Meetings
 Mondays & Wednesdays 3:35-4:50pm  
@@ -35,14 +35,17 @@ Through this course, students will gain:
 
 This course aims for students to learn how to:
 
-1. Summarize key threats to causal inference and identify these threats when evaluating their own and published study designs
-2. Apply causal inference methods to real world research questions and datasets – either through applications to their thesis work or to other datasets – to mitigate threats to causal inference through research design
-3. Identify the most appropriate study design(s) and methodology in non-experimental settings in light of the available data and the research question
-4. Implement these designs and methods in R and appropriately interpret the results and their potential biases
-5. Write and speak clearly about these methods and the results they yield.  
+1. Ask better causal questions
+2. Summarize key threats to causal inference and identify these threats when evaluating their own and published study designs
+3. Apply causal inference methods to real world research questions and datasets – either through applications to their thesis work or to other datasets – to mitigate threats to causal inference through research design
+3. Identify the most appropriate study design(s) and methodology in experimental and non-experimental settings in light of the available data and the research question
+4.  Identify the target population or subpopulation for which you want to make inferences
+5. Implement these designs and methods in R and appropriately interpret the results and their potential biases and assumptions
+6. Conduct robustness checks and sensitivity analysis because our methods are often imperfect and assumptions can be violated
+6. Write and speak clearly about these methods, the assumptions they need for causal inference, and the results they yield.  
 
 ## Code & Data
-I will make RMarkdown Files, datasets, and code available on this website and through shared folders for data I can't post. 
+I will make RMarkdown Files, datasets, and code available on this website and through a shared (private) Google Drive for data I don't have permissions to post. 
 
 ## A Note on Inclusion  
 Some of the texts that we will read in class use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there. At the same time, policy decisions are being made based on these and similar analyses, so we need to train people who can use these methods for causal inference **and** approach this work through a lens of diversity, equity, inclusion, and justice.  

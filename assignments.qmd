@@ -48,7 +48,7 @@ Specific guidelines for data analysis project presentations:
 
 #### Final project write up
 
-For data analysis projects: \~ 5 pages (plus figures, but don't stress over the page count)\
+For data analysis projects: \~ 5 pages (not including tables and figures, but don't stress over the page count)\
 For literature review projects: \~ 10 pages, but don't stress over the page count -- focus on what you need to include to write a compelling paper
 
 ## Additional assignments
@@ -76,10 +76,10 @@ You are not limited to these topics, but here are some ideas:
 -   Challenges and solutions for experimental designs and interpretation (choose one):
     -   Non-compliance and attrition (this is a rich area!)\
     -   Interference between experimental units and spillovers (G&G Ch8)\
-    -   Partial identification (excludability violations)\
+    -   Partial identification (excludability violations, including those common to ecological field experiments)\
     -   Mechanisms and mediation analysis (G&G Ch 10)\
     -   Limits to what experiments tell us about heterogenous treatment effects\
-    -   Integration of experimental findings (e.g., meta-analyses and extrapolation)\
+    -   Integration of experimental and quasi-experimental findings (e.g., meta-analyses and extrapolation)\
 -   New issues for difference-in-difference and two-way fixed effects estimators (e.g., staggered treatments and heterogeneity\
 -   Synthetic control methods (i.e. see https://mixtape.scunning.com/10-synthetic_control)\
 -   Machine learning and causal inference\
