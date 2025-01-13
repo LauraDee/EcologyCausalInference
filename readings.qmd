@@ -1,10 +1,10 @@
 ---
 title: "Readings by Class & Additional Materials"
 ---
-Note: book chapters can be found on the course Google Drive, as well as pdfs of the papers. Demos will be in RMarkdown and on the [course GitHub page in the exercises folder](https://github.com/LauraDee/EcologyCausalInference).
+Note: book chapters can be found on the private [course Google Drive](https://drive.google.com/drive/folders/1YjydIdJ6GAD2MTzYdlUote46PJ-rCwvp?usp=share_link), as well as pdfs of the papers. Demos will be in RMarkdown and on the [course GitHub page in the exercises folder](https://github.com/LauraDee/EcologyCausalInference).
 
 ## Due Mon. 1/13 
-First class; Complete [pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) in class; Review Syllabus
+First class; Complete [pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) in class; Review Syllabus and website
 
 ## Due Wed. 1/15 Introduction Continued
 1) [Hernan et al. 2019](https://doi.org/10.1080/09332480.2019.1579578)
