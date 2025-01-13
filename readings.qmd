@@ -13,19 +13,17 @@ First class; Complete [pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) i
 
 ## Due Mon. 1/20 - No Class MLK day 
 
-## Due Wed. 1/22 Potential Outcomes 
-1) Angrist & Pischke 2008, Chapter 2 (from *Mostly Harmless Econometrics*)  
-OR
-## Due Mon. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)
-Guest speaker: Dr. Zach Laubach
-1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
+## Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)
+Guest speaker: [Dr. Suchinta Arif](https://scholar.google.ca/citations?user=V6lMSmYAAAAJ&hl=en)\
+1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.155
 2) [Laubach et al. 2021](https://doi.org/10.1098/rspb.2020.2815)
 
 Optional; additional background reading on DAGs:  
 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 
 5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)  
 
-## Due Mon. 1/27 SCM or PO
+## Due Mon. 1/27 Potential Outcomes 
+1) Angrist & Pischke 2008, Chapter 2 (from *Mostly Harmless Econometrics*)  
 
 ## Due Wed. 1/29 Experiments and Randomization
 1) Gerber & Green, Chapter 2 
@@ -37,9 +35,10 @@ Optional; additional background reading on DAGs:
 1) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
 2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190)  
 
-## Due Wed. 2/5 - Laura Away; Class is online
-1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1554)  
-2) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
+## Due Wed. 2/5 - Laura Away; Class is online or Dr. Zach Laubach
+1) 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
+2) Review [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1554)  
+3) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
 3) Review DAG resources and [DAG software](http://dagitty.net) on the website's [DAGs resources tab](https://lauradee.github.io/EcologyCausalInference/DAGs.html)
 
 Prior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. *Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.* 

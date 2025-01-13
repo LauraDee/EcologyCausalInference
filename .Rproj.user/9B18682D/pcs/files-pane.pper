@@ -2,8 +2,8 @@
     "sortOrder": [
         {
             "columnIndex": 2,
-            "ascending": true
+            "ascending": false
         }
     ],
-    "path": "~/Library/CloudStorage/OneDrive-UCB-O365/Documents/GitHub/EcologyCausalInference/exercises/inclass_demos"
+    "path": "~/Library/CloudStorage/OneDrive-UCB-O365/Documents/GitHub/EcologyCausalInference"
 }
