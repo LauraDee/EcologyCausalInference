@@ -1834,7 +1834,7 @@
     "href": "readings.html#due-wed.-122-structural-causal-model-and-directed-acyclic-graphs-dag",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)",
-    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022 Laubach et al. 2021\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 5) Cunningham (2021) Ch. 3",
+    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 5) Cunningham (2021) Ch. 3",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1893,6 +1893,16 @@
     "title": "Exercises in R",
     "section": "Measurement Error Creates Bias",
     "text": "Measurement Error Creates Bias",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#fun-with-spurious-correlations-ai-generated-explanations",
+    "href": "exercises/index.html#fun-with-spurious-correlations-ai-generated-explanations",
+    "title": "Exercises in R",
+    "section": "Fun with spurious correlations & AI-generated explanations",
+    "text": "Fun with spurious correlations & AI-generated explanations\nSpurious correlations",
     "crumbs": [
       "Exercises"
     ]

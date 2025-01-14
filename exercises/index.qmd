@@ -31,10 +31,13 @@ This tutorial replicates the main analyses in Dee et al, contrasted with common 
 ## Wednesday 3/22
 [Regression discontinuity design demo in R](https://github.com/katherinesiegel/EBIOcausalinference/blob/main/exercises/RDD_LD.Rmd). Link to an RMarkdown file that walks through the process of coding an analysis using regression discontinuity analysis. 
 
-# Extra Code Resources - Optional Exercises
+# Extra Code Resources - Optional Exercises and Examples
 
 ## Intro: Data Don't Speak
 [Code](https://github.com/LauraDee/EcologyCausalInference/blob/main/exercises/inclass_demos/Day1_dataDontSpeak.R) An example of from the online book, [Causal inference in R Ch 5](https://www.r-causal.org/chapters/01-casual-to-causal), that demonstrates that summary statistics and data visualization are insufficient to untangle causal effects. Instead, prior knowledge, theory, and assumptions are necessary. 
+
+## Fun with spurious correlations & AI-generated explanations
+[Spurious correlations](https://tylervigen.com)
 
 ## Measurement Error Creates Bias 
 
