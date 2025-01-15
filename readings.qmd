@@ -19,6 +19,7 @@ Guest speaker: [Dr. Suchinta Arif](https://scholar.google.ca/citations?user=V6lM
 2) [Laubach et al. 2021](https://doi.org/10.1098/rspb.2020.2815)
 
 Optional; additional background reading on DAGs:  
+3) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)
 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 
 5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)  
 
@@ -179,4 +180,13 @@ I do not expect you to buy any/all of these books. I will provide the sections t
     + Pearl, J. 2009. [*Causality*](https://doi.org/10.1017/CBO9780511803161). (Cambridge, UK: Cambridge University Press).  
 *Ding, P. [*A First Course in Causal Inference.*](https://arxiv.org/pdf/2305.18793) online.
 
+
+# Do you feel like you could use more background or a refresher on the basics? 
+
+## Variables, distributions, conditional distributins and means, types of data 
+
+- [The Effect Ch. 3: Describing Variables](https://theeffectbook.net/ch-DescribingVariables.html)\
+-[The Effect Ch. 4: Describing Relationships](https://theeffectbook.net/ch-DescribingRelationships.html)
+
+Hypothesis testing, type I and type II errors 
 

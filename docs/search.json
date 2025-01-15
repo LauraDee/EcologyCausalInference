@@ -1834,7 +1834,7 @@
     "href": "readings.html#due-wed.-122-structural-causal-model-and-directed-acyclic-graphs-dag",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)",
-    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\nOptional; additional background reading on DAGs:\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 5) Cunningham (2021) Ch. 3",
+    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\nOptional; additional background reading on DAGs:\n3) The Effect Ch. 6 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 5) Cunningham (2021) Ch. 3",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1905,6 +1905,36 @@
     "text": "Fun with spurious correlations & AI-generated explanations\nSpurious correlations",
     "crumbs": [
       "Exercises"
+    ]
+  },
+  {
+    "objectID": "readings.html#do-you-feel-like-you-could-use-more-background-or-a-refresher-on-the-basics",
+    "href": "readings.html#do-you-feel-like-you-could-use-more-background-or-a-refresher-on-the-basics",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Do you feel like you could use more background or a refresher on the basics?",
+    "text": "Do you feel like you could use more background or a refresher on the basics?\nhttps://theeffectbook.net/ch-DescribingVariables.html",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#variables-distributions-types-of-data",
+    "href": "readings.html#variables-distributions-types-of-data",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Variables, distributions, types of data",
+    "text": "Variables, distributions, types of data\nThe Effect Ch. 3: Describing Variables\nHypothesis testing, type I and type II errors",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#variables-distributions-conditional-distributins-and-means-types-of-data",
+    "href": "readings.html#variables-distributions-conditional-distributins-and-means-types-of-data",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Variables, distributions, conditional distributins and means, types of data",
+    "text": "Variables, distributions, conditional distributins and means, types of data\n\nThe Effect Ch. 3: Describing Variables\n-The Effect Ch. 4: Describing Relationships\n\nHypothesis testing, type I and type II errors",
+    "crumbs": [
+      "Readings & Additional Materials"
     ]
   }
 ]
