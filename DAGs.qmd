@@ -51,5 +51,3 @@ For additional background on DAGs:
 -   Morgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)
 -   [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)
 -   Heiss, A. [Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand](https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus)
-
-### 
