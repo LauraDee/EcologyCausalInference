@@ -15,12 +15,12 @@ First class; Complete [pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) i
 
 ## Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)
 Guest speaker: [Dr. Suchinta Arif](https://scholar.google.ca/citations?user=V6lMSmYAAAAJ&hl=en)\
-1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)
+1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)\
 2) [Laubach et al. 2021](https://doi.org/10.1098/rspb.2020.2815)
 
 Optional; additional background reading on DAGs:  
-3) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)
-4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3 
+3) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)\
+4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\
 5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)  
 
 ## Due Mon. 1/27 Potential Outcomes 
