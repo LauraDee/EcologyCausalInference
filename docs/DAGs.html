@@ -169,7 +169,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#useful-videos" id="toc-useful-videos" class="nav-link" data-scroll-target="#useful-videos">Useful Videos</a></li>
   <li><a href="#software-for-dag-construction-and-analysis" id="toc-software-for-dag-construction-and-analysis" class="nav-link" data-scroll-target="#software-for-dag-construction-and-analysis">Software for DAG construction and analysis</a>
   <ul class="collapse">
-  <li><a href="#key-messages-from-cunningham-2021-ch.-3" id="toc-key-messages-from-cunningham-2021-ch.-3" class="nav-link" data-scroll-target="#key-messages-from-cunningham-2021-ch.-3">Key Messages from Cunningham (2021) Ch. 3:</a></li>
+  <li><a href="#key-messages---well-said-in-cunningham-2021-ch.-3" id="toc-key-messages---well-said-in-cunningham-2021-ch.-3" class="nav-link" data-scroll-target="#key-messages---well-said-in-cunningham-2021-ch.-3">Key Messages - well said in Cunningham (2021) Ch. 3:</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
   </ul></li>
   </ul>
 </nav>
@@ -231,24 +232,25 @@ c) <a href="https://www.gerkelab.com/project/shinydag/">shinydag</a> is another 
 d) <a href="https://sites.google.com/view/tetradcausal">TETRAD</a><br>
 e) <a href="https://hsz.dife.de/dag/">DAG program</a><br>
 f) <a href="https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx">dagR</a></p>
+<section id="key-messages---well-said-in-cunningham-2021-ch.-3" class="level3">
+<h3 class="anchored" data-anchor-id="key-messages---well-said-in-cunningham-2021-ch.-3">Key Messages - well said in Cunningham (2021) Ch. 3:</h3>
+<p><em>Well summarized fom Cunningham (2021) Ch. 3:</em> “Causal effects can happen in two ways. They can either be direct (e.g., D→Y), or they can be mediated by a third variable (e.g., D→X→Y). When they are mediated by a third variable, we are capturing a sequence of events originating with D, which may or may not be important to you depending on the question you’re asking.</p>
+<p>A DAG is meant to describe all causal relationships relevant to the effect of D on Y. What makes the DAG distinctive is both the explicit commitment to a causal effect pathway and the complete commitment to the <em>lack of</em> a causal pathway represented by missing arrows. In other words, a DAG will contain both arrows connecting variables and choices to exclude arrows. And the lack of an arrow necessarily means that you think there is no such relationship in the data—this is one of the strongest beliefs you can hold. A complete DAG will have all direct causal effects among the variables in the graph as well as all common causes of any pair of variables in the graph.</p>
+<p>At this point, you may be wondering where the DAG comes from. It’s an excellent question. It may be <em>the</em> question. A DAG is supposed to be a theoretical representation of the state-of-the-art knowledge about the phenomena you’re studying. It’s what an expert would say is the thing itself, and that expertise comes from a variety of sources. Examples include economic theory, other scientific models, conversations with experts, your own observations and experiences, literature reviews, as well as your own intuition and hypotheses….</p>
+<p>…. I have found DAGs to be useful for understanding the critical role that prior knowledge plays in identifying causal effects. But there are other reasons too. One, I have found that DAGs are very helpful for communicating research designs and estimators if for no other reason than pictures speak a thousand words…..</p>
+<p>….. Two, through concepts such as the backdoor criterion and collider bias, a well-designed DAG can help you develop a credible research design for identifying the causal effects of some intervention. As a bonus, I also think a DAG provides a bridge between various empirical schools, such as the structural and reduced form groups. And finally, DAGs drive home the point that assumptions are necessary for any and all identification of causal effects, which economists have been hammering at for years (<a href="https://mixtape.scunning.com/references#ref-Wolpin2013">Wolpin 2013</a>).”</p>
 <section id="additional-background-readings" class="level4">
 <h4 class="anchored" data-anchor-id="additional-background-readings">Additional Background Readings</h4>
 <p>For additional background on DAGs:</p>
 <ul>
 <li>Morgan &amp; Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)</li>
-</ul>
-<!-- -->
-<ul>
-<li><p><a href="https://mixtape.scunning.com/03-directed_acyclical_graphs">Cunningham (2021) Ch. 3</a></p></li>
-<li><p>Heiss, A. <a href="https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus">Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand</a></p></li>
+<li><a href="https://mixtape.scunning.com/03-directed_acyclical_graphs">Cunningham (2021) Ch. 3</a></li>
+<li>Heiss, A. <a href="https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus">Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand</a></li>
 </ul>
 </section>
-<section id="key-messages-from-cunningham-2021-ch.-3" class="level3">
-<h3 class="anchored" data-anchor-id="key-messages-from-cunningham-2021-ch.-3">Key Messages from Cunningham (2021) Ch. 3:</h3>
-<p><em>Well summarized fom Cunningham (2021) Ch. 3:</em> “Causal effects can happen in two ways. They can either be direct (e.g., D→Y), or they can be mediated by a third variable (e.g., D→X→Y). When they are mediated by a third variable, we are capturing a sequence of events originating with D, which may or may not be important to you depending on the question you’re asking.</p>
-<p>A DAG is meant to describe all causal relationships relevant to the effect of D on Y. What makes the DAG distinctive is both the explicit commitment to a causal effect pathway and the complete commitment to the <em>lack of</em> a causal pathway represented by missing arrows. In other words, a DAG will contain both arrows connecting variables and choices to exclude arrows. And the lack of an arrow necessarily means that you think there is no such relationship in the data—this is one of the strongest beliefs you can hold. A complete DAG will have all direct causal effects among the variables in the graph as well as all common causes of any pair of variables in the graph.</p>
-<p>At this point, you may be wondering where the DAG comes from. It’s an excellent question. It may be <em>the</em> question. A DAG is supposed to be a theoretical representation of the state-of-the-art knowledge about the phenomena you’re studying. It’s what an expert would say is the thing itself, and that expertise comes from a variety of sources. Examples include economic theory, other scientific models, conversations with experts, your own observations and experiences, literature reviews, as well as your own intuition and hypotheses.</p>
-<p>I have included this material in the book because I have found DAGs to be useful for understanding the critical role that prior knowledge plays in identifying causal effects. But there are other reasons too. One, I have found that DAGs are very helpful for communicating research designs and estimators if for no other reason than pictures speak a thousand words. This is, in my experience, especially true for instrumental variables, which have a very intuitive DAG representation. Two, through concepts such as the backdoor criterion and collider bias, a well-designed DAG can help you develop a credible research design for identifying the causal effects of some intervention. As a bonus, I also think a DAG provides a bridge between various empirical schools, such as the structural and reduced form groups. And finally, DAGs drive home the point that assumptions are necessary for any and all identification of causal effects, which economists have been hammering at for years (<a href="https://mixtape.scunning.com/references#ref-Wolpin2013">Wolpin 2013</a>).”</p>
+</section>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section"></h3>
 
 
 </section>
