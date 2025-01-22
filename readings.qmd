@@ -29,12 +29,12 @@ Optional; additional background reading on DAGs:
 ## Due Wed. 1/29 Experiments and Randomization
 1) Gerber & Green, Chapter 2 
 2) [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)  
+Optional: 
 
 ## Due Mon. 2/3  Introduction to Challenges of Observational Data
 1) Watch Imbens video: [2022 Nobel Prize lecture](https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/)
 2) [Ferraro 2009](https://doi.org/10.1002/ev.297)  
-1) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
-2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190)  
+3) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190)  
 
 ## Due Wed. 2/5 - Laura Away; Class is online or Dr. Zach Laubach
 1) 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
@@ -87,7 +87,7 @@ Tenative reading: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_con
 *demo* Brynes & Dee Rmarkdow non course GitHub
 
 Optional: 
-1) [Roth et al. (2023). What's trending in difference in difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
+1) [Roth et al. (2023). What's trending in difference in  difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
 2) Pedro Sant'Anna's DiD resources and  [*Comprehensive Course on DiD*](https://psantanna.com/did-resources/)
 
 ## Due Mon. 3/10 Instrumental Variables
@@ -98,6 +98,7 @@ Optional:
 1) [Sims 2010](https://www.sciencedirect.com/science/article/pii/S0095069610000586)   
 2) [MacDonald & Mordecai 2020](https://www.pnas.org/doi/10.1073/pnas.1905315116)\
 *demo* 
+
 ## Due Mon. 3/17  Regression Discontinuity Designs 
 1) [The Effect Ch. 20](https://theeffectbook.net/ch-RegressionDiscontinuity.html)
 Optional: Angrist & Pischke **2015**, Chapter 4 (note: this is in *Mastering ‘Metrics* in the GDrive) 
@@ -111,6 +112,8 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 
 ## Due Monday 3/31 Comparison of Designs & Sensitivity Tests
 1) [Siegel & Dee (2025) Ecology Letters](https://ecoevorxiv.org/repository/view/8208/)
+2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
+3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 2) TBD on sensitivity tests 
 
 ## Due Wed. 4/2 [Discussion lead(s): ____ ]
