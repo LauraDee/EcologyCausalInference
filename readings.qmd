@@ -29,7 +29,8 @@ Optional; additional background reading on DAGs:
 ## Due Wed. 1/29 Experiments and Randomization
 1) Gerber & Green, Chapter 2 
 2) [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)  
-Optional: 
+
+Optional: [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)
 
 ## Due Mon. 2/3  Introduction to Challenges of Observational Data
 1) Watch Imbens video: [2022 Nobel Prize lecture](https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/)
