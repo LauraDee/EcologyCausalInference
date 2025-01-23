@@ -30,12 +30,15 @@ Optional; additional background reading on DAGs:
 1) Gerber & Green, Chapter 2 
 2) [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)  
 
-Optional: [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)
+Optional: [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)\
 
 ## Due Mon. 2/3  Introduction to Challenges of Observational Data
 1) Watch Imbens video: [2022 Nobel Prize lecture](https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/)
-2) [Ferraro 2009](https://doi.org/10.1002/ev.297)  
-3) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190)  
+2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190) - up to section 8, and the Discussion. Can skim in between for preview of what's to come. 
+3) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - up until section 5.1. 
+
+Optional: [Ferraro 2009](https://doi.org/10.1002/ev.297)\ 
+Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs
 
 ## Due Wed. 2/5 - Laura Away; Class is online or Dr. Zach Laubach
 1) 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
@@ -68,7 +71,7 @@ Prior to and during the class period, you will start your projects and make a fi
 ## Due Mon. 2/24 Panel methods continued; Two-way fixed effects
 1) Angrist & Pischke **2008**, Chapter 5
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
-3) Brynes and Dee (2025 Ecology Letters)
+3) Brynes and Dee 2025 *Ecology Letters*
 
 ## Due Wed. 2/26 - Laura away: Fixed Effects Discussion
 1) Brief Review -- Brynes and Dee (2025 Ecology Letters)
@@ -112,7 +115,7 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 ## Week of March 24th - Spring Break, No Classes this week
 
 ## Due Monday 3/31 Comparison of Designs & Sensitivity Tests
-1) [Siegel & Dee (2025) Ecology Letters](https://ecoevorxiv.org/repository/view/8208/)
+1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)
 2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
 3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 2) TBD on sensitivity tests 
