@@ -37,10 +37,11 @@ Optional: [Arif & Massey (2023) Reducing bias in experimental ecology through di
 2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190) - up to section 8, and the Discussion. Can skim in between for preview of what's to come. 
 3) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - up until section 5.1. 
 
-Optional: [Ferraro 2009](https://doi.org/10.1002/ev.297)\ 
-Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs
+Optional: 
+- [Ferraro 2009](https://doi.org/10.1002/ev.297)\
+- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs
 
-## Due Wed. 2/5 - Laura Away; Class is online or Dr. Zach Laubach
+## Due Wed. 2/5 - Visitor: Dr. Zach Laubach
 1) 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
 2) Review [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.1554)  
 3) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
@@ -71,14 +72,13 @@ Prior to and during the class period, you will start your projects and make a fi
 ## Due Mon. 2/24 Panel methods continued; Two-way fixed effects
 1) Angrist & Pischke **2008**, Chapter 5
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
-3) Brynes and Dee 2025 *Ecology Letters*
+3) [Brynes and Dee 2025 *Ecology Letters*](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
 ## Due Wed. 2/26 - Laura away: Fixed Effects Discussion
-1) Brief Review -- Brynes and Dee (2025 Ecology Letters)
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
-2) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
+3) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 
-Optional (but good for the discussants!) 3) [Meehan et al. 2011](https://doi.org/10.1073/pnas.1100751108) vs. [Larsen 2013](https://doi.org/10.1073/pnas.1301900110)
+Optional (but good for the discussants!) [Meehan et al. 2011](https://doi.org/10.1073/pnas.1100751108) vs. [Larsen 2013](https://doi.org/10.1073/pnas.1301900110)
 
 *demo* Dee et al. Rmarkdown on course GitHub
 
@@ -86,7 +86,8 @@ Optional (but good for the discussants!) 3) [Meehan et al. 2011](https://doi.org
 Tenative reading: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
 
 ## Due Wed. 3/5 DiD extensions and issues
-1) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) starting at 18.2.5 Rollout Designs and Multiple Treatment Periods. 
+1) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
+3) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) starting at 18.2.5 Rollout Designs and Multiple Treatment Periods. 
 
 *demo* Brynes & Dee Rmarkdow non course GitHub
 
