@@ -25,6 +25,7 @@ Optional; additional background reading on DAGs:
 
 ## Due Mon. 1/27 Potential Outcomes 
 1) Angrist & Pischke 2008, Chapter 2 (from *Mostly Harmless Econometrics*)  
+Optional: Morgan & Winship Book, Ch. 2 
 
 ## Due Wed. 1/29 Experiments and Randomization
 1) Gerber & Green, Chapter 2 
