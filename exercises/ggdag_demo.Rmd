@@ -9,7 +9,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 ## Load Packages
 ```{r cars}
 library(ggdag)
@@ -23,7 +22,6 @@ library(tidyverse)
 ## Including Plots
 
 You can also embed plots, for example:
-
 ```{r pressure, echo=FALSE}
 plot(pressure)
 ```
