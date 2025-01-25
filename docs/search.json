@@ -994,7 +994,7 @@
     "href": "readings.html#due-mon.-23-introduction-to-challenges-of-observational-data",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 2/3 Introduction to Challenges of Observational Data",
-    "text": "Due Mon. 2/3 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nLarsen et al. 2019 - up to section 8, and the Discussion. Can skim in between for preview of what’s to come.\nSiegel & Dee (2025) Ecology Letters - up until section 5.1.\n\nOptional: - Ferraro 2009\n- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs",
+    "text": "Due Mon. 2/3 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nLarsen et al. 2019 - up to section 8, and the Discussion. Can skim in between for preview of what’s to come.\nSiegel & Dee (2025) Ecology Letters - up until section 5.1.\n\nOptional and more advanced: Angrist & Pischke 2008, Chapter 3 (from Mostly Harmless Econometrics)\nOptional: - Ferraro 2009\n- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1942,7 +1942,17 @@
     "href": "readings.html#due-wed.-25---visitor-dr.-zach-laubach",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 2/5 - Visitor: Dr. Zach Laubach",
-    "text": "Due Wed. 2/5 - Visitor: Dr. Zach Laubach\n\n\nRohrer 2018\n\nReview Arif & MacNeil 2022\n\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
+    "text": "Due Wed. 2/5 - Visitor: Dr. Zach Laubach\n\nRohrer 2018\nReview Laubach et al. 2021\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-25---start-your-dags-with-guest-speaker-and-visitor-dr.-zach-laubach",
+    "href": "readings.html#due-wed.-25---start-your-dags-with-guest-speaker-and-visitor-dr.-zach-laubach",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach",
+    "text": "Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach\n\nRohrer 2018\nReview Laubach et al. 2021\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
