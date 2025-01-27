@@ -1956,5 +1956,15 @@
     "crumbs": [
       "Readings & Additional Materials"
     ]
+  },
+  {
+    "objectID": "exercises/index.html#the-potential-outcomes-framework-helps-clarify-the-estamind-what-effect-we-are-capturing.",
+    "href": "exercises/index.html#the-potential-outcomes-framework-helps-clarify-the-estamind-what-effect-we-are-capturing.",
+    "title": "Exercises in R",
+    "section": "The Potential Outcomes Framework helps clarify the estamind: what effect we are capturing.",
+    "text": "The Potential Outcomes Framework helps clarify the estamind: what effect we are capturing.\n\nComparing different estimands - ATE, ATT versus ATU\nAndrew Heiss has a great breakdown here",
+    "crumbs": [
+      "Exercises"
+    ]
   }
 ]

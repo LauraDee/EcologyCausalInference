@@ -39,6 +39,10 @@ This tutorial replicates the main analyses in Dee et al, contrasted with common 
 ## Fun with spurious correlations & AI-generated explanations
 [Spurious correlations](https://tylervigen.com)
 
+## The Potential Outcomes Framework helps clarify the estamind: what effect we are capturing. 
+### Comparing different estimands - ATE, ATT versus ATU
+Andrew Heiss has a great breakdown [here](https://www.andrewheiss.com/blog/2024/03/21/demystifying-ate-att-atu/)
+
 ## Measurement Error Creates Bias 
 
 ## Sims 

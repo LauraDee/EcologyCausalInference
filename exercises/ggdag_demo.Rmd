@@ -4,13 +4,21 @@ author: "Laura Dee"
 date: "`r Sys.Date()`"
 output: html_document
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Load Packages
+
+# Learning Objectives
+
+
+First, I highly recommend this live demonstration and tutorial by Andrew Heiss [here](https://www.youtube.com/watch?v=uoAjyyToUTE)
+
+# The Context: Let's Start Simple
+Let's consider that we are investigating the effect of a species invasion on native biodiversity. We also know that land-use (nearby agricultural conversion) and nutrient additions (from fertilizer) help facilitate invasion, and nutrients can reduce native plant biodiversity (REF). Climate also affects both native biodiversity and the invasive species' abundances. We formalize this knowledge in the following DAG, after loading the packages we will use.
+
 ```{r cars}
+## Load Packages
 library(ggdag)
 require(knitr)
 library(dagitty)
@@ -19,12 +27,71 @@ require(ddplyr)
 library(tidyverse)
 ```
 
-## Including Plots
-
-You can also embed plots, for example:
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+## Specify the DAG
+DAG_invasion_effects <- dagify(
+  invasion ~ nutrients + climate + landuse,
+  native_biodiversity ~ invasion + nutrients + climate,
+  nutrients ~ landuse 
+)
+plot(DAG_invasion_effects)
 ```
+
+Next, we ned to identify which variable is the outcome of interest, and which is the treatment or exposure. Here are are considering the effect of invasion on native biodiversity. We can plot this nicely with ggdag. Here I set the seed when plotting because otherwise the DAG shows up in different orientations each time! 
+
+```{r}
+DAG_invasion_effects <- dagify(
+  invasion ~ nutrients + climate + landuse,
+  native_biodiversity ~ invasion + nutrients + climate,
+  nutrients ~ landuse ,
+exposure = "invasion", #wont run if current biodiersity  also effects current exotic because then the graph is not acyclic
+ outcome = "native_biodiversity",
+labels = c(outcome = "Native Biodiversity",
+           exposure = "Invasion"))
+
+set.seed(124)
+ggdag(DAG_invasion_effects, 
+       use_labels = "label")
+
+ggdag_status(DAG_invasion_effects,
+             use_labels = "label",
+             text = TRUE,
+             label_alpha = 0.5) + theme_dag()
+```
+
+To identify  what must be controlled for, we can use adjustmentSets(). We can also have a summary of all possible paths in the DAG and identify which are open vs closed backdoors using paths(). 
+
+This function takes a DAG, with a given “exposure” or "treatment variable" and an “outcome” and identifies open backdoors: confounding variables (common causes) that need to be controlled for. 
+
+We can also check to see which variables are conditionally independent of one another using impliedConditionalIndependencies().
+
+```{r, echo = TRUE}
+impliedConditionalIndependencies(DAG_invasion_effects)
+
+#identify the open paths that need to be adjusted for 
+paths(DAG_invasion_effects)
+#identify the covariaters need to be adjusted for to meet the back-door criterion
+adjustmentSets(DAG_invasion_effects)
+
+#plot the open  paths 
+ggdag_paths(DAG_invasion_effects)
+ggdag_paths(DAG_invasion_effects, shadow = TRUE) #
+
+#you can identify "descendant nodes" 
+ggdag_descendants(DAG_invasion_effects, "landuse")
+
+# Finally, you can also visulaize the variables that need to be adjusted for (which is also told to you by
+# the adjustmentSets() function 
+ggdag_adjustment_set(DAG_invasion_effects, shadow = TRUE)
+
+```
+
+# A more complex case
+I am currently working on a project led by Jane Catford with the Nutrient Network. The aim of the project is 
+
+the study design is 
+
+The challenge is DAGs need to be *Acyclic* - so no feedbacks 
 
 ## So now we just have past richness affecting current exotic (not contemporaneous because otherwise isnt acyclic graph)!
 ```{r}
@@ -49,7 +116,10 @@ labels = c(outcome = "richness",
 set.seed(124)
 ggdag(richness_dag, 
        use_labels = "label")
+```
 
+
+```{r}
 ggdag_status(richness_dag,
              use_labels = "label",
              text = TRUE,
@@ -66,7 +136,28 @@ ggdag_descendants(richness_dag, "Climate_sy")
 ggdag_descendants(richness_dag, "Ndep_sy")
 
 impliedConditionalIndependencies(richness_dag)
-# We can also find all the paths between x and y using the paths() function from the dagitty package. We can see that there are three open paths between x and y:
 
+# We can also find all the paths between x and y using the paths() function from the dagitty package. We can see that there are three open paths between x and y:
 paths(richness_dag)
 ```
+
+
+# Your turn to practice. 
+## Let's plot the Arif et al. (2022) Coral Reef Example for more practice!
+You'll note, to analyze the DAG, you'll need to specify the exposure and the outcome. To look at a bunch of different relationships, this needs to be done one by one to avoid a "causal salad" in the amazing terms of Arif et al. 
+
+*You can practice writing code to do this for a given exposure and outcome, modifying the code above for this example below!*
+
+```{r}
+seychelles <- dagify(
+  regime_shift ~ initial_algae + wave_exposure + herbivore_biomass + depth + nutrients + branching_coral + structural_complexity,
+  initial_algae ~ wave_exposure + herbivore_biomass + nutrients,
+  herbivore_biomass ~ mpa + structural_complexity,
+  nutrients ~ depth,
+  branching_coral ~ mpa + depth + wave_exposure,
+  structural_complexity ~ branching_coral
+)
+
+plot(seychelles)
+```
+
