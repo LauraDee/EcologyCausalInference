@@ -9,14 +9,21 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Learning Objectives
+* Understand what a DAG is and what it is useful for.
+* Understand how to construct a DAG in R to represent a set of assumptions about causal
+relationships.
+* Understand how to use a DAG to determine the consequences of including
+variables in a regression model.
+* Understand how to use a DAG to select appropriate statistical analysis methods
+(with focus on regression models) for estimating causal relationships in non-randomized studies, including:
+* how to identify variables that should be included in a regression model
+* how to identify variables that should NOT be included in a regression model (colliders, bad controls)
 
+For more recap and a live guide through ggdag and dagitty, I highly recommend this live demonstration and tutorial by Andrew Heiss [here](https://www.youtube.com/watch?v=uoAjyyToUTE)
 
-First, I highly recommend this live demonstration and tutorial by Andrew Heiss [here](https://www.youtube.com/watch?v=uoAjyyToUTE)
+# Using dagitty and ggdag in R 
 
-# The Context: Let's Start Simple
-Let's consider that we are investigating the effect of a species invasion on native biodiversity. We also know that land-use (nearby agricultural conversion) and nutrient additions (from fertilizer) help facilitate invasion, and nutrients can reduce native plant biodiversity (REF). Climate also affects both native biodiversity and the invasive species' abundances. We formalize this knowledge in the following DAG, after loading the packages we will use.
-
-```{r cars}
+```{r cars, echo= TRUE, warning = FALSE}
 ## Load Packages
 library(ggdag)
 require(knitr)
@@ -24,11 +31,20 @@ library(dagitty)
 require(tidyr)
 require(ddplyr)
 library(tidyverse)
-# install.packages("devtools")
-devtools::install_github("lbusett/insert_table") 
-library(inserttable)
-
 ```
+# General syntax of the ggdag package:
+* We created dagified objects with ggdag::dagify()
+* We plotted our DAGs with ggdag::ggdag()
+* We can also specify the coordinates of our nodes with a coordinate list
+* We can use ggdag and dagitty packages can help us illustrate our paths and adjustment sets to fulfill the backdoor criterion
+
+We will focus on two functions from the dagitty package:
+* dagitty::paths(): Returns a list with two components: paths, which gives the actual paths, and open, which shows whether each path is open (d-connected) or closed (d-separated).
+* dagitty::adjustmentSets(): Lists the sets of covariates that would allow for unbiased estimation of causal effects, assuming that the causal graph is correct.
+
+
+# The Context: Let's Start Simple
+Let's consider that we are investigating the effect of a species invasion on native biodiversity. We also know that land-use (nearby agricultural conversion) and nutrient additions (from fertilizer) help facilitate invasion, and nutrients can reduce native plant biodiversity ([Seabloom et al. 2021 *Ecology*](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.3218)). Climate also affects both native biodiversity and the invasive species' abundances. We formalize this knowledge in the following DAG, after loading the packages we will use.
 
 ```{r}
 ## Specify the DAG
@@ -66,62 +82,69 @@ To identify  what must be controlled for, we can use adjustmentSets(). We can al
 
 This function takes a DAG, with a given “exposure” or "treatment variable" and an “outcome” and identifies open backdoors: confounding variables (common causes) that need to be controlled for. 
 
-We can also check to see which variables are conditionally independent of one another using impliedConditionalIndependencies().
-
 ```{r, echo = TRUE}
 #identify the open paths that need to be adjusted for 
 paths(DAG_invasion_effects)
-#identify the covariaters need to be adjusted for to meet the back-door criterion
-adjustmentSets(DAG_invasion_effects)
 
 #plot the open  paths 
 ggdag_paths(DAG_invasion_effects)
-ggdag_paths(DAG_invasion_effects, shadow = TRUE) #
+ggdag_paths(DAG_invasion_effects, shadow = TRUE) #Also, do not forget to set the argument shadow = TRUE, so that the arrows from the adjusted nodes are included
+```
 
+We see under '$paths' the paths we specified:
+$paths
+[1] "invasion -> native_biodiversity"                        
+[2] "invasion <- climate -> native_biodiversity"             
+[3] "invasion <- landuse -> nutrients -> native_biodiversity"
+[4] "invasion <- nutrients -> native_biodiversity"           
+
+Then, '$open' tells us whether each path is open.  In this case, we see that all four paths are open. We want the first path - [1] "invasion -> native_biodiversity"- the causal path of interest to be open. But the other paths are confounding, so we would need to condition on nutrients,  and climate to close these backdoor paths. We do not need to condition on landuse because nutrients is a descedent. We can see that here using the function ggdag_descendants()
+
+```{r, echo = TRUE}
 #you can identify "descendant nodes" 
 ggdag_descendants(DAG_invasion_effects, "landuse")
+```
 
-# Finally, you can also visulaize the variables that need to be adjusted for (which is also told to you by
-# the adjustmentSets() function 
-ggdag_adjustment_set(DAG_invasion_effects, shadow = TRUE)
+```{r, echo = TRUE}
+#identify the covariaters need to be adjusted for to meet the back-door criterion
+adjustmentSets(DAG_invasion_effects)
 
+# Finally, you can also visulaize the variables that need to be adjusted for (which is also told to you by the adjustmentSets() function 
+ggdag_adjustment_set(DAG_invasion_effects, shadow = TRUE) 
+#Also, do not forget to set the argument shadow = TRUE, so that the arrows from the adjusted nodes are included.
+```
+
+We can also check to see which variables are conditionally independences in the DAG using impliedConditionalIndependencies().
+```{r, echo = TRUE}
 impliedConditionalIndependencies(DAG_invasion_effects)
 ```
 
 # A more complex case
-I am currently working on a project led by Jane Catford with the Nutrient Network. We are analysing time-series data from 61 NutNet sites located in 14 countries and 6 continents. We will use species abundance and diversity trends over time (> or = 5 years) in control and nutrient-addition plots, and in sites that range in extent of human-driven environmental change, to disentangle various mechanistic scenarios including whether: 
-i)	exotic plants effectively replace native species lost because of environmental change, filling their now-vacant niches;
+I am currently working on a project led by Jane Catford with the Nutrient Network. We are analysing time-series data from 61 NutNet sites located in 14 countries and 6 continents. We will use species abundance and diversity trends over time (> or = 5 years) in control and nutrient-addition plots, and in sites that range in extent of human-driven environmental change. 
 
-ii)	native species are competitively displaced by invading exotic species, whether assisted by environmental change or not (Fig. 2c-f); or 
-iii)	environmental change independently drives both responses (Fig. 2b).
+One of the aims of this project is to test the following hypotheses: 
+native species are competitively displaced by invading exotic species
 
-Determining whether exotic invasion and native diversity loss are both consequences of environmental change, or whether invasion directly drives the loss of native diversity is crucial for understanding and mitigating impacts of invasion and other forms of global change on biodiversity. 
+The study design includes plots, within sites, with the treatment applied in treated plots (as opposed to control plots) for multiple years. Thus, we have subscripts for p for plot; s for site, and y for year. 
 
-The aim of the project is to test the following hypotheses: 
+ **Variable name   **   | **Description    **                                                                         | 
+----------------------- | ------------------------------------------------------------------------------------------- 
+| $\text{Native_psy}$    |  Native plant species richness in the plot, site and year |
+$\text{Exotic_psy}$          | Exotic species abundance in the plot, site and year |
+$\text{Exotics_yr0}$ | Exotic species abundance in year 0 per plot (pre-treatment) |
+$\text{Native_yr0}$ | Native plant species richness in year 0 per plot |
+$\text{NPKTreatment}$  |  Randomized experimental treatment: nutrient addition |
+$\text{Ndep_sy}$  | Nitrogen deposition for a site and year |
+$\text{Climate_sy}$  | Climate conditions for a site and year  |
+$\text{SoilFert_yr0}$  |  Soil feritility for each plot in the pre-treatment year |
+$\text{livestock_sy}$  | livestock grazing by site and year|
+$\text{Dist_to_Road_s}$  | Distance to road for each site |
+$\text{Oldfield_past_s }$  | |
+$\text{pastlivestock_yr0}$  | Past grazing for each site (pre-treatment) |
 
-The study design includes plots, within sites, with the treatment applied in treated plots (as opposed to control plots) for multiple years. Thus. 
+A Note: The challenge is DAGs need to be *Acyclic* - so no feedbacks! However, we also hypothesize that native species richness can reduce invasion probabiliy and success by occupying a greater amount of niche space. 
 
-We have subscripts for p for plot; s for site, and y for year. 
-
-Native_psy - \
-Exotic_psy - \
-NPKTreatment\
-Exotics_yr0 \
-Native_yr0 \
-Ndep_sy \
-Climate_sy \
-SoilFert_yr0 \
-livestock_sy \
-Dist_to_Road_s \
-Oldfield_past_s \
-pastlivestock_yr0 \
-
-```{r, echo = FALSE, warning = FALSE}
-
-```
-
-The challenge is DAGs need to be *Acyclic* - so no feedbacks ! So now we just have past richness affecting current exotic (not contemporaneous because otherwise isnt acyclic graph)!
-
+The way to get around this issue -- or the best we can -- is to incorperate time lags of the effects. So, you'll see  now we just have past richness affecting current exotic (not contemporaneous richness in time *t*  affecting invasive abundance in time  *t* because otherwise isnt acyclic graph)!
 
 ## Here's the DAG: 
 ```{r}
@@ -145,27 +168,39 @@ ggdag(richness_dag,
        use_labels = "label")
 ```
 
+We can now plot and analyze the DAG, identifying the adjustment set (covariates to control for!) to satisfy the backdoor criterion.
 
 ```{r}
+# plot the DAG with ggdag 
 ggdag_status(richness_dag,
              use_labels = "label",
              text = TRUE,
              label_alpha = 0.5) + theme_dag()
-  #identify the paths that need to be adjusted for 
-paths(richness_dag)
-adjustmentSets(richness_dag, effect = "direct")
-adjustmentSets(richness_dag, effect = "total")
-ggdag_paths(richness_dag)
-ggdag_paths(richness_dag, shadow = TRUE)
-ggdag_adjustment_set(richness_dag, shadow = TRUE)
-ggdag_descendants(richness_dag, "Climate_sy")
-ggdag_descendants(richness_dag, "Ndep_sy")
 
+# We can find and print all the paths between x and y using the paths() function from the dagitty package. We can see that there are three open paths between x and y:
+paths(richness_dag)
+
+# print conditional independences
 impliedConditionalIndependencies(richness_dag)
 
-# We can also find all the paths between x and y using the paths() function from the dagitty package. We can see that there are three open paths between x and y:
-paths(richness_dag)
+# Now, lets plot the open paths
+ggdag_paths(richness_dag, shadow = TRUE)
+
+#to identify descendants 
+ggdag_descendants(richness_dag, "Climate_sy")
+ggdag_descendants(richness_dag, "Ndep_sy")
+ggdag_descendants(richness_dag, "SoilFert_yr0")
+
+#identify the paths that need to be adjusted for - because we have specified the exposure to be invasive abundance and outcome to be richness, we are looking at the direct effect (not the mediated effect), so the direct and total will be thed same here: 
+adjustmentSets(richness_dag, effect = "direct")
+adjustmentSets(richness_dag, effect = "total")
+
+#Let's plot the identified the adjustment set to meet the backdoor criterion 
+ggdag_adjustment_set(richness_dag, shadow = TRUE)
+
 ```
+
+Let's compare the above with analyzing the treatment effect, which was randomized. You can see we don't need to adjust to estimate the treatment effect on richness.
 
 ```{r}
 NPK_dag <- dagify(Native_psy ~ Exotic_psy + NPKTreatment + Exotics_yr0 + Native_yr0 + Ndep_sy + Climate_sy + SoilFert_yr0 +  livestock_sy + Dist_to_Road_s + Oldfield_past_s + pastlivestock_yr0, 
@@ -210,3 +245,4 @@ seychelles <- dagify(
 plot(seychelles)
 ```
 
+Your turn -- pick an exposure and outcome and go! 
