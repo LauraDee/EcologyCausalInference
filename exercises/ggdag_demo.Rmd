@@ -8,7 +8,6 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-
 # Learning Objectives
 
 
@@ -25,6 +24,10 @@ library(dagitty)
 require(tidyr)
 require(ddplyr)
 library(tidyverse)
+# install.packages("devtools")
+devtools::install_github("lbusett/insert_table") 
+library(inserttable)
+
 ```
 
 ```{r}
@@ -66,8 +69,6 @@ This function takes a DAG, with a given “exposure” or "treatment variable" a
 We can also check to see which variables are conditionally independent of one another using impliedConditionalIndependencies().
 
 ```{r, echo = TRUE}
-impliedConditionalIndependencies(DAG_invasion_effects)
-
 #identify the open paths that need to be adjusted for 
 paths(DAG_invasion_effects)
 #identify the covariaters need to be adjusted for to meet the back-door criterion
@@ -84,33 +85,59 @@ ggdag_descendants(DAG_invasion_effects, "landuse")
 # the adjustmentSets() function 
 ggdag_adjustment_set(DAG_invasion_effects, shadow = TRUE)
 
+impliedConditionalIndependencies(DAG_invasion_effects)
 ```
 
 # A more complex case
-I am currently working on a project led by Jane Catford with the Nutrient Network. The aim of the project is 
+I am currently working on a project led by Jane Catford with the Nutrient Network. We are analysing time-series data from 61 NutNet sites located in 14 countries and 6 continents. We will use species abundance and diversity trends over time (> or = 5 years) in control and nutrient-addition plots, and in sites that range in extent of human-driven environmental change, to disentangle various mechanistic scenarios including whether: 
+i)	exotic plants effectively replace native species lost because of environmental change, filling their now-vacant niches;
 
-the study design is 
+ii)	native species are competitively displaced by invading exotic species, whether assisted by environmental change or not (Fig. 2c-f); or 
+iii)	environmental change independently drives both responses (Fig. 2b).
 
-The challenge is DAGs need to be *Acyclic* - so no feedbacks 
+Determining whether exotic invasion and native diversity loss are both consequences of environmental change, or whether invasion directly drives the loss of native diversity is crucial for understanding and mitigating impacts of invasion and other forms of global change on biodiversity. 
 
-## So now we just have past richness affecting current exotic (not contemporaneous because otherwise isnt acyclic graph)!
+The aim of the project is to test the following hypotheses: 
+
+The study design includes plots, within sites, with the treatment applied in treated plots (as opposed to control plots) for multiple years. Thus. 
+
+We have subscripts for p for plot; s for site, and y for year. 
+
+Native_psy - \
+Exotic_psy - \
+NPKTreatment\
+Exotics_yr0 \
+Native_yr0 \
+Ndep_sy \
+Climate_sy \
+SoilFert_yr0 \
+livestock_sy \
+Dist_to_Road_s \
+Oldfield_past_s \
+pastlivestock_yr0 \
+
+```{r, echo = FALSE, warning = FALSE}
+
+```
+
+The challenge is DAGs need to be *Acyclic* - so no feedbacks ! So now we just have past richness affecting current exotic (not contemporaneous because otherwise isnt acyclic graph)!
+
+
+## Here's the DAG: 
 ```{r}
 richness_dag <- dagify(Native_psy ~ Exotic_psy + NPKTreatment + Exotics_yr0 + Native_yr0 + Ndep_sy + Climate_sy + SoilFert_yr0 +  livestock_sy + Dist_to_Road_s + Oldfield_past_s + pastlivestock_yr0, 
-                #is there anything else I missed in the native diversity not in the exotic? or vice versa?
  Exotic_psy ~  NPKTreatment + Exotics_yr0 + Native_yr0 + Ndep_sy + Climate_sy + SoilFert_yr0 +
  livestock_sy + Dist_to_Road_s + Oldfield_past_s + pastlivestock_yr0, 
  Ndep_sy ~  Climate_sy, 
-Exotics_yr0 ~ Climate_sy + Ndep_sy + pastlivestock_yr0 + livestock_sy + Dist_to_Road_s + SoilFert_yr0,
-                # Did you have Native div in year 0 related to N deposition too?
-                # wouldn't native and invasive diversity in year 0 be related too?
+ Exotics_yr0 ~ Climate_sy + Ndep_sy + pastlivestock_yr0 + livestock_sy + Dist_to_Road_s + SoilFert_yr0,
  Native_yr0 ~ Climate_sy + pastlivestock_yr0 + livestock_sy + SoilFert_yr0, 
-SoilFert_yr0 ~ Ndep_sy + Oldfield_past_s +  livestock_sy +  pastlivestock_yr0, 
+   SoilFert_yr0 ~ Ndep_sy + Oldfield_past_s +  livestock_sy +  pastlivestock_yr0, 
   Oldfield_past_s  ~ Dist_to_Road_s, 
-livestock_sy  ~ pastlivestock_yr0 + Dist_to_Road_s,
-pastlivestock_yr0 ~ Dist_to_Road_s, 
-exposure = "Exotic_psy", #wont run if current richess also effects current exotic 
- outcome = "Native_psy",
-labels = c(outcome = "richness",
+  livestock_sy  ~ pastlivestock_yr0 + Dist_to_Road_s,
+   pastlivestock_yr0 ~ Dist_to_Road_s, 
+  exposure = "Exotic_psy", #wont run if current richess also effects current exotic 
+  outcome = "Native_psy",
+ labels = c(outcome = "richness",
            exposure = "Exotic"))
 
 set.seed(124)
@@ -123,12 +150,11 @@ ggdag(richness_dag,
 ggdag_status(richness_dag,
              use_labels = "label",
              text = TRUE,
-             label_alpha = 0.5) +
-   #guides(fill = FALSE, color = FALSE) +
-  theme_dag()
+             label_alpha = 0.5) + theme_dag()
   #identify the paths that need to be adjusted for 
 paths(richness_dag)
-adjustmentSets(richness_dag)
+adjustmentSets(richness_dag, effect = "direct")
+adjustmentSets(richness_dag, effect = "total")
 ggdag_paths(richness_dag)
 ggdag_paths(richness_dag, shadow = TRUE)
 ggdag_adjustment_set(richness_dag, shadow = TRUE)
@@ -141,6 +167,29 @@ impliedConditionalIndependencies(richness_dag)
 paths(richness_dag)
 ```
 
+```{r}
+NPK_dag <- dagify(Native_psy ~ Exotic_psy + NPKTreatment + Exotics_yr0 + Native_yr0 + Ndep_sy + Climate_sy + SoilFert_yr0 +  livestock_sy + Dist_to_Road_s + Oldfield_past_s + pastlivestock_yr0, 
+ Exotic_psy ~  NPKTreatment + Exotics_yr0 + Native_yr0 + Ndep_sy + Climate_sy + SoilFert_yr0 +
+ livestock_sy + Dist_to_Road_s + Oldfield_past_s + pastlivestock_yr0, 
+ Ndep_sy ~  Climate_sy, 
+ Exotics_yr0 ~ Climate_sy + Ndep_sy + pastlivestock_yr0 + livestock_sy + Dist_to_Road_s + SoilFert_yr0,
+ Native_yr0 ~ Climate_sy + pastlivestock_yr0 + livestock_sy + SoilFert_yr0, 
+   SoilFert_yr0 ~ Ndep_sy + Oldfield_past_s +  livestock_sy +  pastlivestock_yr0, 
+  Oldfield_past_s  ~ Dist_to_Road_s, 
+  livestock_sy  ~ pastlivestock_yr0 + Dist_to_Road_s,
+   pastlivestock_yr0 ~ Dist_to_Road_s, 
+  exposure = "NPKTreatment", 
+  outcome = "Native_psy",
+ labels = c(outcome = "richness",
+           exposure = "NPKTreatment"))
+
+ggdag_status(NPK_dag,
+             use_labels = "label",
+             text = TRUE,
+             label_alpha = 0.5) + theme_dag()
+
+adjustmentSets(NPK_dag, effect = "total")
+```     
 
 # Your turn to practice. 
 ## Let's plot the Arif et al. (2022) Coral Reef Example for more practice!
