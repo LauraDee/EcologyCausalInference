@@ -57,6 +57,8 @@ Prior to and during the class period, you will start your projects and make a fi
 1) [Ramsey et al. 2018](https://doi.org/10.1111/2041-210X.13111)
 2) [Stuart 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2943670/)  
 
+Optional: [Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)
+
 ## Due Wed. 2/12 [Discussion lead(s): ____ ]
 1) [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)  
 2) [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)  
@@ -201,4 +203,9 @@ I do not expect you to buy any/all of these books. I will provide the sections t
 -[The Effect Ch. 4: Describing Relationships](https://theeffectbook.net/ch-DescribingRelationships.html)
 
 Hypothesis testing, type I and type II errors 
+
+
+# Running List of Papers that review best practices for some techniques
+
+[Austin & Stuart (2015) for ITPW](https://pmc.ncbi.nlm.nih.gov/articles/PMC4626409/pdf/SIM-34-3661.pdf):  Moving towards best practice when using inverse probability of treatment weighting (IPTW) using the propensity score to estimate causal treatment effects in observational studies
 

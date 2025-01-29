@@ -246,3 +246,6 @@ plot(seychelles)
 ```
 
 Your turn -- pick an exposure and outcome and go! 
+
+To consider other sources of bias (collider, omitted variable bias, etc) see https://lfoswald.github.io/2021-spring-stats2/materials/session-4/04-online-tutorial/
+
