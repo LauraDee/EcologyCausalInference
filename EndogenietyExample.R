@@ -32,10 +32,12 @@ y = beta_xy*x + beta_oy*o + u
 ## Now let's just do a linear model of x --> y
 OLS <- lm(y ~ x)
 coeftest(OLS)  #biased up, because positive effect of o on y and on x.
-
+summary(OLS)
 #Now let's do a model where we control for o., assuming you observe o.
 OLS2 <- lm(y ~ x + o)
 coeftest(OLS2)
+
+summary(OLS2)
 
 #Now let's do a model where we control for z, assuming you don't observe o
 OLS2 <- lm(y ~ x + z)
