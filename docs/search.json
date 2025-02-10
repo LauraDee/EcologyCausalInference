@@ -1114,7 +1114,7 @@
     "href": "readings.html#due-wed.-219-discussion-leads-____",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 2/19 [Discussion lead(s): ____ ]",
-    "text": "Due Wed. 2/19 [Discussion lead(s): ____ ]\nDUE Draft of DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)",
+    "text": "Due Wed. 2/19 [Discussion lead(s): ____ ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1144,7 +1144,7 @@
     "href": "readings.html#due-mon.-210-matching-and-weighting",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 2/10 Matching (and weighting)",
-    "text": "Due Mon. 2/10 Matching (and weighting)\n\nRamsey et al. 2018\nStuart 2010\n\nOptional: Chesnaye et al. 2022",
+    "text": "Due Mon. 2/10 Matching (and weighting)\n\nRamsey et al. 2018\nStuart 2010\n\nOptional: -Chesnaye et al. 2022\n-McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1952,7 +1952,7 @@
     "href": "readings.html#due-wed.-25---start-your-dags-with-guest-speaker-and-visitor-dr.-zach-laubach",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach",
-    "text": "Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach\n\nRohrer 2018\nReview Laubach et al. 2021\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.",
+    "text": "Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach\n\nRohrer 2018\nReview Laubach et al. 2021\nVanderwheele 2019 Principles of confounder selection\nReview DAG resources and DAG software on the website’s DAGs resources tab\n\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2134,5 +2134,35 @@
     "title": "Constructing and Analyzing DAGs in dagitty and ggdag_demo",
     "section": "Let’s plot the Arif et al. (2022) Coral Reef Example for more practice!",
     "text": "Let’s plot the Arif et al. (2022) Coral Reef Example for more practice!\nYou’ll note, to analyze the DAG, you’ll need to specify the exposure and the outcome. To look at a bunch of different relationships, this needs to be done one by one to avoid a “causal salad” in the amazing terms of Arif et al. \nYou can practice writing code to do this for a given exposure and outcome, modifying the code above for this example below!\n\n\nCode\nseychelles &lt;- dagify(\n  regime_shift ~ initial_algae + wave_exposure + herbivore_biomass + depth + nutrients + branching_coral + structural_complexity,\n  initial_algae ~ wave_exposure + herbivore_biomass + nutrients,\n  herbivore_biomass ~ mpa + structural_complexity,\n  nutrients ~ depth,\n  branching_coral ~ mpa + depth + wave_exposure,\n  structural_complexity ~ branching_coral\n)\n\nplot(seychelles)\n\n\nPlot coordinates for graph not supplied! Generating coordinates, see ?coordinates for how to set your own.\n\n\n\n\n\n\n\n\n\nYour turn – pick an exposure and outcome and go!\nTo consider other sources of bias (collider, omitted variable bias, etc) see https://lfoswald.github.io/2021-spring-stats2/materials/session-4/04-online-tutorial/"
+  },
+  {
+    "objectID": "readings.html#due-wed.-212-discussion-leads-miles-teresea",
+    "href": "readings.html#due-wed.-212-discussion-leads-miles-teresea",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/12 [Discussion lead(s): Miles & Teresea ]",
+    "text": "Due Wed. 2/12 [Discussion lead(s): Miles & Teresea ]\n\nSiegel et al. 2022\n\nXu et al. 2022\n\ndemo RMarkdowns from Siegel & Dee (2025) for weighting and matching on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-226---fixed-effects-discussion",
+    "href": "readings.html#due-wed.-226---fixed-effects-discussion",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 2/26 - Fixed Effects Discussion",
+    "text": "Due Wed. 2/26 - Fixed Effects Discussion\n\nDudney et al. 2021\n\nDee et al., 2023\n\nOptional (but good for the discussants!) Meehan et al. 2011 vs. Larsen 2013\ndemo Dee et al. Rmarkdown on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-42-discussion-leads-rachel-____",
+    "href": "readings.html#due-wed.-42-discussion-leads-rachel-____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/2 [Discussion lead(s): Rachel & ____ ]",
+    "text": "Due Wed. 4/2 [Discussion lead(s): Rachel & ____ ]\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023 - TBD on sensitivity and placebo tests",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
   }
 ]

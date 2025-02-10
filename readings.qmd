@@ -43,7 +43,7 @@ Optional and more advanced: Angrist & Pischke 2008, Chapter 3 (from *Mostly Harm
 
 Optional: 
 - [Ferraro 2009](https://doi.org/10.1002/ev.297)\
-- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs
+- [Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs](https://www.google.com/search?client=safari&rls=en&q=Ferraro+and+Hanauer+2014+Advances+in+Measuring+the+Environmental+and+Social+Impacts+of+Environmental+Programs&ie=UTF-8&oe=UTF-8)
 
 ## Due Wed. 2/5 - Start your DAGs with Guest Speaker and visitor: Dr. Zach Laubach
 1) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
@@ -51,15 +51,17 @@ Optional:
 3) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
 3) Review DAG resources and [DAG software](http://dagitty.net) on the website's [DAGs resources tab](https://lauradee.github.io/EcologyCausalInference/DAGs.html)
 
-Prior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. *Be prepared to present and discuss your DAG. You will answer a set of questions in the template on the Google Drive based on your question and DAG.* 
+Prior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. *Be prepared to present and discuss your DAG.* 
 
 ## Due Mon. 2/10 Matching (and weighting)
 1) [Ramsey et al. 2018](https://doi.org/10.1111/2041-210X.13111)
 2) [Stuart 2010](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2943670/)  
 
-Optional: [Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)
+Optional: 
+-[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
+-[McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models](https://pmc.ncbi.nlm.nih.gov/articles/PMC3710547/)
 
-## Due Wed. 2/12 [Discussion lead(s): ____ ]
+## Due Wed. 2/12 [Discussion lead(s): Miles & Teresea ]
 1) [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)  
 2) [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)  
 
@@ -71,7 +73,7 @@ Optional: [Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)
 3) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) up until 18.2.5 Rollout Designs and Multiple Treatment Periods.
 
 ## Due Wed. 2/19 [Discussion lead(s): ____ ]
-*DUE Draft of DAG OR literature review proposal (1 page max.)*\
+*DUE Draft of Revised DAG OR literature review proposal (1 page max.)*\
 1) [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 *demo* RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)
 
@@ -80,7 +82,7 @@ Optional: [Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
 3) [Brynes and Dee 2025 *Ecology Letters*](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
-## Due Wed. 2/26 - Laura away: Fixed Effects Discussion
+## Due Wed. 2/26 - Fixed Effects Discussion
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
 3) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 
@@ -127,7 +129,7 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 2) TBD on sensitivity tests 
 
-## Due Wed. 4/2 [Discussion lead(s): ____ ]
+## Due Wed. 4/2 [Discussion lead(s): Rachel & ____ ]
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 - [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
