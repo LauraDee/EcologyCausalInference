@@ -206,6 +206,9 @@ I do not expect you to buy any/all of these books. I will provide the sections t
 
 Hypothesis testing, type I and type II errors 
 
+## Logistic Regression
+
+[Logistic Regression Refresher](https://uc-r.github.io/logistic_regression)
 
 # Running List of Papers that review best practices for some techniques
 
