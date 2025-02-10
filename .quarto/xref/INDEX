@@ -46,5 +46,17 @@
   },
   "ggdag_demo.Rmd": {
     "ggdag_demo.html": "7d6bb5d1"
+  },
+  "exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf/Fixed_Effects.Rmd": {
+    "Fixed_Effects.html": "2efc140a"
+  },
+  "exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf/Matching_Weighting.Rmd": {
+    "Matching_Weighting.html": "a1b2914a"
+  },
+  "exercises/ggdag_demo.Rmd": {
+    "ggdag_demo.html": "7c7a5b89"
+  },
+  "exercises/inclass_demos/IPTW_exercise.Rmd": {
+    "IPTW_exercise.html": "870469ec"
   }
 }
