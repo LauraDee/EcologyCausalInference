@@ -1,0 +1,438 @@
+---
+title: "Tutorial on propensity score matching and inverse probability of treatment weighting"
+author: "Katherine Siegel and Laura Dee"
+date: "2024-06-17"
+output: html_document
+---
+
+## Description
+This tutorial demonstrates how to use propensity score matching and inverse probability of treatment weighting using a real dataset from [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y). The dataset for the entire western US is very large and unwieldy, so you'll work with a subset of data for a single year in Colorado. 
+
+## Set up
+Load the packages used for data manipulation (tidyverse, sf), making a directed acyclic graph (ggdag), matching (MatchIt), weighting (ipw), and regression models (lme4).
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+### load libraries
+library(tidyverse) ## for basic coding
+library(knitr) ## for rmarkdown
+library(sf) ## for dealing with shapefiles
+library(ggdag) ## for making a directed acyclic graph (DAG)
+library(MatchIt) ## for matching
+library(ipw) ## for weighting
+library(lme4) ## for regression models after matching/weighting
+
+### get rid of scientific notation
+options(scipen = 999)
+```
+
+## The context
+The Siegel et al. 2022 study examines the effect of forest management (through the proxy of land ownership) on annual burn probability in forests of the western US. Specifically, it looks at the effect of federal (treatment) vs. private (control) ownership on wildfire occurrence in sample units.
+
+### Directed acyclic graph
+Here's a DAG for the research question:  
+
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 10}
+### make dag
+fire_dag <- dagify(burn_prob ~ land_own + confound_covar,
+                   land_own ~ confound_covar,
+                   
+                   ### label nodes
+                   labels = c("burn_prob" = "Burn probability",
+                              "land_own" = "Land ownership",
+                              "confound_covar" = "Climate,\n geographic,\n and human\n covariates"),
+                   exposure = "land_own",
+                   outcome = "burn_prob",
+                   
+                   ### add coordinates
+                   coords = list(x = c(land_own = 1, 
+                                       burn_prob = 3,
+                                       confound_covar = 2),
+                                 y = c(land_own = 1, 
+                                       burn_prob = 1,
+                                       confound_covar = 2)))
+
+### plot dag
+ggdag_status(fire_dag,
+             use_labels = "label",
+             text = FALSE,
+             label_alpha = 0.5) +
+  guides(fill = FALSE, color = FALSE) +
+  theme_dag()
+```
+
+
+## The data
+The data are in the file *matching_ipw_data.csv.*
+
+### Variable names   
+
+* state: the state the sample unit is from (Colorado)  
+* UID: a unique identifier for each sample unit  
+* year: the year that the fire and climate data is from (2002)   
+* burned: whether or not the unit burned in 2002 (0 = unburned, 1 = burned)  
+* prot_cat_recl: the ownership class. 0 = private, 1 = federal  
+* dist_rds_km: distance to the nearest road, in kiometers  
+* slope: slope, in degrees  
+* aspect_srai: solar radiation aspect index     
+* elev_km: elevation, in 1000 m  
+* lon: longitude  
+* lat: latitude  
+* pdsi_avg_season: seasonal average Palmer Drought Severity Index value (fall, spring, summer, winter)  
+* soil_avg_season: seasonal average soil moisture (fall, spring, summer, winter)  
+* tmmn_avg_season: seasonal average minimum temperature (fall, spring, summer, winter)
+* tmmx_avg_season: seasonal average maximum temperature (fall, spring, summer, winter)  
+* vs_max_season: seasonal average maximum wind speed (fall, spring, summer, winter)  
+* total_precip_season: total seasonal precipitation (fall, spring, summer, winter)    
+* prev_yr_precip: total precipitation in the previous year
+
+## Data exploration
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 12}
+### open data
+dat <- read_csv("data/matching_ipw_data.csv")
+
+### set factor variables
+dat <- dat %>%
+  mutate_at(vars(state,
+                 UID,
+                 burned,
+                 prot_cat_recl),
+            factor)
+```
+
+### What's the breakdown of private (value = 0) vs. federal (value = 1) units? 
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### what's the breakdown of private vs. federal sample units? 
+kable(table(dat$prot_cat_recl),
+      caption = "Units on federal (=1) and private (=0) land") 
+```
+
+### What's the breakdown of units that burned (value = 1) in 2002 vs. units that did not burn (value = 0)?
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+kable(table(dat$burned),
+      caption = "Units that burned (=1) or did not burn (=0) in 2002") ## 82190 did not burn, while 1342 burned
+```
+
+### How do the private (in red) vs federal (in blue) units differ in terms of potential confounders?
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 12, fig.width = 10}
+dat %>%
+  pivot_longer(!state:prot_cat_recl,
+               names_to = "covars",
+               values_to = "value") %>%
+  # filter(covars %in% c("elev_km", "prev_yr_precip")) %>%
+  ggplot(aes(x = value, 
+             color = prot_cat_recl,
+             fill = prot_cat_recl,
+             alpha = 0.3)) +
+  geom_density() +
+  facet_wrap(~ covars,
+             scales = "free",
+             nrow = 8) + 
+  theme(legend.position = "none") +
+  xlab("Value") +
+  ylab("Density")
+```
+
+## Run naive regression
+We could just run a naive regression, ignoring the potential impact of confounders. There are some highly correlated covariates in the model, but let's ignore them for now. Let's see what that would yield:
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 12}
+### fit model
+fit_naive <- glm(burned ~ prot_cat_recl +
+                     dist_rds_km +
+                   slope +
+                   aspect_srai +
+                   elev_km +
+                   pdsi_avg_winter + pdsi_avg_spring +
+                   pdsi_avg_summer + pdsi_avg_fall +
+                   soil_avg_winter + soil_avg_spring +
+                   soil_avg_summer + soil_avg_fall +
+                   tmmn_avg_winter + tmmn_avg_spring +
+                   tmmn_avg_summer + tmmn_avg_fall +
+                   tmmx_avg_winter + tmmx_avg_spring +
+                   tmmx_avg_summer + tmmx_avg_fall +
+                   vs_max_winter + vs_max_spring +
+                   vs_max_summer + vs_max_fall +
+                   total_precip_winter + total_precip_spring +
+                   total_precip_summer + total_precip_fall +
+                   prev_yr_precip,
+                     data = dat,
+                   family = binomial(link = "logit"))
+
+### extract coefficients
+naive_summary <- summary(fit_naive)
+naive_coeff <- as.data.frame(naive_summary$coefficients)
+naive_coeff <- naive_coeff %>% rownames_to_column()
+
+### round for ease of presentation
+naive_coeff_round <- naive_coeff %>%
+  dplyr::select(Variable = rowname, 
+                Estimate,
+                `Std. Error`,
+                `p value` = `Pr(>|z|)`) %>%
+  mutate(Estimate = round(Estimate, 3),
+         `Std. Error` = round(`Std. Error`, 3),
+         `p value` = round(`p value`, 3))
+
+kable(naive_coeff_round,
+      caption = "Coefficient estimates for naive model")
+```
+
+## Use matching to overcome issues with observed confounding variables
+
+### Match the data  
+Match the data on the observable covariates, using the MatchIt package. You can play around with the settings to see how it affects the matched data you end up with. 
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### Match the data 
+matched_dat <- matchit(prot_cat_recl ~ elev_km + 
+                         slope + aspect_srai +
+                         lon + lat +
+                         dist_rds_km + prev_yr_precip +
+                         vs_max_fall + vs_max_winter +
+                         vs_max_spring + vs_max_summer +
+                         total_precip_fall + 
+                         total_precip_winter +
+                         total_precip_spring + 
+                         total_precip_summer +
+                         tmmx_avg_fall + tmmx_avg_winter +
+                         tmmx_avg_spring + tmmx_avg_summer +
+                         tmmn_avg_fall + tmmn_avg_winter +
+                         tmmn_avg_spring + tmmn_avg_summer +
+                         pdsi_avg_fall + pdsi_avg_winter +
+                         pdsi_avg_spring + pdsi_avg_summer +
+                         soil_avg_fall + soil_avg_winter + 
+                         soil_avg_spring + soil_avg_summer,
+                       method = "nearest", 
+                       data = dat, 
+                       distance = "probit",
+                       caliper = 0.10,  
+                       m.order = "random")
+
+### summarize
+match_qual <- summary(matched_dat, standardize = TRUE)
+```
+
+#### Assess match quality
+Take a look at the quality of the matches: how many units were matched? Control = private units, Treated = federal units
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 8}
+kable(match_qual$nn,
+      caption = "Breakdown of matched and unmatched units")
+```
+
+What are the covariate means in the matched dataset for the treated (federal) and control (private) units? What was the covariate balance after matching? 
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 8}
+### look at the standardized mean differences 
+match_summary <- as.data.frame(match_qual$sum.matched)
+
+kable(match_summary %>%
+        dplyr::select(`Means Treated`,
+                      `Means Control`,
+                      `Standardized Mean Difference` = `Std. Mean Diff.`),
+      caption = "Covariate balance of matched dataset")
+# range(match_summary$`Std. Mean Diff.`)
+```
+
+Comparison of standardized mean differences in the covariate values in the full vs. matched dataset
+```{r echo = FALSE, message = FALSE, warning = FALSE, fig.height = 8}
+### plot
+plot(match_qual)
+
+### Some easy visualizations through MatchiIt
+# plot(match, interactive = FALSE)
+# plot(match, type = "jitter", interactive = FALSE)
+```
+
+### Analyze the matched dataset
+#### Extract the matched data
+First, you'll need to extract the matched data and use the UIDs from the matched data to subset the full dataset for analysis. 
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### Extract the matches from the MatchIt object
+matched_units <- match.data(matched_dat)
+
+### Filter full_data to just include the UIDs of the matched subset of the data
+dat_matched <- dat %>%
+  filter(UID %in% matched_units$UID)
+```
+
+#### Model the effect of ownership/management on wildfire probability
+Again, there are correlated covariates, but let's just ignore them
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### fit model
+fit_matched <- glm(burned ~ prot_cat_recl +
+                     dist_rds_km +
+                     slope +
+                     aspect_srai +
+                     elev_km +
+                     pdsi_avg_winter + pdsi_avg_spring +
+                     pdsi_avg_summer + pdsi_avg_fall +
+                     soil_avg_winter + soil_avg_spring +
+                     soil_avg_summer + soil_avg_fall +
+                     tmmn_avg_winter + tmmn_avg_spring +
+                     tmmn_avg_summer + tmmn_avg_fall +
+                     tmmx_avg_winter + tmmx_avg_spring +
+                     tmmx_avg_summer + tmmx_avg_fall +
+                     vs_max_winter + vs_max_spring +
+                     vs_max_summer + vs_max_fall +
+                     total_precip_winter + total_precip_spring +
+                     total_precip_summer + total_precip_fall +
+                     prev_yr_precip,
+                   data = dat_matched,
+                   family = binomial(link = "logit"))
+
+### extract coefficients
+matched_summary <- summary(fit_matched)
+matched_coeff <- as.data.frame(matched_summary$coefficients)
+matched_coeff <- matched_coeff %>% rownames_to_column()
+
+### round for ease of presentation
+matched_coeff_round <- matched_coeff %>%
+  dplyr::select(Variable = rowname, 
+                Estimate,
+                `Std. Error`,
+                `p value` = `Pr(>|z|)`) %>%
+  mutate(Estimate = round(Estimate, 3),
+         `Std. Error` = round(`Std. Error`, 3),
+         `p value` = round(`p value`, 3))
+
+kable(matched_coeff_round,
+      caption = "Coefficient estimates for model with matching")
+```
+
+## Use weighting to overcome issues with observed confounding variables
+
+### Weight the data 
+Use the package ipw
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### for the ipw package, the exposure needs to be numeric, not a factor
+dat_weight <- dat %>%
+  mutate(prot_cat_recl = as.numeric(prot_cat_recl) - 1)
+
+### convert to dataframe
+dat_weight <- dat_weight %>%
+  as.data.frame()
+
+### Generate weights
+weights_ipwpoint <- ipwpoint(exposure = prot_cat_recl,
+                             family = "binomial",  
+                             link = "logit",
+                             denominator = ~ elev_km + 
+                               slope + aspect_srai +
+                               lon + lat +
+                               dist_rds_km + prev_yr_precip +
+                               vs_max_fall + vs_max_winter +
+                               vs_max_spring + vs_max_summer +
+                               total_precip_fall + 
+                               total_precip_winter +
+                               total_precip_spring + 
+                               total_precip_summer +
+                               tmmx_avg_fall + tmmx_avg_winter +
+                               tmmx_avg_spring + tmmx_avg_summer +
+                               tmmn_avg_fall + tmmn_avg_winter +
+                               tmmn_avg_spring + tmmn_avg_summer +
+                               pdsi_avg_fall + pdsi_avg_winter +
+                               pdsi_avg_spring + pdsi_avg_summer +
+                               soil_avg_fall + soil_avg_winter + 
+                               soil_avg_spring + soil_avg_summer,
+                             data = dat_weight)
+```
+
+#### What's the range of weights?
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### add weights to dataset
+data_ipw <- dat %>%
+  mutate(ipw = weights_ipwpoint$ipw.weights)
+
+### print weights
+range(data_ipw$ipw)
+
+### plot
+ipwplot(data_ipw$ipw, 
+        logscale = TRUE,
+        xlab = "Weight (log scale)",
+        ylab = "Density",
+        main = "", 
+        ref = FALSE)
+```
+
+### Model the effect of ownership
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### estimate average treatment effect
+model_ipw <- glm(burned ~ prot_cat_recl +
+                   dist_rds_km +
+                   slope +
+                   aspect_srai +
+                   elev_km +
+                   pdsi_avg_winter + pdsi_avg_spring +
+                   pdsi_avg_summer + pdsi_avg_fall +
+                   soil_avg_winter + soil_avg_spring +
+                   soil_avg_summer + soil_avg_fall +
+                   tmmn_avg_winter + tmmn_avg_spring +
+                   tmmn_avg_summer + tmmn_avg_fall +
+                   tmmx_avg_winter + tmmx_avg_spring +
+                   tmmx_avg_summer + tmmx_avg_fall +
+                   vs_max_winter + vs_max_spring +
+                   vs_max_summer + vs_max_fall +
+                   total_precip_winter + total_precip_spring +
+                   total_precip_summer + total_precip_fall +
+                   prev_yr_precip,
+                 data = data_ipw,
+                 weights = ipw,
+                 family = binomial(link = "logit"))
+
+### extract coefficients
+weighted_summary <- summary(model_ipw)
+weighted_coeff <- as.data.frame(weighted_summary$coefficients)
+weighted_coeff <- weighted_coeff %>% rownames_to_column()
+
+### round for ease of presentation
+weighted_coeff_round <- weighted_coeff %>%
+  dplyr::select(Variable = rowname, 
+                Estimate,
+                `Std. Error`,
+                `p value` = `Pr(>|z|)`) %>%
+  mutate(Estimate = round(Estimate, 3),
+         `Std. Error` = round(`Std. Error`, 3),
+         `p value` = round(`p value`, 3))
+
+kable(weighted_coeff_round,
+      caption = "Coefficient estimates for model with weighting")
+```
+
+## Compare outputs from the naive, matched, and weighted regressions
+```{r echo = FALSE, message = FALSE, warning = FALSE}
+### add identifying column for coefficient tables
+naive_coeff <- naive_coeff %>%
+  mutate(model = "Naive")
+matched_coeff <- matched_coeff %>%
+  mutate(model = "Matched")
+weighted_coeff <- weighted_coeff %>%
+  mutate(model = "Weighted")
+
+### combine 
+all_coeff <- rbind(naive_coeff,
+                   matched_coeff,
+                   weighted_coeff)
+
+### fix column names
+colnames(all_coeff) <- c("variable",
+                         "estimate",
+                         "std_error",
+                         "z_value",
+                         "p_value",
+                         "model")
+
+### plot
+all_coeff %>%
+  filter(variable == "prot_cat_recl1") %>%
+  ggplot() +
+  geom_point(aes(x = model,
+             y = estimate)) +
+  geom_errorbar(aes(ymin = estimate - std_error, 
+                    ymax = estimate + std_error,
+                    x = model),
+                width = .1) +
+  scale_x_discrete(limits = c('Naive', 'Matched', 
+                     'Weighted')) +
+  xlab("Model") +
+  ylab("Estimated treatment effect")
+  theme_bw()
+```
