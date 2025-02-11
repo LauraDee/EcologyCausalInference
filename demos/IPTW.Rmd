@@ -1,0 +1,62 @@
+---
+title: "IPTW"
+author: "Laura Dee"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This document is to  help students understand how the **Inverse Probability of Treatment Weighting (IPTW)** method works and how to apply it when adjusting for treatment assignment in observational studies. 
+
+Below a table with the **formulas** for **Weight (IPTW)** included for clarity. The formulas are added to show how the weights are calculated based on the **Probability of High Pollution** (P(T=1)) for each island.
+
+- **Distance to Shoreline**: Represents the proximity of the island to the shoreline.
+- **Treatment (High vs Low Pollution)**: 1 for high pollution exposure, 0 for low pollution exposure.
+- **Probability of High Pollution (P(T=1))**: The estimated likelihood of high pollution exposure for each island.
+
+### Updated Table with Formulas for IPTW:
+
+| Island ID | Distance to Shoreline (km) | Treatment (T) | Probability of High Pollution (P(T=1)) | Weight (IPTW)  |
+|-----------|----------------------------|---------------|----------------------------------------|----------------|
+| 1         | 1.2                        | 1             | 0.85                                   | \( \frac{1}{0.85} = 1.18 \)  |
+| 2         | 2.5                        | 0             | 0.45                                   | \( \frac{1}{1 - 0.45} = 1.82 \)  |
+| 3         | 0.8                        | 1             | 0.70                                   | \( \frac{1}{0.70} = 1.43 \)  |
+| 4         | 3.0                        | 0             | 0.30                                   | \( \frac{1}{1 - 0.30} = 1.43 \)  |
+| 5         | 1.5                        | 1             | 0.75                                   | \( \frac{1}{0.75} = 1.33 \)  |
+| 6         | 4.0                        | 0             | 0.20                                   | \( \frac{1}{1 - 0.20} = 1.25 \)  |
+| 7         | 2.0                        | 1             | 0.90                                   | \( \frac{1}{0.90} = 1.11 \)  |
+| 8         | 5.0                        | 0             | 0.10                                   | \( \frac{1}{1 - 0.10} = 1.11 \)  |
+
+### Formulas for Calculating Weight (IPTW):
+- **For treated islands (T=1)**:
+  \[
+  \text{Weight} = \frac{1}{P(T=1)}
+  \]
+  Where \( P(T=1) \) is the probability of being exposed to **high pollution** (probability of treatment).
+
+- **For untreated islands (T=0)**:
+  \[
+  \text{Weight} = \frac{1}{1 - P(T=1)}
+  \]
+  Where \( 1 - P(T=1) \) represents the probability of being exposed to **low pollution** (complement of treatment probability).
+
+### Example of Calculation:
+
+- For **Island 1** (treated, high pollution):
+  - Probability of high pollution = 0.85
+  - Weight: 
+    \[
+    \frac{1}{0.85} = 1.18
+    \]
+  
+- For **Island 2** (untreated, low pollution):
+  - Probability of high pollution = 0.45
+  - Weight: 
+    \[
+    \frac{1}{1 - 0.45} = 1.82
+    \]
+
+
