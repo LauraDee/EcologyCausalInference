@@ -65,14 +65,14 @@ Optional:
 1) [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)  
 2) [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)  
 
-*demo* RMarkdowns from Siegel & Dee (2025) for weighting and matching on course GitHub
+*demo* RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub [here](https://github.com/LauraDee/EcologyCausalInference/tree/main/exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf)
 
 ## Due Mon. 2/17 Difference-in-Difference
 1) Angrist & Pischke **2015**, Chapter 5 (note: this is in the book *Mastering ‘Metrics*)  
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html) up until 16.2.2 Multiple Sets of Fixed Effects. 
 3) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) up until 18.2.5 Rollout Designs and Multiple Treatment Periods.
 
-## Due Wed. 2/19 [Discussion lead(s): ____ ]
+## Due Wed. 2/19 [Discussion lead(s):Advyth + Kathryn ]
 *DUE Draft of Revised DAG OR literature review proposal (1 page max.)*\
 1) [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 *demo* RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)
@@ -82,7 +82,7 @@ Optional:
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
 3) [Brynes and Dee 2025 *Ecology Letters*](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
-## Due Wed. 2/26 - Fixed Effects Discussion
+## Due Wed. 2/26 - Fixed Effects Discussion [Hunter + Treson]
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
 3) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 
@@ -107,7 +107,7 @@ Optional:
 1) Angrist & Pischke **2015**, Chapter 3 (note: this is in *Mastering ‘Metrics*)   
 2) Kendall book chapter (in GDrive)  
 
-## Due Wed. 3/12  Instrumental Variables Applications [Discussion lead(s): ____ ]
+## Due Wed. 3/12  Instrumental Variables Applications [Discussion lead(s): Hope & Katie]
 1) [Sims 2010](https://www.sciencedirect.com/science/article/pii/S0095069610000586)   
 2) [MacDonald & Mordecai 2020](https://www.pnas.org/doi/10.1073/pnas.1905315116)\
 *demo* 
@@ -116,7 +116,7 @@ Optional:
 1) [The Effect Ch. 20](https://theeffectbook.net/ch-RegressionDiscontinuity.html)
 Optional: Angrist & Pischke **2015**, Chapter 4 (note: this is in *Mastering ‘Metrics* in the GDrive) 
 
-## Due Wed. 3/19 RDD Applications [Discussion lead(s): ____ ]
+## Due Wed. 3/19 RDD Applications [Discussion lead(s): Anna & Jiacheng  ]
 1) [Englander 2019](https://doi.org/10.1038/s41893-019-0389-9)   
 2) [Noack et al. 2022](https://doi.org/10.1111/ajae.12274)  
 Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
@@ -129,7 +129,7 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 2) TBD on sensitivity tests 
 
-## Due Wed. 4/2 [Discussion lead(s): Rachel & ____ ]
+## Due Wed. 4/2 [Discussion lead(s): Rachel & Luis ]
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 - [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
@@ -146,7 +146,7 @@ Brief presentation (3-5 minutes) of your project: the question you are addressin
 ## Due Wed. 4/ 16 Power, standard error estimation, and inference 
 Revised DAG + proposed methods OR outline of literature review due
 
-## Due Mon. 4/21 Special topics or Project Work 
+## Due Mon. 4/21 Special topics 
 
 ## Due Wed 4/23 Special topics discussion or Project Work 
 
