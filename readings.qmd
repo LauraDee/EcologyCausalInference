@@ -38,7 +38,6 @@ Optional: [Arif & Massey (2023) Reducing bias in experimental ecology through di
 2) [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190) - up to section 8, and the Discussion. *Can skim in between for preview of what's to come.* 
 3) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - up until section 5.1. 
 
-
 Optional and more advanced: Angrist & Pischke 2008, Chapter 3 (from *Mostly Harmless Econometrics*)  
 
 Optional: 
@@ -148,7 +147,7 @@ Revised DAG + proposed methods OR outline of literature review due
 
 ## Due Mon. 4/21 Special topics 
 
-## Due Wed 4/23 Special topics discussion or Project Work 
+## Due Wed 4/23  Project Presentations 
 
 ## Due Mon. 4/28  Project Presentations
 Project Presentations
@@ -171,10 +170,10 @@ Specific guidelines for literature review  presentations:
 * Describe and critique the current approaches people are taking  
 * Present your ideas for how the field could better incorporate causal inference methods  
 
-## Due Wed 4/30  Special topics or Project Work 
+## Due Wed 4/30  Project Presentations (or no class)
 Project Presentations Continued
 
-## May 1 is last day of class - Projects Due Friday May 2 
+## Projects Due Friday May 2 
 See Assignments & Evaluation tab for more information 
 
 # Recommended Textbooks (not required)    

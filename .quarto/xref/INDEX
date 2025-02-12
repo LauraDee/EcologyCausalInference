@@ -58,5 +58,8 @@
   },
   "exercises/inclass_demos/IPTW_exercise.Rmd": {
     "IPTW_exercise.html": "870469ec"
+  },
+  "demos/IPTW.Rmd": {
+    "IPTW.html": "0b5e439a"
   }
 }
