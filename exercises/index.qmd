@@ -11,9 +11,11 @@ Creating and Analyzing DAGs in ggdag (or Daggity).
 [Matching demo in R](https://github.com/katherinesiegel/EBIOcausalinference/blob/main/exercises/matching_demo.Rmd). I couldn't figure out a cute way for you to be able to download this directly as a RMarkdown file (thwarted by quarto...). But this link will take you to the page in the course's GitHub repository where the RMarkdown file is stored. Click on "Raw," then you can copy and paste the code into an RMarkdown on your computer.
 
 ## Wednesday 2/22
-[Matching replication exercise](https://github.com/katherinesiegel/EBIOcausalinference/blob/main/exercises/matching_replication.Rmd)  
+[Matching demo with simulated data](https://github.com/LauraDee/EcologyCausalInference/blob/main/exercises/matching_demo.Rmd)
 
-In this replication exercise, you will use a subset of the data from [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y) to play around with matching using a real dataset. The data are available for download on the course [Canvas page](https://canvas.colorado.edu/courses/92330), under the header "IV Quasi Experimental Designs: Matching." There are two csv files of data: *colo_dat_full.csv* and *colo_data_for_matching.csv*. *colo_dat_full.csv* has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. *colo_data_for_matching.csv* is a file that's ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables. 
+[Matching and Weighting replication exercise](https://github.com/LauraDee/EcologyCausalInference/tree/main/exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf)  
+
+In this replication exercise, you will use a subset of the data in the data folder found in the above link; the data is from [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y) to play around with matching and weighting using a real dataset. On the Github, there are two csv files of data: *colo_dat_full.csv* and *colo_data_for_matching.csv*. *colo_dat_full.csv* has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. *colo_data_for_matching.csv* is a file that's ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables. 
 
 ## Monday 2/27
 [Diff-in-Diff regression demo in R](https://github.com/katherinesiegel/EBIOcausalinference/tree/main/exercises/DiD_demo)

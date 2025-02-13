@@ -254,7 +254,7 @@
     "href": "exercises/index.html#wednesday-222",
     "title": "Exercises in R",
     "section": "Wednesday 2/22",
-    "text": "Wednesday 2/22\nMatching replication exercise\nIn this replication exercise, you will use a subset of the data from Siegel et al. 2022 to play around with matching using a real dataset. The data are available for download on the course Canvas page, under the header “IV Quasi Experimental Designs: Matching.” There are two csv files of data: colo_dat_full.csv and colo_data_for_matching.csv. colo_dat_full.csv has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. colo_data_for_matching.csv is a file that’s ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables.",
+    "text": "Wednesday 2/22\nMatching demo with simulated data\nMatching and Weighting replication exercise\nIn this replication exercise, you will use a subset of the data in the data folder found in the above link; the data is from Siegel et al. 2022 to play around with matching and weighting using a real dataset. On the Github, there are two csv files of data: colo_dat_full.csv and colo_data_for_matching.csv. colo_dat_full.csv has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. colo_data_for_matching.csv is a file that’s ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables.",
     "crumbs": [
       "Exercises"
     ]
