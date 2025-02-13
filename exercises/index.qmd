@@ -46,5 +46,5 @@ This tutorial replicates the main analyses in Dee et al, contrasted with common 
 Andrew Heiss has a great breakdown [here](https://www.andrewheiss.com/blog/2024/03/21/demystifying-ate-att-atu/)
 
 ## Measurement Error Creates Bias 
+code demo [here](https://github.com/LauraDee/EcologyCausalInference/blob/main/demos/MeasurementError.R)
 
-## Sims 
