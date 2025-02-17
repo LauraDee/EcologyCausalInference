@@ -93,7 +93,6 @@ Optional (but good for the discussants!) [Meehan et al. 2011](https://doi.org/10
 
 For a more complete treatment, see: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
 
-
 ## Due Wed. 3/5 DiD extensions and issues
 1) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 3) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) starting at 18.2.5 Rollout Designs and Multiple Treatment Periods. 
