@@ -89,7 +89,8 @@ Optional (but good for the discussants!) [Meehan et al. 2011](https://doi.org/10
 *demo* Dee et al. Rmarkdown on course GitHub
 
 ## Due Mon. 3/3  Synthetic Control (Asia Kaiser)
-Tenative reading: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
+Tenative reading: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)\
+OR [The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)
 
 ## Due Wed. 3/5 DiD extensions and issues
 1) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
