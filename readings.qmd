@@ -79,7 +79,6 @@ Optional:
 ## Due Mon. 2/24 Panel methods continued; Two-way fixed effects
 1) Angrist & Pischke **2008**, Chapter 5
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
-3) [Brynes and Dee 2025 *Ecology Letters*](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
 ## Due Wed. 2/26 - Fixed Effects Discussion [Hunter + Treson]
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
@@ -115,7 +114,7 @@ Optional:
 1) [The Effect Ch. 20](https://theeffectbook.net/ch-RegressionDiscontinuity.html)
 Optional: Angrist & Pischke **2015**, Chapter 4 (note: this is in *Mastering ‘Metrics* in the GDrive) 
 
-## Due Wed. 3/19 RDD Applications [Discussion lead(s): Anna & Jiacheng  ]
+## Due Wed. 3/19 RDD Applications [Discussion lead(s): Anna & Jiacheng]
 1) [Englander 2019](https://doi.org/10.1038/s41893-019-0389-9)   
 2) [Noack et al. 2022](https://doi.org/10.1111/ajae.12274)  
 Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
