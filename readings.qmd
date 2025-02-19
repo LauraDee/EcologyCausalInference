@@ -60,7 +60,7 @@ Optional:
 -[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
 -[McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models](https://pmc.ncbi.nlm.nih.gov/articles/PMC3710547/)
 
-## Due Wed. 2/12 [Discussion lead(s): Miles & Teresea ]
+## Due Wed. 2/12 [Discussion lead(s): Miles & Teresea]
 1) [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)  
 2) [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)  
 
@@ -79,6 +79,10 @@ Optional:
 ## Due Mon. 2/24 Panel methods continued; Two-way fixed effects
 1) Angrist & Pischke **2008**, Chapter 5
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html)  starting at 16.2.2 Multiple Sets of Fixed Effects
+
+Optional: 
+[Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)\
+[Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
 ## Due Wed. 2/26 - Fixed Effects Discussion [Hunter + Treson]
 2) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6)  
@@ -102,6 +106,7 @@ For a more complete treatment, see: [Mixtape Ch. 10](https://mixtape.scunning.co
 Optional: 
 1) [Roth et al. (2023). What's trending in difference in  difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
 2) Pedro Sant'Anna's DiD resources and  [*Comprehensive Course on DiD*](https://psantanna.com/did-resources/)
+3)[Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)
 
 ## Due Mon. 3/10 Instrumental Variables
 1) Angrist & Pischke **2015**, Chapter 3 (note: this is in *Mastering ‘Metrics*)   
