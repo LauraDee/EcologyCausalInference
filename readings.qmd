@@ -93,7 +93,9 @@ Optional (but good for the discussants!) [Meehan et al. 2011](https://doi.org/10
 *demo* Dee et al. Rmarkdown on course GitHub
 
 ## Due Mon. 3/3  Synthetic Control (Asia Kaiser)
-[The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)
+1) [Fick et al (2020)](https://drive.google.com/file/d/1pCl1LkraGB7O55NsgW3j9lPVdBg9Tvar/view)
+
+Optional: [The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)
 
 For a more complete treatment of synthetic control, see: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
 

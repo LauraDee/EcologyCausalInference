@@ -29,7 +29,7 @@ options(scipen = 999)
 The Dee et al. 2023 study examines the effect of grassland species richness on productivity, engaging with ongoing debates about the relationship between biodiversity and ecosystem functioning. Specifically, it looks at how plant species richness (a continuous treatment) affects live aboveground biomass (outcome) in sample plots across different research sites over time.
 
 ### Directed acyclic graph
-Here's a DAG for the research question:  
+Here's a simplified DAG for the research question:  
 
 ```{r echo = FALSE, message = FALSE, warning = FALSE, fig.width = 10, fig.height = 10}
 ### make dag
