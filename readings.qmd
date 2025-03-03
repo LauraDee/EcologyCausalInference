@@ -22,7 +22,6 @@ Optional; additional background reading on DAGs:
 3) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)\
 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\
 5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)  
-
 ## Due Mon. 1/27 Potential Outcomes 
 1) Angrist & Pischke 2008, Chapter 2 (from *Mostly Harmless Econometrics*)  
 Optional: Morgan & Winship Book, Ch. 2 
@@ -119,34 +118,34 @@ Optional:
 2) [MacDonald & Mordecai 2020](https://www.pnas.org/doi/10.1073/pnas.1905315116)\
 *demo* 
 
-## Due Mon. 3/17  Regression Discontinuity Designs 
+## Due Mon. 3/17  Project Consultations
+1:1 consultations with Laura  in lieu of class. Schedule to sign up [here](https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing)
+
+## Due Wed. 3/19 First Project Presentations 
+Brief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A.
+
+## Week of March 24th - Spring Break, No Classes this week
+
+## Due Monday 3/31 Regression Discontinuity Designs 
 1) [The Effect Ch. 20](https://theeffectbook.net/ch-RegressionDiscontinuity.html)
 Optional: Angrist & Pischke **2015**, Chapter 4 (note: this is in *Mastering ‘Metrics* in the GDrive) 
 
-## Due Wed. 3/19 RDD Applications [Discussion lead(s): Anna & Jiacheng]
+## Due Wed. 4/2 RDD Applications [Discussion lead(s): Anna & Jiacheng]
 1) [Englander 2019](https://doi.org/10.1038/s41893-019-0389-9)   
 2) [Noack et al. 2022](https://doi.org/10.1111/ajae.12274)  
 Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 
-## Week of March 24th - Spring Break, No Classes this week
-
-## Due Monday 3/31 Comparison of Designs & Sensitivity Tests
+## Due Mon. 4/7  Project Check ins or Comparison of Designs & Sensitivity Tests
 1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)
 2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
 3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 2) TBD on sensitivity tests 
 
-## Due Wed. 4/2 [Discussion lead(s): Rachel & Luis ]
+## Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ]
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 - [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 - TBD on sensitivity and placebo tests 
-
-## Due Mon. 4/7  First Project Presentations 
-Brief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A
-
-## Due Wed. 4/9 Project Consultations
-1:1 consultations with Laura  in lieu of class. Schedule to sign up [here](https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing)
 
 ## Due Mon. 4/14 Heterogeniety & Generalizability in experimental and observational studies
 

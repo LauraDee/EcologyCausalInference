@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests and availability of guest speakers, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations  • Intro to concepts in causal inference and motivation for applying it to ecology and evolution  • Clarify causal versus other research questions and aims  • Brief Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\nGuest speaker: Dr. Suchinta Arif\n• Structural Causal Models and Directed Acyclic Graphs\n\n\nWeek 3 (1/27)\nIntro to the main frameworks for counterfactual causal inference\nRandomized Controlled Experiments (or RCTs) and experimental design\n• Potential outcomes framework  • Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions  • Dissect experimental design with respect to assumptions required for causal inference\n\n\nWeek 4 (2/3)\nObservational data and counterfactuals; Introduction to quasi-experimental methods\nCreating and Analyzing DAGs\n(Guest speaker: [Dr. Zach Laubach](https://laubach.github.io))\nDue: first draft of research question, or lit review proposal, and DAG analysis on 2/7\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • DAGs as a tool from the graphical causal modeling framework  • Principles of covariate and confounder selection \nProject/Workshopping:\n• Students create and workshop DAGs for their own research/study systems\n\n\nWeek 5 (2/10)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 6 (2/17)\nDifference in Difference (DiD)\nPaper discussion and replication exercise\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nPanel methods continued: Two way fixed effects and extensions\nPaper discussion and replication exercise - Class on zoom\nDue Draft of DAG OR literature review proposal (2 page max.)\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 8 (3/3)\nSynthetic Control (Asia Kaiser)\nExtensions of diff-in-diff and fixed effects\n(Dr. Jarrett Brynes)\nOn zoom\n• Learn synthetic control including identification assumptions and interpretation  • Compare it to other types of designs\n\n\nWeek 9 (3/10)\nInstrumental Variables (IV)\nIV Paper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 10 (3/17)\nRegression Discontinuity Designs (RDD)\nRDD Paper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nComparison of study designs\nComparison of study designs cont’d; Sensitivity tests\n• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs  • Intro to Sensitivity Tests\n\n\nWeek 13 (4/7)\nOne-on-one consultations on projects on zoom\nDUE: In class - brief presentation on project\n• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates\n\n\nWeek 14 (4/14)\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\nPower, Inference, and Standard Errors\n• Introduction to challenges with generalizability  • Standard errors, power, and inference with quasi-experimental methods\n\n\nWeek 15 (4/21)\nMediation Analysis\nProject presentations\nMonday is TBD based on surveying the class - see ideas for additional topics below. Opportunity for guest speaker.  • Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\nWeek 16 (4/28)\nProject presentations\nMay 2nd: Final Write up due by email\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\n\n\n\n\n\n\n\n\nPotential additional topics/units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\nSpake et al. 2022\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects and conditional average effects\ne.g. Causal Forests\n\n\nDeeper dive into mechanisms and mediation analysis\n\n\nDeeper dive into Sensitivity Tests\n\n\nReplication/Reproducibility/Pre-registration\ne.g. Kimmel et al. 2023 Empirical evidence of widespread exaggeration bias and selective reporting in ecology",
+    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to workshopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests and availability of guest speakers, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations  • Intro to concepts in causal inference and motivation for applying it to ecology and evolution  • Clarify causal versus other research questions and aims  • Brief Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\nGuest speaker: Dr. Suchinta Arif\n• Structural Causal Models and Directed Acyclic Graphs\n\n\nWeek 3 (1/27)\nIntro to the main frameworks for counterfactual causal inference\nRandomized Controlled Experiments (or RCTs) and experimental design\n• Potential outcomes framework  • Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions  • Dissect experimental design with respect to assumptions required for causal inference\n\n\nWeek 4 (2/3)\nObservational data and counterfactuals; Introduction to quasi-experimental methods\nCreating and Analyzing DAGs\n(Guest speaker: [Dr. Zach Laubach](https://laubach.github.io))\nDue: first draft of research question, or lit review proposal, and DAG analysis on 2/7\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • DAGs as a tool from the graphical causal modeling framework  • Principles of covariate and confounder selection \nProject/Workshopping:\n• Students create and workshop DAGs for their own research/study systems\n\n\nWeek 5 (2/10)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 6 (2/17)\nDifference in Difference (DiD)\nPaper discussion and replication exercise\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nPanel methods continued: Two way fixed effects and extensions\nPaper discussion and replication exercise - Class on zoom\nDue Draft of DAG OR literature review proposal (2 page max.)\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 8 (3/3)\nSynthetic Control (Asia Kaiser)\nExtensions of diff-in-diff and fixed effects\n(Dr. Jarrett Brynes)\nOn zoom\n• Learn synthetic control including identification assumptions and interpretation  • Compare it to other types of designs\n\n\nWeek 9 (3/10)\nInstrumental Variables (IV)\nIV Paper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 10 (3/17)\nOne-on-one consultations on projects on zoom\nDUE: In class - brief presentation on project\n• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nRegressionDiscontinuity Designs (RDD)\nRDD Paper discussion\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 13 (4/7)\nProject consultations or Comparison of study designs\nComparison of study designs cont’d; Sensitivity tests\n• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs  • Intro to Sensitivity Tests\n\n\nWeek 14 (4/14)\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\nPower, Inference, and Standard Errors\n• Introduction to challenges with generalizability  • Standard errors, power, and inference with quasi-experimental methods\n\n\nWeek 15 (4/21)\nMediation Analysis\nProject presentations\nMonday is TBD based on surveying the class - see ideas for additional topics below. Opportunity for guest speaker.  • Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\nWeek 16 (4/28)\nProject presentations\nMay 2nd: Final Write up due by email\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\n\n\n\n\n\n\n\n\nPotential additional topics/units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\nSpake et al. 2022\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects and conditional average effects\ne.g. Causal Forests\n\n\nDeeper dive into mechanisms and mediation analysis\n\n\nDeeper dive into Sensitivity Tests\n\n\nReplication/Reproducibility/Pre-registration\ne.g. Kimmel et al. 2023 Empirical evidence of widespread exaggeration bias and selective reporting in ecology",
     "crumbs": [
       "Schedule"
     ]
@@ -1764,7 +1764,7 @@
     "href": "readings.html#due-mon.-33-synthetic-control-asia-kaiser",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 3/3 Synthetic Control (Asia Kaiser)",
-    "text": "Due Mon. 3/3 Synthetic Control (Asia Kaiser)\nThe Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10",
+    "text": "Due Mon. 3/3 Synthetic Control (Asia Kaiser)\n\nFick et al (2020)\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -1834,7 +1834,7 @@
     "href": "readings.html#due-wed.-122-structural-causal-model-and-directed-acyclic-graphs-dag",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)",
-    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\nOptional; additional background reading on DAGs:\n3) The Effect Ch. 6\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) Cunningham (2021) Ch. 3",
+    "text": "Due Wed. 1/22 Structural Causal Model and Directed Acyclic Graphs (DAG)\nGuest speaker: Dr. Suchinta Arif\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\nOptional; additional background reading on DAGs:\n3) The Effect Ch. 6\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) Cunningham (2021) Ch. 3\n## Due Mon. 1/27 Potential Outcomes 1) Angrist & Pischke 2008, Chapter 2 (from Mostly Harmless Econometrics)\nOptional: Morgan & Winship Book, Ch. 2",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2270,6 +2270,66 @@
     "text": "Bootstrapping standard errors for propensity score matching\nAndrew Heiss has code and an example here",
     "crumbs": [
       "Exercises"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-317-project-consultations",
+    "href": "readings.html#due-mon.-317-project-consultations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 3/17 Project Consultations",
+    "text": "Due Mon. 3/17 Project Consultations\n1:1 consultations with Laura in lieu of class. Schedule to sign up here",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-319-first-project-presentations",
+    "href": "readings.html#due-wed.-319-first-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/19 First Project Presentations",
+    "text": "Due Wed. 3/19 First Project Presentations\nBrief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-monday-331-regression-discontinuity-designs",
+    "href": "readings.html#due-monday-331-regression-discontinuity-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Monday 3/31 Regression Discontinuity Designs",
+    "text": "Due Monday 3/31 Regression Discontinuity Designs\n\nThe Effect Ch. 20 Optional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-42-rdd-applications-discussion-leads-anna-jiacheng",
+    "href": "readings.html#due-wed.-42-rdd-applications-discussion-leads-anna-jiacheng",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/2 RDD Applications [Discussion lead(s): Anna & Jiacheng]",
+    "text": "Due Wed. 4/2 RDD Applications [Discussion lead(s): Anna & Jiacheng]\n\nEnglander 2019\n\nNoack et al. 2022\nOptional paper: Burgess et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-47-project-check-ins-or-comparison-of-designs-sensitivity-tests",
+    "href": "readings.html#due-mon.-47-project-check-ins-or-comparison-of-designs-sensitivity-tests",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 4/7 Project Check ins or Comparison of Designs & Sensitivity Tests",
+    "text": "Due Mon. 4/7 Project Check ins or Comparison of Designs & Sensitivity Tests\n\nSiegel & Dee (2025) Ecology Letters\nButsic et al. 2017\nArif & MacNiel 2021 Ecosphere\nTBD on sensitivity tests",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-49-comparison-of-designs-discussion-leads-rachel-luis",
+    "href": "readings.html#due-wed.-49-comparison-of-designs-discussion-leads-rachel-luis",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ]",
+    "text": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ]\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023 - TBD on sensitivity and placebo tests",
+    "crumbs": [
+      "Readings & Additional Materials"
     ]
   }
 ]
