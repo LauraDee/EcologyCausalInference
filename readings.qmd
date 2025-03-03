@@ -94,15 +94,20 @@ Optional (but good for the discussants!) [Meehan et al. 2011](https://doi.org/10
 ## Due Mon. 3/3  Synthetic Control (Asia Kaiser)
 1) [Fick et al (2020)](https://drive.google.com/file/d/1pCl1LkraGB7O55NsgW3j9lPVdBg9Tvar/view)
 
-Optional: [The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)
+*Optional:* 
+[The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)
 
 For a more complete treatment of synthetic control, see: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
+
+Applications: 
+- [Wu et al. 2023](https://www.science.org/doi/epdf/10.1126/sciadv.adi4123)\
+- [Lawson and Smith 2023](https://onlinelibrary.wiley.com/doi/10.1111/faf.12752)
 
 ## Due Wed. 3/5 DiD extensions and issues
 1) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 3) The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) starting at 18.2.5 Rollout Designs and Multiple Treatment Periods. 
 
-*demo* Brynes & Dee Rmarkdow non course GitHub
+*demo* Brynes & Dee Rmarkdown on [GitHub here] (https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)
 
 Optional: 
 1) [Roth et al. (2023). What's trending in difference in  difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
