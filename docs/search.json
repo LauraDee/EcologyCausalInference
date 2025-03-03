@@ -2070,7 +2070,7 @@
     "href": "exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf/Fixed_Effects.html#the-context",
     "title": "Tutorial on panel data and fixed effects designs",
     "section": "The context",
-    "text": "The context\nThe Dee et al. 2023 study examines the effect of grassland species richness on productivity, engaging with ongoing debates about the relationship between biodiversity and ecosystem functioning. Specifically, it looks at how plant species richness (a continuous treatment) affects live aboveground biomass (outcome) in sample plots across different research sites over time.\n\nDirected acyclic graph\nHere’s a DAG for the research question:"
+    "text": "The context\nThe Dee et al. 2023 study examines the effect of grassland species richness on productivity, engaging with ongoing debates about the relationship between biodiversity and ecosystem functioning. Specifically, it looks at how plant species richness (a continuous treatment) affects live aboveground biomass (outcome) in sample plots across different research sites over time.\n\nDirected acyclic graph\nHere’s a simplified DAG for the research question:"
   },
   {
     "objectID": "exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf/Fixed_Effects.html#the-data",
