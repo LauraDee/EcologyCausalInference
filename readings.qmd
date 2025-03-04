@@ -124,7 +124,12 @@ Optional:
 *demo* 
 
 ## Due Mon. 3/17  Project Consultations
-1:1 consultations with Laura  in lieu of class. Schedule to sign up [here](https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing)
+1:1 consultations with Laura  in lieu of class. Please read the rest of the following papers and come to the call with a proposal for the statistical design you'll use and reasoning why: 
+[Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - up until section 5.1. 
+[Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190) - up to section 8, and the Discussion. *Can skim in between for preview of what's to come.* 
+3)  
+
+Schedule to sign up [here](https://docs.google.com/spreadsheets/d/1zCzG5zejrPa7gjMcVOseEWRs0y5cBAcJ1IXRZZyLcPM/edit?usp=sharing)
 
 ## Due Wed. 3/19 First Project Presentations 
 Brief presentation (3-5 minutes) of your project: the question you are addressing, its applications, your DAG (if applicable) and your proposed method for feedback and Q&A.
@@ -154,8 +159,7 @@ Revisit these papers in light of the assumptions of different designs, their dif
 
 ## Due Mon. 4/14 Heterogeniety & Generalizability in experimental and observational studies
 
-## Due Wed. 4/ 16 Power, standard error estimation, and inference 
-Revised DAG + proposed methods OR outline of literature review due
+## Due Wed. 4/16 Power, standard error estimation, and inference 
 
 ## Due Mon. 4/21 Special topics 
 
