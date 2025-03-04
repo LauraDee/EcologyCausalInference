@@ -790,7 +790,7 @@
     "href": "assignments.html#deadlines",
     "title": "Assignments & Evaluation",
     "section": "Deadlines",
-    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nTuesday 1/14\n\n\nIdentify project focus (option 1 or 2). Identify research questions + create and workshop DAGs for it.\nDue 2/7 (by email)\n\n\nRevised draft of Project Question and revised DAG OR literature review proposal (2 page max)\n2/19 (by email)\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results)\nWednesday 4/9 (in class)\n\n\nPresentation of final project\nApril 28th & 30th (in class)\n\n\nFinal project write-up due\nFriday 5/2",
+    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nTuesday 1/14\n\n\nIdentify project focus (option 1 or 2). Identify research questions + create and workshop DAGs for it.\nDue 2/7 (by email)\n\n\nRevised draft of Project Question and revised DAG OR literature review proposal (2 page max)\n2/19 (by email)\n\n\nOne on One Consultations ~March 17th with Laura\n\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results)\nWednesday 4/3 (in class)\n\n\nPresentation of final project\nApril 28th & 30th (in class)\n\n\nFinal project write-up due\nFriday 5/2",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -2338,6 +2338,36 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/16 Power, standard error estimation, and inference",
     "text": "Due Wed. 4/16 Power, standard error estimation, and inference",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-319-regression-discontinuity-designs",
+    "href": "readings.html#due-wed.-319-regression-discontinuity-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 3/19 Regression Discontinuity Designs",
+    "text": "Due Wed. 3/19 Regression Discontinuity Designs\n\nThe Effect Ch. 20 Optional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-monday-331-rdd-applications-discussion-leads-anna-jiacheng",
+    "href": "readings.html#due-monday-331-rdd-applications-discussion-leads-anna-jiacheng",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Monday 3/31 RDD Applications [Discussion lead(s): Anna & Jiacheng]",
+    "text": "Due Monday 3/31 RDD Applications [Discussion lead(s): Anna & Jiacheng]\n\nEnglander 2019\n\nNoack et al. 2022\nOptional paper: Burgess et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-42-first-project-presentations",
+    "href": "readings.html#due-wed.-42-first-project-presentations",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/2 First Project Presentations",
+    "text": "Due Wed. 4/2 First Project Presentations\nBrief presentation (5 minutes) of your project: the “so what” big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
