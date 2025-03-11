@@ -115,14 +115,10 @@ dtf <- data.frame(y1,y2,x1,x2)
 
 ## run models to compare iv and OLS and SEM
 m1 <- lm(y1 ~ y2, data=dtf)
-# plot(y1 ~ y2)
+plot(y1 ~ y2)
 summary(m1)
 m2 <- lm(y1 ~ y2 + x1, data=dtf)
 summary(m2)
-
-#IV
-ivmod1 <- ivreg(y1 ~ y2 + x1 | x2 + x1, data=dtf)
-summary(ivmod1, diagnostics = T)
 
 #SEM
 sem.naive1 <- 'y1 ~ y2 + x1 '
@@ -134,6 +130,11 @@ sem.reverse <- 'y1 ~ y2 + x1
                y2 ~ x2 '
 sem.reverse.fit <- sem(sem.reverse, dtf)
 summary(sem.reverse.fit)
+
+#IV
+ivmod1 <- ivreg(y1 ~ y2 + x1 | x2 + x1, data=dtf)
+summary(ivmod1, diagnostics = T) #First stage test!
+
 
 #########################################################################
 #### Vary the noise and instrument strength ###########################
