@@ -1,0 +1,108 @@
+---
+title: "Simulation Study of Sharp and Fuzzy RDD"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(rdd)
+library(rddtools)
+```
+
+## Introduction
+This simulation study investigates the impact of a forest fire (discontinuity) on insect diversity using distance from the fire edge as the running variable.
+
+## Simulating Data
+
+```{r simulate-data}
+set.seed(123)
+n <- 500
+distance <- runif(n, -50, 50)  # Running variable: distance from fire edge
+
+diversity_control <- 50 + 0.5 * distance + rnorm(n, sd = 5)  # Control group trend
+diversity_treated <- 30 + 0.3 * distance + rnorm(n, sd = 5)  # Treated group trend
+
+treatment <- ifelse(distance < 0, 1, 0)  # Treatment assignment at fire edge
+diversity <- ifelse(treatment == 1, diversity_treated, diversity_control)
+
+# Adding confounders
+vegetation_density <- 80 - 0.6 * distance + rnorm(n, sd = 5)  # Higher closer to fire
+soil_moisture <- 40 + 0.4 * distance + rnorm(n, sd = 3)  # Lower closer to fire
+
+data <- data.frame(distance, treatment, diversity, vegetation_density, soil_moisture)
+```
+
+## Visualizing the Discontinuity
+
+```{r plot-data}
+ggplot(data, aes(x = distance, y = diversity, color = factor(treatment))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(title = "Effect of Forest Fire on Insect Diversity",
+       x = "Distance from Fire Edge (meters)",
+       y = "Insect Diversity Index",
+       color = "Treatment")
+```
+
+## Assessing Covariates as a Function of Distance
+
+```{r plot-covariates}
+ggplot(data, aes(x = distance, y = vegetation_density)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "blue") +
+  theme_minimal() +
+  labs(title = "Vegetation Density as a Function of Distance",
+       x = "Distance from Fire Edge",
+       y = "Vegetation Density")
+
+
+ggplot(data, aes(x = distance, y = soil_moisture)) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "green") +
+  theme_minimal() +
+  labs(title = "Soil Moisture as a Function of Distance",
+       x = "Distance from Fire Edge",
+       y = "Soil Moisture")
+```
+
+## Sharp RDD Estimation
+
+```{r sharp-rdd}
+rdd_object <- rdd_data(y = diversity, x = distance, cutpoint = 0, covar = data[, c("vegetation_density", "soil_moisture")])
+rdd_result <- rdd_reg_lm(rdd_object)
+summary(rdd_result)
+```
+
+## Fuzzy RDD Simulation (with Imperfect Treatment Assignment)
+
+```{r fuzzy-rdd}
+treatment_fuzzy <- ifelse(distance < 0, rbinom(n, 1, 0.8), rbinom(n, 1, 0.2))  # Imperfect compliance
+diversity_fuzzy <- ifelse(treatment_fuzzy == 1, diversity_treated, diversity_control)
+
+data_fuzzy <- data.frame(distance, treatment_fuzzy, diversity_fuzzy, vegetation_density, soil_moisture)
+```
+
+```{r fuzzy-rdd-plot}
+ggplot(data_fuzzy, aes(x = distance, y = diversity_fuzzy, color = factor(treatment_fuzzy))) +
+  geom_point(alpha = 0.5) +
+  geom_smooth(method = "lm", se = FALSE) +
+  theme_minimal() +
+  labs(title = "Fuzzy RDD: Effect of Fire on Insect Diversity",
+       x = "Distance from Fire Edge",
+       y = "Insect Diversity Index",
+       color = "Observed Treatment")
+```
+
+```{r fuzzy-rdd-estimation}
+rdd_fuzzy_object <- rdd_data(y = diversity_fuzzy, x = distance, cutpoint = 0, covar = c("vegetation_density", "soil_moisture"), data = data_fuzzy)
+rdd_fuzzy_result <- rdd_reg_lm(rdd_fuzzy_object, covariates = TRUE)
+summary(rdd_fuzzy_result)
+```
+
+## Conclusion
+This simulation demonstrates the use of Sharp and Fuzzy RDD in evaluating the impact of forest fires on insect diversity. The sharp RDD estimates the direct effect, while the fuzzy RDD accounts for imperfect treatment assignment. Additionally, we assess vegetation density and soil moisture as potential confounders and visualize their relationship with distance from the fire edge.
