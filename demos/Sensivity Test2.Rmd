@@ -9,11 +9,10 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+# Learning objectives and take aways
+✅ Placebo tests ensure the estimated effect is not driven by spurious correlations.
+✅ Sensitivity analyses check if conclusions remain valid under different assumptions.
+✅ R provides powerful tools (e.g., EValue, rbounds, placebo regressions) for assessing robustness in causal inference.
 
 ```{r echo = FALSE}
 # Load necessary libraries
@@ -27,12 +26,10 @@ library(rbounds)
 #install.packages("EValue")
 library(EValue)
 library(sensemakr)
-```
 
-# Learning objectives and take aways
-✅ Placebo tests ensure the estimated effect is not driven by spurious correlations.
-✅ Sensitivity analyses check if conclusions remain valid under different assumptions.
-✅ R provides powerful tools (e.g., EValue, rbounds, placebo regressions) for assessing robustness in causal inference.
+library(MatchIt)
+library(rbounds)
+```
 
 # 1.Placebo Tests in R
 Placebo tests are used to check if a treatment effect appears where it should not exist, which can indicate spurious correlation or model misspecification.
@@ -147,8 +144,7 @@ Step 2: Run the Real Treatment Model
 model_real <- lm(post_score ~ treated_real + pre_score, data = data)
 summary(model_real)
 ```
-This regression estimates the effect of the real education program.
-We expect a positive, significant coefficient for treated_real, since the real program increases test scores.
+This regression estimates the effect of the real education program. We expect a positive, significant coefficient for treated_real, since the real program increases test scores.
 
 Step 3: Run the Placebo Test (Fake Treatment)
 ```{r }
@@ -157,12 +153,11 @@ model_placebo <- lm(post_score ~ treated_placebo + pre_score, data = data)
 summary(model_placebo)
 ```
 If the placebo treatment shows no effect, the original study is likely valid.
+
 If the placebo treatment is significant, it suggests that our main analysis may be biased (e.g., by omitted variables, incorrect assumptions, or random noise).
 
-
 Step 4: Visualize Results
-
-We plot test scores before and after the placebo treatment to see if any patterns emerge.
+We can plot test scores before and after the placebo treatment to see if any patterns emerge.
 ```{r viz}
 ggplot(data, aes(x = pre_score, y = post_score, color = as.factor(treated_placebo))) +
   geom_point(alpha = 0.5) +
@@ -172,10 +167,10 @@ ggplot(data, aes(x = pre_score, y = post_score, color = as.factor(treated_placeb
        color = "Fake Treatment Group")
 ```
 If students who received the fake treatment have significantly different test scores, it suggests an issue in our model.
+
 If the lines for placebo and non-placebo groups overlap, it means the fake treatment has no real effect, supporting the validity of our causal estimate.
 
-
-nterpretation:
+Interpretation:
 
 If the placebo treatment (randomly assigned) is statistically significant, it suggests that the main analysis may be biased.
 If the placebo effect is insignificant, it strengthens the validity of the causal effect estimate.
@@ -189,16 +184,15 @@ The E-value estimates how strong an unmeasured confounder would need to be to ex
 
 *Scenario:* We estimate the effect of smoking on lung cancer and check how sensitive the result is to unmeasured confounding.
 
-
-Expanded Explanation of E-Values in Sensitivity Analysis
 The E-value is a statistical tool used in causal inference to assess the robustness of an observed treatment effect to unmeasured confounding. It quantifies how strong an unmeasured confounder would have to be to fully explain away the observed association between treatment and outcome.
 
-1. Why Use E-Values?
+### 1. Why Use E-Values?
 
 In observational studies, treatment and control groups may differ due to unmeasured confounding (e.g., socioeconomic status, genetic factors, environment).
 E-values help answer:
 How strong must an unmeasured confounder be to reduce our estimated effect to zero (null effect)?
-2. How Do E-Values Work?
+
+### 2. How Do E-Values Work?
 
 Suppose we estimate the effect of smoking on lung cancer and find a risk ratio (RR) of 2.5.
 The E-value tells us how strong an unmeasured confounder must be (in terms of association with both treatment and outcome) to fully explain away the observed RR of 2.5.
@@ -206,17 +200,17 @@ If the E-value is large (e.g., 5.0), an extremely strong confounder would be nee
 If the E-value is small (e.g., 1.5), even a weak confounder could explain away the effect.
 3. Formula for E-Value Calculation
 
-For a risk ratio (RR) or odds ratio (OR) estimate:
+###  For a risk ratio (RR) or odds ratio (OR) estimate:
 
 
-4. Interpreting E-Values
+###  4. Interpreting E-Values
 
 E-Value	Interpretation
 High (e.g., >4.0)	✅ Very strong confounding needed to explain away the result → The effect is robust.
 Moderate (e.g., 2.0 - 4.0)	⚠️ Some confounding could reduce the effect, but strong confounders are still needed.
 Low (e.g., <2.0)	❌ A relatively weak confounder could fully explain away the observed effect → The effect is not robust.
 
-# Assume an estimated risk ratio (RR) of 2.5 with a confidence interval (1.8, 3.2)
+###  Assume an estimated risk ratio (RR) of 2.5 with a confidence interval (1.8, 3.2)
 ```{r } 
 help(package = "EValue")
 EValue::evalues.RR(2.5, lo = 1.8, hi = 3.2)
@@ -229,8 +223,7 @@ E_value <- RR + sqrt(RR * (RR - 1))
 E_value
 ```
 
-Interpretation:
-
+###  Interpretation:
 If the E-value is high (e.g., 5+), an extremely strong unmeasured confounder would be needed to fully explain away the effect.
 If the E-value is low (e.g., 1.5), the result is more sensitive to hidden confounding.
 
@@ -238,11 +231,8 @@ If the E-value is low (e.g., 1.5), the result is more sensitive to hidden confou
 ## Example 4: Sensitivity to Model Specification (Robustness Checks)
 We check if the results change under different regression specifications.
 
-Scenario:
+Scenario: A study examines whether a new drug reduces blood pressure.
 
-A study examines whether a new drug reduces blood pressure.
-
-R Code:
 ```{r } 
 # Simulated Data
 set.seed(789)
@@ -269,17 +259,14 @@ summary(model3)
 
 Interpretation:
 
-If the estimated effect remains stable across models, it suggests robustness.
-If the effect changes dramatically, it indicates sensitivity to model specification (potential omitted variable bias).
+- If the estimated effect remains stable across models, it suggests robustness.
+- If the effect changes dramatically, it indicates sensitivity to model specification (potential omitted variable bias).
 
 ## Example 5: Rosenbaum Bounds for Sensitivity to Unmeasured Confounding
 We test how strong an unmeasured confounder must be to invalidate our results using the rbounds package.
 
-Scenario:
+Scenario: We estimate the effect of a scholarship program on college enrollment and check for unmeasured confounding.
 
-We estimate the effect of a scholarship program on college enrollment and check for unmeasured confounding.
-
-R Code:
 ```{r } 
 # Simulated matched dataset (outcome: enrollment, treatment: scholarship)
 set.seed(111)
@@ -291,13 +278,24 @@ psens(enrollment, scholarship, Gamma = 2)  # Gamma = strength of confounding
 ```
 
 Interpretation:
-
 If the effect remains significant for large values of Gamma (e.g., 2+), the results are robust.
 If the effect disappears for small values of Gamma (<1.2), the findings are highly sensitive to hidden bias.
 
 ## Example X: Sensitivity Analysis Using the sensemakr Package in R
 The sensemakr package is a powerful tool for sensitivity analysis in causal inference. It helps assess how unmeasured confounders might impact estimated treatment effects.
 
+📌 Step 2: Simulate a Dataset
+We create a dataset where:
+
+wages: Worker’s wage after training
+training: Binary variable (1 = received job training, 0 = no training)
+education: Years of education (a potential confounder)
+experience: Years of work experience (another potential confounder)
+
+Here, we assume the true treatment effect of training on wages is $3 per hour.
+
+📌 Step 3: Run the Initial Regression
+We estimate the impact of job training on wages, controlling for education and experience.
 
 ```{r } 
 # Set seed for reproducibility
@@ -319,7 +317,10 @@ model <- lm(wages ~ training + education + experience, data = data)
 # Display model summary
 summary(model)
 ```
-Now, check the sensitivity
+Now, check the sensitivity: 
+
+📌 Step 4: Conduct Sensitivity Analysis with sensemakr
+We now check if an unmeasured confounder could explain away the observed effect of training.
 
 ```{r } 
 # Perform sensitivity analysis with sensemakr
@@ -333,11 +334,20 @@ sensitivity <- sensemakr(
 
 # Print sensitivity analysis summary
 summary(sensitivity)
+```
 
+📌 Step 5: Visualize Sensitivity Results
+sensemakr provides a contour plot that shows how strong an unmeasured confounder would have to be to invalidate our conclusions.
+
+🔍 How to Interpret the Plot:
+
+The x-axis represents the strength of an unmeasured confounder’s association with treatment (job training).
+The y-axis represents its effect on the outcome (wages).
+If the observed effect remains above the significance threshold across plausible values, the result is robust.
+```{r } 
 # Plot sensitivity results
 plot(sensitivity)
 ```
-
 
 Step 6: Interpret the Sensitivity Analysis Results
 The summary output will show:
@@ -346,3 +356,83 @@ R-squared of omitted variable needed to fully explain the effect
 How much the observed effect reduces under different confounding scenarios
 Whether the treatment effect remains significant under potential omitted variables
 If the sensitivity analysis shows that an extremely strong confounder is needed to nullify the effect, we can be confident in our causal estimate. If a moderate confounder could eliminate the effect, we should be cautious in our conclusions.
+
+# Rosenbaum Bounds
+
+Rosenbaum bounds are used in sensitivity analysis for observational studies, particularly in propensity score matching. They assess how sensitive causal inferences are to potential hidden bias due to unmeasured confounders. Since observational studies lack randomized treatment assignment, unmeasured variables may affect both the treatment and the outcome. Rosenbaum bounds estimate how strong an unmeasured confounder would have to be to alter the conclusions of a study.
+
+Concept of Rosenbaum Bounds
+The method introduces a sensitivity parameter, Gamma (Γ), which represents the degree of potential hidden bias:
+
+If Γ = 1, the study is free from hidden bias, meaning matched pairs have the same probability of treatment assignment.
+If Γ > 1, there is potential unmeasured confounding, and the higher the value of Γ, the more sensitive the results are to hidden bias.
+Rosenbaum bounds use Wilcoxon signed-rank tests or Mantel-Haenszel tests to check how the significance of an estimated treatment effect changes under different levels of Γ.
+
+### *Example:* 
+I will illustrate Rosenbaum bounds with an ecological example: assessing the effect of deforestation on bird species richness. Suppose we have an observational dataset where sites with deforestation are matched to sites without deforestation based on environmental factors (e.g., elevation, precipitation).
+
+
+## Introduction
+
+This document demonstrates how to perform **Rosenbaum Bounds Sensitivity Analysis** using R, applied to an ecological study assessing the impact of deforestation on bird species richness.
+
+## Load Required Libraries
+
+```{r}
+# Install packages if not already installed
+if (!require(MatchIt)) install.packages("MatchIt", dependencies = TRUE)
+if (!require(rbounds)) install.packages("rbounds", dependencies = TRUE)
+
+# Load the libraries
+library(MatchIt)
+library(rbounds)
+```
+
+## Simulate Ecological Data
+
+We create a dataset where bird species richness is compared between deforested and non-deforested sites while controlling for elevation and precipitation.
+
+```{r}
+set.seed(123)
+data <- data.frame(
+  deforestation = rep(c(1, 0), each = 50),
+  species_richness = c(rnorm(50, mean = 10, sd = 3), rnorm(50, mean = 15, sd = 3)),
+  elevation = rnorm(100, mean = 500, sd = 100),
+  precipitation = rnorm(100, mean = 1000, sd = 200)
+)
+```
+
+## Perform Propensity Score Matching
+
+We match deforested and non-deforested sites based on elevation and precipitation.
+
+```{r}
+match_model <- matchit(deforestation ~ elevation + precipitation, data = data, method = "nearest")
+matched_data <- match.data(match_model)
+```
+
+## Conduct Sensitivity Analysis with Rosenbaum Bounds
+
+We check how sensitive our results are to hidden bias.
+
+```{r}
+# Extract matched treatment and control outcomes
+treated_outcomes <- matched_data$species_richness[matched_data$deforestation == 1]
+control_outcomes <- matched_data$species_richness[matched_data$deforestation == 0]
+
+# Perform Rosenbaum sensitivity analysis
+psens(x = treated_outcomes, y = control_outcomes, Gamma = 1.5)  # Adjust Gamma to test sensitivity
+```
+
+## Interpretation of Results
+
+- If the p-value remains small at **Γ = 1.5**, our conclusions are robust to moderate hidden bias.
+- If the p-value becomes insignificant at lower values of **Γ**, our study is highly sensitive to hidden confounders.
+
+## Conclusion
+
+Rosenbaum bounds allow us to assess the robustness of our ecological study results against unmeasured confounding. This is particularly useful when controlled experiments are infeasible.
+
+### Take Aways
+
+Rosenbaum bounds provide a way to assess how much an unmeasured confounder could influence the causal relationship between deforestation and bird species richness. In ecological studies, where controlled experiments are often impractical, this method helps gauge the reliability of observational findings.

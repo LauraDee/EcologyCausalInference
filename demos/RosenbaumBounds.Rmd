@@ -1,0 +1,76 @@
+
+---
+title: "Rosenbaum Bounds Sensitivity Analysis in Ecology"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This document demonstrates how to perform **Rosenbaum Bounds Sensitivity Analysis** using R, applied to an ecological study assessing the impact of deforestation on bird species richness.
+
+## Load Required Libraries
+
+```{r}
+# Install packages if not already installed
+if (!require(MatchIt)) install.packages("MatchIt", dependencies = TRUE)
+if (!require(rbounds)) install.packages("rbounds", dependencies = TRUE)
+
+# Load the libraries
+library(MatchIt)
+library(rbounds)
+```
+
+## Simulate Ecological Data
+
+We create a dataset where bird species richness is compared between deforested and non-deforested sites while controlling for elevation and precipitation.
+
+```{r}
+set.seed(123)
+data <- data.frame(
+  deforestation = rep(c(1, 0), each = 50),
+  species_richness = c(rnorm(50, mean = 10, sd = 3), rnorm(50, mean = 15, sd = 3)),
+  elevation = rnorm(100, mean = 500, sd = 100),
+  precipitation = rnorm(100, mean = 1000, sd = 200)
+)
+```
+
+## Perform Propensity Score Matching
+
+We match deforested and non-deforested sites based on elevation and precipitation.
+
+```{r}
+match_model <- matchit(deforestation ~ elevation + precipitation, data = data, method = "nearest")
+matched_data <- match.data(match_model)
+```
+
+## Conduct Sensitivity Analysis with Rosenbaum Bounds
+
+We check how sensitive our results are to hidden bias.
+
+```{r}
+# Extract matched treatment and control outcomes
+treated_outcomes <- matched_data$species_richness[matched_data$deforestation == 1]
+control_outcomes <- matched_data$species_richness[matched_data$deforestation == 0]
+
+# Perform Rosenbaum sensitivity analysis
+psens(x = treated_outcomes, y = control_outcomes, Gamma = 1.5)  # Adjust Gamma to test sensitivity
+```
+
+## Interpretation of Results
+
+- If the p-value remains small at **Γ = 1.5**, our conclusions are robust to moderate hidden bias.
+- If the p-value becomes insignificant at lower values of **Γ**, our study is highly sensitive to hidden confounders.
+
+## Conclusion
+
+Rosenbaum bounds allow us to assess the robustness of our ecological study results against unmeasured confounding. This is particularly useful when controlled experiments are infeasible.
+
+### Take Aways
+
+Rosenbaum bounds provide a way to assess how much an unmeasured confounder could influence the causal relationship between deforestation and bird species richness. In ecological studies, where controlled experiments are often impractical, this method helps gauge the reliability of observational findings.
