@@ -145,23 +145,25 @@ Optional paper: [Burgess et al. 2019](https://osf.io/preprints/socarxiv/67xg5/)
 ## Due Wed. 4/2  First Project Presentations 
 Brief presentation (5 minutes) of your project: the "so what" big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.
 
-## Due Mon. 4/7  Project Check ins or Comparison of Designs & Sensitivity Tests
-1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)
-2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
-3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
-2) TBD on sensitivity tests 
+## Due Mon. 4/7  Presentations Continued; intro to robustness checks 
 
-## Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ]
+## Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
 - [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 - TBD on sensitivity and placebo tests 
 
+Optional to revisit for methods comparison
+1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)
+2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
+3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
+
 ## Due Mon. 4/14 Heterogeniety & Generalizability in experimental and observational studies
 
 ## Due Wed. 4/16 Power, standard error estimation, and inference 
 
-## Due Mon. 4/21 Special topics 
+## Due Mon. 4/21 Dr. Rebecca Spakes: Generalizability 
+Read [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)
 
 ## Due Wed 4/23  Project Presentations 
 
