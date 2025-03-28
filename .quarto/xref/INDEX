@@ -61,5 +61,17 @@
   },
   "demos/IPTW.Rmd": {
     "IPTW.html": "0b5e439a"
+  },
+  "demos/RDD v2 insects and fire.Rmd": {
+    "RDD v2 insects and fire.html": "dbc28110"
+  },
+  "demos/RDD_2025_fire_insects.Rmd": {
+    "RDD_2025_fire_insects.html": "df9fb1f6"
+  },
+  "demos/Sensivity Test2.Rmd": {
+    "Sensivity Test2.html": "c9756644"
+  },
+  "demos/RosenbaumBounds.Rmd": {
+    "RosenbaumBounds.html": "78ce5e43"
   }
 }
