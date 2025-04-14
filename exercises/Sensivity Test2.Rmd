@@ -12,7 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Learning objectives and take aways
 ✅ Placebo tests ensure the estimated effect is not driven by spurious correlations.
 ✅ Sensitivity analyses check if conclusions remain valid under different assumptions.
-✅ R provides powerful tools (e.g., EValue, rbounds, placebo regressions) for assessing robustness in causal inference.
+✅ R provides powerful tools (e.g., EValue, sensemakr, rbounds, placebo regressions) for assessing robustness in causal inference.
 
 ```{r echo = FALSE}
 # Load necessary libraries
