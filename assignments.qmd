@@ -31,9 +31,7 @@ Specific guidelines for data analysis project presentations:
 
 -   Describe the causal inference approach you took and why you chose that approach\
 
--   Present your DAG\
-
--   Briefly describe the data you used\
+-   Briefly  present your DAG and describe the data you used\
 
 -   Share your results AND contextualize them with the important limitations and assumptions of the method(s) you used\
 
@@ -99,5 +97,5 @@ You are not limited to these topics, but here are some ideas:
 | Revised draft of Project Question and revised DAG OR literature review proposal (2 page max) | 2/19 (by email) |
 | One on One Consultations ~March 17th with Laura |
 | Short presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results) | Wednesday 4/3 (in class) |
-| Presentation of final project | April 28th & 30th (in class) |
-| Final project write-up due | Friday 5/2 |
+| Presentation of final project | April 23rd & 28th (in class) |
+| Final project write-up due by email | Friday 5/4 |
