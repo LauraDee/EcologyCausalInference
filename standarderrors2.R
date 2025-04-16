@@ -113,3 +113,4 @@ modelplot(
 coeftest(model1, vcov = NeweyWest)
 coeftest(model1, vcov = vcovCL(model1, ~species))
 
+
