@@ -113,39 +113,3 @@ modelplot(
 coeftest(model1, vcov = NeweyWest)
 coeftest(model1, vcov = vcovCL(model1, ~species))
 
-## From the Effect Ch. 13: 
-
-# Load packages
-library(tidyverse)
-# For approach 1
-library(AER); library(sandwich)
-# For approach 2
-library(modelsummary)
-# For approach 3
-library(fixest)
-
-df <- causaldata::restaurant_inspections
-
-# In R there are many ways to get at robust SEs
-# For the first two methods we'll look at, we need to estimate
-# the regression on its own
-# (most types of regressions will work, not just lm()!)
-m1 <- lm(inspection_score ~ Year + Weekend, data = df)
-
-# First, the classic way, sending our regression
-# object to AER::coeftest(), specifying the kind
-# of library(sandwich) estimator we want
-# vcovHC for heteroskedasticity-consistent
-coeftest(m1, vcov = vcovHC(m1))
-
-# Second, we can take that same regression object
-# and, do the robust SEs inside of our msummary()
-msummary(m1, vcov = 'robust',
-         stars = c('*' = .1, '**' = .05, '***' = .01))
-
-# Third, we can skip all that and use a regression
-# function with robust SEs built in, like
-# fixest::feols()
-feols(inspection_score ~ Year + Weekend, data = df, se = 'hetero')
-# (this object can be sent to modelsummary
-# or summary as normal)
