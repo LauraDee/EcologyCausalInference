@@ -23,26 +23,18 @@ Alternatively, students can complete a literature review that provides a deeper 
 #### Final project presentation
 
 Guidelines for all presentations:
+-   7 minute presentation + 2 minutes for questions\
 
--   8 minute presentation + 2 minutes for questions\
--   Introduce the question you address and the motivation for your project
-
-Specific guidelines for data analysis project presentations:
-
--   Describe the causal inference approach you took and why you chose that approach\
-
--   Briefly  present your DAG and describe the data you used\
-
--   Share your results AND contextualize them with the important limitations and assumptions of the method(s) you used\
-
+*Specific guidelines for data analysis project presentations:*
+-   Briefly introduce the question you address and the motivation for your project (as this was covered in the first presentations)
+- Describe the causal inference approach you took and why you chose that approach; as part of this part, you could *briefly*  present your DAG and describe the data you used (as DAGs and data were covered in Presentation 1)\
+-   Share your results, explain how you checked their robustness, AND contextualize them with the important limitations and assumptions of the method(s) you used, includinbg their assumptions and why or why not they are met\
 -   Outline possible next steps you could take to make your analysis more robust in the future\
-    Specific guidelines for literature review presentations:
 
--   Describe the challenge for causal inference\
-
+*Specific guidelines for literature review presentations:*
+-   Introduce the topic and describe the challenge for causal inference\
 -   Describe and critique the current approaches people are taking\
-
--   Present your ideas for how the field could better incorporate causal inference methods
+-   Present your ideas for how the field could better incorporate causal inference methods\
 
 #### Final project write up
 *Length*
@@ -58,7 +50,9 @@ For Project Option 1, final reports should include:
 -Brief Discussion of the analysis -- the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions -- and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\
 
 For Project Option 2, final reports should include:\
-
+- Motivation for your review: what is the issue, topic, or gap you are interested in and why?\
+-Motivation for use of causal inference (or discovery) approaches. Why could they help here, or why is it needed for the topic or question?\
+-Review of methods or approaches that could be helpful, which could cover: a) how do these approaches/methods compare to what is currently being done on this topic?; b) what do you propose to do and which methods or study design would you use -- and why?; c) discussion of implications and potential uses or changes -- or areas of advances that are needed; and d) brief conclusions.
 
 ## Additional assignments
 
