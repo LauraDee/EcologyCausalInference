@@ -47,11 +47,11 @@ Alternatively, students can complete a literature review that provides a deeper 
 #### Content for Project Option 1\
 
 Final reports should include:\
-- A brief introduction (1-2 paragraphs) that establishes your causal question, hypotheses, and a brief motivation\
-- DAG and explanation of variables (could also incldue a table explaning variables in your DAG and their data sources)\
-- A Methods section, as you would for a publication. Include the identification strategy (which design you use and why), and how you checked the robustness of your results (or sensitivity of results if you preform a sensivity analysis)\
-- Results Section: Present your estimates, confidence intervals and inference, and figures or tables of output\
-- Brief Discussion of the analysis -- the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions -- and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\
+-   A brief introduction (1-2 paragraphs) that establishes your causal question, hypotheses, and a brief motivation\
+-   DAG and explanation of variables (could also incldue a table explaning variables in your DAG and their data sources)\
+-   A Methods section, as you would for a publication. Include the identification strategy (which design you use and why), and how you checked the robustness of your results (or sensitivity of results if you preform a sensivity analysis)\
+-   Results Section: Present your estimates, confidence intervals and inference, and figures or tables of output\
+-   Brief Discussion of the analysis -- the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions -- and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\
 
 #### Content for Project Option 2\ 
 
