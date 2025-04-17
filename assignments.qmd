@@ -55,7 +55,7 @@ Final reports should include:\
 -Results Section: Present your estimates, confidence intervals and inference, and figures or tables of output\
 -Brief Discussion of the analysis -- the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions -- and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\
 
-#### Content for Project Option 2*\ 
+#### Content for Project Option 2\ 
 
 Final reports should include:\
 
@@ -65,10 +65,10 @@ Final reports should include:\
 
 -Review of methods or approaches that could be helpful, which could cover:\
 
-- a) How do these approaches/methods compare to what is currently being done on this topic?;\
-- b) What do you propose to do and which methods or study design would you use -- and why?;\
-- c) discussion of implications and potential uses or changes -- or areas of advances that are needed;\
-- and d) brief conclusions.
+a) How do these approaches/methods compare to what is currently being done on this topic?;\
+b) What do you propose to do and which methods or study design would you use -- and why?;\
+c) discussion of implications and potential uses or changes -- or areas of advances that are needed;\
+and d) brief conclusions.
 
 ## Additional assignments
 
