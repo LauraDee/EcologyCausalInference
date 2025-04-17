@@ -73,5 +73,8 @@
   },
   "demos/RosenbaumBounds.Rmd": {
     "RosenbaumBounds.html": "78ce5e43"
+  },
+  "exercises/Sensivity Test2.Rmd": {
+    "Sensivity Test2.html": "06aa98f4"
   }
 }

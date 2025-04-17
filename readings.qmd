@@ -150,17 +150,22 @@ Brief presentation (5 minutes) of your project: the "so what" big picture, the q
 ## Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)
 Revisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:\ 
 - [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
-- [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
-- TBD on sensitivity and placebo tests 
+- [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)\
+- For Sensitivity Tests, see [sensemakr help](https://carloscinelli.com/sensemakr/) for a primer in R
 
 Optional to revisit for methods comparison
-1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)
-2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)
+1) [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053)\
+2) [Butsic et al. 2017](https://www.sciencedirect.com/science/article/pii/S1439179116301323)\
 3) [Arif & MacNiel 2021 *Ecosphere*](https://esajournals.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/ecs2.4009)
 
 ## Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]
+Read [Correia et al. 2025](https://onlinelibrary.wiley.com/doi/10.1111/brv.70011)
 
 ## Due Wed. 4/16 Power, standard error estimation, and inference 
+Read [The Effect: Chapter 13 "Your standard errors are probably wrong"](https://theeffectbook.net/ch-StatisticalAdjustment.html)\
+Read [Kimmel, Avolio & Ferraro 2023](https://www.nature.com/articles/s41559-023-02144-3)
+
+For a deeper dive on standard error estimation, read [Cameron and Miller. A pracitioner's guide to clustered robust standard errrors](https://cameron.econ.ucdavis.edu/research/Cameron_Miller_JHR_2015_February.pdf) 
 
 ## Due Mon. 4/21 Dr. Rebecca Spakes: Generalizability 
 Read [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)

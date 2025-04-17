@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.6.39">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Laura Dee">
+<meta name="dcterms.date" content="2025-04-17">
+
+<title>Sensitivity Tests – EBIO 5460: Causal Inference in Ecology</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-0a72121b9fcec87d83c9cf685d5385ec.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar docked">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      EBIO 5460: Causal Inference in Ecology
+      </li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="../">EBIO 5460: Causal Inference in Ecology</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/LauraDee/EcologyCausalInference" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../readings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readings &amp; Additional Materials</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assignments &amp; Evaluation</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../exercises/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Exercises</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../coding_resources.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding Resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../DAGs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">DAG resources</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../policies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">University Policies</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives-and-take-aways" id="toc-learning-objectives-and-take-aways" class="nav-link active" data-scroll-target="#learning-objectives-and-take-aways">Learning objectives and take aways</a></li>
+  <li><a href="#placebo-tests-in-r" id="toc-placebo-tests-in-r" class="nav-link" data-scroll-target="#placebo-tests-in-r">1.Placebo Tests in R</a>
+  <ul>
+  <li><a href="#example-1-placebo-test-with-pre-treatment-outcomes" id="toc-example-1-placebo-test-with-pre-treatment-outcomes" class="nav-link" data-scroll-target="#example-1-placebo-test-with-pre-treatment-outcomes">Example 1: Placebo Test with Pre-Treatment Outcomes</a></li>
+  <li><a href="#example-2-placebo-test-with-fake-treatment-groups" id="toc-example-2-placebo-test-with-fake-treatment-groups" class="nav-link" data-scroll-target="#example-2-placebo-test-with-fake-treatment-groups">Example 2: Placebo Test with Fake Treatment Groups</a></li>
+  </ul></li>
+  <li><a href="#sensitivity-analyses-in-r" id="toc-sensitivity-analyses-in-r" class="nav-link" data-scroll-target="#sensitivity-analyses-in-r">2. Sensitivity Analyses in R</a>
+  <ul>
+  <li><a href="#example-3-sensitivity-analysis-for-unmeasured-confounding-e-value-calculation" id="toc-example-3-sensitivity-analysis-for-unmeasured-confounding-e-value-calculation" class="nav-link" data-scroll-target="#example-3-sensitivity-analysis-for-unmeasured-confounding-e-value-calculation">Example 3: Sensitivity Analysis for Unmeasured Confounding (E-value Calculation)</a>
+  <ul class="collapse">
+  <li><a href="#why-use-e-values" id="toc-why-use-e-values" class="nav-link" data-scroll-target="#why-use-e-values">1. Why Use E-Values?</a></li>
+  <li><a href="#how-do-e-values-work" id="toc-how-do-e-values-work" class="nav-link" data-scroll-target="#how-do-e-values-work">2. How Do E-Values Work?</a></li>
+  <li><a href="#for-a-risk-ratio-rr-or-odds-ratio-or-estimate" id="toc-for-a-risk-ratio-rr-or-odds-ratio-or-estimate" class="nav-link" data-scroll-target="#for-a-risk-ratio-rr-or-odds-ratio-or-estimate">For a risk ratio (RR) or odds ratio (OR) estimate:</a></li>
+  <li><a href="#interpreting-e-values" id="toc-interpreting-e-values" class="nav-link" data-scroll-target="#interpreting-e-values">4. Interpreting E-Values</a></li>
+  <li><a href="#assume-an-estimated-risk-ratio-rr-of-2.5-with-a-confidence-interval-1.8-3.2" id="toc-assume-an-estimated-risk-ratio-rr-of-2.5-with-a-confidence-interval-1.8-3.2" class="nav-link" data-scroll-target="#assume-an-estimated-risk-ratio-rr-of-2.5-with-a-confidence-interval-1.8-3.2">Assume an estimated risk ratio (RR) of 2.5 with a confidence interval (1.8, 3.2)</a></li>
+  <li><a href="#interpretation" id="toc-interpretation" class="nav-link" data-scroll-target="#interpretation">Interpretation:</a></li>
+  </ul></li>
+  <li><a href="#example-4-sensitivity-to-model-specification-robustness-checks" id="toc-example-4-sensitivity-to-model-specification-robustness-checks" class="nav-link" data-scroll-target="#example-4-sensitivity-to-model-specification-robustness-checks">Example 4: Sensitivity to Model Specification (Robustness Checks)</a></li>
+  <li><a href="#example-5-rosenbaum-bounds-for-sensitivity-to-unmeasured-confounding" id="toc-example-5-rosenbaum-bounds-for-sensitivity-to-unmeasured-confounding" class="nav-link" data-scroll-target="#example-5-rosenbaum-bounds-for-sensitivity-to-unmeasured-confounding">Example 5: Rosenbaum Bounds for Sensitivity to Unmeasured Confounding</a></li>
+  <li><a href="#example-x-sensitivity-analysis-using-the-sensemakr-package-in-r" id="toc-example-x-sensitivity-analysis-using-the-sensemakr-package-in-r" class="nav-link" data-scroll-target="#example-x-sensitivity-analysis-using-the-sensemakr-package-in-r">Example X: Sensitivity Analysis Using the sensemakr Package in R</a></li>
+  </ul></li>
+  <li><a href="#rosenbaum-bounds" id="toc-rosenbaum-bounds" class="nav-link" data-scroll-target="#rosenbaum-bounds">Rosenbaum Bounds</a>
+  <ul>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><em>Example:</em></a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#load-required-libraries" id="toc-load-required-libraries" class="nav-link" data-scroll-target="#load-required-libraries">Load Required Libraries</a></li>
+  <li><a href="#simulate-ecological-data" id="toc-simulate-ecological-data" class="nav-link" data-scroll-target="#simulate-ecological-data">Simulate Ecological Data</a></li>
+  <li><a href="#perform-propensity-score-matching" id="toc-perform-propensity-score-matching" class="nav-link" data-scroll-target="#perform-propensity-score-matching">Perform Propensity Score Matching</a></li>
+  <li><a href="#conduct-sensitivity-analysis-with-rosenbaum-bounds" id="toc-conduct-sensitivity-analysis-with-rosenbaum-bounds" class="nav-link" data-scroll-target="#conduct-sensitivity-analysis-with-rosenbaum-bounds">Conduct Sensitivity Analysis with Rosenbaum Bounds</a></li>
+  <li><a href="#interpretation-of-results" id="toc-interpretation-of-results" class="nav-link" data-scroll-target="#interpretation-of-results">Interpretation of Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#take-aways" id="toc-take-aways" class="nav-link" data-scroll-target="#take-aways">Take Aways</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title">Sensitivity Tests</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Laura Dee </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 17, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives-and-take-aways" class="level1">
+<h1>Learning objectives and take aways</h1>
+<p>✅ Placebo tests ensure the estimated effect is not driven by spurious correlations. ✅ Sensitivity analyses check if conclusions remain valid under different assumptions. ✅ R provides powerful tools (e.g., EValue, sensemakr, rbounds, placebo regressions) for assessing robustness in causal inference.</p>
+<div class="cell">
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.4     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors
+Loading required package: zoo
+
+
+Attaching package: 'zoo'
+
+
+The following objects are masked from 'package:base':
+
+    as.Date, as.Date.numeric
+
+
+See details in:
+
+Carlos Cinelli and Chad Hazlett (2020). Making Sense of Sensitivity: Extending Omitted Variable Bias. Journal of the Royal Statistical Society, Series B (Statistical Methodology).</code></pre>
+</div>
+</div>
+</section>
+<section id="placebo-tests-in-r" class="level1">
+<h1>1.Placebo Tests in R</h1>
+<p>Placebo tests are used to check if a treatment effect appears where it should not exist, which can indicate spurious correlation or model misspecification.</p>
+<p>A placebo test checks if an effect appears where it should not. In Example 2, we test whether a randomly assigned treatment has a significant effect on student test scores. This helps us determine if our model incorrectly detects an effect due to statistical artifacts, confounding, or model misspecification.</p>
+<section id="example-1-placebo-test-with-pre-treatment-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="example-1-placebo-test-with-pre-treatment-outcomes">Example 1: Placebo Test with Pre-Treatment Outcomes</h2>
+<p>We check if a policy or treatment has an effect before it was implemented. If significant effects are found before the actual intervention, the causal claim is questionable.</p>
+<p>Scenario Examples: A state implements a minimum wage increase in 2018, and we estimate its effect on employment. A placebo test checks if a pre-2018 placebo treatment also shows an effect.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">state =</span> <span class="fu">rep</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">each =</span> <span class="dv">10</span>),</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">year =</span> <span class="fu">rep</span>(<span class="dv">2009</span><span class="sc">:</span><span class="dv">2018</span>, <span class="at">times =</span> <span class="dv">50</span>),</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated =</span> <span class="fu">ifelse</span>(state <span class="sc">&lt;=</span> <span class="dv">25</span>, <span class="dv">1</span>, <span class="dv">0</span>), <span class="co"># 25 treated states</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">post_treatment =</span> <span class="fu">ifelse</span>(year <span class="sc">&gt;=</span> <span class="dv">2018</span>, <span class="dv">1</span>, <span class="dv">0</span>), <span class="co"># Policy starts in 2018</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">employment =</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="at">mean =</span> <span class="dv">100</span>, <span class="at">sd =</span> <span class="dv">10</span>) <span class="sc">-</span> <span class="dv">2</span> <span class="sc">*</span> treated <span class="sc">*</span> post_treatment <span class="co"># Simulated policy effect</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Run regression for actual treatment</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>model_actual <span class="ot">&lt;-</span> <span class="fu">lm</span>(employment <span class="sc">~</span> treated <span class="sc">*</span> post_treatment <span class="sc">+</span> <span class="fu">factor</span>(state) <span class="sc">+</span> <span class="fu">factor</span>(year), <span class="at">data =</span> data)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_actual)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = employment ~ treated * post_treatment + factor(state) + 
+    factor(year), data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-28.7438  -6.0938  -0.2846   6.0033  29.7668 
+
+Coefficients: (2 not defined because of singularities)
+                       Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)            103.0010     3.3976  30.315   &lt;2e-16 ***
+treated                  0.4352     4.4290   0.098   0.9218    
+post_treatment          -2.6077     2.4649  -1.058   0.2907    
+factor(state)2           1.3400     4.4192   0.303   0.7619    
+factor(state)3          -4.9918     4.4192  -1.130   0.2593    
+factor(state)4           2.4742     4.4192   0.560   0.5759    
+factor(state)5          -0.8334     4.4192  -0.189   0.8505    
+factor(state)6           1.4706     4.4192   0.333   0.7395    
+factor(state)7           0.4846     4.4192   0.110   0.9127    
+factor(state)8          -4.3754     4.4192  -0.990   0.3227    
+factor(state)9           2.3847     4.4192   0.540   0.5897    
+factor(state)10          3.6247     4.4192   0.820   0.4125    
+factor(state)11         -4.7047     4.4192  -1.065   0.2876    
+factor(state)12         -3.9754     4.4192  -0.900   0.3688    
+factor(state)13         -1.8506     4.4192  -0.419   0.6756    
+factor(state)14         -0.4089     4.4192  -0.093   0.9263    
+factor(state)15         -5.4867     4.4192  -1.242   0.2151    
+factor(state)16          0.5274     4.4192   0.119   0.9050    
+factor(state)17          2.1581     4.4192   0.488   0.6255    
+factor(state)18         -0.3129     4.4192  -0.071   0.9436    
+factor(state)19         -0.7456     4.4192  -0.169   0.8661    
+factor(state)20         -3.4181     4.4192  -0.773   0.4397    
+factor(state)21          2.3661     4.4192   0.535   0.5926    
+factor(state)22         -2.6689     4.4192  -0.604   0.5462    
+factor(state)23         -0.7415     4.4192  -0.168   0.8668    
+factor(state)24         -1.5179     4.4192  -0.343   0.7314    
+factor(state)25         -1.5951     4.4192  -0.361   0.7183    
+factor(state)26         -0.1501     4.4192  -0.034   0.9729    
+factor(state)27          1.4536     4.4192   0.329   0.7424    
+factor(state)28          1.6677     4.4192   0.377   0.7061    
+factor(state)29          0.7183     4.4192   0.163   0.8710    
+factor(state)30          6.1122     4.4192   1.383   0.1673    
+factor(state)31         -2.6271     4.4192  -0.594   0.5525    
+factor(state)32          0.7785     4.4192   0.176   0.8602    
+factor(state)33          2.3192     4.4192   0.525   0.6000    
+factor(state)34         -2.3832     4.4192  -0.539   0.5900    
+factor(state)35         -0.6556     4.4192  -0.148   0.8821    
+factor(state)36         -1.8980     4.4192  -0.429   0.6678    
+factor(state)37          1.6467     4.4192   0.373   0.7096    
+factor(state)38         -2.1433     4.4192  -0.485   0.6279    
+factor(state)39         -0.1039     4.4192  -0.024   0.9813    
+factor(state)40         -3.8974     4.4192  -0.882   0.3783    
+factor(state)41         -3.3247     4.4192  -0.752   0.4523    
+factor(state)42         -1.9829     4.4192  -0.449   0.6539    
+factor(state)43          4.3652     4.4192   0.988   0.3238    
+factor(state)44         -1.3018     4.4192  -0.295   0.7684    
+factor(state)45         -3.7068     4.4192  -0.839   0.4020    
+factor(state)46          1.9103     4.4192   0.432   0.6657    
+factor(state)47          3.8897     4.4192   0.880   0.3792    
+factor(state)48          1.0666     4.4192   0.241   0.8094    
+factor(state)49          4.3279     4.4192   0.979   0.3280    
+factor(state)50              NA         NA      NA       NA    
+factor(year)2010        -2.9238     1.9763  -1.479   0.1397    
+factor(year)2011        -2.4424     1.9763  -1.236   0.2172    
+factor(year)2012        -2.9507     1.9763  -1.493   0.1361    
+factor(year)2013        -3.5011     1.9763  -1.772   0.0772 .  
+factor(year)2014        -2.7767     1.9763  -1.405   0.1607    
+factor(year)2015        -1.2810     1.9763  -0.648   0.5172    
+factor(year)2016        -4.3472     1.9763  -2.200   0.0284 *  
+factor(year)2017        -1.8373     1.9763  -0.930   0.3531    
+factor(year)2018             NA         NA      NA       NA    
+treated:post_treatment  -4.2308     2.9461  -1.436   0.1517    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 9.882 on 440 degrees of freedom
+Multiple R-squared:  0.09686,   Adjusted R-squared:  -0.02424 
+F-statistic: 0.7999 on 59 and 440 DF,  p-value: 0.8544</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Placebo Test: Using 2016 as the fake treatment year</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>placebo_post <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(data<span class="sc">$</span>year <span class="sc">&gt;=</span> <span class="dv">2016</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>model_placebo <span class="ot">&lt;-</span> <span class="fu">lm</span>(employment <span class="sc">~</span> treated <span class="sc">*</span> placebo_post <span class="sc">+</span> <span class="fu">factor</span>(state) <span class="sc">+</span> <span class="fu">factor</span>(year), <span class="at">data =</span> data)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = employment ~ treated * placebo_post + factor(state) + 
+    factor(year), data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-28.7205  -6.1867  -0.1883   6.1179  29.7436 
+
+Coefficients: (2 not defined because of singularities)
+                     Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)          102.9777     3.4122  30.179   &lt;2e-16 ***
+treated                0.4817     4.4640   0.108   0.9141    
+placebo_post          -3.9403     2.2026  -1.789   0.0743 .  
+factor(state)2         1.3400     4.4262   0.303   0.7622    
+factor(state)3        -4.9918     4.4262  -1.128   0.2600    
+factor(state)4         2.4742     4.4262   0.559   0.5765    
+factor(state)5        -0.8334     4.4262  -0.188   0.8507    
+factor(state)6         1.4706     4.4262   0.332   0.7399    
+factor(state)7         0.4846     4.4262   0.109   0.9129    
+factor(state)8        -4.3754     4.4262  -0.989   0.3234    
+factor(state)9         2.3847     4.4262   0.539   0.5903    
+factor(state)10        3.6247     4.4262   0.819   0.4133    
+factor(state)11       -4.7047     4.4262  -1.063   0.2884    
+factor(state)12       -3.9754     4.4262  -0.898   0.3696    
+factor(state)13       -1.8506     4.4262  -0.418   0.6761    
+factor(state)14       -0.4089     4.4262  -0.092   0.9264    
+factor(state)15       -5.4867     4.4262  -1.240   0.2158    
+factor(state)16        0.5274     4.4262   0.119   0.9052    
+factor(state)17        2.1581     4.4262   0.488   0.6261    
+factor(state)18       -0.3129     4.4262  -0.071   0.9437    
+factor(state)19       -0.7456     4.4262  -0.168   0.8663    
+factor(state)20       -3.4181     4.4262  -0.772   0.4404    
+factor(state)21        2.3661     4.4262   0.535   0.5932    
+factor(state)22       -2.6689     4.4262  -0.603   0.5468    
+factor(state)23       -0.7415     4.4262  -0.168   0.8670    
+factor(state)24       -1.5179     4.4262  -0.343   0.7318    
+factor(state)25       -1.5951     4.4262  -0.360   0.7187    
+factor(state)26       -0.1501     4.4262  -0.034   0.9730    
+factor(state)27        1.4536     4.4262   0.328   0.7428    
+factor(state)28        1.6677     4.4262   0.377   0.7065    
+factor(state)29        0.7183     4.4262   0.162   0.8712    
+factor(state)30        6.1122     4.4262   1.381   0.1680    
+factor(state)31       -2.6271     4.4262  -0.594   0.5531    
+factor(state)32        0.7785     4.4262   0.176   0.8605    
+factor(state)33        2.3192     4.4262   0.524   0.6006    
+factor(state)34       -2.3832     4.4262  -0.538   0.5906    
+factor(state)35       -0.6556     4.4262  -0.148   0.8823    
+factor(state)36       -1.8980     4.4262  -0.429   0.6683    
+factor(state)37        1.6467     4.4262   0.372   0.7101    
+factor(state)38       -2.1433     4.4262  -0.484   0.6285    
+factor(state)39       -0.1039     4.4262  -0.023   0.9813    
+factor(state)40       -3.8974     4.4262  -0.881   0.3791    
+factor(state)41       -3.3247     4.4262  -0.751   0.4530    
+factor(state)42       -1.9829     4.4262  -0.448   0.6544    
+factor(state)43        4.3652     4.4262   0.986   0.3246    
+factor(state)44       -1.3018     4.4262  -0.294   0.7688    
+factor(state)45       -3.7068     4.4262  -0.837   0.4028    
+factor(state)46        1.9103     4.4262   0.432   0.6662    
+factor(state)47        3.8897     4.4262   0.879   0.3800    
+factor(state)48        1.0666     4.4262   0.241   0.8097    
+factor(state)49        4.3279     4.4262   0.978   0.3287    
+factor(state)50            NA         NA      NA       NA    
+factor(year)2010      -2.9238     1.9795  -1.477   0.1404    
+factor(year)2011      -2.4424     1.9795  -1.234   0.2179    
+factor(year)2012      -2.9507     1.9795  -1.491   0.1368    
+factor(year)2013      -3.5011     1.9795  -1.769   0.0776 .  
+factor(year)2014      -2.7767     1.9795  -1.403   0.1614    
+factor(year)2015      -1.2810     1.9795  -0.647   0.5179    
+factor(year)2016       0.3758     1.9795   0.190   0.8495    
+factor(year)2017       2.8858     1.9795   1.458   0.1456    
+factor(year)2018           NA         NA      NA       NA    
+treated:placebo_post  -1.5655     1.9318  -0.810   0.4182    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 9.897 on 440 degrees of freedom
+Multiple R-squared:  0.09398,   Adjusted R-squared:  -0.0275 
+F-statistic: 0.7736 on 59 and 440 DF,  p-value: 0.8878</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing results</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> employment, <span class="at">color =</span> <span class="fu">as.factor</span>(treated))) <span class="sc">+</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>treated) <span class="sc">+</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Employment Trends Before and After Policy"</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>, <span class="at">y =</span> <span class="st">"Employment Level"</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Treatment Group"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sensivity-Test2_files/figure-html/ex1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Interpretation:</em> If the placebo treatment (2016) shows a significant effect, it suggests that trends or confounding factors, not the actual policy, might be driving results. If no effect is found, it supports the credibility of the causal effect estimated from the actual policy change.</p>
+</section>
+<section id="example-2-placebo-test-with-fake-treatment-groups" class="level2">
+<h2 class="anchored" data-anchor-id="example-2-placebo-test-with-fake-treatment-groups">Example 2: Placebo Test with Fake Treatment Groups</h2>
+<p>This placebo test ensures that the observed effect isn’t due to random chance by testing a fake, randomized treatment assignment.</p>
+<p>Scenario: We analyze the effect of an education program on students’ test scores, but we randomly assign treatment as a placebo test.</p>
+<p>Expanded Explanation:</p>
+<p>A real education program is tested to see if it improves student test scores. We run a placebo test where treatment is randomly assigned to see if the model falsely detects an effect. If the placebo treatment appears significant, our original causal claim is likely biased.</p>
+<p>Why Randomly Assigning the Treatment is a Placebo Test True Treatment vs.&nbsp;Fake Treatment: In a real study, a policy or intervention (e.g., an education program) is assigned to students based on specific criteria. In a placebo test, we replace the real assignment with a completely random assignment. Key Idea: If our model finds a significant effect for a randomly assigned treatment, it suggests our original results may be driven by spurious correlations or bias rather than a true causal effect. Expected Outcome: A valid causal model should show no significant effect for a placebo (randomly assigned) treatment. If the placebo treatment is significant, it suggests our main analysis may be biased (e.g., due to confounding, model errors, or random chance).</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate Data</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">456</span>)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">student_id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated_real =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Real treatment</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated_placebo =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Fake treatment</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">pre_score =</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>, <span class="dv">50</span>, <span class="dv">10</span>),  <span class="co"># Pre-treatment test scores</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">post_score =</span> pre_score <span class="sc">+</span> treated_real <span class="sc">*</span> <span class="dv">5</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>, <span class="dv">0</span>, <span class="dv">3</span>)  <span class="co"># Treatment adds 5 points on avg</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Real treatment effect</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>model_real <span class="ot">&lt;-</span> <span class="fu">lm</span>(post_score <span class="sc">~</span> treated_real <span class="sc">+</span> pre_score, <span class="at">data =</span> data)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_real)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = post_score ~ treated_real + pre_score, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.149  -1.991   0.069   1.907  11.665 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  -0.669861   0.478638    -1.4    0.162    
+treated_real  5.192764   0.182868    28.4   &lt;2e-16 ***
+pre_score     1.009045   0.009113   110.7   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.891 on 997 degrees of freedom
+Multiple R-squared:  0.9292,    Adjusted R-squared:  0.9291 
+F-statistic:  6543 on 2 and 997 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Placebo test: Fake treatment group</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>model_placebo <span class="ot">&lt;-</span> <span class="fu">lm</span>(post_score <span class="sc">~</span> treated_placebo <span class="sc">+</span> pre_score, <span class="at">data =</span> data)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = post_score ~ treated_placebo + pre_score, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-11.2109  -2.7614   0.0739   2.8359  12.2893 
+
+Coefficients:
+                Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)      1.97996    0.64436   3.073  0.00218 ** 
+treated_placebo -0.26389    0.24592  -1.073  0.28350    
+pre_score        1.00997    0.01225  82.449  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.886 on 997 degrees of freedom
+Multiple R-squared:  0.8721,    Adjusted R-squared:  0.8718 
+F-statistic:  3399 on 2 and 997 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed for reproducibility</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">456</span>)</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate simulated data</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">student_id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated_real =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># True treatment assignment</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated_placebo =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">1000</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),  <span class="co"># Fake (random) treatment</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">pre_score =</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>, <span class="dv">50</span>, <span class="dv">10</span>),  <span class="co"># Pre-treatment test scores</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">post_score =</span> pre_score <span class="sc">+</span> treated_real <span class="sc">*</span> <span class="dv">5</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">1000</span>, <span class="dv">0</span>, <span class="dv">3</span>)  <span class="co"># True treatment adds 5 points</span></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<p>treated_real: This represents the actual education program assignment. treated_placebo: This is a randomly assigned treatment (placebo). pre_score: Students’ scores before the program. post_score: Students’ scores after the program, where the real treatment increases scores by 5 points on average.</p>
+<p>Step 2: Run the Real Treatment Model</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze the effect of the real treatment</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>model_real <span class="ot">&lt;-</span> <span class="fu">lm</span>(post_score <span class="sc">~</span> treated_real <span class="sc">+</span> pre_score, <span class="at">data =</span> data)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_real)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = post_score ~ treated_real + pre_score, data = data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-10.149  -1.991   0.069   1.907  11.665 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  -0.669861   0.478638    -1.4    0.162    
+treated_real  5.192764   0.182868    28.4   &lt;2e-16 ***
+pre_score     1.009045   0.009113   110.7   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 2.891 on 997 degrees of freedom
+Multiple R-squared:  0.9292,    Adjusted R-squared:  0.9291 
+F-statistic:  6543 on 2 and 997 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>This regression estimates the effect of the real education program. We expect a positive, significant coefficient for treated_real, since the real program increases test scores.</p>
+<p>Step 3: Run the Placebo Test (Fake Treatment)</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Analyze the effect of the fake (randomly assigned) treatment</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>model_placebo <span class="ot">&lt;-</span> <span class="fu">lm</span>(post_score <span class="sc">~</span> treated_placebo <span class="sc">+</span> pre_score, <span class="at">data =</span> data)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model_placebo)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = post_score ~ treated_placebo + pre_score, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-11.2109  -2.7614   0.0739   2.8359  12.2893 
+
+Coefficients:
+                Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)      1.97996    0.64436   3.073  0.00218 ** 
+treated_placebo -0.26389    0.24592  -1.073  0.28350    
+pre_score        1.00997    0.01225  82.449  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 3.886 on 997 degrees of freedom
+Multiple R-squared:  0.8721,    Adjusted R-squared:  0.8718 
+F-statistic:  3399 on 2 and 997 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>If the placebo treatment shows no effect, the original study is likely valid.</p>
+<p>If the placebo treatment is significant, it suggests that our main analysis may be biased (e.g., by omitted variables, incorrect assumptions, or random noise).</p>
+<p>Step 4: Visualize Results We can plot test scores before and after the placebo treatment to see if any patterns emerge.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> pre_score, <span class="at">y =</span> post_score, <span class="at">color =</span> <span class="fu">as.factor</span>(treated_placebo))) <span class="sc">+</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">alpha =</span> <span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Placebo Test: Fake Treatment vs. Test Scores"</span>,</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Pre-Test Score"</span>, <span class="at">y =</span> <span class="st">"Post-Test Score"</span>,</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>       <span class="at">color =</span> <span class="st">"Fake Treatment Group"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>`geom_smooth()` using formula = 'y ~ x'</code></pre>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sensivity-Test2_files/figure-html/viz-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>If students who received the fake treatment have significantly different test scores, it suggests an issue in our model.</p>
+<p>If the lines for placebo and non-placebo groups overlap, it means the fake treatment has no real effect, supporting the validity of our causal estimate.</p>
+<p>Interpretation:</p>
+<p>If the placebo treatment (randomly assigned) is statistically significant, it suggests that the main analysis may be biased. If the placebo effect is insignificant, it strengthens the validity of the causal effect estimate.</p>
+</section>
+</section>
+<section id="sensitivity-analyses-in-r" class="level1">
+<h1>2. Sensitivity Analyses in R</h1>
+<p>Sensitivity analyses check how robust our causal conclusions are to potential violations of key assumptions (e.g., unmeasured confounding, model specification).</p>
+<section id="example-3-sensitivity-analysis-for-unmeasured-confounding-e-value-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="example-3-sensitivity-analysis-for-unmeasured-confounding-e-value-calculation">Example 3: Sensitivity Analysis for Unmeasured Confounding (E-value Calculation)</h2>
+<p>The E-value estimates how strong an unmeasured confounder would need to be to explain away the observed effect. We can use the E-value package.</p>
+<p><em>Scenario:</em> We estimate the effect of smoking on lung cancer and check how sensitive the result is to unmeasured confounding.</p>
+<p>The E-value is a statistical tool used in causal inference to assess the robustness of an observed treatment effect to unmeasured confounding. It quantifies how strong an unmeasured confounder would have to be to fully explain away the observed association between treatment and outcome.</p>
+<section id="why-use-e-values" class="level3">
+<h3 class="anchored" data-anchor-id="why-use-e-values">1. Why Use E-Values?</h3>
+<p>In observational studies, treatment and control groups may differ due to unmeasured confounding (e.g., socioeconomic status, genetic factors, environment). E-values help answer: How strong must an unmeasured confounder be to reduce our estimated effect to zero (null effect)?</p>
+</section>
+<section id="how-do-e-values-work" class="level3">
+<h3 class="anchored" data-anchor-id="how-do-e-values-work">2. How Do E-Values Work?</h3>
+<p>Suppose we estimate the effect of smoking on lung cancer and find a risk ratio (RR) of 2.5. The E-value tells us how strong an unmeasured confounder must be (in terms of association with both treatment and outcome) to fully explain away the observed RR of 2.5. If the E-value is large (e.g., 5.0), an extremely strong confounder would be needed to invalidate the result. If the E-value is small (e.g., 1.5), even a weak confounder could explain away the effect. 3. Formula for E-Value Calculation</p>
+</section>
+<section id="for-a-risk-ratio-rr-or-odds-ratio-or-estimate" class="level3">
+<h3 class="anchored" data-anchor-id="for-a-risk-ratio-rr-or-odds-ratio-or-estimate">For a risk ratio (RR) or odds ratio (OR) estimate:</h3>
+</section>
+<section id="interpreting-e-values" class="level3">
+<h3 class="anchored" data-anchor-id="interpreting-e-values">4. Interpreting E-Values</h3>
+<p>E-Value Interpretation High (e.g., &gt;4.0) ✅ Very strong confounding needed to explain away the result → The effect is robust. Moderate (e.g., 2.0 - 4.0) ⚠️ Some confounding could reduce the effect, but strong confounders are still needed. Low (e.g., &lt;2.0) ❌ A relatively weak confounder could fully explain away the observed effect → The effect is not robust.</p>
+</section>
+<section id="assume-an-estimated-risk-ratio-rr-of-2.5-with-a-confidence-interval-1.8-3.2" class="level3">
+<h3 class="anchored" data-anchor-id="assume-an-estimated-risk-ratio-rr-of-2.5-with-a-confidence-interval-1.8-3.2">Assume an estimated risk ratio (RR) of 2.5 with a confidence interval (1.8, 3.2)</h3>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">help</span>(<span class="at">package =</span> <span class="st">"EValue"</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>EValue<span class="sc">::</span><span class="fu">evalues.RR</span>(<span class="fl">2.5</span>, <span class="at">lo =</span> <span class="fl">1.8</span>, <span class="at">hi =</span> <span class="fl">3.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>            point lower upper
+RR       2.500000   1.8   3.2
+E-values 4.436492   3.0    NA</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>EValue<span class="sc">::</span><span class="fu">evalues.RR</span>(<span class="at">est =</span> <span class="fl">2.5</span>, <span class="at">lo =</span> <span class="fl">1.8</span>, <span class="at">hi =</span> <span class="fl">3.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>            point lower upper
+RR       2.500000   1.8   3.2
+E-values 4.436492   3.0    NA</code></pre>
+</div>
+</div>
+<p>Or do it manually</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>RR <span class="ot">&lt;-</span> <span class="fl">2.5</span>  <span class="co"># Estimated risk ratio</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>E_value <span class="ot">&lt;-</span> RR <span class="sc">+</span> <span class="fu">sqrt</span>(RR <span class="sc">*</span> (RR <span class="sc">-</span> <span class="dv">1</span>))</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>E_value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4.436492</code></pre>
+</div>
+</div>
+</section>
+<section id="interpretation" class="level3">
+<h3 class="anchored" data-anchor-id="interpretation">Interpretation:</h3>
+<p>If the E-value is high (e.g., 5+), an extremely strong unmeasured confounder would be needed to fully explain away the effect. If the E-value is low (e.g., 1.5), the result is more sensitive to hidden confounding.</p>
+</section>
+</section>
+<section id="example-4-sensitivity-to-model-specification-robustness-checks" class="level2">
+<h2 class="anchored" data-anchor-id="example-4-sensitivity-to-model-specification-robustness-checks">Example 4: Sensitivity to Model Specification (Robustness Checks)</h2>
+<p>We check if the results change under different regression specifications.</p>
+<p>Scenario: A study examines whether a new drug reduces blood pressure.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulated Data</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">789</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">patient_id =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>,</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">treated =</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">500</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">age =</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="dv">50</span>, <span class="dv">10</span>),</span>
+<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">bmi =</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="dv">25</span>, <span class="dv">4</span>),</span>
+<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">blood_pressure =</span> <span class="dv">120</span> <span class="sc">-</span> treated <span class="sc">*</span> <span class="dv">5</span> <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="dv">0</span>, <span class="dv">5</span>)  <span class="co"># Drug reduces BP by 5 units</span></span>
+<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Model 1: Basic regression</span></span>
+<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(blood_pressure <span class="sc">~</span> treated, <span class="at">data =</span> data)</span>
+<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = blood_pressure ~ treated, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.4700  -3.1209  -0.1249   3.2771  13.6328 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 120.0594     0.3150  381.19   &lt;2e-16 ***
+treated      -4.8644     0.4278  -11.37   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.766 on 498 degrees of freedom
+Multiple R-squared:  0.2061,    Adjusted R-squared:  0.2045 
+F-statistic: 129.3 on 1 and 498 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model 2: Controlling for age</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(blood_pressure <span class="sc">~</span> treated <span class="sc">+</span> age, <span class="at">data =</span> data)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = blood_pressure ~ treated + age, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.3825  -3.2104  -0.1291   3.2562  13.4816 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 119.5588     1.1514 103.834   &lt;2e-16 ***
+treated      -4.8608     0.4282 -11.351   &lt;2e-16 ***
+age           0.0099     0.0219   0.452    0.651    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.77 on 497 degrees of freedom
+Multiple R-squared:  0.2064,    Adjusted R-squared:  0.2032 
+F-statistic: 64.64 on 2 and 497 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Model 3: Controlling for age and BMI</span></span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>model3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(blood_pressure <span class="sc">~</span> treated <span class="sc">+</span> age <span class="sc">+</span> bmi, <span class="at">data =</span> data)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = blood_pressure ~ treated + age + bmi, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-15.3533  -3.1962  -0.1751   3.2654  13.4810 
+
+Coefficients:
+              Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept) 119.255805   1.674354  71.225   &lt;2e-16 ***
+treated      -4.865551   0.429052 -11.340   &lt;2e-16 ***
+age           0.009542   0.021968   0.434    0.664    
+bmi           0.013045   0.052294   0.249    0.803    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.774 on 496 degrees of freedom
+Multiple R-squared:  0.2065,    Adjusted R-squared:  0.2017 
+F-statistic: 43.04 on 3 and 496 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Interpretation:</p>
+<ul>
+<li>If the estimated effect remains stable across models, it suggests robustness.</li>
+<li>If the effect changes dramatically, it indicates sensitivity to model specification (potential omitted variable bias).</li>
+</ul>
+</section>
+<section id="example-5-rosenbaum-bounds-for-sensitivity-to-unmeasured-confounding" class="level2">
+<h2 class="anchored" data-anchor-id="example-5-rosenbaum-bounds-for-sensitivity-to-unmeasured-confounding">Example 5: Rosenbaum Bounds for Sensitivity to Unmeasured Confounding</h2>
+<p>We test how strong an unmeasured confounder must be to invalidate our results using the rbounds package.</p>
+<p>Scenario: We estimate the effect of a scholarship program on college enrollment and check for unmeasured confounding.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulated matched dataset (outcome: enrollment, treatment: scholarship)</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">111</span>)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>scholarship <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">1</span>, <span class="dv">500</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>enrollment <span class="ot">&lt;-</span> scholarship <span class="sc">+</span> <span class="fu">rnorm</span>(<span class="dv">500</span>, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Wilcoxon signed-rank test for matching</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="fu">psens</span>(enrollment, scholarship, <span class="at">Gamma =</span> <span class="dv">2</span>)  <span class="co"># Gamma = strength of confounding</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Rosenbaum Sensitivity Test for Wilcoxon Signed Rank P-Value 
+ 
+Unconfounded estimate ....  0.5866 
+
+ Gamma Lower bound Upper bound
+     1      0.5866      0.5866
+     2      0.0000      1.0000
+
+ Note: Gamma is Odds of Differential Assignment To
+ Treatment Due to Unobserved Factors 
+ </code></pre>
+</div>
+</div>
+<p>Interpretation: If the effect remains significant for large values of Gamma (e.g., 2+), the results are robust. If the effect disappears for small values of Gamma (&lt;1.2), the findings are highly sensitive to hidden bias.</p>
+</section>
+<section id="example-x-sensitivity-analysis-using-the-sensemakr-package-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="example-x-sensitivity-analysis-using-the-sensemakr-package-in-r">Example X: Sensitivity Analysis Using the sensemakr Package in R</h2>
+<p>The sensemakr package is a powerful tool for sensitivity analysis in causal inference. It helps assess how unmeasured confounders might impact estimated treatment effects.</p>
+<p>📌 Step 2: Simulate a Dataset We create a dataset where:</p>
+<p>wages: Worker’s wage after training training: Binary variable (1 = received job training, 0 = no training) education: Years of education (a potential confounder) experience: Years of work experience (another potential confounder)</p>
+<p>Here, we assume the true treatment effect of training on wages is $3 per hour.</p>
+<p>📌 Step 3: Run the Initial Regression We estimate the impact of job training on wages, controlling for education and experience.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Set seed for reproducibility</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Simulate data: Job training impact on wages</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="dv">500</span></span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>training <span class="ot">&lt;-</span> <span class="fu">rbinom</span>(n, <span class="dv">1</span>, <span class="fl">0.5</span>)  <span class="co"># 50% received training</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>education <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">12</span>, <span class="at">sd =</span> <span class="dv">2</span>)  <span class="co"># Avg. 12 years of education</span></span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>experience <span class="ot">&lt;-</span> <span class="fu">rnorm</span>(n, <span class="at">mean =</span> <span class="dv">5</span>, <span class="at">sd =</span> <span class="dv">2</span>)  <span class="co"># Avg. 5 years of experience</span></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>wages <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="sc">+</span> <span class="dv">3</span> <span class="sc">*</span> training <span class="sc">+</span> <span class="dv">2</span> <span class="sc">*</span> education <span class="sc">+</span> <span class="fl">1.5</span> <span class="sc">*</span> experience <span class="sc">+</span> <span class="fu">rnorm</span>(n, <span class="at">sd =</span> <span class="dv">5</span>)  <span class="co"># Wage equation</span></span>
+<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Create data frame</span></span>
+<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(wages, training, education, experience)</span>
+<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Fit linear regression model</span></span>
+<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>model <span class="ot">&lt;-</span> <span class="fu">lm</span>(wages <span class="sc">~</span> training <span class="sc">+</span> education <span class="sc">+</span> experience, <span class="at">data =</span> data)</span>
+<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Display model summary</span></span>
+<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = wages ~ training + education + experience, data = data)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-14.6127  -3.1967   0.0747   3.4101  17.0122 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  18.5307     1.4648  12.651  &lt; 2e-16 ***
+training      3.4949     0.4445   7.862 2.38e-14 ***
+education     2.2004     0.1105  19.921  &lt; 2e-16 ***
+experience    1.3084     0.1091  11.989  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 4.952 on 496 degrees of freedom
+Multiple R-squared:  0.5555,    Adjusted R-squared:  0.5528 
+F-statistic: 206.6 on 3 and 496 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p>Now, check the sensitivity:</p>
+<p>📌 Step 4: Conduct Sensitivity Analysis with sensemakr We now check if an unmeasured confounder could explain away the observed effect of training.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform sensitivity analysis with sensemakr</span></span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>sensitivity <span class="ot">&lt;-</span> <span class="fu">sensemakr</span>(</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model,</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">treatment =</span> <span class="st">"training"</span>,</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">benchmark_covariates =</span> <span class="fu">c</span>(<span class="st">"education"</span>, <span class="st">"experience"</span>),  <span class="co"># Use observed confounders as benchmarks</span></span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">q =</span> <span class="dv">1</span>,  <span class="co"># Assess robustness to omitted variable bias</span></span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">alpha =</span> <span class="fl">0.05</span>  <span class="co"># Significance level</span></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Print sensitivity analysis summary</span></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(sensitivity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Sensitivity Analysis to Unobserved Confounding
+
+Model Formula: wages ~ training + education + experience
+
+Null hypothesis: q = 1 and reduce = TRUE 
+-- This means we are considering biases that reduce the absolute value of the current estimate.
+-- The null hypothesis deemed problematic is H0:tau = 0 
+
+Unadjusted Estimates of 'training': 
+  Coef. estimate: 3.4949 
+  Standard Error: 0.4445 
+  t-value (H0:tau = 0): 7.8616 
+
+Sensitivity Statistics:
+  Partial R2 of treatment with outcome: 0.1108 
+  Robustness Value, q = 1: 0.2961 
+  Robustness Value, q = 1, alpha = 0.05: 0.232 
+
+Verbal interpretation of sensitivity statistics:
+
+-- Partial R2 of the treatment with the outcome: an extreme confounder (orthogonal to the covariates) that explains 100% of the residual variance of the outcome, would need to explain at least 11.08% of the residual variance of the treatment to fully account for the observed estimated effect.
+
+-- Robustness Value, q = 1: unobserved confounders (orthogonal to the covariates) that explain more than 29.61% of the residual variance of both the treatment and the outcome are strong enough to bring the point estimate to 0 (a bias of 100% of the original estimate). Conversely, unobserved confounders that do not explain more than 29.61% of the residual variance of both the treatment and the outcome are not strong enough to bring the point estimate to 0.
+
+-- Robustness Value, q = 1, alpha = 0.05: unobserved confounders (orthogonal to the covariates) that explain more than 23.2% of the residual variance of both the treatment and the outcome are strong enough to bring the estimate to a range where it is no longer 'statistically different' from 0 (a bias of 100% of the original estimate), at the significance level of alpha = 0.05. Conversely, unobserved confounders that do not explain more than 23.2% of the residual variance of both the treatment and the outcome are not strong enough to bring the estimate to a range where it is no longer 'statistically different' from 0, at the significance level of alpha = 0.05.
+
+Bounds on omitted variable bias:
+
+--The table below shows the maximum strength of unobserved confounders with association with the treatment and the outcome bounded by a multiple of the observed explanatory power of the chosen benchmark covariate(s).
+
+   Bound Label R2dz.x R2yz.dx Treatment Adjusted Estimate Adjusted Se
+  1x education 0.0037  0.8061  training            2.9529      0.1963
+ 1x experience 0.0001  0.2898  training            3.4460      0.3750
+ Adjusted T Adjusted Lower CI Adjusted Upper CI
+    15.0403            2.5671            3.3386
+     9.1888            2.7092            4.1828</code></pre>
+</div>
+</div>
+<p>📌 Step 5: Visualize Sensitivity Results sensemakr provides a contour plot that shows how strong an unmeasured confounder would have to be to invalidate our conclusions.</p>
+<p>🔍 How to Interpret the Plot:</p>
+<p>The x-axis represents the strength of an unmeasured confounder’s association with treatment (job training). The y-axis represents its effect on the outcome (wages). If the observed effect remains above the significance threshold across plausible values, the result is robust.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot sensitivity results</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(sensitivity)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Sensivity-Test2_files/figure-html/unnamed-chunk-10-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Step 6: Interpret the Sensitivity Analysis Results The summary output will show:</p>
+<p>R-squared of omitted variable needed to fully explain the effect How much the observed effect reduces under different confounding scenarios Whether the treatment effect remains significant under potential omitted variables If the sensitivity analysis shows that an extremely strong confounder is needed to nullify the effect, we can be confident in our causal estimate. If a moderate confounder could eliminate the effect, we should be cautious in our conclusions.</p>
+</section>
+</section>
+<section id="rosenbaum-bounds" class="level1">
+<h1>Rosenbaum Bounds</h1>
+<p>Rosenbaum bounds are used in sensitivity analysis for observational studies, particularly in propensity score matching. They assess how sensitive causal inferences are to potential hidden bias due to unmeasured confounders. Since observational studies lack randomized treatment assignment, unmeasured variables may affect both the treatment and the outcome. Rosenbaum bounds estimate how strong an unmeasured confounder would have to be to alter the conclusions of a study.</p>
+<p>Concept of Rosenbaum Bounds The method introduces a sensitivity parameter, Gamma (Γ), which represents the degree of potential hidden bias:</p>
+<p>If Γ = 1, the study is free from hidden bias, meaning matched pairs have the same probability of treatment assignment. If Γ &gt; 1, there is potential unmeasured confounding, and the higher the value of Γ, the more sensitive the results are to hidden bias. Rosenbaum bounds use Wilcoxon signed-rank tests or Mantel-Haenszel tests to check how the significance of an estimated treatment effect changes under different levels of Γ.</p>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example"><em>Example:</em></h3>
+<p>I will illustrate Rosenbaum bounds with an ecological example: assessing the effect of deforestation on bird species richness. Suppose we have an observational dataset where sites with deforestation are matched to sites without deforestation based on environmental factors (e.g., elevation, precipitation).</p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>This document demonstrates how to perform <strong>Rosenbaum Bounds Sensitivity Analysis</strong> using R, applied to an ecological study assessing the impact of deforestation on bird species richness.</p>
+</section>
+<section id="load-required-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="load-required-libraries">Load Required Libraries</h2>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages if not already installed</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(MatchIt)) <span class="fu">install.packages</span>(<span class="st">"MatchIt"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(rbounds)) <span class="fu">install.packages</span>(<span class="st">"rbounds"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the libraries</span></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MatchIt)</span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rbounds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="simulate-ecological-data" class="level2">
+<h2 class="anchored" data-anchor-id="simulate-ecological-data">Simulate Ecological Data</h2>
+<p>We create a dataset where bird species richness is compared between deforested and non-deforested sites while controlling for elevation and precipitation.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">deforestation =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>), <span class="at">each =</span> <span class="dv">50</span>),</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_richness =</span> <span class="fu">c</span>(<span class="fu">rnorm</span>(<span class="dv">50</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> <span class="dv">3</span>), <span class="fu">rnorm</span>(<span class="dv">50</span>, <span class="at">mean =</span> <span class="dv">15</span>, <span class="at">sd =</span> <span class="dv">3</span>)),</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">elevation =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">500</span>, <span class="at">sd =</span> <span class="dv">100</span>),</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">precipitation =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">1000</span>, <span class="at">sd =</span> <span class="dv">200</span>)</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="perform-propensity-score-matching" class="level2">
+<h2 class="anchored" data-anchor-id="perform-propensity-score-matching">Perform Propensity Score Matching</h2>
+<p>We match deforested and non-deforested sites based on elevation and precipitation.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>match_model <span class="ot">&lt;-</span> <span class="fu">matchit</span>(deforestation <span class="sc">~</span> elevation <span class="sc">+</span> precipitation, <span class="at">data =</span> data, <span class="at">method =</span> <span class="st">"nearest"</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>matched_data <span class="ot">&lt;-</span> <span class="fu">match.data</span>(match_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+</section>
+<section id="conduct-sensitivity-analysis-with-rosenbaum-bounds" class="level2">
+<h2 class="anchored" data-anchor-id="conduct-sensitivity-analysis-with-rosenbaum-bounds">Conduct Sensitivity Analysis with Rosenbaum Bounds</h2>
+<p>We check how sensitive our results are to hidden bias.</p>
+<div class="cell">
+<details open="" class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract matched treatment and control outcomes</span></span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>treated_outcomes <span class="ot">&lt;-</span> matched_data<span class="sc">$</span>species_richness[matched_data<span class="sc">$</span>deforestation <span class="sc">==</span> <span class="dv">1</span>]</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>control_outcomes <span class="ot">&lt;-</span> matched_data<span class="sc">$</span>species_richness[matched_data<span class="sc">$</span>deforestation <span class="sc">==</span> <span class="dv">0</span>]</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform Rosenbaum sensitivity analysis</span></span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a><span class="fu">psens</span>(<span class="at">x =</span> treated_outcomes, <span class="at">y =</span> control_outcomes, <span class="at">Gamma =</span> <span class="fl">1.5</span>)  <span class="co"># Adjust Gamma to test sensitivity</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+ Rosenbaum Sensitivity Test for Wilcoxon Signed Rank P-Value 
+ 
+Unconfounded estimate ....  1 
+
+ Gamma Lower bound Upper bound
+     1           1           1
+
+ Note: Gamma is Odds of Differential Assignment To
+ Treatment Due to Unobserved Factors 
+ </code></pre>
+</div>
+</div>
+</section>
+<section id="interpretation-of-results" class="level2">
+<h2 class="anchored" data-anchor-id="interpretation-of-results">Interpretation of Results</h2>
+<ul>
+<li>If the p-value remains small at <strong>Γ = 1.5</strong>, our conclusions are robust to moderate hidden bias.</li>
+<li>If the p-value becomes insignificant at lower values of <strong>Γ</strong>, our study is highly sensitive to hidden confounders.</li>
+</ul>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Rosenbaum bounds allow us to assess the robustness of our ecological study results against unmeasured confounding. This is particularly useful when controlled experiments are infeasible.</p>
+<section id="take-aways" class="level3">
+<h3 class="anchored" data-anchor-id="take-aways">Take Aways</h3>
+<p>Rosenbaum bounds provide a way to assess how much an unmeasured confounder could influence the causal relationship between deforestation and bird species richness. In ecological studies, where controlled experiments are often impractical, this method helps gauge the reliability of observational findings.</p>
+
+
+<!-- -->
+
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+  const viewSource = window.document.getElementById('quarto-view-source') ||
+                     window.document.getElementById('quarto-code-tools-source');
+  if (viewSource) {
+    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+    viewSource.addEventListener("click", function(e) {
+      if (sourceUrl) {
+        // rstudio viewer pane
+        if (/\bcapabilities=\b/.test(window.location)) {
+          window.open(sourceUrl);
+        } else {
+          window.location.href = sourceUrl;
+        }
+      } else {
+        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+        modal.show();
+      }
+      return false;
+    });
+  }
+  function toggleCodeHandler(show) {
+    return function(e) {
+      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+      for (let i=0; i<detailsSrc.length; i++) {
+        const details = detailsSrc[i].parentElement;
+        if (show) {
+          details.open = true;
+        } else {
+          details.removeAttribute("open");
+        }
+      }
+      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+      const fromCls = show ? "hidden" : "unhidden";
+      const toCls = show ? "unhidden" : "hidden";
+      for (let i=0; i<cellCodeDivs.length; i++) {
+        const codeDiv = cellCodeDivs[i];
+        if (codeDiv.classList.contains(fromCls)) {
+          codeDiv.classList.remove(fromCls);
+          codeDiv.classList.add(toCls);
+        } 
+      }
+      return false;
+    }
+  }
+  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+  if (hideAllCode) {
+    hideAllCode.addEventListener("click", toggleCodeHandler(false));
+  }
+  const showAllCode = window.document.getElementById("quarto-show-all-code");
+  if (showAllCode) {
+    showAllCode.addEventListener("click", toggleCodeHandler(true));
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="sourceCode" id="cb43" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Sensitivity Tests"</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Laura Dee"</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> "`r Sys.Date()`"</span></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> html_document</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, include=FALSE}</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="in">knitr::opts_chunk$set(echo = TRUE)</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a><span class="fu"># Learning objectives and take aways</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a>✅ Placebo tests ensure the estimated effect is not driven by spurious correlations.</span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>✅ Sensitivity analyses check if conclusions remain valid under different assumptions.</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>✅ R provides powerful tools (e.g., EValue, sensemakr, rbounds, placebo regressions) for assessing robustness in causal inference.</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a><span class="in">```{r echo = FALSE}</span></span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a><span class="in"># Load necessary libraries</span></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a><span class="in">library(lmtest)</span></span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a><span class="in"># Install and load package</span></span>
+<span id="cb43-23"><a href="#cb43-23" aria-hidden="true" tabindex="-1"></a><span class="in">#install.packages("rbounds")</span></span>
+<span id="cb43-24"><a href="#cb43-24" aria-hidden="true" tabindex="-1"></a><span class="in">library(rbounds)</span></span>
+<span id="cb43-25"><a href="#cb43-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-26"><a href="#cb43-26" aria-hidden="true" tabindex="-1"></a><span class="in">#install.packages("EValue")</span></span>
+<span id="cb43-27"><a href="#cb43-27" aria-hidden="true" tabindex="-1"></a><span class="in">library(EValue)</span></span>
+<span id="cb43-28"><a href="#cb43-28" aria-hidden="true" tabindex="-1"></a><span class="in">library(sensemakr)</span></span>
+<span id="cb43-29"><a href="#cb43-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-30"><a href="#cb43-30" aria-hidden="true" tabindex="-1"></a><span class="in">library(MatchIt)</span></span>
+<span id="cb43-31"><a href="#cb43-31" aria-hidden="true" tabindex="-1"></a><span class="in">library(rbounds)</span></span>
+<span id="cb43-32"><a href="#cb43-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-33"><a href="#cb43-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-34"><a href="#cb43-34" aria-hidden="true" tabindex="-1"></a><span class="fu"># 1.Placebo Tests in R</span></span>
+<span id="cb43-35"><a href="#cb43-35" aria-hidden="true" tabindex="-1"></a>Placebo tests are used to check if a treatment effect appears where it should not exist, which can indicate spurious correlation or model misspecification.</span>
+<span id="cb43-36"><a href="#cb43-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-37"><a href="#cb43-37" aria-hidden="true" tabindex="-1"></a>A placebo test checks if an effect appears where it should not. In Example 2, we test whether a randomly assigned treatment has a significant effect on student test scores. This helps us determine if our model incorrectly detects an effect due to statistical artifacts, confounding, or model misspecification.</span>
+<span id="cb43-38"><a href="#cb43-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-39"><a href="#cb43-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example 1: Placebo Test with Pre-Treatment Outcomes </span></span>
+<span id="cb43-40"><a href="#cb43-40" aria-hidden="true" tabindex="-1"></a>We check if a policy or treatment has an effect before it was implemented. If significant effects are found before the actual intervention, the causal claim is questionable.</span>
+<span id="cb43-41"><a href="#cb43-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-42"><a href="#cb43-42" aria-hidden="true" tabindex="-1"></a>Scenario Examples: A state implements a minimum wage increase in 2018, and we estimate its effect on employment. A placebo test checks if a pre-2018 placebo treatment also shows an effect.</span>
+<span id="cb43-43"><a href="#cb43-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-44"><a href="#cb43-44" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ex1}</span></span>
+<span id="cb43-45"><a href="#cb43-45" aria-hidden="true" tabindex="-1"></a><span class="in"># Simulate data</span></span>
+<span id="cb43-46"><a href="#cb43-46" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(123)</span></span>
+<span id="cb43-47"><a href="#cb43-47" aria-hidden="true" tabindex="-1"></a><span class="in">data &lt;- tibble(</span></span>
+<span id="cb43-48"><a href="#cb43-48" aria-hidden="true" tabindex="-1"></a><span class="in">  state = rep(1:50, each = 10),</span></span>
+<span id="cb43-49"><a href="#cb43-49" aria-hidden="true" tabindex="-1"></a><span class="in">  year = rep(2009:2018, times = 50),</span></span>
+<span id="cb43-50"><a href="#cb43-50" aria-hidden="true" tabindex="-1"></a><span class="in">  treated = ifelse(state &lt;= 25, 1, 0), # 25 treated states</span></span>
+<span id="cb43-51"><a href="#cb43-51" aria-hidden="true" tabindex="-1"></a><span class="in">  post_treatment = ifelse(year &gt;= 2018, 1, 0), # Policy starts in 2018</span></span>
+<span id="cb43-52"><a href="#cb43-52" aria-hidden="true" tabindex="-1"></a><span class="in">  employment = rnorm(500, mean = 100, sd = 10) - 2 * treated * post_treatment # Simulated policy effect</span></span>
+<span id="cb43-53"><a href="#cb43-53" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb43-54"><a href="#cb43-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-55"><a href="#cb43-55" aria-hidden="true" tabindex="-1"></a><span class="in"># Run regression for actual treatment</span></span>
+<span id="cb43-56"><a href="#cb43-56" aria-hidden="true" tabindex="-1"></a><span class="in">model_actual &lt;- lm(employment ~ treated * post_treatment + factor(state) + factor(year), data = data)</span></span>
+<span id="cb43-57"><a href="#cb43-57" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_actual)</span></span>
+<span id="cb43-58"><a href="#cb43-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-59"><a href="#cb43-59" aria-hidden="true" tabindex="-1"></a><span class="in"># Placebo Test: Using 2016 as the fake treatment year</span></span>
+<span id="cb43-60"><a href="#cb43-60" aria-hidden="true" tabindex="-1"></a><span class="in">data$placebo_post &lt;- ifelse(data$year &gt;= 2016, 1, 0)</span></span>
+<span id="cb43-61"><a href="#cb43-61" aria-hidden="true" tabindex="-1"></a><span class="in">model_placebo &lt;- lm(employment ~ treated * placebo_post + factor(state) + factor(year), data = data)</span></span>
+<span id="cb43-62"><a href="#cb43-62" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_placebo)</span></span>
+<span id="cb43-63"><a href="#cb43-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-64"><a href="#cb43-64" aria-hidden="true" tabindex="-1"></a><span class="in"># Visualizing results</span></span>
+<span id="cb43-65"><a href="#cb43-65" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(data, aes(x = year, y = employment, color = as.factor(treated))) +</span></span>
+<span id="cb43-66"><a href="#cb43-66" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(alpha = 0.5) +</span></span>
+<span id="cb43-67"><a href="#cb43-67" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method = "lm", se = FALSE) +</span></span>
+<span id="cb43-68"><a href="#cb43-68" aria-hidden="true" tabindex="-1"></a><span class="in">  facet_wrap(~treated) +</span></span>
+<span id="cb43-69"><a href="#cb43-69" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(title = "Employment Trends Before and After Policy",</span></span>
+<span id="cb43-70"><a href="#cb43-70" aria-hidden="true" tabindex="-1"></a><span class="in">       x = "Year", y = "Employment Level",</span></span>
+<span id="cb43-71"><a href="#cb43-71" aria-hidden="true" tabindex="-1"></a><span class="in">       color = "Treatment Group")</span></span>
+<span id="cb43-72"><a href="#cb43-72" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-73"><a href="#cb43-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-74"><a href="#cb43-74" aria-hidden="true" tabindex="-1"></a> *Interpretation:*</span>
+<span id="cb43-75"><a href="#cb43-75" aria-hidden="true" tabindex="-1"></a>If the placebo treatment (2016) shows a significant effect, it suggests that trends or confounding factors, not the actual policy, might be driving results.</span>
+<span id="cb43-76"><a href="#cb43-76" aria-hidden="true" tabindex="-1"></a>If no effect is found, it supports the credibility of the causal effect estimated from the actual policy change.</span>
+<span id="cb43-77"><a href="#cb43-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-78"><a href="#cb43-78" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example 2: Placebo Test with Fake Treatment Groups</span></span>
+<span id="cb43-79"><a href="#cb43-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-80"><a href="#cb43-80" aria-hidden="true" tabindex="-1"></a>This placebo test ensures that the observed effect isn’t due to random chance by testing a fake, randomized treatment assignment.</span>
+<span id="cb43-81"><a href="#cb43-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-82"><a href="#cb43-82" aria-hidden="true" tabindex="-1"></a>Scenario: We analyze the effect of an education program on students' test scores, but we randomly assign treatment as a placebo test.</span>
+<span id="cb43-83"><a href="#cb43-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-84"><a href="#cb43-84" aria-hidden="true" tabindex="-1"></a>Expanded Explanation:</span>
+<span id="cb43-85"><a href="#cb43-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-86"><a href="#cb43-86" aria-hidden="true" tabindex="-1"></a>A real education program is tested to see if it improves student test scores.</span>
+<span id="cb43-87"><a href="#cb43-87" aria-hidden="true" tabindex="-1"></a>We run a placebo test where treatment is randomly assigned to see if the model falsely detects an effect.</span>
+<span id="cb43-88"><a href="#cb43-88" aria-hidden="true" tabindex="-1"></a>If the placebo treatment appears significant, our original causal claim is likely biased.</span>
+<span id="cb43-89"><a href="#cb43-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-90"><a href="#cb43-90" aria-hidden="true" tabindex="-1"></a>Why Randomly Assigning the Treatment is a Placebo Test</span>
+<span id="cb43-91"><a href="#cb43-91" aria-hidden="true" tabindex="-1"></a>True Treatment vs. Fake Treatment:</span>
+<span id="cb43-92"><a href="#cb43-92" aria-hidden="true" tabindex="-1"></a>In a real study, a policy or intervention (e.g., an education program) is assigned to students based on specific criteria.</span>
+<span id="cb43-93"><a href="#cb43-93" aria-hidden="true" tabindex="-1"></a>In a placebo test, we replace the real assignment with a completely random assignment.</span>
+<span id="cb43-94"><a href="#cb43-94" aria-hidden="true" tabindex="-1"></a>Key Idea:</span>
+<span id="cb43-95"><a href="#cb43-95" aria-hidden="true" tabindex="-1"></a>If our model finds a significant effect for a randomly assigned treatment, it suggests our original results may be driven by spurious correlations or bias rather than a true causal effect.</span>
+<span id="cb43-96"><a href="#cb43-96" aria-hidden="true" tabindex="-1"></a>Expected Outcome:</span>
+<span id="cb43-97"><a href="#cb43-97" aria-hidden="true" tabindex="-1"></a>A valid causal model should show no significant effect for a placebo (randomly assigned) treatment.</span>
+<span id="cb43-98"><a href="#cb43-98" aria-hidden="true" tabindex="-1"></a>If the placebo treatment is significant, it suggests our main analysis may be biased (e.g., due to confounding, model errors, or random chance).</span>
+<span id="cb43-99"><a href="#cb43-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-100"><a href="#cb43-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-101"><a href="#cb43-101" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ex2}</span></span>
+<span id="cb43-102"><a href="#cb43-102" aria-hidden="true" tabindex="-1"></a><span class="in"># Simulate Data</span></span>
+<span id="cb43-103"><a href="#cb43-103" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(456)</span></span>
+<span id="cb43-104"><a href="#cb43-104" aria-hidden="true" tabindex="-1"></a><span class="in">data &lt;- tibble(</span></span>
+<span id="cb43-105"><a href="#cb43-105" aria-hidden="true" tabindex="-1"></a><span class="in">  student_id = 1:1000,</span></span>
+<span id="cb43-106"><a href="#cb43-106" aria-hidden="true" tabindex="-1"></a><span class="in">  treated_real = sample(0:1, 1000, replace = TRUE),  # Real treatment</span></span>
+<span id="cb43-107"><a href="#cb43-107" aria-hidden="true" tabindex="-1"></a><span class="in">  treated_placebo = sample(0:1, 1000, replace = TRUE),  # Fake treatment</span></span>
+<span id="cb43-108"><a href="#cb43-108" aria-hidden="true" tabindex="-1"></a><span class="in">  pre_score = rnorm(1000, 50, 10),  # Pre-treatment test scores</span></span>
+<span id="cb43-109"><a href="#cb43-109" aria-hidden="true" tabindex="-1"></a><span class="in">  post_score = pre_score + treated_real * 5 + rnorm(1000, 0, 3)  # Treatment adds 5 points on avg</span></span>
+<span id="cb43-110"><a href="#cb43-110" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb43-111"><a href="#cb43-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-112"><a href="#cb43-112" aria-hidden="true" tabindex="-1"></a><span class="in"># Real treatment effect</span></span>
+<span id="cb43-113"><a href="#cb43-113" aria-hidden="true" tabindex="-1"></a><span class="in">model_real &lt;- lm(post_score ~ treated_real + pre_score, data = data)</span></span>
+<span id="cb43-114"><a href="#cb43-114" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_real)</span></span>
+<span id="cb43-115"><a href="#cb43-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-116"><a href="#cb43-116" aria-hidden="true" tabindex="-1"></a><span class="in"># Placebo test: Fake treatment group</span></span>
+<span id="cb43-117"><a href="#cb43-117" aria-hidden="true" tabindex="-1"></a><span class="in">model_placebo &lt;- lm(post_score ~ treated_placebo + pre_score, data = data)</span></span>
+<span id="cb43-118"><a href="#cb43-118" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_placebo)</span></span>
+<span id="cb43-119"><a href="#cb43-119" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-120"><a href="#cb43-120" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-121"><a href="#cb43-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-122"><a href="#cb43-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-123"><a href="#cb43-123" aria-hidden="true" tabindex="-1"></a><span class="in">```{r ex4}</span></span>
+<span id="cb43-124"><a href="#cb43-124" aria-hidden="true" tabindex="-1"></a><span class="in"># Set seed for reproducibility</span></span>
+<span id="cb43-125"><a href="#cb43-125" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(456)</span></span>
+<span id="cb43-126"><a href="#cb43-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-127"><a href="#cb43-127" aria-hidden="true" tabindex="-1"></a><span class="in"># Generate simulated data</span></span>
+<span id="cb43-128"><a href="#cb43-128" aria-hidden="true" tabindex="-1"></a><span class="in">data &lt;- tibble(</span></span>
+<span id="cb43-129"><a href="#cb43-129" aria-hidden="true" tabindex="-1"></a><span class="in">  student_id = 1:1000,</span></span>
+<span id="cb43-130"><a href="#cb43-130" aria-hidden="true" tabindex="-1"></a><span class="in">  treated_real = sample(0:1, 1000, replace = TRUE),  # True treatment assignment</span></span>
+<span id="cb43-131"><a href="#cb43-131" aria-hidden="true" tabindex="-1"></a><span class="in">  treated_placebo = sample(0:1, 1000, replace = TRUE),  # Fake (random) treatment</span></span>
+<span id="cb43-132"><a href="#cb43-132" aria-hidden="true" tabindex="-1"></a><span class="in">  pre_score = rnorm(1000, 50, 10),  # Pre-treatment test scores</span></span>
+<span id="cb43-133"><a href="#cb43-133" aria-hidden="true" tabindex="-1"></a><span class="in">  post_score = pre_score + treated_real * 5 + rnorm(1000, 0, 3)  # True treatment adds 5 points</span></span>
+<span id="cb43-134"><a href="#cb43-134" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb43-135"><a href="#cb43-135" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-136"><a href="#cb43-136" aria-hidden="true" tabindex="-1"></a>treated_real: This represents the actual education program assignment.</span>
+<span id="cb43-137"><a href="#cb43-137" aria-hidden="true" tabindex="-1"></a>treated_placebo: This is a randomly assigned treatment (placebo).</span>
+<span id="cb43-138"><a href="#cb43-138" aria-hidden="true" tabindex="-1"></a>pre_score: Students’ scores before the program.</span>
+<span id="cb43-139"><a href="#cb43-139" aria-hidden="true" tabindex="-1"></a>post_score: Students’ scores after the program, where the real treatment increases scores by 5 points on average.</span>
+<span id="cb43-140"><a href="#cb43-140" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-141"><a href="#cb43-141" aria-hidden="true" tabindex="-1"></a>Step 2: Run the Real Treatment Model</span>
+<span id="cb43-142"><a href="#cb43-142" aria-hidden="true" tabindex="-1"></a><span class="in">```{r }</span></span>
+<span id="cb43-143"><a href="#cb43-143" aria-hidden="true" tabindex="-1"></a><span class="in"># Analyze the effect of the real treatment</span></span>
+<span id="cb43-144"><a href="#cb43-144" aria-hidden="true" tabindex="-1"></a><span class="in">model_real &lt;- lm(post_score ~ treated_real + pre_score, data = data)</span></span>
+<span id="cb43-145"><a href="#cb43-145" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_real)</span></span>
+<span id="cb43-146"><a href="#cb43-146" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-147"><a href="#cb43-147" aria-hidden="true" tabindex="-1"></a>This regression estimates the effect of the real education program. We expect a positive, significant coefficient for treated_real, since the real program increases test scores.</span>
+<span id="cb43-148"><a href="#cb43-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-149"><a href="#cb43-149" aria-hidden="true" tabindex="-1"></a>Step 3: Run the Placebo Test (Fake Treatment)</span>
+<span id="cb43-150"><a href="#cb43-150" aria-hidden="true" tabindex="-1"></a><span class="in">```{r }</span></span>
+<span id="cb43-151"><a href="#cb43-151" aria-hidden="true" tabindex="-1"></a><span class="in"># Analyze the effect of the fake (randomly assigned) treatment</span></span>
+<span id="cb43-152"><a href="#cb43-152" aria-hidden="true" tabindex="-1"></a><span class="in">model_placebo &lt;- lm(post_score ~ treated_placebo + pre_score, data = data)</span></span>
+<span id="cb43-153"><a href="#cb43-153" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model_placebo)</span></span>
+<span id="cb43-154"><a href="#cb43-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-155"><a href="#cb43-155" aria-hidden="true" tabindex="-1"></a>If the placebo treatment shows no effect, the original study is likely valid.</span>
+<span id="cb43-156"><a href="#cb43-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-157"><a href="#cb43-157" aria-hidden="true" tabindex="-1"></a>If the placebo treatment is significant, it suggests that our main analysis may be biased (e.g., by omitted variables, incorrect assumptions, or random noise).</span>
+<span id="cb43-158"><a href="#cb43-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-159"><a href="#cb43-159" aria-hidden="true" tabindex="-1"></a>Step 4: Visualize Results</span>
+<span id="cb43-160"><a href="#cb43-160" aria-hidden="true" tabindex="-1"></a>We can plot test scores before and after the placebo treatment to see if any patterns emerge.</span>
+<span id="cb43-161"><a href="#cb43-161" aria-hidden="true" tabindex="-1"></a><span class="in">```{r viz}</span></span>
+<span id="cb43-162"><a href="#cb43-162" aria-hidden="true" tabindex="-1"></a><span class="in">ggplot(data, aes(x = pre_score, y = post_score, color = as.factor(treated_placebo))) +</span></span>
+<span id="cb43-163"><a href="#cb43-163" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_point(alpha = 0.5) +</span></span>
+<span id="cb43-164"><a href="#cb43-164" aria-hidden="true" tabindex="-1"></a><span class="in">  geom_smooth(method = "lm", se = FALSE) +</span></span>
+<span id="cb43-165"><a href="#cb43-165" aria-hidden="true" tabindex="-1"></a><span class="in">  labs(title = "Placebo Test: Fake Treatment vs. Test Scores",</span></span>
+<span id="cb43-166"><a href="#cb43-166" aria-hidden="true" tabindex="-1"></a><span class="in">       x = "Pre-Test Score", y = "Post-Test Score",</span></span>
+<span id="cb43-167"><a href="#cb43-167" aria-hidden="true" tabindex="-1"></a><span class="in">       color = "Fake Treatment Group")</span></span>
+<span id="cb43-168"><a href="#cb43-168" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-169"><a href="#cb43-169" aria-hidden="true" tabindex="-1"></a>If students who received the fake treatment have significantly different test scores, it suggests an issue in our model.</span>
+<span id="cb43-170"><a href="#cb43-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-171"><a href="#cb43-171" aria-hidden="true" tabindex="-1"></a>If the lines for placebo and non-placebo groups overlap, it means the fake treatment has no real effect, supporting the validity of our causal estimate.</span>
+<span id="cb43-172"><a href="#cb43-172" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-173"><a href="#cb43-173" aria-hidden="true" tabindex="-1"></a>Interpretation:</span>
+<span id="cb43-174"><a href="#cb43-174" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-175"><a href="#cb43-175" aria-hidden="true" tabindex="-1"></a>If the placebo treatment (randomly assigned) is statistically significant, it suggests that the main analysis may be biased.</span>
+<span id="cb43-176"><a href="#cb43-176" aria-hidden="true" tabindex="-1"></a>If the placebo effect is insignificant, it strengthens the validity of the causal effect estimate.</span>
+<span id="cb43-177"><a href="#cb43-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-178"><a href="#cb43-178" aria-hidden="true" tabindex="-1"></a><span class="fu"># 2. Sensitivity Analyses in R</span></span>
+<span id="cb43-179"><a href="#cb43-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-180"><a href="#cb43-180" aria-hidden="true" tabindex="-1"></a>Sensitivity analyses check how robust our causal conclusions are to potential violations of key assumptions (e.g., unmeasured confounding, model specification).</span>
+<span id="cb43-181"><a href="#cb43-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-182"><a href="#cb43-182" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example 3: Sensitivity Analysis for Unmeasured Confounding (E-value Calculation)</span></span>
+<span id="cb43-183"><a href="#cb43-183" aria-hidden="true" tabindex="-1"></a>The E-value estimates how strong an unmeasured confounder would need to be to explain away the observed effect. We can use the E-value package.</span>
+<span id="cb43-184"><a href="#cb43-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-185"><a href="#cb43-185" aria-hidden="true" tabindex="-1"></a>*Scenario:* We estimate the effect of smoking on lung cancer and check how sensitive the result is to unmeasured confounding.</span>
+<span id="cb43-186"><a href="#cb43-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-187"><a href="#cb43-187" aria-hidden="true" tabindex="-1"></a>The E-value is a statistical tool used in causal inference to assess the robustness of an observed treatment effect to unmeasured confounding. It quantifies how strong an unmeasured confounder would have to be to fully explain away the observed association between treatment and outcome.</span>
+<span id="cb43-188"><a href="#cb43-188" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-189"><a href="#cb43-189" aria-hidden="true" tabindex="-1"></a><span class="fu">### 1. Why Use E-Values?</span></span>
+<span id="cb43-190"><a href="#cb43-190" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-191"><a href="#cb43-191" aria-hidden="true" tabindex="-1"></a>In observational studies, treatment and control groups may differ due to unmeasured confounding (e.g., socioeconomic status, genetic factors, environment).</span>
+<span id="cb43-192"><a href="#cb43-192" aria-hidden="true" tabindex="-1"></a>E-values help answer:</span>
+<span id="cb43-193"><a href="#cb43-193" aria-hidden="true" tabindex="-1"></a>How strong must an unmeasured confounder be to reduce our estimated effect to zero (null effect)?</span>
+<span id="cb43-194"><a href="#cb43-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-195"><a href="#cb43-195" aria-hidden="true" tabindex="-1"></a><span class="fu">### 2. How Do E-Values Work?</span></span>
+<span id="cb43-196"><a href="#cb43-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-197"><a href="#cb43-197" aria-hidden="true" tabindex="-1"></a>Suppose we estimate the effect of smoking on lung cancer and find a risk ratio (RR) of 2.5.</span>
+<span id="cb43-198"><a href="#cb43-198" aria-hidden="true" tabindex="-1"></a>The E-value tells us how strong an unmeasured confounder must be (in terms of association with both treatment and outcome) to fully explain away the observed RR of 2.5.</span>
+<span id="cb43-199"><a href="#cb43-199" aria-hidden="true" tabindex="-1"></a>If the E-value is large (e.g., 5.0), an extremely strong confounder would be needed to invalidate the result.</span>
+<span id="cb43-200"><a href="#cb43-200" aria-hidden="true" tabindex="-1"></a>If the E-value is small (e.g., 1.5), even a weak confounder could explain away the effect.</span>
+<span id="cb43-201"><a href="#cb43-201" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Formula for E-Value Calculation</span>
+<span id="cb43-202"><a href="#cb43-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-203"><a href="#cb43-203" aria-hidden="true" tabindex="-1"></a><span class="fu">###  For a risk ratio (RR) or odds ratio (OR) estimate:</span></span>
+<span id="cb43-204"><a href="#cb43-204" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-205"><a href="#cb43-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-206"><a href="#cb43-206" aria-hidden="true" tabindex="-1"></a><span class="fu">###  4. Interpreting E-Values</span></span>
+<span id="cb43-207"><a href="#cb43-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-208"><a href="#cb43-208" aria-hidden="true" tabindex="-1"></a>E-Value Interpretation</span>
+<span id="cb43-209"><a href="#cb43-209" aria-hidden="true" tabindex="-1"></a>High (e.g., &gt;4.0)   ✅ Very strong confounding needed to explain away the result → The effect is robust.</span>
+<span id="cb43-210"><a href="#cb43-210" aria-hidden="true" tabindex="-1"></a>Moderate (e.g., 2.0 - 4.0)  ⚠️ Some confounding could reduce the effect, but strong confounders are still needed.</span>
+<span id="cb43-211"><a href="#cb43-211" aria-hidden="true" tabindex="-1"></a>Low (e.g., &lt;2.0)    ❌ A relatively weak confounder could fully explain away the observed effect → The effect is not robust.</span>
+<span id="cb43-212"><a href="#cb43-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-213"><a href="#cb43-213" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Assume an estimated risk ratio (RR) of 2.5 with a confidence interval (1.8, 3.2)</span></span>
+<span id="cb43-214"><a href="#cb43-214" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-215"><a href="#cb43-215" aria-hidden="true" tabindex="-1"></a><span class="in">help(package = "EValue")</span></span>
+<span id="cb43-216"><a href="#cb43-216" aria-hidden="true" tabindex="-1"></a><span class="in">EValue::evalues.RR(2.5, lo = 1.8, hi = 3.2)</span></span>
+<span id="cb43-217"><a href="#cb43-217" aria-hidden="true" tabindex="-1"></a><span class="in">EValue::evalues.RR(est = 2.5, lo = 1.8, hi = 3.2)</span></span>
+<span id="cb43-218"><a href="#cb43-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-219"><a href="#cb43-219" aria-hidden="true" tabindex="-1"></a>Or do it manually</span>
+<span id="cb43-220"><a href="#cb43-220" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-221"><a href="#cb43-221" aria-hidden="true" tabindex="-1"></a><span class="in">RR &lt;- 2.5  # Estimated risk ratio</span></span>
+<span id="cb43-222"><a href="#cb43-222" aria-hidden="true" tabindex="-1"></a><span class="in">E_value &lt;- RR + sqrt(RR * (RR - 1))</span></span>
+<span id="cb43-223"><a href="#cb43-223" aria-hidden="true" tabindex="-1"></a><span class="in">E_value</span></span>
+<span id="cb43-224"><a href="#cb43-224" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-225"><a href="#cb43-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-226"><a href="#cb43-226" aria-hidden="true" tabindex="-1"></a><span class="fu">###  Interpretation:</span></span>
+<span id="cb43-227"><a href="#cb43-227" aria-hidden="true" tabindex="-1"></a>If the E-value is high (e.g., 5+), an extremely strong unmeasured confounder would be needed to fully explain away the effect.</span>
+<span id="cb43-228"><a href="#cb43-228" aria-hidden="true" tabindex="-1"></a>If the E-value is low (e.g., 1.5), the result is more sensitive to hidden confounding.</span>
+<span id="cb43-229"><a href="#cb43-229" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-230"><a href="#cb43-230" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-231"><a href="#cb43-231" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example 4: Sensitivity to Model Specification (Robustness Checks)</span></span>
+<span id="cb43-232"><a href="#cb43-232" aria-hidden="true" tabindex="-1"></a>We check if the results change under different regression specifications.</span>
+<span id="cb43-233"><a href="#cb43-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-234"><a href="#cb43-234" aria-hidden="true" tabindex="-1"></a>Scenario: A study examines whether a new drug reduces blood pressure.</span>
+<span id="cb43-235"><a href="#cb43-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-236"><a href="#cb43-236" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-237"><a href="#cb43-237" aria-hidden="true" tabindex="-1"></a><span class="in"># Simulated Data</span></span>
+<span id="cb43-238"><a href="#cb43-238" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(789)</span></span>
+<span id="cb43-239"><a href="#cb43-239" aria-hidden="true" tabindex="-1"></a><span class="in">data &lt;- tibble(</span></span>
+<span id="cb43-240"><a href="#cb43-240" aria-hidden="true" tabindex="-1"></a><span class="in">  patient_id = 1:500,</span></span>
+<span id="cb43-241"><a href="#cb43-241" aria-hidden="true" tabindex="-1"></a><span class="in">  treated = sample(0:1, 500, replace = TRUE),</span></span>
+<span id="cb43-242"><a href="#cb43-242" aria-hidden="true" tabindex="-1"></a><span class="in">  age = rnorm(500, 50, 10),</span></span>
+<span id="cb43-243"><a href="#cb43-243" aria-hidden="true" tabindex="-1"></a><span class="in">  bmi = rnorm(500, 25, 4),</span></span>
+<span id="cb43-244"><a href="#cb43-244" aria-hidden="true" tabindex="-1"></a><span class="in">  blood_pressure = 120 - treated * 5 + rnorm(500, 0, 5)  # Drug reduces BP by 5 units</span></span>
+<span id="cb43-245"><a href="#cb43-245" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb43-246"><a href="#cb43-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-247"><a href="#cb43-247" aria-hidden="true" tabindex="-1"></a><span class="in"># Model 1: Basic regression</span></span>
+<span id="cb43-248"><a href="#cb43-248" aria-hidden="true" tabindex="-1"></a><span class="in">model1 &lt;- lm(blood_pressure ~ treated, data = data)</span></span>
+<span id="cb43-249"><a href="#cb43-249" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model1)</span></span>
+<span id="cb43-250"><a href="#cb43-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-251"><a href="#cb43-251" aria-hidden="true" tabindex="-1"></a><span class="in"># Model 2: Controlling for age</span></span>
+<span id="cb43-252"><a href="#cb43-252" aria-hidden="true" tabindex="-1"></a><span class="in">model2 &lt;- lm(blood_pressure ~ treated + age, data = data)</span></span>
+<span id="cb43-253"><a href="#cb43-253" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model2)</span></span>
+<span id="cb43-254"><a href="#cb43-254" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-255"><a href="#cb43-255" aria-hidden="true" tabindex="-1"></a><span class="in"># Model 3: Controlling for age and BMI</span></span>
+<span id="cb43-256"><a href="#cb43-256" aria-hidden="true" tabindex="-1"></a><span class="in">model3 &lt;- lm(blood_pressure ~ treated + age + bmi, data = data)</span></span>
+<span id="cb43-257"><a href="#cb43-257" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model3)</span></span>
+<span id="cb43-258"><a href="#cb43-258" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-259"><a href="#cb43-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-260"><a href="#cb43-260" aria-hidden="true" tabindex="-1"></a>Interpretation:</span>
+<span id="cb43-261"><a href="#cb43-261" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-262"><a href="#cb43-262" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the estimated effect remains stable across models, it suggests robustness.</span>
+<span id="cb43-263"><a href="#cb43-263" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the effect changes dramatically, it indicates sensitivity to model specification (potential omitted variable bias).</span>
+<span id="cb43-264"><a href="#cb43-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-265"><a href="#cb43-265" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example 5: Rosenbaum Bounds for Sensitivity to Unmeasured Confounding</span></span>
+<span id="cb43-266"><a href="#cb43-266" aria-hidden="true" tabindex="-1"></a>We test how strong an unmeasured confounder must be to invalidate our results using the rbounds package.</span>
+<span id="cb43-267"><a href="#cb43-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-268"><a href="#cb43-268" aria-hidden="true" tabindex="-1"></a>Scenario: We estimate the effect of a scholarship program on college enrollment and check for unmeasured confounding.</span>
+<span id="cb43-269"><a href="#cb43-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-270"><a href="#cb43-270" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-271"><a href="#cb43-271" aria-hidden="true" tabindex="-1"></a><span class="in"># Simulated matched dataset (outcome: enrollment, treatment: scholarship)</span></span>
+<span id="cb43-272"><a href="#cb43-272" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(111)</span></span>
+<span id="cb43-273"><a href="#cb43-273" aria-hidden="true" tabindex="-1"></a><span class="in">scholarship &lt;- sample(0:1, 500, replace = TRUE)</span></span>
+<span id="cb43-274"><a href="#cb43-274" aria-hidden="true" tabindex="-1"></a><span class="in">enrollment &lt;- scholarship + rnorm(500, 0, 1)</span></span>
+<span id="cb43-275"><a href="#cb43-275" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-276"><a href="#cb43-276" aria-hidden="true" tabindex="-1"></a><span class="in"># Wilcoxon signed-rank test for matching</span></span>
+<span id="cb43-277"><a href="#cb43-277" aria-hidden="true" tabindex="-1"></a><span class="in">psens(enrollment, scholarship, Gamma = 2)  # Gamma = strength of confounding</span></span>
+<span id="cb43-278"><a href="#cb43-278" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-279"><a href="#cb43-279" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-280"><a href="#cb43-280" aria-hidden="true" tabindex="-1"></a>Interpretation:</span>
+<span id="cb43-281"><a href="#cb43-281" aria-hidden="true" tabindex="-1"></a>If the effect remains significant for large values of Gamma (e.g., 2+), the results are robust.</span>
+<span id="cb43-282"><a href="#cb43-282" aria-hidden="true" tabindex="-1"></a>If the effect disappears for small values of Gamma (&lt;1.2), the findings are highly sensitive to hidden bias.</span>
+<span id="cb43-283"><a href="#cb43-283" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-284"><a href="#cb43-284" aria-hidden="true" tabindex="-1"></a><span class="fu">## Example X: Sensitivity Analysis Using the sensemakr Package in R</span></span>
+<span id="cb43-285"><a href="#cb43-285" aria-hidden="true" tabindex="-1"></a>The sensemakr package is a powerful tool for sensitivity analysis in causal inference. It helps assess how unmeasured confounders might impact estimated treatment effects.</span>
+<span id="cb43-286"><a href="#cb43-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-287"><a href="#cb43-287" aria-hidden="true" tabindex="-1"></a>📌 Step 2: Simulate a Dataset</span>
+<span id="cb43-288"><a href="#cb43-288" aria-hidden="true" tabindex="-1"></a>We create a dataset where:</span>
+<span id="cb43-289"><a href="#cb43-289" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-290"><a href="#cb43-290" aria-hidden="true" tabindex="-1"></a>wages: Worker’s wage after training</span>
+<span id="cb43-291"><a href="#cb43-291" aria-hidden="true" tabindex="-1"></a>training: Binary variable (1 = received job training, 0 = no training)</span>
+<span id="cb43-292"><a href="#cb43-292" aria-hidden="true" tabindex="-1"></a>education: Years of education (a potential confounder)</span>
+<span id="cb43-293"><a href="#cb43-293" aria-hidden="true" tabindex="-1"></a>experience: Years of work experience (another potential confounder)</span>
+<span id="cb43-294"><a href="#cb43-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-295"><a href="#cb43-295" aria-hidden="true" tabindex="-1"></a>Here, we assume the true treatment effect of training on wages is $3 per hour.</span>
+<span id="cb43-296"><a href="#cb43-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-297"><a href="#cb43-297" aria-hidden="true" tabindex="-1"></a>📌 Step 3: Run the Initial Regression</span>
+<span id="cb43-298"><a href="#cb43-298" aria-hidden="true" tabindex="-1"></a>We estimate the impact of job training on wages, controlling for education and experience.</span>
+<span id="cb43-299"><a href="#cb43-299" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-300"><a href="#cb43-300" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-301"><a href="#cb43-301" aria-hidden="true" tabindex="-1"></a><span class="in"># Set seed for reproducibility</span></span>
+<span id="cb43-302"><a href="#cb43-302" aria-hidden="true" tabindex="-1"></a><span class="in">set.seed(123)</span></span>
+<span id="cb43-303"><a href="#cb43-303" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-304"><a href="#cb43-304" aria-hidden="true" tabindex="-1"></a><span class="in"># Simulate data: Job training impact on wages</span></span>
+<span id="cb43-305"><a href="#cb43-305" aria-hidden="true" tabindex="-1"></a><span class="in">n &lt;- 500</span></span>
+<span id="cb43-306"><a href="#cb43-306" aria-hidden="true" tabindex="-1"></a><span class="in">training &lt;- rbinom(n, 1, 0.5)  # 50% received training</span></span>
+<span id="cb43-307"><a href="#cb43-307" aria-hidden="true" tabindex="-1"></a><span class="in">education &lt;- rnorm(n, mean = 12, sd = 2)  # Avg. 12 years of education</span></span>
+<span id="cb43-308"><a href="#cb43-308" aria-hidden="true" tabindex="-1"></a><span class="in">experience &lt;- rnorm(n, mean = 5, sd = 2)  # Avg. 5 years of experience</span></span>
+<span id="cb43-309"><a href="#cb43-309" aria-hidden="true" tabindex="-1"></a><span class="in">wages &lt;- 20 + 3 * training + 2 * education + 1.5 * experience + rnorm(n, sd = 5)  # Wage equation</span></span>
+<span id="cb43-310"><a href="#cb43-310" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-311"><a href="#cb43-311" aria-hidden="true" tabindex="-1"></a><span class="in"># Create data frame</span></span>
+<span id="cb43-312"><a href="#cb43-312" aria-hidden="true" tabindex="-1"></a><span class="in">data &lt;- data.frame(wages, training, education, experience)</span></span>
+<span id="cb43-313"><a href="#cb43-313" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-314"><a href="#cb43-314" aria-hidden="true" tabindex="-1"></a><span class="in"># Fit linear regression model</span></span>
+<span id="cb43-315"><a href="#cb43-315" aria-hidden="true" tabindex="-1"></a><span class="in">model &lt;- lm(wages ~ training + education + experience, data = data)</span></span>
+<span id="cb43-316"><a href="#cb43-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-317"><a href="#cb43-317" aria-hidden="true" tabindex="-1"></a><span class="in"># Display model summary</span></span>
+<span id="cb43-318"><a href="#cb43-318" aria-hidden="true" tabindex="-1"></a><span class="in">summary(model)</span></span>
+<span id="cb43-319"><a href="#cb43-319" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-320"><a href="#cb43-320" aria-hidden="true" tabindex="-1"></a>Now, check the sensitivity: </span>
+<span id="cb43-321"><a href="#cb43-321" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-322"><a href="#cb43-322" aria-hidden="true" tabindex="-1"></a>📌 Step 4: Conduct Sensitivity Analysis with sensemakr</span>
+<span id="cb43-323"><a href="#cb43-323" aria-hidden="true" tabindex="-1"></a>We now check if an unmeasured confounder could explain away the observed effect of training.</span>
+<span id="cb43-324"><a href="#cb43-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-325"><a href="#cb43-325" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-326"><a href="#cb43-326" aria-hidden="true" tabindex="-1"></a><span class="in"># Perform sensitivity analysis with sensemakr</span></span>
+<span id="cb43-327"><a href="#cb43-327" aria-hidden="true" tabindex="-1"></a><span class="in">sensitivity &lt;- sensemakr(</span></span>
+<span id="cb43-328"><a href="#cb43-328" aria-hidden="true" tabindex="-1"></a><span class="in">  model = model,</span></span>
+<span id="cb43-329"><a href="#cb43-329" aria-hidden="true" tabindex="-1"></a><span class="in">  treatment = "training",</span></span>
+<span id="cb43-330"><a href="#cb43-330" aria-hidden="true" tabindex="-1"></a><span class="in">  benchmark_covariates = c("education", "experience"),  # Use observed confounders as benchmarks</span></span>
+<span id="cb43-331"><a href="#cb43-331" aria-hidden="true" tabindex="-1"></a><span class="in">  q = 1,  # Assess robustness to omitted variable bias</span></span>
+<span id="cb43-332"><a href="#cb43-332" aria-hidden="true" tabindex="-1"></a><span class="in">  alpha = 0.05  # Significance level</span></span>
+<span id="cb43-333"><a href="#cb43-333" aria-hidden="true" tabindex="-1"></a><span class="in">)</span></span>
+<span id="cb43-334"><a href="#cb43-334" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-335"><a href="#cb43-335" aria-hidden="true" tabindex="-1"></a><span class="in"># Print sensitivity analysis summary</span></span>
+<span id="cb43-336"><a href="#cb43-336" aria-hidden="true" tabindex="-1"></a><span class="in">summary(sensitivity)</span></span>
+<span id="cb43-337"><a href="#cb43-337" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-338"><a href="#cb43-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-339"><a href="#cb43-339" aria-hidden="true" tabindex="-1"></a>📌 Step 5: Visualize Sensitivity Results</span>
+<span id="cb43-340"><a href="#cb43-340" aria-hidden="true" tabindex="-1"></a>sensemakr provides a contour plot that shows how strong an unmeasured confounder would have to be to invalidate our conclusions.</span>
+<span id="cb43-341"><a href="#cb43-341" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-342"><a href="#cb43-342" aria-hidden="true" tabindex="-1"></a>🔍 How to Interpret the Plot:</span>
+<span id="cb43-343"><a href="#cb43-343" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-344"><a href="#cb43-344" aria-hidden="true" tabindex="-1"></a>The x-axis represents the strength of an unmeasured confounder’s association with treatment (job training).</span>
+<span id="cb43-345"><a href="#cb43-345" aria-hidden="true" tabindex="-1"></a>The y-axis represents its effect on the outcome (wages).</span>
+<span id="cb43-346"><a href="#cb43-346" aria-hidden="true" tabindex="-1"></a>If the observed effect remains above the significance threshold across plausible values, the result is robust.</span>
+<span id="cb43-347"><a href="#cb43-347" aria-hidden="true" tabindex="-1"></a><span class="in">```{r } </span></span>
+<span id="cb43-348"><a href="#cb43-348" aria-hidden="true" tabindex="-1"></a><span class="in"># Plot sensitivity results</span></span>
+<span id="cb43-349"><a href="#cb43-349" aria-hidden="true" tabindex="-1"></a><span class="in">plot(sensitivity)</span></span>
+<span id="cb43-350"><a href="#cb43-350" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-351"><a href="#cb43-351" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-352"><a href="#cb43-352" aria-hidden="true" tabindex="-1"></a>Step 6: Interpret the Sensitivity Analysis Results</span>
+<span id="cb43-353"><a href="#cb43-353" aria-hidden="true" tabindex="-1"></a>The summary output will show:</span>
+<span id="cb43-354"><a href="#cb43-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-355"><a href="#cb43-355" aria-hidden="true" tabindex="-1"></a>R-squared of omitted variable needed to fully explain the effect</span>
+<span id="cb43-356"><a href="#cb43-356" aria-hidden="true" tabindex="-1"></a>How much the observed effect reduces under different confounding scenarios</span>
+<span id="cb43-357"><a href="#cb43-357" aria-hidden="true" tabindex="-1"></a>Whether the treatment effect remains significant under potential omitted variables</span>
+<span id="cb43-358"><a href="#cb43-358" aria-hidden="true" tabindex="-1"></a>If the sensitivity analysis shows that an extremely strong confounder is needed to nullify the effect, we can be confident in our causal estimate. If a moderate confounder could eliminate the effect, we should be cautious in our conclusions.</span>
+<span id="cb43-359"><a href="#cb43-359" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-360"><a href="#cb43-360" aria-hidden="true" tabindex="-1"></a><span class="fu"># Rosenbaum Bounds</span></span>
+<span id="cb43-361"><a href="#cb43-361" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-362"><a href="#cb43-362" aria-hidden="true" tabindex="-1"></a>Rosenbaum bounds are used in sensitivity analysis for observational studies, particularly in propensity score matching. They assess how sensitive causal inferences are to potential hidden bias due to unmeasured confounders. Since observational studies lack randomized treatment assignment, unmeasured variables may affect both the treatment and the outcome. Rosenbaum bounds estimate how strong an unmeasured confounder would have to be to alter the conclusions of a study.</span>
+<span id="cb43-363"><a href="#cb43-363" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-364"><a href="#cb43-364" aria-hidden="true" tabindex="-1"></a>Concept of Rosenbaum Bounds</span>
+<span id="cb43-365"><a href="#cb43-365" aria-hidden="true" tabindex="-1"></a>The method introduces a sensitivity parameter, Gamma (Γ), which represents the degree of potential hidden bias:</span>
+<span id="cb43-366"><a href="#cb43-366" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-367"><a href="#cb43-367" aria-hidden="true" tabindex="-1"></a>If Γ = 1, the study is free from hidden bias, meaning matched pairs have the same probability of treatment assignment.</span>
+<span id="cb43-368"><a href="#cb43-368" aria-hidden="true" tabindex="-1"></a>If Γ &gt; 1, there is potential unmeasured confounding, and the higher the value of Γ, the more sensitive the results are to hidden bias.</span>
+<span id="cb43-369"><a href="#cb43-369" aria-hidden="true" tabindex="-1"></a>Rosenbaum bounds use Wilcoxon signed-rank tests or Mantel-Haenszel tests to check how the significance of an estimated treatment effect changes under different levels of Γ.</span>
+<span id="cb43-370"><a href="#cb43-370" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-371"><a href="#cb43-371" aria-hidden="true" tabindex="-1"></a><span class="fu">### *Example:* </span></span>
+<span id="cb43-372"><a href="#cb43-372" aria-hidden="true" tabindex="-1"></a>I will illustrate Rosenbaum bounds with an ecological example: assessing the effect of deforestation on bird species richness. Suppose we have an observational dataset where sites with deforestation are matched to sites without deforestation based on environmental factors (e.g., elevation, precipitation).</span>
+<span id="cb43-373"><a href="#cb43-373" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-374"><a href="#cb43-374" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-375"><a href="#cb43-375" aria-hidden="true" tabindex="-1"></a><span class="fu">## Introduction</span></span>
+<span id="cb43-376"><a href="#cb43-376" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-377"><a href="#cb43-377" aria-hidden="true" tabindex="-1"></a>This document demonstrates how to perform **Rosenbaum Bounds Sensitivity Analysis** using R, applied to an ecological study assessing the impact of deforestation on bird species richness.</span>
+<span id="cb43-378"><a href="#cb43-378" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-379"><a href="#cb43-379" aria-hidden="true" tabindex="-1"></a><span class="fu">## Load Required Libraries</span></span>
+<span id="cb43-380"><a href="#cb43-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-383"><a href="#cb43-383" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb43-384"><a href="#cb43-384" aria-hidden="true" tabindex="-1"></a><span class="co"># Install packages if not already installed</span></span>
+<span id="cb43-385"><a href="#cb43-385" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(MatchIt)) <span class="fu">install.packages</span>(<span class="st">"MatchIt"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb43-386"><a href="#cb43-386" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">require</span>(rbounds)) <span class="fu">install.packages</span>(<span class="st">"rbounds"</span>, <span class="at">dependencies =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb43-387"><a href="#cb43-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-388"><a href="#cb43-388" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the libraries</span></span>
+<span id="cb43-389"><a href="#cb43-389" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(MatchIt)</span>
+<span id="cb43-390"><a href="#cb43-390" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rbounds)</span>
+<span id="cb43-391"><a href="#cb43-391" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-392"><a href="#cb43-392" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-393"><a href="#cb43-393" aria-hidden="true" tabindex="-1"></a><span class="fu">## Simulate Ecological Data</span></span>
+<span id="cb43-394"><a href="#cb43-394" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-395"><a href="#cb43-395" aria-hidden="true" tabindex="-1"></a>We create a dataset where bird species richness is compared between deforested and non-deforested sites while controlling for elevation and precipitation.</span>
+<span id="cb43-396"><a href="#cb43-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-399"><a href="#cb43-399" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb43-400"><a href="#cb43-400" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb43-401"><a href="#cb43-401" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb43-402"><a href="#cb43-402" aria-hidden="true" tabindex="-1"></a>  <span class="at">deforestation =</span> <span class="fu">rep</span>(<span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>), <span class="at">each =</span> <span class="dv">50</span>),</span>
+<span id="cb43-403"><a href="#cb43-403" aria-hidden="true" tabindex="-1"></a>  <span class="at">species_richness =</span> <span class="fu">c</span>(<span class="fu">rnorm</span>(<span class="dv">50</span>, <span class="at">mean =</span> <span class="dv">10</span>, <span class="at">sd =</span> <span class="dv">3</span>), <span class="fu">rnorm</span>(<span class="dv">50</span>, <span class="at">mean =</span> <span class="dv">15</span>, <span class="at">sd =</span> <span class="dv">3</span>)),</span>
+<span id="cb43-404"><a href="#cb43-404" aria-hidden="true" tabindex="-1"></a>  <span class="at">elevation =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">500</span>, <span class="at">sd =</span> <span class="dv">100</span>),</span>
+<span id="cb43-405"><a href="#cb43-405" aria-hidden="true" tabindex="-1"></a>  <span class="at">precipitation =</span> <span class="fu">rnorm</span>(<span class="dv">100</span>, <span class="at">mean =</span> <span class="dv">1000</span>, <span class="at">sd =</span> <span class="dv">200</span>)</span>
+<span id="cb43-406"><a href="#cb43-406" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb43-407"><a href="#cb43-407" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-408"><a href="#cb43-408" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-409"><a href="#cb43-409" aria-hidden="true" tabindex="-1"></a><span class="fu">## Perform Propensity Score Matching</span></span>
+<span id="cb43-410"><a href="#cb43-410" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-411"><a href="#cb43-411" aria-hidden="true" tabindex="-1"></a>We match deforested and non-deforested sites based on elevation and precipitation.</span>
+<span id="cb43-412"><a href="#cb43-412" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-415"><a href="#cb43-415" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb43-416"><a href="#cb43-416" aria-hidden="true" tabindex="-1"></a>match_model <span class="ot">&lt;-</span> <span class="fu">matchit</span>(deforestation <span class="sc">~</span> elevation <span class="sc">+</span> precipitation, <span class="at">data =</span> data, <span class="at">method =</span> <span class="st">"nearest"</span>)</span>
+<span id="cb43-417"><a href="#cb43-417" aria-hidden="true" tabindex="-1"></a>matched_data <span class="ot">&lt;-</span> <span class="fu">match.data</span>(match_model)</span>
+<span id="cb43-418"><a href="#cb43-418" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-419"><a href="#cb43-419" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-420"><a href="#cb43-420" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conduct Sensitivity Analysis with Rosenbaum Bounds</span></span>
+<span id="cb43-421"><a href="#cb43-421" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-422"><a href="#cb43-422" aria-hidden="true" tabindex="-1"></a>We check how sensitive our results are to hidden bias.</span>
+<span id="cb43-423"><a href="#cb43-423" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-426"><a href="#cb43-426" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb43-427"><a href="#cb43-427" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract matched treatment and control outcomes</span></span>
+<span id="cb43-428"><a href="#cb43-428" aria-hidden="true" tabindex="-1"></a>treated_outcomes <span class="ot">&lt;-</span> matched_data<span class="sc">$</span>species_richness[matched_data<span class="sc">$</span>deforestation <span class="sc">==</span> <span class="dv">1</span>]</span>
+<span id="cb43-429"><a href="#cb43-429" aria-hidden="true" tabindex="-1"></a>control_outcomes <span class="ot">&lt;-</span> matched_data<span class="sc">$</span>species_richness[matched_data<span class="sc">$</span>deforestation <span class="sc">==</span> <span class="dv">0</span>]</span>
+<span id="cb43-430"><a href="#cb43-430" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-431"><a href="#cb43-431" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform Rosenbaum sensitivity analysis</span></span>
+<span id="cb43-432"><a href="#cb43-432" aria-hidden="true" tabindex="-1"></a><span class="fu">psens</span>(<span class="at">x =</span> treated_outcomes, <span class="at">y =</span> control_outcomes, <span class="at">Gamma =</span> <span class="fl">1.5</span>)  <span class="co"># Adjust Gamma to test sensitivity</span></span>
+<span id="cb43-433"><a href="#cb43-433" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb43-434"><a href="#cb43-434" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-435"><a href="#cb43-435" aria-hidden="true" tabindex="-1"></a><span class="fu">## Interpretation of Results</span></span>
+<span id="cb43-436"><a href="#cb43-436" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-437"><a href="#cb43-437" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the p-value remains small at **Γ = 1.5**, our conclusions are robust to moderate hidden bias.</span>
+<span id="cb43-438"><a href="#cb43-438" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If the p-value becomes insignificant at lower values of **Γ**, our study is highly sensitive to hidden confounders.</span>
+<span id="cb43-439"><a href="#cb43-439" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-440"><a href="#cb43-440" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conclusion</span></span>
+<span id="cb43-441"><a href="#cb43-441" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-442"><a href="#cb43-442" aria-hidden="true" tabindex="-1"></a>Rosenbaum bounds allow us to assess the robustness of our ecological study results against unmeasured confounding. This is particularly useful when controlled experiments are infeasible.</span>
+<span id="cb43-443"><a href="#cb43-443" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-444"><a href="#cb43-444" aria-hidden="true" tabindex="-1"></a><span class="fu">### Take Aways</span></span>
+<span id="cb43-445"><a href="#cb43-445" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-446"><a href="#cb43-446" aria-hidden="true" tabindex="-1"></a>Rosenbaum bounds provide a way to assess how much an unmeasured confounder could influence the causal relationship between deforestation and bird species richness. In ecological studies, where controlled experiments are often impractical, this method helps gauge the reliability of observational findings.</span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
