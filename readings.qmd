@@ -217,7 +217,6 @@ I do not expect you to buy any/all of these books. I will provide the sections t
     + Pearl, J. 2009. [*Causality*](https://doi.org/10.1017/CBO9780511803161). (Cambridge, UK: Cambridge University Press).  
 *Ding, P. [*A First Course in Causal Inference.*](https://arxiv.org/pdf/2305.18793) online.
 
-
 # Do you feel like you could use more background or a refresher on the basics? 
 
 ## Variables, distributions, conditional distributins and means, types of data 
@@ -235,3 +234,4 @@ Hypothesis testing, type I and type II errors
 
 [Austin & Stuart (2015) for ITPW](https://pmc.ncbi.nlm.nih.gov/articles/PMC4626409/pdf/SIM-34-3661.pdf):  Moving towards best practice when using inverse probability of treatment weighting (IPTW) using the propensity score to estimate causal treatment effects in observational studies
 
+[Kimmel et al. 2023 for power analysis and reporting for reproducibility](https://www.nature.com/articles/s41559-023-02144-3): Particularly, see suggestions in Table 1: Changes in research practices to help increase the reliability of ecological research.

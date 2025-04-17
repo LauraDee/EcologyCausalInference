@@ -2387,7 +2387,7 @@
     "href": "readings.html#due-wed.-49-comparison-of-designs-discussion-leads-rachel-luis-sensitivity-tests-laura",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)",
-    "text": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023 - TBD on sensitivity and placebo tests\nOptional to revisit for methods comparison 1) Siegel & Dee (2025) Ecology Letters 2) Butsic et al. 2017 3) Arif & MacNiel 2021 Ecosphere",
+    "text": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023\n- For Sensitivity Tests, see sensemakr help for a primer in R\nOptional to revisit for methods comparison 1) Siegel & Dee (2025) Ecology Letters\n2) Butsic et al. 2017\n3) Arif & MacNiel 2021 Ecosphere",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2673,7 +2673,7 @@
     "href": "readings.html#due-mon.-414-mediation-analysis-sarah-elizabeth",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]",
-    "text": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]",
+    "text": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]\nRead Correia et al. 2025",
     "crumbs": [
       "Readings & Additional Materials"
     ]
