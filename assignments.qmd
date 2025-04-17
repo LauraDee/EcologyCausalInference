@@ -41,7 +41,8 @@ Alternatively, students can complete a literature review that provides a deeper 
 
 ### Final project write up
 
-#### Length
+#### Length\
+
 -For data analysis projects: \~ 5 pages (not including tables and figures, but don't stress over the page count)\
 
 -For literature review projects: \~ 10 pages, but don't stress over the page count -- focus on what you need to include to write a compelling paper
