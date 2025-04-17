@@ -161,7 +161,7 @@ Optional to revisit for methods comparison
 ## Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]
 Read [Correia et al. 2025](https://onlinelibrary.wiley.com/doi/10.1111/brv.70011)
 
-## Due Wed. 4/16 Power, standard error estimation, and inference 
+## Due Wed. 4/16 Power, standard error estimation, and inference [Mobeen and Lincoln]
 Read [The Effect: Chapter 13 "Your standard errors are probably wrong"](https://theeffectbook.net/ch-StatisticalAdjustment.html)\
 Read [Kimmel, Avolio & Ferraro 2023](https://www.nature.com/articles/s41559-023-02144-3)
 
@@ -193,10 +193,9 @@ Specific guidelines for literature review  presentations:
 * Describe and critique the current approaches people are taking  
 * Present your ideas for how the field could better incorporate causal inference methods  
 
-## Due Wed 4/30  Project Presentations (or no class)
-Project Presentations Continued
+## Due Wed 4/30  No Class: Work on final report
 
-## Projects Due Friday May 2 
+## Projects Due Sunday May 4 by email
 See Assignments & Evaluation tab for more information 
 
 # Recommended Textbooks (not required)    

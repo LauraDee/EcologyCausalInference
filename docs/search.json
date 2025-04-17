@@ -2337,7 +2337,7 @@
     "href": "readings.html#due-wed.-416-power-standard-error-estimation-and-inference",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/16 Power, standard error estimation, and inference",
-    "text": "Due Wed. 4/16 Power, standard error estimation, and inference\nRead The Effect: Chapter 13 “Your standard errors are probably wrong”\nRead Kimmel, Avolio & Ferraro 2023\nFor a deeper dive on standard error estimation, read Cameron and Miller. A pracitioner’s guide to clustered robust standard errrors",
+    "text": "Due Wed. 4/16 Power, standard error estimation, and inference",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2387,7 +2387,7 @@
     "href": "readings.html#due-wed.-49-comparison-of-designs-discussion-leads-rachel-luis-sensitivity-tests-laura",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)",
-    "text": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023\n- For Sensitivity Tests, see sensemakr help for a primer in R\nOptional to revisit for methods comparison 1) Siegel & Dee (2025) Ecology Letters\n2) Butsic et al. 2017\n3) Arif & MacNiel 2021 Ecosphere",
+    "text": "Due Wed. 4/9 Comparison of Designs [Discussion lead(s): Rachel & Luis ] & Sensitivity Tests (Laura)\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions:  - Simler-Williamson & Germino 2022\n- Dee et al., 2023 - TBD on sensitivity and placebo tests\nOptional to revisit for methods comparison 1) Siegel & Dee (2025) Ecology Letters 2) Butsic et al. 2017 3) Arif & MacNiel 2021 Ecosphere",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2673,7 +2673,7 @@
     "href": "readings.html#due-mon.-414-mediation-analysis-sarah-elizabeth",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]",
-    "text": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]\nRead Correia et al. 2025",
+    "text": "Due Mon. 4/14 Mediation Analysis [Sarah Elizabeth]",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2775,5 +2775,35 @@
     "title": "Sensitivity Tests",
     "section": "Conclusion",
     "text": "Conclusion\nRosenbaum bounds allow us to assess the robustness of our ecological study results against unmeasured confounding. This is particularly useful when controlled experiments are infeasible.\n\nTake Aways\nRosenbaum bounds provide a way to assess how much an unmeasured confounder could influence the causal relationship between deforestation and bird species richness. In ecological studies, where controlled experiments are often impractical, this method helps gauge the reliability of observational findings."
+  },
+  {
+    "objectID": "readings.html#due-wed.-416-power-standard-error-estimation-and-inference-mobeen-and-lincoln",
+    "href": "readings.html#due-wed.-416-power-standard-error-estimation-and-inference-mobeen-and-lincoln",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 4/16 Power, standard error estimation, and inference [Mobeen and Lincoln]",
+    "text": "Due Wed. 4/16 Power, standard error estimation, and inference [Mobeen and Lincoln]\nRead The Effect: Chapter 13 “Your standard errors are probably wrong”\nRead Kimmel, Avolio & Ferraro 2023\nFor a deeper dive on standard error estimation, read Cameron and Miller. A pracitioner’s guide to clustered robust standard errrors",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-430-no-class-work-on-final-report",
+    "href": "readings.html#due-wed-430-no-class-work-on-final-report",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 4/30 No Class: Work on final report",
+    "text": "Due Wed 4/30 No Class: Work on final report",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#projects-due-sunday-may-4-by-email",
+    "href": "readings.html#projects-due-sunday-may-4-by-email",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Projects Due Sunday May 4 by email",
+    "text": "Projects Due Sunday May 4 by email\nSee Assignments & Evaluation tab for more information",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
   }
 ]
