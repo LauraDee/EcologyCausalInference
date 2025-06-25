@@ -8,31 +8,30 @@ editor: visual
 
 ## Useful Videos
 
+#### Papers introducing the Structural Causal Model and DAGs as its key tool to Ecologists
+
+1) [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)\
+2) [Laubach et al. 2021](https://doi.org/10.1098/rspb.2020.2815)
+
+3\) [Grace & Irving 2020](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2962)
+
+4)[ Byrnes and Dee 2025 ](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70023)
+
 #### Conceptual
 
 -   Discussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: <https://www.youtube.com/watch?v=_qs_1B4ySWY>
 
--   Watch Hernan video: "3. Elements of DAGs"
+-   Watch Hernan video: "3. Elements of DAGs" on the Google Drive
 
-#### Implementation
-
--   How to build and begin to analyze them it in ggdag by A. Heiss: <https://www.youtube.com/watch?v=uoAjyyToUTE>
+#### Implementation and Analysis of DAGs
 
 -   Drawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c
 
 -   Intro to DAGitty for identifying confounding variables: <https://www.youtube.com/watch?v=sI_w9uVLdCg>
 
-## Software for DAG construction and analysis
+-   How to build and begin to analyze them it in ggdag by A. Heiss: <https://www.youtube.com/watch?v=uoAjyyToUTE>
 
-a\) [Daggitity](https://www.dagitty.net)
-
-b\) [ggdag](https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html) is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality\
-c) [shinydag](https://www.gerkelab.com/project/shinydag/) is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\
-d) [TETRAD](https://sites.google.com/view/tetradcausal)\
-e) [DAG program](https://hsz.dife.de/dag/)\
-f) [dagR](https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx)
-
-### Key Messages - well said in Cunningham (2021) Ch. 3:
+### Key Messages about DAGs - well said in Cunningham (2021) Ch. 3:
 
 *Well summarized fom Cunningham (2021) Ch. 3:* "Causal effects can happen in two ways. They can either be direct (e.g., D→Y), or they can be mediated by a third variable (e.g., D→X→Y). When they are mediated by a third variable, we are capturing a sequence of events originating with D, which may or may not be important to you depending on the question you’re asking.
 
@@ -44,10 +43,22 @@ At this point, you may be wondering where the DAG comes from. It’s an excellen
 
 ..... Two, through concepts such as the backdoor criterion and collider bias, a well-designed DAG can help you develop a credible research design for identifying the causal effects of some intervention. As a bonus, I also think a DAG provides a bridge between various empirical schools, such as the structural and reduced form groups. And finally, DAGs drive home the point that assumptions are necessary for any and all identification of causal effects, which economists have been hammering at for years ([Wolpin 2013](https://mixtape.scunning.com/references#ref-Wolpin2013))."
 
-#### Additional Background Readings
+#### Software for DAG construction and analysis
 
-For additional background on DAGs:
+a\) [Daggitity](https://www.dagitty.net)
+
+b\) [ggdag](https://cran.r-project.org/web/packages/ggdag/vignettes/intro-to-ggdag.html) is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality - The course github has a tutorial\
+c) [shinydag](https://www.gerkelab.com/project/shinydag/) is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\
+d) [TETRAD](https://sites.google.com/view/tetradcausal)\
+e) [DAG program](https://hsz.dife.de/dag/)\
+f) [dagR](https://journals.lww.com/epidem/Fulltext/2010/07000/dagR__A_Suite_of_R_Functions_for_Directed_Acyclic.26.aspx)
+
+Additional Background Readings
+
+For additional background on DAGs from other fields:
 
 -   Morgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)
 -   [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)
 -   Heiss, A. [Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand](https://www.andrewheiss.com/blog/2021/09/07/do-calculus-backdoors/#exploring-the-rules-of-do-calculus)
+-   [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
+-   [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
