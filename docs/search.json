@@ -234,7 +234,7 @@
     "href": "exercises/index.html",
     "title": "Exercises in R",
     "section": "",
-    "text": "This section has link to the files for the demos and replication exercises that we will do in class. Here, you will find link to files with annotated code and csv files with data for the replication exercises.",
+    "text": "This section has link to the files for the demos and replication exercises that we will do in class. Here, you will find link to files with annotated code and .csv files with data for the replication exercises.",
     "crumbs": [
       "Exercises"
     ]
@@ -2861,7 +2861,7 @@
     "href": "readings.html#due-mon.-831---structural-causal-model-and-directed-acyclic-graphs-dag",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)",
-    "text": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)\n\nArif & MacNeil 2022\n2)Rohrer 2018\n\nGuest speaker: Dr. Zach Laubach\nOptional, additional useful background reading on DAGs:\n3) The Effect Ch. 6\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) Cunningham (2021) Ch. 3",
+    "text": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)\n\nArif & MacNeil 2022\nRohrer 2018\n\nGuest speaker: Dr. Zach Laubach\nOptional, additional useful background reading on DAGs:\n3) Borger and Ramesh 2025 4\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) The Effect Ch. 6\n6) Cunningham (2021) Ch. 3",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2901,7 +2901,7 @@
     "href": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions",
-    "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\n\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
+    "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2911,7 +2911,7 @@
     "href": "readings.html#due-wed-916-target-validity-external-validity-transportability",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed 9/16 Target Validity, External Validity, Transportability",
-    "text": "Due Wed 9/16 Target Validity, External Validity, Transportability\nTBD something on transportability, target validity, external validity",
+    "text": "Due Wed 9/16 Target Validity, External Validity, Transportability\nTBD something on external validity: transportability, target validity,",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2931,7 +2931,7 @@
     "href": "readings.html#due-wed.-923---workshop-start-your-dags-and-get-feedback",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback",
-    "text": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback\nFLIPPED CLASSROOM: watch Dr. Suchinta Arif presentation prior to class and read:\n1) Vanderwheele 2019 Principles of confounder selection\n2) Review DAG resources and DAG software on the website’s DAGs resources tab\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
+    "text": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback\nFLIPPED CLASSROOM - Watch Dr. Suchinta Arif presentation prior to class and read:\n1) Vanderwheele 2019 Principles of confounder selection\n2) Review DAG resources and DAG software on the website’s DAGs resources tab\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2951,7 +2951,7 @@
     "href": "readings.html#due-wed.-930-discussion-leads",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 9/30 [Discussion lead(s): ]",
-    "text": "Due Wed. 9/30 [Discussion lead(s): ]\n\nSiegel et al. 2022\n\nXu et al. 2022\n\ndemo RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub here",
+    "text": "Due Wed. 9/30 [Discussion lead(s): ]\n\nSiegel et al. 2022\nXu et al. 2022\n\ndemo RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub here.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2961,7 +2961,7 @@
     "href": "readings.html#due-mon.-95-difference-in-difference",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 9/5 Difference-in-Difference",
-    "text": "Due Mon. 9/5 Difference-in-Difference\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)\n\nThe Effect Ch. 16 - Fixed Effects up until 16.2.2 Multiple Sets of Fixed Effects.\nThe Effect Ch. 18 up until 18.2.5 Rollout Designs and Multiple Treatment Periods.",
+    "text": "Due Mon. 9/5 Difference-in-Difference\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)\nThe Effect Ch. 16 - Fixed Effects up until 16.2.2 Multiple Sets of Fixed Effects.\nThe Effect Ch. 18 up until 18.2.5 Rollout Designs and Multiple Treatment Periods.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2971,7 +2971,7 @@
     "href": "readings.html#due-wed.-107-discussion-leads",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/7 [Discussion lead(s): ]",
-    "text": "Due Wed. 10/7 [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional: 1) Roth et al. (2023). What’s trending in difference in difference?\n2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD\n3)Bell et al. 2019. Fixed and random effects models making an informed choice\nFixed Effects Discussion:\n1) Dudney et al. 2021 \n2) Dee et al., 2023",
+    "text": "Due Wed. 10/7 [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional:\n1) Roth et al. (2023). What’s trending in difference in difference?\n2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD\n3)Bell et al. 2019. Fixed and random effects models making an informed choice\nFixed Effects Applications in Ecology for Discussion:\n1) Dudney et al. 2021 \n2) Dee et al., 2023",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2981,7 +2981,7 @@
     "href": "readings.html#due-mon.-1012-panel-methods-continued-two-way-fixed-effects",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects",
-    "text": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects\nTBD 1) Angrist & Pischke 2008, Chapter 5\n2) The Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects 3) Brynes and Dee (2025) Ecology Letters\ndemo Brynes & Dee Rmarkdown on [GitHub here] (https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)\nOptional: Bell et al. 2019. Fixed and random effects models making an informed choice\n\ndemo Dee et al. Rmarkdown on course GitHub",
+    "text": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects\n1) Angrist & Pischke 2008, Chapter 5\n2) The Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects 3) Brynes and Dee (2025) Ecology Letters\ndemo Brynes & Dee Rmarkdown on [GitHub here](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)\nOptional: Bell et al. 2019. Fixed and random effects models making an informed choice\ndemo Dee et al. Rmarkdown on course GitHub",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3171,7 +3171,7 @@
     "href": "exercises/index.html#dags",
     "title": "Exercises in R",
     "section": "9/23 DAGs",
-    "text": "9/23 DAGs\nCreating and Analyzing DAGs in ggdag (or Daggity).",
+    "text": "9/23 DAGs\nCreating and Analyzing DAGs in ggdag (or Daggity). ggdag demo",
     "crumbs": [
       "Exercises"
     ]

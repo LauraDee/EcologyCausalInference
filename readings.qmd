@@ -17,15 +17,17 @@ First class; Complete [pre-course survey](https://forms.gle/cv7dr13eRB4xe5E87) i
 
 ## Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)
 
-1)  [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)\
-    2)[Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
+1)  [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)
+2)  [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
 
 Guest speaker: Dr. Zach Laubach
 
 Optional, additional useful background reading on DAGs:\
-3) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)\
+3) [Borger and Ramesh 2025](https://doi.org/10.1098/rspb.2025.0963) 4\
 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\
-5) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)
+5) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)
+
+6\) [Cunningham (2021) Ch. 3](https://mixtape.scunning.com/03-directed_acyclical_graphs)
 
 ## Due Wed. 9/2 - Potential Outcomes
 
@@ -46,20 +48,20 @@ Optional: [Mixtape: 4.4 Randomization](https://mixtape.scunning.com/04-potential
 
 ## Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions
 
-1)  [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)\
+1)  [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)
 2)  [Mixtape: 4.5 SUTVA](https://mixtape.scunning.com/04-potential_outcomes_and_randomization#randomization)
 
 Note: Please read [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/) if you didn't for last class
 
 ## Due Wed 9/16 Target Validity, External Validity, Transportability
 
-TBD something on transportability, target validity, external validity
+TBD something on external validity: transportability, target validity,
 
 ## Due Mon. 9/21 Introduction to Challenges of Observational Data
 
 1)  Watch Imbens video: [2022 Nobel Prize lecture](https://www.nobelprize.org/prizes/economic-sciences/2021/imbens/lecture/)
 2)  [Larsen et al. 2019](https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.13190) - up to section 8, and the Discussion. *Can skim in between for preview of what's to come.*
-3)  [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - up until section 5.1.
+3)  [Siegel & Dee (2025) Ecology Letters](https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.70053) - *up until section 5.1.*
 
 Optional and more advanced: Angrist & Pischke 2008, Chapter 3 (from *Mostly Harmless Econometrics*)
 
@@ -70,7 +72,7 @@ Optional:
 
 ## Due Wed. 9/23 - Workshop: Start your DAGs and get feedback
 
-*FLIPPED CLASSROOM: watch Dr. Suchinta Arif presentation prior to class and read:*
+*FLIPPED CLASSROOM - Watch Dr. Suchinta Arif presentation prior to class and read:*
 
 1\) [Vanderwheele 2019 Principles of confounder selection](https://doi.org/10.1007/s10654-019-00494-6)
 
@@ -88,14 +90,14 @@ Optional: -[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
 
 ## Due Wed. 9/30 \[Discussion lead(s): \]
 
-1)  [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)\
+1)  [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)
 2)  [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)
 
-*demo* RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub [here](https://github.com/LauraDee/EcologyCausalInference/tree/main/exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf)
+*demo* RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub [here](https://github.com/LauraDee/EcologyCausalInference/tree/main/exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf).
 
 ## Due Mon. 9/5 Difference-in-Difference
 
-1)  Angrist & Pischke **2015**, Chapter 5 (note: this is in the book *Mastering ‘Metrics*)\
+1)  Angrist & Pischke **2015**, Chapter 5 (note: this is in the book *Mastering ‘Metrics*)
 2)  The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html) up until 16.2.2 Multiple Sets of Fixed Effects.
 3)  The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) up until 18.2.5 Rollout Designs and Multiple Treatment Periods.
 
@@ -107,13 +109,15 @@ Optional: -[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
 
 *demo* RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)
 
-Optional: 1) [Roth et al. (2023). What's trending in difference in difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
+Optional:
+
+1\) [Roth et al. (2023). What's trending in difference in difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
 
 2\) Pedro Sant'Anna's DiD resources and [*Comprehensive Course on DiD*](https://psantanna.com/did-resources/)
 
 3)[Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)
 
-Fixed Effects Discussion:
+Fixed Effects Applications in Ecology for Discussion:
 
 1\) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6) 
 
@@ -121,13 +125,12 @@ Fixed Effects Discussion:
 
 ## Due Mon. 10/12 Panel methods continued; Two-way fixed effects
 
-*TBD* 1) Angrist & Pischke **2008**, Chapter 5\
+1\) Angrist & Pischke **2008**, Chapter 5\
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html) starting at 16.2.2 Multiple Sets of Fixed Effects 3) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
 
-*demo* Brynes & Dee Rmarkdown on \[GitHub here\] (https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)
+*demo* Brynes & Dee Rmarkdown on \[GitHub here\](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)
 
 Optional: [Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)\
-
 *demo* Dee et al. Rmarkdown on course GitHub
 
 ## Due Wed. 10/14 - Synthetic Control
