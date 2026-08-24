@@ -12,7 +12,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "",
     "text": "Laura Dee, Associate Professor, CU Boulder (laura.dee@colorado.edu)",
     "crumbs": [
@@ -32,9 +32,9 @@
   {
     "objectID": "index.html#class-meetings",
     "href": "index.html#class-meetings",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Class Meetings",
-    "text": "Class Meetings\nAt University of Colorado: EBIO 5460 Mondays & Wednesdays 3:35-4:50pm in Eaton Humanities Bldg.\n\nOffice Hours\nWednesday 2:15-3:15 pm and by appointment",
+    "text": "Class Meetings\nAt University of Colorado: EBIO 5460 Mondays & Wednesdays 3:35-4:50pm in Eaton Humanities Bldg.\n\nOffice Hours\nWednesday 2:15-3:15 pm and by appointment (location on Lecture 1 slides)",
     "crumbs": [
       "Course Overview"
     ]
@@ -52,7 +52,7 @@
   {
     "objectID": "index.html#course-prerequisites",
     "href": "index.html#course-prerequisites",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Course Prerequisites",
     "text": "Course Prerequisites\nSome introductory statistics or biostatistics that covers hypothesis testing and regression is required. Some familiarity with R as a programming language is also recommended. This course will be most beneficial to students who have started their thesis work and can incorporate an empirical analysis into the class project, but it is open to all students who meet the pre-requisites. Contact the professors if you are unsure whether your background is sufficient for the course.",
     "crumbs": [
@@ -62,7 +62,7 @@
   {
     "objectID": "index.html#course-objectives",
     "href": "index.html#course-objectives",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Course Objectives",
     "text": "Course Objectives\nThrough this course, students will gain:\n\nAn understanding of the main frameworks for counterfactual causal inference and how causal inference differs from other empirical research aims\nFamiliarity with how causal inference is applied in experimental and quasi-experimental study designs in ecology and evolution\nExperience reading the published literature in ecology and evolutionary biology with a critical eye towards appropriate use of methods for identifying causal relationships and mechanisms.\n\nThis course aims for students to learn how to:\n\nAsk better causal questions\nSummarize key threats to causal inference and identify these threats when evaluating their own and published study designs\nApply causal inference methods to real world research questions and datasets – either through applications to their thesis work or to other datasets – to mitigate threats to causal inference through research design\nIdentify the most appropriate study design(s) and methodology in experimental and non-experimental settings in light of the available data and the research question\nIdentify the target population or subpopulation for which you want to make inferences\nImplement these designs and methods in R and appropriately interpret the results and their potential biases and assumptions\nConduct robustness checks and sensitivity analysis because our methods are often imperfect and assumptions can be violated\nWrite and speak clearly about these methods, the assumptions they need for causal inference, and the results they yield.",
     "crumbs": [
@@ -72,7 +72,7 @@
   {
     "objectID": "index.html#code-data",
     "href": "index.html#code-data",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Code & Data",
     "text": "Code & Data\nI will make RMarkdown Files, datasets, and code available on this website and through a shared (private) Google Drive for data I don’t have permissions to post.",
     "crumbs": [
@@ -82,7 +82,7 @@
   {
     "objectID": "index.html#a-note-on-inclusion",
     "href": "index.html#a-note-on-inclusion",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "A Note on Inclusion",
     "text": "A Note on Inclusion\nSome of the texts that we will read in class use examples to illustrate their points that are problematic (e.g., treating gender as a binary or studying post-colonial economic development without considering the violence of colonialism). We do not agree with the assumptions underlying these examples and we acknowledge the problems with them. The descriptions of methods are still some of the easiest to read out there. At the same time, policy decisions are being made based on these and similar analyses, so we need to train people who can use these methods for causal inference and approach this work through a lens of diversity, equity, inclusion, and justice.\nIn this class, we aim to foster discussions of how bias shapes causal models in science, the questions we ask, the analyses we do, who does them, and our interpretation of these results. We are also always open to feedback on these subjects.",
     "crumbs": [
@@ -358,7 +358,7 @@
   {
     "objectID": "index.html#instructor",
     "href": "index.html#instructor",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "",
     "text": "Laura Dee, Associate Professor, CU Boulder (laura.dee@colorado.edu)",
     "crumbs": [
@@ -1772,9 +1772,9 @@
   {
     "objectID": "index.html#acknowledgements",
     "href": "index.html#acknowledgements",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nThis course was supported by NSF DEB CAREER #Xxxx\nThe course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/), Paul Ferraro’s syllabus, and builds on (and revises/expands) a course developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. See Siegel and Dee (2025) Ecology Letters for a publication based on that experience.",
+    "text": "Acknowledgements\nThis course was supported by NSF DEB CAREER #2340606 to L.Dee.\nThe course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/), Paul Ferraro’s syllabus, and builds on (and revises/expands) a course developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. See Siegel and Dee (2025) Ecology Letters for a publication based on that experience.",
     "crumbs": [
       "Course Overview"
     ]
@@ -2819,7 +2819,7 @@
   {
     "objectID": "index.html#fall-course-description",
     "href": "index.html#fall-course-description",
-    "title": "EBIO 5460: Causal Inference in Ecology",
+    "title": "EBIO 5460: Causal Inference in Ecology Fall 2026",
     "section": "Fall Course Description",
     "text": "Fall Course Description\nHow does biodiversity effect ecosystem functioning? What are the consequences of temperature variability for parasite loads and host populations? How do plant communities respond to drought, and which ecosystems respond most? Do restoration and conservation work? How does climate change affect disturbance regimes? Cause and effect questions like these motivate much of the empirical work in basic and applied ecological and environmental sciences. Does X cause Y? If X causes Y, does it cause Y in all situations? Through what mechanisms does X cause Y? If X causes Y, how large is the effect of X on Y and how does the size compare to other causes of Y? To answer these cause-and-effect questions, a counterfactual model of causality and a unified methodological framework has been developed yet is not often taught or emphasized in ecology and EBIO more generally. Now this framework is the predominant approach for causal inference in a diversity of fields including public health, economics, and computer science (which is also referred to as program evaluation or impact evaluation).\nGiven the increasing access to spatiotemporally large observational datasets (e.g., remotely sensed data, data from long-term ecological monitoring), we have unprecedented opportunities to answer questions about causal relationships and mechanisms outside of the context of traditional ecological approaches to experimental design. Deriving causal inferences from observational data presents its own set of challenges, and this course presents statistical methods to overcome challenges for causal inference in both observational and experimental study designs.\nThis class aims to teach students to apply and interpret the counterfactual causality model and associated methods in answering empirical questions in basic and applied ecology. As a 3-credit graduate course, this course has a corresponding reading load with an emphasis on readings that elucidate the intuition and the application of the core conceptual ideas. I am a firm believer that the most fundamental principles can be stated in plain English and conceptual understanding is just as important as the math. Thus the course stresses intuition (in English) over mechanics and proofs. Nevertheless, students will be expected to apply the mechanics in replication exercises in R statistical software and in a final a project related to the students’ thesis.\nWhether you are a student with substantial graduate work in empirical methods or a student with only the basic pre-requisites covered (some introductory statistics or biostatistics is required), you should expect to gain a deeper understanding of approaches to answering causal questions and of the nature of evidence. Importantly, you will see more clearly the conceptual connections among the various approaches to estimating causal effects – experiments and observational analyses. Even for students with substantial coursework in statistics, these connections are often missed.\nWhile most students who will take this class are in EBIO fields, you should expect to do readings outside of EBIO areas and to see examples from other fields – because ecology and evolutionary biology is lagging a bit behind other fields in several areas we will cover (but catching up fast!). On the bright side, reading beyond the typical EBIO papers will provide you with an entry point into the broader literature on causal inference, stemming from economics, public health, epidemiology, political science, and other fields. Thus, we see the use of broader readings and examples as intentional to meet the course’s learning objectives, and as a potential competitive advantage – and a way to expand your thinking – rather than a distraction from topics that interest you most. In our experience, gaining perspective on methods and language used in other fields will also provide you with skills to foster collaborations across disciplines. We will also invite guest speakers who are experts to showcase applications of the theory and approaches to questions and data in ecology, conservation, and evolution/behavior – and present some of our in-progress research using causal inference approaches applied to EBIO.\nI have outlined a provisional syllabus below but can adapt it based on student interests and background. The main emphasis of the course is like any other graduate course: to encourage students to think critically, to speak and write simply and clearly, collaborate, to own and use a body of facts and ideas that are widely known, to detect errors and fallacies, to resolve intellectual problems, and to advance our collective knowledge through independent research and applied statistics.",
     "crumbs": [
