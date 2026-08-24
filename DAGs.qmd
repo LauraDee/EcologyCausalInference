@@ -15,7 +15,9 @@ editor: visual
 
 3\) [Grace & Irving 2020](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecy.2962)
 
-4)[ Byrnes and Dee 2025 ](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70023)
+4\) [Borger and Ramesh 2025](https://doi.org/10.1098/rspb.2025.0963)
+
+5\) [Byrnes and Dee 2025](https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70023)
 
 #### Conceptual
 

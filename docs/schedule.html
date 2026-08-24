@@ -167,8 +167,9 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#potential-additional-topicsunits-to-be-voted-on-by-the-class" id="toc-potential-additional-topicsunits-to-be-voted-on-by-the-class" class="nav-link active" data-scroll-target="#potential-additional-topicsunits-to-be-voted-on-by-the-class">Potential additional topics/units to be voted on by the class:</a>
   <ul class="collapse">
   <li><a href="#generalizability-in-experimental-and-observational-studies" id="toc-generalizability-in-experimental-and-observational-studies" class="nav-link" data-scroll-target="#generalizability-in-experimental-and-observational-studies">Generalizability in experimental and observational studies</a></li>
+  <li><a href="#machine-learning-and-causal-inference" id="toc-machine-learning-and-causal-inference" class="nav-link" data-scroll-target="#machine-learning-and-causal-inference">Machine Learning and Causal Inference</a></li>
   <li><a href="#heterogeneous-treatment-effects-and-conditional-average-effects" id="toc-heterogeneous-treatment-effects-and-conditional-average-effects" class="nav-link" data-scroll-target="#heterogeneous-treatment-effects-and-conditional-average-effects">Heterogeneous treatment effects and conditional average effects</a></li>
-  <li><a href="#deeper-dive-into-mechanisms-and-mediation-analysis" id="toc-deeper-dive-into-mechanisms-and-mediation-analysis" class="nav-link" data-scroll-target="#deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into mechanisms and mediation analysis</a></li>
+  <li><a href="#deeper-dive-into-mechanisms-and-mediation-analysis" id="toc-deeper-dive-into-mechanisms-and-mediation-analysis" class="nav-link" data-scroll-target="#deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into Mechanisms and Mediation analysis</a></li>
   <li><a href="#deeper-dive-into-sensitivity-tests" id="toc-deeper-dive-into-sensitivity-tests" class="nav-link" data-scroll-target="#deeper-dive-into-sensitivity-tests">Deeper dive into Sensitivity Tests</a></li>
   <li><a href="#replicationreproducibilitypre-registration" id="toc-replicationreproducibilitypre-registration" class="nav-link" data-scroll-target="#replicationreproducibilitypre-registration">Replication/Reproducibility/Pre-registration</a></li>
   </ul></li>
@@ -198,6 +199,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to work-shopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.</p>
+<p>Because this course is part of a larger, distributed graduate seminar (dgs), some lecture days will feature content and lectures from instructors from other universities who are part of this dgs.</p>
 <p>The tentative schedule of content, subject to change based on student interests and availability of guest speakers, is as follows:</p>
 <table class="caption-top table">
 <thead>
@@ -210,111 +212,113 @@ ul.task-list li input[type="checkbox"] {
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;">Week 1 (1/13)</td>
+<td style="text-align: center;">Week 1 (8/24)</td>
 <td style="text-align: center;">Course Intro</td>
 <td style="text-align: center;">Intro to causal inference and counterfactual causality</td>
 <td style="text-align: center;">• Intro to course and goals <br> • Understand students’ goals for the course <br> • Set norms and expectations <br> • Intro to concepts in causal inference and motivation for applying it to ecology and evolution <br> • Clarify causal versus other research questions and aims <br> • Brief Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Week 2 (1/20)</td>
-<td style="text-align: center;">No class - MLK Day</td>
-<td style="text-align: center;"><p>Intro to the main frameworks for counterfactual causal inference</p>
-<p>Guest speaker: <a href="https://scholar.google.ca/citations?user=V6lMSmYAAAAJ&amp;hl=en">Dr.&nbsp;Suchinta Arif</a></p></td>
-<td style="text-align: center;">• Structural Causal Models and Directed Acyclic Graphs</td>
+<td style="text-align: center;">Week 2 (8/31)</td>
+<td style="text-align: center;"><p>Structural Causal Models and Directed Acyclic Graphs</p>
+<p>Guest speaker: <a href="https://laubach.github.io">Dr.&nbsp;Zach Laubach</a></p></td>
+<td style="text-align: center;">Potential outcomes framework</td>
+<td style="text-align: center;">Intro to the main frameworks for counterfactual causal inference</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Week 3 (1/27)</td>
-<td style="text-align: center;">Intro to the main frameworks for counterfactual causal inference</td>
+<td style="text-align: center;">Week 3 (9/7)</td>
+<td style="text-align: center;">Labor Day - No Class</td>
 <td style="text-align: center;">Randomized Controlled Experiments (or RCTs) and experimental design</td>
-<td style="text-align: center;">• Potential outcomes framework <br> • Application of potential outcomes framework to RCTs <br> • Review key assumptions of RCTs <br> • Critique experimental designs in ecology and identify solutions <br> • Dissect experimental design with respect to assumptions required for causal inference</td>
+<td style="text-align: center;">• Application of potential outcomes framework to RCTs <br> • Review key assumptions of RCTs <br> • Dissect experimental design with respect to assumptions required for causal inference</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Week 4 (2/3)</td>
-<td style="text-align: center;">Observational data and counterfactuals; Introduction to quasi-experimental methods</td>
-<td style="text-align: center;"><p>Creating and Analyzing DAGs</p>
-<p>(Guest speaker: [Dr.&nbsp;Zach Laubach](<a href="https://laubach.github.io" class="uri">https://laubach.github.io</a>))</p>
-<p><em>Due: first draft of research question, or lit review proposal, and DAG analysis on 2/7</em></p></td>
-<td style="text-align: center;"><p>• Articulate how and why observational data deviates from assumptions of RCTs <br> • Understand challenges of applying causal inference to observational data, including confounding and selection bias <br> • DAGs as a tool from the graphical causal modeling framework <br> • Principles of covariate and confounder selection <br></p>
-<p>Project/Workshopping:</p>
-<p>• Students create and workshop DAGs for their own research/study systems</p></td>
+<td style="text-align: center;">Week 4 (9/14)</td>
+<td style="text-align: center;">Bias and solutions in expertiments</td>
+<td style="text-align: center;"><p>External Validity</p>
+<p><a href="https://www.boisestate.edu/biology/faculty-and-staff/faculty/allison-simler-williamson/">Dr.&nbsp;Allison Simler-Williamson</a></p></td>
+<td style="text-align: center;"><p>Identify when key assumptions for causal inference are violated in experiments <br> • Critique experimental designs in ecology and identify solutions <br> • Identify solutions</p>
+<p>External Validity: Target Validity and Transportability</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Week 5 (2/10)</td>
+<td style="text-align: center;"><p>Week 5</p>
+<p>(9/20)</p></td>
+<td style="text-align: center;">Observational data and counterfactuals; Introduction to quasi-experimental methods</td>
+<td style="text-align: center;"><p>Creating and Analyzing DAGs</p>
+<p><em>Due: first draft of research question, or lit review proposal, and DAG analysis</em></p></td>
+<td style="text-align: center;"><p>• Articulate how and why observational data deviates from assumptions of RCTs <br> • Understand challenges of applying causal inference to observational data, including confounding and selection bias <br> • DAGs as a tool from the graphical causal modeling framework <br> • Principles of covariate and confounder selection <br></p>
+<p>Project Workshop:</p>
+<p>• Students create and workshop DAGs for their own research/study systems</p></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">Week 6 (9/28)</td>
 <td style="text-align: center;">Pre-regression matching</td>
 <td style="text-align: center;">Paper discussion and replication exercise</td>
 <td style="text-align: center;">• Learn pre-regression matching as a method <br> • Demo application in R <br> • See &amp; critique how it is applied in the literature</td>
 </tr>
-<tr class="even">
-<td style="text-align: center;">Week 6 (2/17)</td>
+<tr class="odd">
+<td style="text-align: center;">Week 7 (10/5)</td>
 <td style="text-align: center;">Difference in Difference (DiD)</td>
 <td style="text-align: center;">Paper discussion and replication exercise</td>
-<td style="text-align: center;">• Learn DiD designs, including identification assumptions and interpretation <br> • Demo application in R <br> • Compare DiD to matching and experiments <br> • See &amp; critique how it is applied in the literature</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Week 7 (2/24)</td>
-<td style="text-align: center;">Panel methods continued: Two way fixed effects and extensions</td>
-<td style="text-align: center;"><p>Paper discussion and replication exercise - <em>Class on zoom</em></p>
-<p><em>Due Draft of DAG OR literature review proposal (2 page max.)</em></p></td>
-<td style="text-align: center;">• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation <br> • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions <br> • Compare applications in literature and the assumptions required for the conclusions drawn</td>
+<td style="text-align: center;">• Learn DiD designs, including identification assumptions and interpretation <br> • Demo application in R <br> • Compare DiD to matching and experiments <br> • See &amp; critique how it is applied in the literature <br> • Staggered treatment timing and heterogeniety extensions in “modern DiD”</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Week 8 (3/3)</td>
-<td style="text-align: center;">Synthetic Control (Asia Kaiser)</td>
-<td style="text-align: center;"><p>Extensions of diff-in-diff and fixed effects</p>
-<p>(Dr.&nbsp;Jarrett Brynes)</p>
-<p>On zoom</p></td>
-<td style="text-align: center;">• Learn synthetic control including identification assumptions and interpretation <br> • Compare it to other types of designs</td>
+<td style="text-align: center;">Week 8 (10/12)</td>
+<td style="text-align: center;">Panel methods continued: Two way fixed effects, clustered designs, and extensions</td>
+<td style="text-align: center;"><p>Paper discussion and replication exercise</p>
+<p>OR Synthetic Control (Dr.&nbsp;Asia Kaiser)</p>
+<p><strong><em>Due Revised Draft of Project Concepts with Revised DAG OR literature review proposal (2 page max.)</em></strong></p></td>
+<td style="text-align: center;"><p>• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation <br> • Mundlak devices <br> • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions <br> • Compare applications in literature and the assumptions required for the conclusions drawn</p>
+<p>• Learn synthetic control including identification assumptions and interpretation <br> • Compare it to other types of designs</p></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Week 9 (3/10)</td>
+<td style="text-align: center;">Week 9 (10/19)</td>
 <td style="text-align: center;">Instrumental Variables (IV)</td>
 <td style="text-align: center;">IV Paper discussion</td>
 <td style="text-align: center;">• Learn IV as a method <br> • Demo application in R <br> • See &amp; critique how it is applied in the literature</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">Week 10 (3/17)</td>
-<td style="text-align: center;">One-on-one consultations on projects on zoom</td>
-<td style="text-align: center;">RegressionDiscontinuity Designs (RDD)</td>
-<td style="text-align: center;"><p>• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates</p>
-<p>• Learn RDD as a method</p></td>
+<td style="text-align: center;">Week 10 (10/26)</td>
+<td style="text-align: center;">Regression Discontinuity Designs (RDD)</td>
+<td style="text-align: center;">RDD discussion and application</td>
+<td style="text-align: center;">• Learn RDD as a method <br> • Demo application in R <br> • See &amp; critique how it is applied in the literature</td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">Week 11 (3/24)</td>
-<td style="text-align: center;">Spring break (no class)</td>
-<td style="text-align: center;">Spring break (no class)</td>
-<td style="text-align: center;"></td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">Week 12 (3/31)</td>
-<td style="text-align: center;">RDD Paper discussion</td>
-<td style="text-align: center;"><em>DUE: In class - brief presentation on project</em></td>
-<td style="text-align: center;"><p>• Demo application in R <br> • See &amp; critique how it is applied in the literature <br></p>
+<td style="text-align: center;">Week 11 (11/2)</td>
+<td style="text-align: center;">Comparison across designs; Intro to robustness checks</td>
+<td style="text-align: center;"><p>Project work and discussions of design choices</p>
+<p><strong><em>DUE: In class - brief presentation on project</em></strong></p></td>
+<td style="text-align: center;"><p>• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs <br> • Intro to Sensitivity Tests</p>
 <p>• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates</p></td>
 </tr>
-<tr class="odd">
-<td style="text-align: center;">Week 13 (4/7)</td>
-<td style="text-align: center;">Project presentations continued; Intro to robustness checks</td>
-<td style="text-align: center;">Comparison of study designs cont’d; Sensitivity tests</td>
-<td style="text-align: center;">• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs <br> • Intro to Sensitivity Tests</td>
-</tr>
 <tr class="even">
-<td style="text-align: center;">Week 14 (4/14)</td>
-<td style="text-align: center;">Mediation Analysis</td>
-<td style="text-align: center;">Power, Inference, and Robust and Clustered Standard Errors</td>
-<td style="text-align: center;">• Introduction to mediation analysis <br> • <br> Articulate additional assumptions for mediation • <br> • Standard errors, power, and inference with quasi-experimental methods</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">Week 15 (4/21)</td>
-<td style="text-align: center;">Special topic: Generalizability (Guest speaker: <a href="https://www.reading.ac.uk/ecology/staff/rebecca-spake">Dr.&nbsp;Becks Spake</a>)</td>
-<td style="text-align: center;"><em>Project presentations</em></td>
-<td style="text-align: center;"><p>• <br>Introduction to challenges with generalizability</p>
+<td style="text-align: center;">Week 12 (11/9)</td>
+<td style="text-align: center;">Inference, Power, Standard Errors, Reproducibility; Randomization inference</td>
+<td style="text-align: center;"><p>Heterogeniety, generalizability</p>
+<p>Special topic: Generalizability (<em>To be confirmed</em> - Guest speaker: <a href="https://www.reading.ac.uk/ecology/staff/rebecca-spake">Dr.&nbsp;Becks Spake</a>)</p></td>
+<td style="text-align: center;"><p><br> • Standard errors, power, and inference with quasi-experimental methods</p>
+<p>• <br>Introduction to challenges with generalizability</p>
 <p>• <br> Crititically consider Generalizability, transportability, and approaches to increase them <br> • Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class</p></td>
 </tr>
+<tr class="odd">
+<td style="text-align: center;">Week 13 (11/16)</td>
+<td style="text-align: center;"><p>Mediation Analysis;</p>
+<p>Sensitivity and placebo tests</p></td>
+<td style="text-align: center;">TBD (likely ML and causal)</td>
+<td style="text-align: center;">• Introduction to mediation analysis <br> • Articulate additional assumptions for mediation <br> • Identify frontiers in the field at the interface of causal inference and AI/Machine Learning</td>
+</tr>
 <tr class="even">
-<td style="text-align: center;">Week 16 (4/28)</td>
-<td style="text-align: center;"><em>Project presentations</em></td>
-<td style="text-align: center;"><em><strong>May 4th:</strong> Final Write up due by email</em></td>
-<td style="text-align: center;">• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class</td>
+<td style="text-align: center;">Week 14 (11/23)</td>
+<td style="text-align: center;">No class</td>
+<td style="text-align: center;">No class</td>
+<td style="text-align: center;">Thanksgiving Break</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">Week 15 (11/30)</td>
+<td style="text-align: center;"><p><em>Project presentations</em></p>
+<p>Group 1</p></td>
+<td style="text-align: center;"><p><em>Project presentations</em></p>
+<p>Group 2</p>
+<p><em>Final Write up due by midnight on Dec 6th by email</em></p></td>
+<td style="text-align: center;">• Clearly communicate the application of causal inference methods to a research question in ecology OR present a review on a topic we did not cover as a class</td>
 </tr>
 </tbody>
 </table>
@@ -328,12 +332,15 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/ele.13641">Spake et al.&nbsp;2021</a></li>
 </ol>
 </section>
+<section id="machine-learning-and-causal-inference" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-and-causal-inference">Machine Learning and Causal Inference</h3>
+</section>
 <section id="heterogeneous-treatment-effects-and-conditional-average-effects" class="level3">
 <h3 class="anchored" data-anchor-id="heterogeneous-treatment-effects-and-conditional-average-effects">Heterogeneous treatment effects and conditional average effects</h3>
 <p>e.g.&nbsp;Causal Forests</p>
 </section>
 <section id="deeper-dive-into-mechanisms-and-mediation-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into mechanisms and mediation analysis</h3>
+<h3 class="anchored" data-anchor-id="deeper-dive-into-mechanisms-and-mediation-analysis">Deeper dive into Mechanisms and Mediation analysis</h3>
 </section>
 <section id="deeper-dive-into-sensitivity-tests" class="level3">
 <h3 class="anchored" data-anchor-id="deeper-dive-into-sensitivity-tests">Deeper dive into Sensitivity Tests</h3>

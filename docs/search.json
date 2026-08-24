@@ -4,7 +4,7 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to work-shopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nThe tentative schedule of content, subject to change based on student interests and availability of guest speakers, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (1/13)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations  • Intro to concepts in causal inference and motivation for applying it to ecology and evolution  • Clarify causal versus other research questions and aims  • Brief Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 2 (1/20)\nNo class - MLK Day\nIntro to the main frameworks for counterfactual causal inference\nGuest speaker: Dr. Suchinta Arif\n• Structural Causal Models and Directed Acyclic Graphs\n\n\nWeek 3 (1/27)\nIntro to the main frameworks for counterfactual causal inference\nRandomized Controlled Experiments (or RCTs) and experimental design\n• Potential outcomes framework  • Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Critique experimental designs in ecology and identify solutions  • Dissect experimental design with respect to assumptions required for causal inference\n\n\nWeek 4 (2/3)\nObservational data and counterfactuals; Introduction to quasi-experimental methods\nCreating and Analyzing DAGs\n(Guest speaker: [Dr. Zach Laubach](https://laubach.github.io))\nDue: first draft of research question, or lit review proposal, and DAG analysis on 2/7\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • DAGs as a tool from the graphical causal modeling framework  • Principles of covariate and confounder selection \nProject/Workshopping:\n• Students create and workshop DAGs for their own research/study systems\n\n\nWeek 5 (2/10)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 6 (2/17)\nDifference in Difference (DiD)\nPaper discussion and replication exercise\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature\n\n\nWeek 7 (2/24)\nPanel methods continued: Two way fixed effects and extensions\nPaper discussion and replication exercise - Class on zoom\nDue Draft of DAG OR literature review proposal (2 page max.)\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n\n\nWeek 8 (3/3)\nSynthetic Control (Asia Kaiser)\nExtensions of diff-in-diff and fixed effects\n(Dr. Jarrett Brynes)\nOn zoom\n• Learn synthetic control including identification assumptions and interpretation  • Compare it to other types of designs\n\n\nWeek 9 (3/10)\nInstrumental Variables (IV)\nIV Paper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 10 (3/17)\nOne-on-one consultations on projects on zoom\nRegressionDiscontinuity Designs (RDD)\n• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates\n• Learn RDD as a method\n\n\nWeek 11 (3/24)\nSpring break (no class)\nSpring break (no class)\n\n\n\nWeek 12 (3/31)\nRDD Paper discussion\nDUE: In class - brief presentation on project\n• Demo application in R  • See & critique how it is applied in the literature \n• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates\n\n\nWeek 13 (4/7)\nProject presentations continued; Intro to robustness checks\nComparison of study designs cont’d; Sensitivity tests\n• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs  • Intro to Sensitivity Tests\n\n\nWeek 14 (4/14)\nMediation Analysis\nPower, Inference, and Robust and Clustered Standard Errors\n• Introduction to mediation analysis  •  Articulate additional assumptions for mediation •  • Standard errors, power, and inference with quasi-experimental methods\n\n\nWeek 15 (4/21)\nSpecial topic: Generalizability (Guest speaker: Dr. Becks Spake)\nProject presentations\n• Introduction to challenges with generalizability\n•  Crititically consider Generalizability, transportability, and approaches to increase them  • Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\nWeek 16 (4/28)\nProject presentations\nMay 4th: Final Write up due by email\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\n\n\nPotential additional topics/units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\nSpake et al. 2022\nSpake et al. 2021\n\n\n\nHeterogeneous treatment effects and conditional average effects\ne.g. Causal Forests\n\n\nDeeper dive into mechanisms and mediation analysis\n\n\nDeeper dive into Sensitivity Tests\n\n\nReplication/Reproducibility/Pre-registration\ne.g. Kimmel et al. 2023 Empirical evidence of widespread exaggeration bias and selective reporting in ecology",
+    "text": "In general, on Mondays we will have brief lectures and demonstrations in R, while on Wednesdays, we will have student-led paper discussions and/or replication exercises of published papers. In the latter half of the course, we will shift to work-shopping our own projects and discussing additional issues and considerations with applied causal inference. In this way, we will use a partially flipped classroom and strive to create a collaborative and inclusive classroom environment to discuss, ask questions, collaborate, and get feedback on your analyses.\nBecause this course is part of a larger, distributed graduate seminar (dgs), some lecture days will feature content and lectures from instructors from other universities who are part of this dgs.\nThe tentative schedule of content, subject to change based on student interests and availability of guest speakers, is as follows:\n\n\n\n\nMonday\nWednesday\nGoals/Topics\n\n\n\n\nWeek 1 (8/24)\nCourse Intro\nIntro to causal inference and counterfactual causality\n• Intro to course and goals  • Understand students’ goals for the course  • Set norms and expectations  • Intro to concepts in causal inference and motivation for applying it to ecology and evolution  • Clarify causal versus other research questions and aims  • Brief Introduction to two main frameworks for counterfactual causality (potential outcomes and graphical causal modeling frameworks)\n\n\nWeek 2 (8/31)\nStructural Causal Models and Directed Acyclic Graphs\nGuest speaker: Dr. Zach Laubach\nPotential outcomes framework\nIntro to the main frameworks for counterfactual causal inference\n\n\nWeek 3 (9/7)\nLabor Day - No Class\nRandomized Controlled Experiments (or RCTs) and experimental design\n• Application of potential outcomes framework to RCTs  • Review key assumptions of RCTs  • Dissect experimental design with respect to assumptions required for causal inference\n\n\nWeek 4 (9/14)\nBias and solutions in expertiments\nExternal Validity\nDr. Allison Simler-Williamson\nIdentify when key assumptions for causal inference are violated in experiments  • Critique experimental designs in ecology and identify solutions  • Identify solutions\nExternal Validity: Target Validity and Transportability\n\n\nWeek 5\n(9/20)\nObservational data and counterfactuals; Introduction to quasi-experimental methods\nCreating and Analyzing DAGs\nDue: first draft of research question, or lit review proposal, and DAG analysis\n• Articulate how and why observational data deviates from assumptions of RCTs  • Understand challenges of applying causal inference to observational data, including confounding and selection bias  • DAGs as a tool from the graphical causal modeling framework  • Principles of covariate and confounder selection \nProject Workshop:\n• Students create and workshop DAGs for their own research/study systems\n\n\nWeek 6 (9/28)\nPre-regression matching\nPaper discussion and replication exercise\n• Learn pre-regression matching as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 7 (10/5)\nDifference in Difference (DiD)\nPaper discussion and replication exercise\n• Learn DiD designs, including identification assumptions and interpretation  • Demo application in R  • Compare DiD to matching and experiments  • See & critique how it is applied in the literature  • Staggered treatment timing and heterogeniety extensions in “modern DiD”\n\n\nWeek 8 (10/12)\nPanel methods continued: Two way fixed effects, clustered designs, and extensions\nPaper discussion and replication exercise\nOR Synthetic Control (Dr. Asia Kaiser)\nDue Revised Draft of Project Concepts with Revised DAG OR literature review proposal (2 page max.)\n• Learn within estimators (two-way fixed effects) including identification assumptions and interpretation  • Mundlak devices  • Compare panel designs with conditioning on observables designs and with random effect/mixed effect models in R and understand the differences in assumptions  • Compare applications in literature and the assumptions required for the conclusions drawn\n• Learn synthetic control including identification assumptions and interpretation  • Compare it to other types of designs\n\n\nWeek 9 (10/19)\nInstrumental Variables (IV)\nIV Paper discussion\n• Learn IV as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 10 (10/26)\nRegression Discontinuity Designs (RDD)\nRDD discussion and application\n• Learn RDD as a method  • Demo application in R  • See & critique how it is applied in the literature\n\n\nWeek 11 (11/2)\nComparison across designs; Intro to robustness checks\nProject work and discussions of design choices\nDUE: In class - brief presentation on project\n• Articulate, compare, and parse the assumptions, estimands, and generalizability of different designs  • Intro to Sensitivity Tests\n• Make progress on project and get feedback on proposed research design and challenges so far from Laura and your classmates\n\n\nWeek 12 (11/9)\nInference, Power, Standard Errors, Reproducibility; Randomization inference\nHeterogeniety, generalizability\nSpecial topic: Generalizability (To be confirmed - Guest speaker: Dr. Becks Spake)\n • Standard errors, power, and inference with quasi-experimental methods\n• Introduction to challenges with generalizability\n•  Crititically consider Generalizability, transportability, and approaches to increase them  • Clearly communicate the application of causal inference methods to a research question in ecology OR present a topic we did not cover as a class\n\n\nWeek 13 (11/16)\nMediation Analysis;\nSensitivity and placebo tests\nTBD (likely ML and causal)\n• Introduction to mediation analysis  • Articulate additional assumptions for mediation  • Identify frontiers in the field at the interface of causal inference and AI/Machine Learning\n\n\nWeek 14 (11/23)\nNo class\nNo class\nThanksgiving Break\n\n\nWeek 15 (11/30)\nProject presentations\nGroup 1\nProject presentations\nGroup 2\nFinal Write up due by midnight on Dec 6th by email\n• Clearly communicate the application of causal inference methods to a research question in ecology OR present a review on a topic we did not cover as a class\n\n\n\n\nPotential additional topics/units to be voted on by the class:\n\nGeneralizability in experimental and observational studies\n\nKorell et al. 2019\nSpake et al. 2022\nSpake et al. 2021\n\n\n\nMachine Learning and Causal Inference\n\n\nHeterogeneous treatment effects and conditional average effects\ne.g. Causal Forests\n\n\nDeeper dive into Mechanisms and Mediation analysis\n\n\nDeeper dive into Sensitivity Tests\n\n\nReplication/Reproducibility/Pre-registration\ne.g. Kimmel et al. 2023 Empirical evidence of widespread exaggeration bias and selective reporting in ecology",
     "crumbs": [
       "Schedule"
     ]
@@ -34,7 +34,7 @@
     "href": "index.html#class-meetings",
     "title": "EBIO 5460: Causal Inference in Ecology",
     "section": "Class Meetings",
-    "text": "Class Meetings\nMondays & Wednesdays 3:35-4:50pm in Physics DUAN G135A\n\nOffice Hours\nWednesday 2:15-3:15 pm and by appointment",
+    "text": "Class Meetings\nAt University of Colorado: EBIO 5460 Mondays & Wednesdays 3:35-4:50pm in Eaton Humanities Bldg.\n\nOffice Hours\nWednesday 2:15-3:15 pm and by appointment",
     "crumbs": [
       "Course Overview"
     ]
@@ -740,7 +740,7 @@
     "href": "assignments.html#main-assignment",
     "title": "Assignments & Evaluation",
     "section": "Main assignment",
-    "text": "Main assignment\nThe main assignment will be either to complete and write up a data analysis or to do a literature review and deep dive on a particular subtopic (ideas listed below). The project or literature review will culminate in a presentation the last week of classes and a final written report.\nMany students in the past have used this course as an opportunity to advance their thesis research or pursue and publish a paper based on their analyses or literature review!\n\nFinal Project Option 1: Data analysis project\nFor the final project that takes the form of a data analysis, each student will complete a project according to the following process: identifying a research question, creating a DAG, choosing and applying a data analysis, and writing up a methods and results section that 1) articulates the causal relationship of interest, 2) describes the causal identification strategy and choice of study design/methods, 3) describes the implicit assumptions on which this strategy rests, and 4) interprets the results and their potential biases. I encourage students to base this analysis on their thesis research to get the most out of the class.\n\n\nFinal Project Option 2: Literature review\nAlternatively, students can complete a literature review that provides a deeper dive on a topic we do not cover in detail in this course (*some ideas are listed below). This direction may be more appropriate for students who are not at a stage of performing analyses for their thesis, who do not have a relevant project that is tackling an empirical causal question, or who are interested in learning more about a topic not covered under our guidance.\n\n\nFinal project presentation\nTime guidelines for all presentations: 7 minute presentation + 2 minutes for questions\n\n\nSpecific guidelines for data analysis project presentations:\n\n\nBriefly introduce the question you address and the motivation for your project (as this was covered in the first presentations)\n\nDescribe the causal inference approach you took and why you chose that approach; as part of this part, you could briefly present your DAG and describe the data you used (as DAGs and data were covered in Presentation 1)\n\nShare your results, explain how you checked their robustness, AND contextualize them with the important limitations and assumptions of the method(s) you used, includinbg their assumptions and why or why not they are met\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\n\n\n\nSpecific guidelines for literature review presentations:\n\n\nIntroduce the topic and describe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods\n\n\n\n\n\nFinal project write up\n\nLength\n\n\nFor data analysis projects: ~ 5 pages (not including tables and figures, but don’t stress over the page count)\n\nFor literature review projects: ~ 10 pages, but don’t stress over the page count – focus on what you need to include to write a compelling paper\n\n\n\nContent for Project Option 1\n\nFinal reports should include:\n\n\nA brief introduction (1-2 paragraphs) that establishes your causal question, hypotheses, and a brief motivation\n\nDAG and explanation of variables (could also incldue a table explaning variables in your DAG and their data sources)\n\nA Methods section, as you would for a publication. Include the identification strategy (which design you use and why), and how you checked the robustness of your results (or sensitivity of results if you preform a sensivity analysis)\n\nResults Section: Present your estimates, confidence intervals and inference, and figures or tables of output\n\nBrief Discussion of the analysis – the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions – and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\n\n\n\n\nContent for Project Option 2 \nFinal reports should include:\n\n\nMotivation for your review: What is the issue, topic, or gap you are interested in and why?\n\nMotivation for use of causal inference (or discovery) approaches. Why could they help here, or why is it needed for the topic or question?\n\nReview of methods or approaches that could be helpful, which could cover:\n\n\n\nHow do these approaches/methods compare to what is currently being done on this topic?;\n\nWhat do you propose to do and which methods or study design would you use – and why?;\n\ndiscussion of implications and potential uses or changes – or areas of advances that are needed;\nand\n\nbrief conclusions.",
+    "text": "Main assignment\nThe main assignment will be either to complete and write up a data analysis or to do a literature review and deep dive on a particular subtopic (ideas listed below). The project or literature review will culminate in a presentation the last week of classes and a final written report.\nMany students in the past have used this course as an opportunity to advance their thesis research or pursue and publish a paper based on their analyses or literature review!\n\nFinal Project Option 1: Data analysis project\nFor the final project that takes the form of a data analysis, each student will complete a project according to the following process: identifying a research question, creating a DAG, choosing and applying a data analysis, and writing up a methods and results section that 1) articulates the causal relationship of interest, 2) describes the causal identification strategy and choice of study design/methods, 3) describes the implicit assumptions on which this strategy rests, and 4) interprets the results and their potential biases. I encourage students to base this analysis on their thesis research to get the most out of the class.\n\n\nFinal Project Option 2: Literature review\nAlternatively, students can complete a literature review that provides a deeper dive on a topic we do not cover in detail in this course (*some ideas are listed below). This direction may be more appropriate for students who are not at a stage of performing analyses for their thesis, who do not have a relevant project that is tackling an empirical causal question, or who are interested in learning more about a topic not covered under our guidance.\n\n\nFinal project presentation\nTime guidelines for all presentations: 7 minute presentation + 2 minutes for questions\n\n\nSpecific guidelines for data analysis project presentations:\n\nBriefly introduce the question you address and the motivation for your project (as this was covered in the first presentations)\n\nDescribe the causal inference approach you took and why you chose that approach; as part of this part, you could briefly present your DAG and describe the data you used (as DAGs and data were covered in Presentation 1)\n\nShare your results, explain how you checked their robustness, AND contextualize them with the important limitations and assumptions of the method(s) you used, including their assumptions and why or why not they are met\n\nOutline possible next steps you could take to make your analysis more robust in the future\n\n\n\n\nSpecific guidelines for literature review presentations:\n\nIntroduce the topic and describe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods\n\n\n\n\n\nFinal project write up\n\nLength\n\nFor data analysis projects: ~ 5 pages (not including tables and figures, but don’t stress over the page count)\n\nFor literature review projects: ~ 10 pages, but don’t stress over the page count – focus on what you need to include to write a compelling paper\n\n\n\nContent for Project Option 1\nFinal reports should include:\n\n\nA brief introduction (1-2 paragraphs) that establishes your causal question, hypotheses, and a brief motivation\n\nDAG and explanation of variables (could also incldue a table explaning variables in your DAG and their data sources)\n\nA Methods section, as you would for a publication. Include the identification strategy (which design you use and why), and how you checked the robustness of your results (or sensitivity of results if you preform a sensivity analysis)\n\nResults Section: Present your estimates, confidence intervals and inference, and figures or tables of output\n\nBrief Discussion of the analysis – the intention here is not to be a discussion as in a publication, but instead a discussion of your the assumptions made by your study design(s), and an assessment of their validity, or assumptions – and what you will do next if you plan to continue your study (e.g. what additional analyses would you like to do and why? what additional data might you need to collect? What other considerations are lurking?)\n\n\n\nContent for Project Option 2 \nFinal reports should include:\n\n\nMotivation for your review: What is the issue, topic, or gap you are interested in and why?\n\nMotivation for use of causal inference (or discovery) approaches. Why could they help here, or why is it needed for the topic or question?\n\nReview of methods or approaches that could be helpful, which could cover:\n\n\n\nHow do these approaches/methods compare to what is currently being done on this topic?;\n\nWhat do you propose to do and which methods or study design would you use – and why?;\n\ndiscussion of implications and potential uses or changes – or areas of advances that are needed;\nand\n\nbrief conclusions.",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -790,7 +790,7 @@
     "href": "assignments.html#deadlines",
     "title": "Assignments & Evaluation",
     "section": "Deadlines",
-    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nTuesday 1/14\n\n\nIdentify project focus (option 1 or 2). Identify research questions + create and workshop DAGs for it.\nDue 2/7 (by email)\n\n\nRevised draft of Project Question and revised DAG OR literature review proposal (2 page max)\n2/19 (by email)\n\n\nOne on One Consultations ~March 17th with Laura\n\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results)\nWednesday 4/3 (in class)\n\n\nPresentation of final project\nApril 23rd & 28th (in class)\n\n\nFinal project write-up due by email\nSunday 5/4",
+    "text": "Deadlines\n\n\n\nAssignment\nDeadline\n\n\n\n\nPre-course survey\nWednesday 8/26\n\n\nIdentify project focus (option 1 or 2). Identify research questions + create a first draft of a DAG for our in class DAG workshop on 9/20\nPrior to class: Due 9/20 (by email)\n\n\nRevised draft of Project Question and revised DAG OR literature review proposal (2 page max)\n10/12 (by email)\n\n\nOne on One Consultations: find 15 mins to meet with Laura\nBefore Thanksgiving Break\n\n\nShort presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results)\nWednesday 11/2 (bring to class for in class workshop day)\n\n\nPresentation of final project\nNov 30 and Dec 2\n\n\nFinal project write-up due by email\nDec 6th by midnight",
     "crumbs": [
       "Assignments & Evaluation"
     ]
@@ -805,9 +805,9 @@
   {
     "objectID": "policies.html",
     "href": "policies.html",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "",
-    "text": "Students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote, or online. Failure to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, marital status, political affiliation, or political philosophy.\nFor more information, see the classroom behavior policy, the Student Code of Conduct, and the Office of Institutional Equity and Compliance.",
+    "text": "All students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code and Student Code of Conduct. Violations of the Honor Code may include but are not limited to: plagiarism (including use of paper writing services or technology [such as essay bots]), cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. Understanding the course’s syllabus is a vital part of adhering to the Honor Code. All incidents of academic misconduct will be reported to Student Conduct & Conflict Resolution: StudentConduct@colorado.edu. Students found responsible for violating the Honor Code will be assigned resolution outcomes from Student Conduct & Conflict Resolution and will be subject to academic sanctions from the faculty member. Visit Honor Code and Student Code of Conduct for more information on the academic integrity policy.",
     "crumbs": [
       "University Policies"
     ]
@@ -815,9 +815,9 @@
   {
     "objectID": "policies.html#classroom-behavior",
     "href": "policies.html#classroom-behavior",
-    "title": "University and Course Policies",
-    "section": "",
-    "text": "Students and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote, or online. Failure to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, marital status, political affiliation, or political philosophy.\nFor more information, see the classroom behavior policy, the Student Code of Conduct, and the Office of Institutional Equity and Compliance.",
+    "title": "University of Colorado and Course Policies",
+    "section": "Classroom Behavior",
+    "text": "Classroom Behavior\nStudents and faculty are responsible for maintaining an appropriate learning environment in all instructional settings, whether in person, remote, or online. Failure to adhere to such behavioral standards may be subject to discipline. Professional courtesy and sensitivity are especially important with respect to individuals and topics dealing with race, color, national origin, sex, pregnancy, age, disability, creed, religion, sexual orientation, gender identity, gender expression, veteran status, marital status, political affiliation, or political philosophy.\nFor more information, see the classroom behavior policy, the Student Code of Conduct, and the Office of Institutional Equity and Compliance.",
     "crumbs": [
       "University Policies"
     ]
@@ -845,7 +845,7 @@
   {
     "objectID": "policies.html#preferred-student-names-and-pronouns",
     "href": "policies.html#preferred-student-names-and-pronouns",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Preferred Student Names and Pronouns",
     "text": "Preferred Student Names and Pronouns\nCU Boulder recognizes that students’ legal information doesn’t always align with how they identify. Students may update their preferred names and pronouns via the student portal; those preferred names and pronouns are listed on instructors’ class rosters. In the absence of such updates, the name that appears on the class roster is the student’s legal name.",
     "crumbs": [
@@ -855,9 +855,9 @@
   {
     "objectID": "policies.html#honor-code",
     "href": "policies.html#honor-code",
-    "title": "University and Course Policies",
-    "section": "Honor Code",
-    "text": "Honor Code\nAll students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code. Violations of the Honor Code may include but are not limited to: plagiarism (including use of paper writing services or technology [such as essay bots]), cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. Understanding the course’s syllabus is a vital part in adhering to the Honor Code.\nAll incidents of academic misconduct will be reported to Student Conduct & Conflict Resolution: StudentConduct@colorado.edu. Students found responsible for violating the Honor Code will be assigned resolution outcomes from the Student Conduct & Conflict Resolution as well as be subject to academic sanctions from the faculty member. Visit Honor Code for more information on the academic integrity policy.",
+    "title": "University of Colorado and Course Policies",
+    "section": "",
+    "text": "All students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code and Student Code of Conduct. Violations of the Honor Code may include but are not limited to: plagiarism (including use of paper writing services or technology [such as essay bots]), cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. Understanding the course’s syllabus is a vital part of adhering to the Honor Code. All incidents of academic misconduct will be reported to Student Conduct & Conflict Resolution: StudentConduct@colorado.edu. Students found responsible for violating the Honor Code will be assigned resolution outcomes from Student Conduct & Conflict Resolution and will be subject to academic sanctions from the faculty member. Visit Honor Code and Student Code of Conduct for more information on the academic integrity policy.",
     "crumbs": [
       "University Policies"
     ]
@@ -865,7 +865,7 @@
   {
     "objectID": "policies.html#sexual-misconduct-discrimination-harassment-andor-related-retaliation",
     "href": "policies.html#sexual-misconduct-discrimination-harassment-andor-related-retaliation",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Sexual Misconduct, Discrimination, Harassment and/or Related Retaliation",
     "text": "Sexual Misconduct, Discrimination, Harassment and/or Related Retaliation\nCU Boulder is committed to fostering an inclusive and welcoming learning, working, and living environment. University policy prohibits protected-class discrimination and harassment, sexual misconduct (harassment, exploitation, and assault), intimate partner abuse (dating or domestic violence), stalking, and related retaliation by or against members of our community on- and off-campus. The Office of Institutional Equity and Compliance (OIEC) addresses these concerns, and individuals who have been subjected to misconduct can contact OIEC at 303-492-2127 or email CUreport@colorado.edu. Information about university policies, reporting options, and OIEC support resources including confidential services can be found on the OIEC website.\nPlease know that faculty and graduate instructors are required to inform OIEC when they are made aware of incidents related to these concerns regardless of when or where something occurred. This is to ensure that individuals impacted receive outreach from OIEC about their options and support resources. To learn more about reporting and support for a variety of concerns, visit the Don’t Ignore It page.",
     "crumbs": [
@@ -875,7 +875,7 @@
   {
     "objectID": "policies.html#religious-holidays",
     "href": "policies.html#religious-holidays",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Religious Holidays",
     "text": "Religious Holidays\nCampus policy regarding religious observances requires that faculty make every effort to deal reasonably and fairly with all students who, because of religious obligations, have conflicts with scheduled exams, assignments or required attendance. See the campus policy regarding religious observances for full details.",
     "crumbs": [
@@ -894,7 +894,7 @@
     "href": "DAGs.html#useful-videos",
     "title": "DAGs",
     "section": "Useful Videos",
-    "text": "Useful Videos\n\nPapers introducing the Structural Causal Model and DAGs as its key tool to Ecologists\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\n3) Grace & Irving 2020\n4)Byrnes and Dee 2025\n\n\nConceptual\n\nDiscussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: https://www.youtube.com/watch?v=_qs_1B4ySWY\nWatch Hernan video: “3. Elements of DAGs” on the Google Drive\n\n\n\nImplementation and Analysis of DAGs\n\nDrawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c\nIntro to DAGitty for identifying confounding variables: https://www.youtube.com/watch?v=sI_w9uVLdCg\nHow to build and begin to analyze them it in ggdag by A. Heiss: https://www.youtube.com/watch?v=uoAjyyToUTE\n\n\n\nKey Messages about DAGs - well said in Cunningham (2021) Ch. 3:\nWell summarized fom Cunningham (2021) Ch. 3: “Causal effects can happen in two ways. They can either be direct (e.g., D→Y), or they can be mediated by a third variable (e.g., D→X→Y). When they are mediated by a third variable, we are capturing a sequence of events originating with D, which may or may not be important to you depending on the question you’re asking.\nA DAG is meant to describe all causal relationships relevant to the effect of D on Y. What makes the DAG distinctive is both the explicit commitment to a causal effect pathway and the complete commitment to the lack of a causal pathway represented by missing arrows. In other words, a DAG will contain both arrows connecting variables and choices to exclude arrows. And the lack of an arrow necessarily means that you think there is no such relationship in the data—this is one of the strongest beliefs you can hold. A complete DAG will have all direct causal effects among the variables in the graph as well as all common causes of any pair of variables in the graph.\nAt this point, you may be wondering where the DAG comes from. It’s an excellent question. It may be the question. A DAG is supposed to be a theoretical representation of the state-of-the-art knowledge about the phenomena you’re studying. It’s what an expert would say is the thing itself, and that expertise comes from a variety of sources. Examples include economic theory, other scientific models, conversations with experts, your own observations and experiences, literature reviews, as well as your own intuition and hypotheses….\n…. I have found DAGs to be useful for understanding the critical role that prior knowledge plays in identifying causal effects. But there are other reasons too. One, I have found that DAGs are very helpful for communicating research designs and estimators if for no other reason than pictures speak a thousand words…..\n….. Two, through concepts such as the backdoor criterion and collider bias, a well-designed DAG can help you develop a credible research design for identifying the causal effects of some intervention. As a bonus, I also think a DAG provides a bridge between various empirical schools, such as the structural and reduced form groups. And finally, DAGs drive home the point that assumptions are necessary for any and all identification of causal effects, which economists have been hammering at for years (Wolpin 2013).”\n\nSoftware for DAG construction and analysis\na) Daggitity\nb) ggdag is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality - The course github has a tutorial\nc) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nd) TETRAD\ne) DAG program\nf) dagR\nAdditional Background Readings\nFor additional background on DAGs from other fields:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)\nCunningham (2021) Ch. 3\nHeiss, A. Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand\nRohrer 2018\nVanderwheele 2019 Principles of confounder selection",
+    "text": "Useful Videos\n\nPapers introducing the Structural Causal Model and DAGs as its key tool to Ecologists\n1) Arif & MacNeil 2022\n2) Laubach et al. 2021\n3) Grace & Irving 2020\n4) Borger and Ramesh 2025\n5) Byrnes and Dee 2025\n\n\nConceptual\n\nDiscussion of how to identify associations, close backdoors, and isolate pathways in a DAG by A. Heiss: https://www.youtube.com/watch?v=_qs_1B4ySWY\nWatch Hernan video: “3. Elements of DAGs” on the Google Drive\n\n\n\nImplementation and Analysis of DAGs\n\nDrawing DAGs with Daggit.net by A. Heiss: https://www.youtube.com/watch?v=3euqrnD9w7c\nIntro to DAGitty for identifying confounding variables: https://www.youtube.com/watch?v=sI_w9uVLdCg\nHow to build and begin to analyze them it in ggdag by A. Heiss: https://www.youtube.com/watch?v=uoAjyyToUTE\n\n\n\nKey Messages about DAGs - well said in Cunningham (2021) Ch. 3:\nWell summarized fom Cunningham (2021) Ch. 3: “Causal effects can happen in two ways. They can either be direct (e.g., D→Y), or they can be mediated by a third variable (e.g., D→X→Y). When they are mediated by a third variable, we are capturing a sequence of events originating with D, which may or may not be important to you depending on the question you’re asking.\nA DAG is meant to describe all causal relationships relevant to the effect of D on Y. What makes the DAG distinctive is both the explicit commitment to a causal effect pathway and the complete commitment to the lack of a causal pathway represented by missing arrows. In other words, a DAG will contain both arrows connecting variables and choices to exclude arrows. And the lack of an arrow necessarily means that you think there is no such relationship in the data—this is one of the strongest beliefs you can hold. A complete DAG will have all direct causal effects among the variables in the graph as well as all common causes of any pair of variables in the graph.\nAt this point, you may be wondering where the DAG comes from. It’s an excellent question. It may be the question. A DAG is supposed to be a theoretical representation of the state-of-the-art knowledge about the phenomena you’re studying. It’s what an expert would say is the thing itself, and that expertise comes from a variety of sources. Examples include economic theory, other scientific models, conversations with experts, your own observations and experiences, literature reviews, as well as your own intuition and hypotheses….\n…. I have found DAGs to be useful for understanding the critical role that prior knowledge plays in identifying causal effects. But there are other reasons too. One, I have found that DAGs are very helpful for communicating research designs and estimators if for no other reason than pictures speak a thousand words…..\n….. Two, through concepts such as the backdoor criterion and collider bias, a well-designed DAG can help you develop a credible research design for identifying the causal effects of some intervention. As a bonus, I also think a DAG provides a bridge between various empirical schools, such as the structural and reduced form groups. And finally, DAGs drive home the point that assumptions are necessary for any and all identification of causal effects, which economists have been hammering at for years (Wolpin 2013).”\n\nSoftware for DAG construction and analysis\na) Daggitity\nb) ggdag is a nice R package based on dagitty but in R tidyverse-compatible and with much better plotting functionality - The course github has a tutorial\nc) shinydag is another GUI aimed at visualizing DAGs and exporting them in different publication-ready formats\nd) TETRAD\ne) DAG program\nf) dagR\nAdditional Background Readings\nFor additional background on DAGs from other fields:\n\nMorgan & Winship (2007) pgs. 29-34 and Ch. 3 (see GDrive)\nCunningham (2021) Ch. 3\nHeiss, A. Do-calculus adventures! Exploring the three rules of do-calculus in plain language and deriving the backdoor adjustment formula by hand\nRohrer 2018\nVanderwheele 2019 Principles of confounder selection",
     "crumbs": [
       "DAG resources"
     ]
@@ -1702,9 +1702,9 @@
   {
     "objectID": "policies.html#accommodation-for-disabilities-temporary-medical-conditions-and-medical-isolation",
     "href": "policies.html#accommodation-for-disabilities-temporary-medical-conditions-and-medical-isolation",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Accommodation for Disabilities, Temporary Medical Conditions, and Medical Isolation",
-    "text": "Accommodation for Disabilities, Temporary Medical Conditions, and Medical Isolation\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the Disability Services website. Contact Disability Services at 303-492-8671 or DSinfo@colorado.edu for further assistance. If you have a temporary medical condition, see Temporary Medical Conditions on the Disability Services website.\nIf you have a temporary illness, injury or required medical isolation for which you require adjustment, contact the instructor to make a plan. Because of FERPA student privacy laws, you do not need to state the nature of their illness when alerting me.",
+    "text": "Accommodation for Disabilities, Temporary Medical Conditions, and Medical Isolation\nIf you qualify for accommodations because of a disability, please submit your accommodation letter from Disability Services to your faculty member in a timely manner so that your needs can be addressed. Disability Services determines accommodations based on documented disabilities in the academic environment. Information on requesting accommodations is located on the CU Boulder Disability Services website. Contact Disability Services at 303-492-8671 or DSinfo@colorado.edu for further assistance. If you have a temporary medical condition, see the Temporary Medical Conditions – Disability Services website.\nIf you have a temporary illness, injury or required medical isolation for which you require adjustment, contact the instructor (Dr. Dee) to make a plan. Because of FERPA student privacy laws, you do not need to state the nature of their illness when alerting me.",
     "crumbs": [
       "University Policies"
     ]
@@ -1712,7 +1712,7 @@
   {
     "objectID": "policies.html#mental-health-and-wellness",
     "href": "policies.html#mental-health-and-wellness",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Mental Health and Wellness",
     "text": "Mental Health and Wellness\nThe University of Colorado Boulder is committed to the well-being of all students. If you are struggling with personal stressors, mental health or substance use concerns that are impacting academic or daily life, please contact Counseling and Psychiatric Services (CAPS) located in C4C or call (303) 492-2277, 24/7.\nFree and unlimited telehealth is also available through Academic Live Care. The Academic Live Care site also provides information about additional wellness services on campus that are available to students.",
     "crumbs": [
@@ -1722,7 +1722,7 @@
   {
     "objectID": "policies.html#acceptable-use-of-ai-in-this-class",
     "href": "policies.html#acceptable-use-of-ai-in-this-class",
-    "title": "University and Course Policies",
+    "title": "University of Colorado and Course Policies",
     "section": "Acceptable Use of AI in this Class",
     "text": "Acceptable Use of AI in this Class\nThe acceptable use of AI in this class is to help you write and trouble shoot code for implementing designs and models in this course, or from translating across programming languages (e.g. R to Python).\nUnacceptable uses include 1) using AI instead of reading papers, 2) using AI instead of writing or preparing your own slides or discussion materials. These uses will be regarded as academic dishonesty. They are also cheating yourself from learning.",
     "crumbs": [
@@ -1774,7 +1774,7 @@
     "href": "index.html#acknowledgements",
     "title": "EBIO 5460: Causal Inference in Ecology",
     "section": "Acknowledgements",
-    "text": "Acknowledgements\nWebsite for EBIO 5460: Causal Inference in Ecology for Spring 2025 taught by Laura Dee. The course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/), Paul Ferraro’s syllabus, and based on the course and page of EBIO 5460 course, developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. Link to that site: https://katherinesiegel.github.io/EBIOcausalinference",
+    "text": "Acknowledgements\nThis course was supported by NSF DEB CAREER #Xxxx\nThe course website url is: https://lauradee.github.io/EcologyCausalInference/\nWe made this course page using the template developed by Francisco Rodriguez-Sanchez (https://github.com/Pakillo/quarto-course-website-template), with additional inspiration from Andrew Heiss (https://www.andrewheiss.com/), Paul Ferraro’s syllabus, and builds on (and revises/expands) a course developed and taught by Laura Dee and Katherine Siegel at the University of Colorado-Boulder in Spring 2023. See Siegel and Dee (2025) Ecology Letters for a publication based on that experience.",
     "crumbs": [
       "Course Overview"
     ]
@@ -1932,7 +1932,7 @@
     "href": "readings.html#variables-distributions-conditional-distributins-and-means-types-of-data",
     "title": "Readings by Class & Additional Materials",
     "section": "Variables, distributions, conditional distributins and means, types of data",
-    "text": "Variables, distributions, conditional distributins and means, types of data\n\nThe Effect Ch. 3: Describing Variables\n-The Effect Ch. 4: Describing Relationships\n\nHypothesis testing, type I and type II errors",
+    "text": "Variables, distributions, conditional distributins and means, types of data\n\nThe Effect Ch. 3: Describing Variables\nThe Effect Ch. 4: Describing Relationships",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2802,6 +2802,366 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Projects Due Sunday May 4 by email",
     "text": "Projects Due Sunday May 4 by email\nSee Assignments & Evaluation tab for more information",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "index.html#fall-2026-ebio5460",
+    "href": "index.html#fall-2026-ebio5460",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Fall 2026 EBIO5460",
+    "text": "Fall 2026 EBIO5460",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#fall-course-description",
+    "href": "index.html#fall-course-description",
+    "title": "EBIO 5460: Causal Inference in Ecology",
+    "section": "Fall Course Description",
+    "text": "Fall Course Description\nHow does biodiversity effect ecosystem functioning? What are the consequences of temperature variability for parasite loads and host populations? How do plant communities respond to drought, and which ecosystems respond most? Do restoration and conservation work? How does climate change affect disturbance regimes? Cause and effect questions like these motivate much of the empirical work in basic and applied ecological and environmental sciences. Does X cause Y? If X causes Y, does it cause Y in all situations? Through what mechanisms does X cause Y? If X causes Y, how large is the effect of X on Y and how does the size compare to other causes of Y? To answer these cause-and-effect questions, a counterfactual model of causality and a unified methodological framework has been developed yet is not often taught or emphasized in ecology and EBIO more generally. Now this framework is the predominant approach for causal inference in a diversity of fields including public health, economics, and computer science (which is also referred to as program evaluation or impact evaluation).\nGiven the increasing access to spatiotemporally large observational datasets (e.g., remotely sensed data, data from long-term ecological monitoring), we have unprecedented opportunities to answer questions about causal relationships and mechanisms outside of the context of traditional ecological approaches to experimental design. Deriving causal inferences from observational data presents its own set of challenges, and this course presents statistical methods to overcome challenges for causal inference in both observational and experimental study designs.\nThis class aims to teach students to apply and interpret the counterfactual causality model and associated methods in answering empirical questions in basic and applied ecology. As a 3-credit graduate course, this course has a corresponding reading load with an emphasis on readings that elucidate the intuition and the application of the core conceptual ideas. I am a firm believer that the most fundamental principles can be stated in plain English and conceptual understanding is just as important as the math. Thus the course stresses intuition (in English) over mechanics and proofs. Nevertheless, students will be expected to apply the mechanics in replication exercises in R statistical software and in a final a project related to the students’ thesis.\nWhether you are a student with substantial graduate work in empirical methods or a student with only the basic pre-requisites covered (some introductory statistics or biostatistics is required), you should expect to gain a deeper understanding of approaches to answering causal questions and of the nature of evidence. Importantly, you will see more clearly the conceptual connections among the various approaches to estimating causal effects – experiments and observational analyses. Even for students with substantial coursework in statistics, these connections are often missed.\nWhile most students who will take this class are in EBIO fields, you should expect to do readings outside of EBIO areas and to see examples from other fields – because ecology and evolutionary biology is lagging a bit behind other fields in several areas we will cover (but catching up fast!). On the bright side, reading beyond the typical EBIO papers will provide you with an entry point into the broader literature on causal inference, stemming from economics, public health, epidemiology, political science, and other fields. Thus, we see the use of broader readings and examples as intentional to meet the course’s learning objectives, and as a potential competitive advantage – and a way to expand your thinking – rather than a distraction from topics that interest you most. In our experience, gaining perspective on methods and language used in other fields will also provide you with skills to foster collaborations across disciplines. We will also invite guest speakers who are experts to showcase applications of the theory and approaches to questions and data in ecology, conservation, and evolution/behavior – and present some of our in-progress research using causal inference approaches applied to EBIO.\nI have outlined a provisional syllabus below but can adapt it based on student interests and background. The main emphasis of the course is like any other graduate course: to encourage students to think critically, to speak and write simply and clearly, collaborate, to own and use a body of facts and ideas that are widely known, to detect errors and fallacies, to resolve intellectual problems, and to advance our collective knowledge through independent research and applied statistics.",
+    "crumbs": [
+      "Course Overview"
+    ]
+  },
+  {
+    "objectID": "policies.html#honor-code-1",
+    "href": "policies.html#honor-code-1",
+    "title": "University of Colorado and Course Policies",
+    "section": "Honor Code",
+    "text": "Honor Code\nAll students enrolled in a University of Colorado Boulder course are responsible for knowing and adhering to the Honor Code. Violations of the Honor Code may include but are not limited to: plagiarism (including use of paper writing services or technology [such as essay bots]), cheating, fabrication, lying, bribery, threat, unauthorized access to academic materials, clicker fraud, submitting the same or similar work in more than one course without permission from all course instructors involved, and aiding academic dishonesty. Understanding the course’s syllabus is a vital part in adhering to the Honor Code.\nAll incidents of academic misconduct will be reported to Student Conduct & Conflict Resolution: StudentConduct@colorado.edu. Students found responsible for violating the Honor Code will be assigned resolution outcomes from the Student Conduct & Conflict Resolution as well as be subject to academic sanctions from the faculty member. Visit Honor Code for more information on the academic integrity policy.",
+    "crumbs": [
+      "University Policies"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-824---intro",
+    "href": "readings.html#due-mon.-824---intro",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 8/24 - Intro",
+    "text": "Due Mon. 8/24 - Intro\nFirst class; Complete pre-course survey in class; Review Syllabus and website",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-826---causal-claims-and-aims",
+    "href": "readings.html#due-wed.-826---causal-claims-and-aims",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 8/26 - Causal claims and aims",
+    "text": "Due Wed. 8/26 - Causal claims and aims\n\nHernan et al. 2019\nLaubach et al. 2021\nMixtape 4.1: Traditional Prediction versus Causal Inference\nAngrist & Pischke 2008, Chapter 1 (from Mostly Harmless Econometrics)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-831---structural-causal-model-and-directed-acyclic-graphs-dag",
+    "href": "readings.html#due-mon.-831---structural-causal-model-and-directed-acyclic-graphs-dag",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)",
+    "text": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)\n\nArif & MacNeil 2022\n2)Rohrer 2018\n\nGuest speaker: Dr. Zach Laubach\nOptional, additional useful background reading on DAGs:\n3) The Effect Ch. 6\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) Cunningham (2021) Ch. 3",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-92---potential-outcomes",
+    "href": "readings.html#due-wed.-92---potential-outcomes",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 9/2 - Potential Outcomes",
+    "text": "Due Wed. 9/2 - Potential Outcomes\n\nAngrist & Pischke 2008, Chapter 2 (from Mostly Harmless Econometrics)\nMixtape: 4.2 Potential Outcomes\n\nOptional: Morgan & Winship Book, Ch. 2",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-97-labor-day-no-class",
+    "href": "readings.html#due-mon.-97-labor-day-no-class",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/7 Labor Day: No Class",
+    "text": "Due Mon. 9/7 Labor Day: No Class",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-99---experiments-and-randomization",
+    "href": "readings.html#due-wed.-99---experiments-and-randomization",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 9/9 - Experiments and Randomization",
+    "text": "Due Wed. 9/9 - Experiments and Randomization\n\nGerber & Green, Chapter 1\nGerber & Green, Chapter 2\nKimmel et al. 2021\n\n\nOptional: Mixtape: 4.4 Randomization",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions",
+    "href": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions",
+    "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\n\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-916-target-validity-external-validity-transportability",
+    "href": "readings.html#due-wed-916-target-validity-external-validity-transportability",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 9/16 Target Validity, External Validity, Transportability",
+    "text": "Due Wed 9/16 Target Validity, External Validity, Transportability\nTBD something on transportability, target validity, external validity",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-921-introduction-to-challenges-of-observational-data",
+    "href": "readings.html#due-mon.-921-introduction-to-challenges-of-observational-data",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/21 Introduction to Challenges of Observational Data",
+    "text": "Due Mon. 9/21 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nLarsen et al. 2019 - up to section 8, and the Discussion. Can skim in between for preview of what’s to come.\nSiegel & Dee (2025) Ecology Letters - up until section 5.1.\n\nOptional and more advanced: Angrist & Pischke 2008, Chapter 3 (from Mostly Harmless Econometrics)\nOptional: - Ferraro 2009\n- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-923---workshop-start-your-dags-and-get-feedback",
+    "href": "readings.html#due-wed.-923---workshop-start-your-dags-and-get-feedback",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback",
+    "text": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback\nFLIPPED CLASSROOM: watch Dr. Suchinta Arif presentation prior to class and read: 1) Vanderwheele 2019 Principles of confounder selection 2) Review DAG resources and DAG software on the website’s DAGs resources tab\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-928-matching-and-weighting",
+    "href": "readings.html#due-mon.-928-matching-and-weighting",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/28 Matching (and weighting)",
+    "text": "Due Mon. 9/28 Matching (and weighting)\n\nRamsey et al. 2018\nStuart 2010\n\nOptional: -Chesnaye et al. 2022\n-McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-930-discussion-leads",
+    "href": "readings.html#due-wed.-930-discussion-leads",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 9/30 [Discussion lead(s): ]",
+    "text": "Due Wed. 9/30 [Discussion lead(s): ]\n\nSiegel et al. 2022\n\nXu et al. 2022\n\ndemo RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub here",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-95-difference-in-difference",
+    "href": "readings.html#due-mon.-95-difference-in-difference",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/5 Difference-in-Difference",
+    "text": "Due Mon. 9/5 Difference-in-Difference\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)\n\nThe Effect Ch. 16 - Fixed Effects up until 16.2.2 Multiple Sets of Fixed Effects.\nThe Effect Ch. 18 up until 18.2.5 Rollout Designs and Multiple Treatment Periods.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-107-discussion-leads",
+    "href": "readings.html#due-wed.-107-discussion-leads",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 10/7 [Discussion lead(s): ]",
+    "text": "Due Wed. 10/7 [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional: 1) Roth et al. (2023). What’s trending in difference in difference? 2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD 3)Bell et al. 2019. Fixed and random effects models making an informed choice\nFixed Effects Discussion [Hunter + Treson] 2) Dudney et al. 2021  3) Dee et al., 2023",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-1012-panel-methods-continued-two-way-fixed-effects",
+    "href": "readings.html#due-mon.-1012-panel-methods-continued-two-way-fixed-effects",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects",
+    "text": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects\nTBD 1) Angrist & Pischke 2008, Chapter 5\n2) The Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects 3) Brynes and Dee (2025) Ecology Letters\ndemo Brynes & Dee Rmarkdown on [GitHub here] (https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)\nOptional: Bell et al. 2019. Fixed and random effects models making an informed choice\n\ndemo Dee et al. Rmarkdown on course GitHub",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1014---synthetic-control",
+    "href": "readings.html#due-wed.-1014---synthetic-control",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 10/14 - Synthetic Control",
+    "text": "Due Wed. 10/14 - Synthetic Control\n\nFick et al (2020)\n\nKaiser, Resasco and Dee (2026)\n\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10\nOther Applications: - Wu et al. 2023\n- Lawson and Smith 2023",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-1019-instrumental-variables",
+    "href": "readings.html#due-mon.-1019-instrumental-variables",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 10/19 Instrumental Variables",
+    "text": "Due Mon. 10/19 Instrumental Variables\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\n\nKendall book chapter (in GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1021-instrumental-variables-applications-discussion-leads",
+    "href": "readings.html#due-wed.-1021-instrumental-variables-applications-discussion-leads",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 10/21 Instrumental Variables Applications [Discussion lead(s): ]",
+    "text": "Due Wed. 10/21 Instrumental Variables Applications [Discussion lead(s): ]\n\nSims 2010\n\nMacDonald & Mordecai 2020\ndemo",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-1026-regression-discontinuity-designs",
+    "href": "readings.html#due-mon.-1026-regression-discontinuity-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 10/26 Regression Discontinuity Designs",
+    "text": "Due Mon. 10/26 Regression Discontinuity Designs\n\nThe Effect Ch. 20\nSiegel et al. preprint\n\nOptional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1028-rdd-applications-discussion-leads-_____",
+    "href": "readings.html#due-wed.-1028-rdd-applications-discussion-leads-_____",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 10/28 RDD Applications [Discussion lead(s): _____]",
+    "text": "Due Wed. 10/28 RDD Applications [Discussion lead(s): _____]\n\nEnglander 2019\nNoack et al. 2022\n\nOptional paper:\nBurgess et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-112-comparison-across-designs-robustness-checks-and-sensitivity-tests",
+    "href": "readings.html#due-mon.-112-comparison-across-designs-robustness-checks-and-sensitivity-tests",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 11/2 Comparison across designs; Robustness Checks and Sensitivity Tests",
+    "text": "Due Mon. 11/2 Comparison across designs; Robustness Checks and Sensitivity Tests\nRevisit these papers in light of the assumptions of different designs, their different estimands, generalizability, and their assumptions: \n- Simler-Williamson & Germino 2022\n- Dee et al., 2023\n- For Sensitivity Tests, see sensemakr help for a primer in R\nOptional to revisit for methods comparisons:\n1) Siegel & Dee (2025) Ecology Letters\n2) Butsic et al. 2017\n3) Arif & MacNiel 2021 Ecosphere",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-114-project-day-on-study-designs",
+    "href": "readings.html#due-wed.-114-project-day-on-study-designs",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 11/4 Project Day on Study Designs",
+    "text": "Due Wed. 11/4 Project Day on Study Designs\nProject work and discussions of design choices DUE: In class - brief presentation on project Come preparfe with a brief presentation (5 minutes) of your project: the “so what” big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.\nPlease read the rest of these papers and come with a proposal for the statistical design you’ll use and reasoning why:\nSiegel & Dee (2025) Ecology Letters;\nLarsen et al. 2019",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-119-power-standard-error-estimation-inference-and-reproducibility-discussion-leads",
+    "href": "readings.html#due-mon.-119-power-standard-error-estimation-inference-and-reproducibility-discussion-leads",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 11/9 Power, standard error estimation, inference, and reproducibility [Discussion lead(s): ]",
+    "text": "Due Mon. 11/9 Power, standard error estimation, inference, and reproducibility [Discussion lead(s): ]\n\nRead The Effect: Chapter 13 “Your standard errors are probably wrong”\nRead Kimmel, Avolio & Ferraro 2023\n\nFor a deeper dive on standard error estimation, read Cameron and Miller. A pracitioner’s guide to clustered robust standard errrors",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1111-heterogeniety-and-generalizability",
+    "href": "readings.html#due-wed.-1111-heterogeniety-and-generalizability",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 11/11 Heterogeniety and Generalizability",
+    "text": "Due Wed. 11/11 Heterogeniety and Generalizability\nRead Spake et al. 2022 Read Spake et al. 2025",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-1116-mediation",
+    "href": "readings.html#due-mon.-1116-mediation",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 11/16 Mediation",
+    "text": "Due Mon. 11/16 Mediation\nRead Correia et al. 2025\nin class demo",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1118-tbd",
+    "href": "readings.html#due-wed.-1118-tbd",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 11/18 TBD",
+    "text": "Due Wed. 11/18 TBD\nSpecial Topics Project (ML and causal) or Project check in and session",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#week-of-novemeber-23-1123-and-1125-no-class",
+    "href": "readings.html#week-of-novemeber-23-1123-and-1125-no-class",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Week of Novemeber 23 (11/23 and 11/25): No Class",
+    "text": "Week of Novemeber 23 (11/23 and 11/25): No Class\nThanksgiving Break - Work on your projects",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-1130-final-project-presentations---group-1",
+    "href": "readings.html#due-mon.-1130-final-project-presentations---group-1",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 11/30 Final Project Presentations - Group 1",
+    "text": "Due Mon. 11/30 Final Project Presentations - Group 1",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-122-final-project-presentations---group-2",
+    "href": "readings.html#due-wed.-122-final-project-presentations---group-2",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 12/2 Final Project Presentations - Group 2",
+    "text": "Due Wed. 12/2 Final Project Presentations - Group 2\nProject Presentations\nGuidelines for all presentations:\n\n8 minute presentation + 2 minutes for questions\n\nIntroduce the question you address and the motivation for your project\n\nSpecific guidelines for data analysis project presentations:\n\nDescribe the causal inference approach you took and why you chose that approach\n\nPresent your DAG\n\nBriefly describe the data you used\n\nShare your results AND contextualize them with the important limitations and assumptions of the method(s) you used\n\nOutline possible next steps you could take to make your analysis more robust in the future\nSpecific guidelines for literature review presentations:\nDescribe the challenge for causal inference\n\nDescribe and critique the current approaches people are taking\n\nPresent your ideas for how the field could better incorporate causal inference methods",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#projects-due-sunday-dec-6th-by-email",
+    "href": "readings.html#projects-due-sunday-dec-6th-by-email",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Projects Due Sunday Dec 6th by email",
+    "text": "Projects Due Sunday Dec 6th by email\nSee Assignments & Evaluation tab for more information",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#hypothesis-testing-type-i-and-type-ii-errors",
+    "href": "readings.html#hypothesis-testing-type-i-and-type-ii-errors",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Hypothesis testing, type I and type II errors",
+    "text": "Hypothesis testing, type I and type II errors",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-1111-heterogeneity-and-generalizability",
+    "href": "readings.html#due-wed.-1111-heterogeneity-and-generalizability",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 11/11 Heterogeneity and Generalizability",
+    "text": "Due Wed. 11/11 Heterogeneity and Generalizability\nRead:\n1) Spake et al. 2022\n2) Spake et al. 2025",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#week-of-nov.-23-1123-and-1125-no-class",
+    "href": "readings.html#week-of-nov.-23-1123-and-1125-no-class",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Week of Nov. 23 (11/23 and 11/25): No Class",
+    "text": "Week of Nov. 23 (11/23 and 11/25): No Class\nThanksgiving Break - Work on your projects",
     "crumbs": [
       "Readings & Additional Materials"
     ]
