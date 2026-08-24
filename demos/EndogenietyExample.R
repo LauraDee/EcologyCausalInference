@@ -1,6 +1,6 @@
 #### Endogeniety and Omitted Variables Bias
 
-#load paclages
+#load packages
 library(AER)
 library(ggplot2)
 library(stargazer)
