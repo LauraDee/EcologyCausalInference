@@ -2921,7 +2921,7 @@
     "href": "readings.html#due-mon.-921-introduction-to-challenges-of-observational-data",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 9/21 Introduction to Challenges of Observational Data",
-    "text": "Due Mon. 9/21 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nLarsen et al. 2019 - up to section 8, and the Discussion. Can skim in between for preview of what’s to come.\nSiegel & Dee (2025) Ecology Letters - up until section 5.1.\n\nOptional and more advanced: Angrist & Pischke 2008, Chapter 3 (from Mostly Harmless Econometrics)\nOptional: - Ferraro 2009\n- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs",
+    "text": "Due Mon. 9/21 Introduction to Challenges of Observational Data\n\nWatch Imbens video: 2022 Nobel Prize lecture\nLarsen et al. 2019 - up to section 8, and the Discussion. Can skim in between for preview of what’s to come.\nSiegel & Dee (2025) Ecology Letters - up until section 5.1.\n\nOptional and more advanced: Angrist & Pischke 2008, Chapter 3 (from Mostly Harmless Econometrics)\nOptional:\n- Ferraro 2009\n- Ferraro and Hanauer 2014 Advances in Measuring the Environmental and Social Impacts of Environmental Programs",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2931,7 +2931,7 @@
     "href": "readings.html#due-wed.-923---workshop-start-your-dags-and-get-feedback",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback",
-    "text": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback\nFLIPPED CLASSROOM: watch Dr. Suchinta Arif presentation prior to class and read: 1) Vanderwheele 2019 Principles of confounder selection 2) Review DAG resources and DAG software on the website’s DAGs resources tab\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
+    "text": "Due Wed. 9/23 - Workshop: Start your DAGs and get feedback\nFLIPPED CLASSROOM: watch Dr. Suchinta Arif presentation prior to class and read:\n1) Vanderwheele 2019 Principles of confounder selection\n2) Review DAG resources and DAG software on the website’s DAGs resources tab\nPrior to and during the class period, you will start your projects and make a first DAG. Review the DAG resources page tab on the website, and send Laura your DAG for feedback and dicussion with the class. Be prepared to present and discuss your DAG.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2940,8 +2940,8 @@
     "objectID": "readings.html#due-mon.-928-matching-and-weighting",
     "href": "readings.html#due-mon.-928-matching-and-weighting",
     "title": "Readings by Class & Additional Materials",
-    "section": "Due Mon. 9/28 Matching (and weighting)",
-    "text": "Due Mon. 9/28 Matching (and weighting)\n\nRamsey et al. 2018\nStuart 2010\n\nOptional: -Chesnaye et al. 2022\n-McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models",
+    "section": "Due Mon. 9/28 Matching and Weighting",
+    "text": "Due Mon. 9/28 Matching and Weighting\n\nRamsey et al. 2018\nStuart 2010\n\nOptional: -Chesnaye et al. 2022\n-McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2971,7 +2971,7 @@
     "href": "readings.html#due-wed.-107-discussion-leads",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/7 [Discussion lead(s): ]",
-    "text": "Due Wed. 10/7 [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional: 1) Roth et al. (2023). What’s trending in difference in difference? 2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD 3)Bell et al. 2019. Fixed and random effects models making an informed choice\nFixed Effects Discussion [Hunter + Treson] 2) Dudney et al. 2021  3) Dee et al., 2023",
+    "text": "Due Wed. 10/7 [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional: 1) Roth et al. (2023). What’s trending in difference in difference?\n2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD\n3)Bell et al. 2019. Fixed and random effects models making an informed choice\nFixed Effects Discussion:\n1) Dudney et al. 2021 \n2) Dee et al., 2023",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2991,7 +2991,7 @@
     "href": "readings.html#due-wed.-1014---synthetic-control",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/14 - Synthetic Control",
-    "text": "Due Wed. 10/14 - Synthetic Control\n\nFick et al (2020)\n\nKaiser, Resasco and Dee (2026)\n\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10\nOther Applications: - Wu et al. 2023\n- Lawson and Smith 2023",
+    "text": "Due Wed. 10/14 - Synthetic Control\n\nFick et al (2020)\nKaiser, Resasco and Dee (2026)\n\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10\nOther Applications:\n- Wu et al. 2023\n- Lawson and Smith 2023",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3001,7 +3001,7 @@
     "href": "readings.html#due-mon.-1019-instrumental-variables",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 10/19 Instrumental Variables",
-    "text": "Due Mon. 10/19 Instrumental Variables\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\n\nKendall book chapter (in GDrive)",
+    "text": "Due Mon. 10/19 Instrumental Variables\n\nAngrist & Pischke 2015, Chapter 3 (note: this is in Mastering ’Metrics)\nKendall book chapter (in GDrive)",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3011,7 +3011,7 @@
     "href": "readings.html#due-wed.-1021-instrumental-variables-applications-discussion-leads",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/21 Instrumental Variables Applications [Discussion lead(s): ]",
-    "text": "Due Wed. 10/21 Instrumental Variables Applications [Discussion lead(s): ]\n\nSims 2010\n\nMacDonald & Mordecai 2020\ndemo",
+    "text": "Due Wed. 10/21 Instrumental Variables Applications [Discussion lead(s): ]\n\nSims 2010\nMacDonald & Mordecai 2020",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3021,7 +3021,7 @@
     "href": "readings.html#due-mon.-1026-regression-discontinuity-designs",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 10/26 Regression Discontinuity Designs",
-    "text": "Due Mon. 10/26 Regression Discontinuity Designs\n\nThe Effect Ch. 20\nSiegel et al. preprint\n\nOptional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)",
+    "text": "Due Mon. 10/26 Regression Discontinuity Designs\n\nThe Effect Ch. 20\nSiegel et al. preprint\n\nOptional: Angrist & Pischke 2015, Chapter 4 (note: this is in Mastering ’Metrics in the GDrive)\ndemo",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3164,6 +3164,66 @@
     "text": "Week of Nov. 23 (11/23 and 11/25): No Class\nThanksgiving Break - Work on your projects",
     "crumbs": [
       "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#dags",
+    "href": "exercises/index.html#dags",
+    "title": "Exercises in R",
+    "section": "9/23 DAGs",
+    "text": "9/23 DAGs\nCreating and Analyzing DAGs in ggdag (or Daggity).",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#matching",
+    "href": "exercises/index.html#matching",
+    "title": "Exercises in R",
+    "section": "9/30 Matching",
+    "text": "9/30 Matching\nMatching demo in R. I couldn’t figure out a cute way for you to be able to download this directly as a RMarkdown file (thwarted by quarto…). But this link will take you to the page in the course’s GitHub repository where the RMarkdown file is stored. Click on “Raw,” then you can copy and paste the code into an RMarkdown on your computer.\nMatching demo with simulated data\nMatching and Weighting replication exercise\nIn this replication exercise, you will use a subset of the data in the data folder found in the above link; the data is from Siegel et al. 2022 to play around with matching and weighting using a real dataset. On the Github, there are two csv files of data: colo_dat_full.csv and colo_data_for_matching.csv. colo_dat_full.csv has the entire time series of data for the full (unmatched) dataset of federal and private forests in Colorado. colo_data_for_matching.csv is a file that’s ready for the matching process without additional pre-processing: it has a row for each sample point in Colorado and five-year averages for the climate variables.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#difference-in-difference",
+    "href": "exercises/index.html#difference-in-difference",
+    "title": "Exercises in R",
+    "section": "10/7 Difference-in-Difference",
+    "text": "10/7 Difference-in-Difference\nDiff-in-Diff regression demo in R Application and interpretation of differences-in-differences to examine effects of the Marshall Fire on vegetation in Boulder, CO. Data file is on GDrive.\nOptional: Review of difference-in-difference covered in lecture in RMarkdown, see here",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#panel-approaches",
+    "href": "exercises/index.html#panel-approaches",
+    "title": "Exercises in R",
+    "section": "Panel Approaches",
+    "text": "Panel Approaches\nPanel regression demo in R This tutorial replicates the main analyses in Dee et al, contrasted with common approaches in ecology (mixed effect models and conditioning on observable covariates. For the rest of the supplemental analyses in Dee et al, see L.Dee’s GitHub",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#instrumental-variables",
+    "href": "exercises/index.html#instrumental-variables",
+    "title": "Exercises in R",
+    "section": "10/19 Instrumental Variables",
+    "text": "10/19 Instrumental Variables\nInstrumental variables demo in R. Link to an RMarkdown file that walks through the process of coding an analysis using an instrumental variable.",
+    "crumbs": [
+      "Exercises"
+    ]
+  },
+  {
+    "objectID": "exercises/index.html#regression-discontinuity-design",
+    "href": "exercises/index.html#regression-discontinuity-design",
+    "title": "Exercises in R",
+    "section": "10/26 Regression discontinuity design",
+    "text": "10/26 Regression discontinuity design\nRegression discontinuity design demo in R. Link to an RMarkdown file that walks through the process of coding an analysis using regression discontinuity analysis.",
+    "crumbs": [
+      "Exercises"
     ]
   }
 ]
