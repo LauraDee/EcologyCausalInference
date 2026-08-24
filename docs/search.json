@@ -2981,7 +2981,7 @@
     "href": "readings.html#due-mon.-1012-panel-methods-continued-two-way-fixed-effects",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects",
-    "text": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects\n1) Angrist & Pischke 2008, Chapter 5\n2) The Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects 3) Brynes and Dee (2025) Ecology Letters\ndemo Brynes & Dee Rmarkdown on [GitHub here](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)\nOptional: Bell et al. 2019. Fixed and random effects models making an informed choice\ndemo Dee et al. Rmarkdown on course GitHub",
+    "text": "Due Mon. 10/12 Panel methods continued; Two-way fixed effects\n1) Angrist & Pischke 2008, Chapter 5\n2) The Effect Ch. 16 - Fixed Effects starting at 16.2.2 Multiple Sets of Fixed Effects 3) Brynes and Dee (2025) Ecology Letters\nFixed Effects Applications in Ecology for Discussion:\n1) Dudney et al. 2021 \n2) Dee et al., 2023\ndemo Brynes & Dee Rmarkdown on [GitHub here](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)\nOptional: Bell et al. 2019. Fixed and random effects models making an informed choice\ndemo Dee et al. Rmarkdown on course GitHub",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -2991,7 +2991,7 @@
     "href": "readings.html#due-wed.-1014---synthetic-control",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/14 - Synthetic Control",
-    "text": "Due Wed. 10/14 - Synthetic Control\n\nFick et al (2020)\nKaiser, Resasco and Dee (2026)\n\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10\nOther Applications:\n- Wu et al. 2023\n- Lawson and Smith 2023",
+    "text": "Due Wed. 10/14 - Synthetic Control\n\nFick et al (2020)\nKaiser, Resasco and Dee (2026)\n\nOptional: The Effect section 21.2.1 Synthetic Control\nFor a more complete treatment of synthetic control, see: Mixtape Ch. 10\nOther Applications:\n- Wu et al. 2023\n- Lawson and Smith 2023",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3051,7 +3051,7 @@
     "href": "readings.html#due-wed.-114-project-day-on-study-designs",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 11/4 Project Day on Study Designs",
-    "text": "Due Wed. 11/4 Project Day on Study Designs\nProject work and discussions of design choices DUE: In class - brief presentation on project Come preparfe with a brief presentation (5 minutes) of your project: the “so what” big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.\nPlease read the rest of these papers and come with a proposal for the statistical design you’ll use and reasoning why:\nSiegel & Dee (2025) Ecology Letters;\nLarsen et al. 2019",
+    "text": "Due Wed. 11/4 Project Day on Study Designs\nProject work and discussions of design choices DUE: In class - brief presentation on project\nCome prepared with a brief presentation (5 minutes) of your project: the “so what” big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.\nPlease read the rest of these papers and come with a proposal for the statistical design you’ll use and reasoning why:\nSiegel & Dee (2025) Ecology Letters;\nLarsen et al. 2019",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3224,6 +3224,26 @@
     "text": "10/26 Regression discontinuity design\nRegression discontinuity design demo in R. Link to an RMarkdown file that walks through the process of coding an analysis using regression discontinuity analysis.",
     "crumbs": [
       "Exercises"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-95-difference-in-difference-did",
+    "href": "readings.html#due-mon.-95-difference-in-difference-did",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/5 Difference-in-Difference (DiD)",
+    "text": "Due Mon. 9/5 Difference-in-Difference (DiD)\n\nAngrist & Pischke 2015, Chapter 5 (note: this is in the book Mastering ’Metrics)\nThe Effect Ch. 16 - Fixed Effects up until 16.2.2 Multiple Sets of Fixed Effects.\nThe Effect Ch. 18 up until 18.2.5 Rollout Designs and Multiple Treatment Periods.",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed.-107-did-discussion-leads",
+    "href": "readings.html#due-wed.-107-did-discussion-leads",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed. 10/7 DiD [Discussion lead(s): ]",
+    "text": "Due Wed. 10/7 DiD [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional:\n1) Roth et al. (2023). What’s trending in difference in difference?\n2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD\n3)Bell et al. 2019. Fixed and random effects models making an informed choice",
+    "crumbs": [
+      "Readings & Additional Materials"
     ]
   }
 ]

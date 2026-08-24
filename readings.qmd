@@ -88,20 +88,20 @@ Prior to and during the class period, you will start your projects and make a fi
 Optional: -[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
 -[McCaffery et al. 2013 A Tutorial on Propensity Score Estimation for Multiple Treatments Using Generalized Boosted Models](https://pmc.ncbi.nlm.nih.gov/articles/PMC3710547/)
 
-## Due Wed. 9/30 \[Discussion lead(s): \]
+## Due Wed. 9/30 \[Discussion lead(s):   \]
 
 1)  [Siegel et al. 2022](https://doi.org/10.1007/s10113-022-01950-y)
 2)  [Xu et al. 2022](https://www.science.org/doi/10.1126/sciadv.abo0119)
 
 *demo* RMarkdowns from Siegel & Dee (2025) Ecology Letters for weighting and matching on course GitHub [here](https://github.com/LauraDee/EcologyCausalInference/tree/main/exercises/Siegel_and_Dee_2025_Exercises_intro_causal_inf).
 
-## Due Mon. 9/5 Difference-in-Difference
+## Due Mon. 9/5 Difference-in-Difference (DiD)
 
 1)  Angrist & Pischke **2015**, Chapter 5 (note: this is in the book *Mastering ‘Metrics*)
 2)  The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html) up until 16.2.2 Multiple Sets of Fixed Effects.
 3)  The Effect [Ch. 18](https://theeffectbook.net/ch-DifferenceinDifference.html) up until 18.2.5 Rollout Designs and Multiple Treatment Periods.
 
-## Due Wed. 10/7 \[Discussion lead(s): \]
+## Due Wed. 10/7 DiD \[Discussion lead(s): \]
 
 *DUE Draft of Revised DAG OR literature review proposal (1 page max.)*\
 1) [Simler-Williamson & Germino 2022](https://www.nature.com/articles/s41467-022-31102-z)\
@@ -117,16 +117,16 @@ Optional:
 
 3)[Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)
 
-Fixed Effects Applications in Ecology for Discussion:
-
-1\) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6) 
-
-2\) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
-
 ## Due Mon. 10/12 Panel methods continued; Two-way fixed effects
 
 1\) Angrist & Pischke **2008**, Chapter 5\
 2) The Effect [Ch. 16 - Fixed Effects](https://theeffectbook.net/ch-FixedEffects.html) starting at 16.2.2 Multiple Sets of Fixed Effects 3) [Brynes and Dee (2025) Ecology Letters](https://pubmed.ncbi.nlm.nih.gov/39836442/)
+
+*Fixed Effects Applications in Ecology for Discussion:*
+
+1\) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6) 
+
+2\) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 
 *demo* Brynes & Dee Rmarkdown on \[GitHub here\](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)
 
@@ -136,7 +136,7 @@ Optional: [Bell et al. 2019. Fixed and random effects models making an informed 
 ## Due Wed. 10/14 - Synthetic Control
 
 1)  [Fick et al (2020)](https://drive.google.com/file/d/1pCl1LkraGB7O55NsgW3j9lPVdBg9Tvar/view)
-2)  [Kaiser, Resasco and Dee (2026)](https://www.nature.com/articles/s41559-026-03084-4)\
+2)  [Kaiser, Resasco and Dee (2026)](https://www.nature.com/articles/s41559-026-03084-4)
 
 *Optional:* [The Effect section 21.2.1 Synthetic Control](https://theeffectbook.net/ch-TheEdge.html)\
 For a more complete treatment of synthetic control, see: [Mixtape Ch. 10](https://mixtape.scunning.com/10-synthetic_control)
@@ -190,7 +190,9 @@ Optional to revisit for methods comparisons:
 
 ## Due Wed. 11/4 Project Day on Study Designs
 
-Project work and discussions of design choices *DUE: In class - brief presentation on project* Come preparfe with a brief presentation (5 minutes) of your project: the "so what" big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.
+Project work and discussions of design choices *DUE: In class - brief presentation on project*
+
+Come prepared with a brief presentation (5 minutes) of your project: the "so what" big picture, the question you are addressing, its applications, your DAG and/or data context, and your proposed method for feedback and Q&A.
 
 Please read the rest of these papers and come with a proposal for the statistical design you'll use and reasoning why:
 
