@@ -2861,7 +2861,7 @@
     "href": "readings.html#due-mon.-831---structural-causal-model-and-directed-acyclic-graphs-dag",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)",
-    "text": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)\n\nArif & MacNeil 2022\nRohrer 2018\n\nGuest speaker: Dr. Zach Laubach\nOptional, additional useful background reading on DAGs:\n3) Borger and Ramesh 2025 4\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) The Effect Ch. 6\n6) Cunningham (2021) Ch. 3",
+    "text": "Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)\n\nArif & MacNeil 2022\nBorger and Ramesh 2025\n\nGuest speaker: Dr. Zach Laubach\nOptional, additional useful background reading on DAGs:\n3) Rohrer 2018\n4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\n5) The Effect Ch. 6\n6) Cunningham (2021) Ch. 3",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3242,6 +3242,16 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 10/7 DiD [Discussion lead(s): ]",
     "text": "Due Wed. 10/7 DiD [Discussion lead(s): ]\nDUE Draft of Revised DAG OR literature review proposal (1 page max.)\n1) Simler-Williamson & Germino 2022\n2) The Effect Ch. 18 starting at 18.2.5 Rollout Designs and Multiple Treatment Periods.\ndemo RMarkdown using Boulder Open Space fire and vegetation case on course GitHub (data in GoogleDrive)\nOptional:\n1) Roth et al. (2023). What’s trending in difference in difference?\n2) Pedro Sant’Anna’s DiD resources and Comprehensive Course on DiD\n3)Bell et al. 2019. Fixed and random effects models making an informed choice",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions-discussion-lead-___",
+    "href": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions-discussion-lead-___",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: ___]",
+    "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: ___]\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
     "crumbs": [
       "Readings & Additional Materials"
     ]

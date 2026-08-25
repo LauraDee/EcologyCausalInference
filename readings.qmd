@@ -18,12 +18,12 @@ First class; Complete [pre-course survey](https://forms.gle/cv7dr13eRB4xe5E87) i
 ## Due Mon. 8/31 - Structural Causal Model and Directed Acyclic Graphs (DAG)
 
 1)  [Arif & MacNeil 2022](https://esajournals.onlinelibrary.wiley.com/doi/abs/10.1002/ecm.1554)
-2)  [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)
+2)  [Borger and Ramesh 2025](https://doi.org/10.1098/rspb.2025.0963)
 
 Guest speaker: Dr. Zach Laubach
 
 Optional, additional useful background reading on DAGs:\
-3) [Borger and Ramesh 2025](https://doi.org/10.1098/rspb.2025.0963) 4\
+3) [Rohrer 2018](https://journals.sagepub.com/doi/epub/10.1177/2515245917745629)\
 4) Morgan & Winship (2007) pgs. 29-34 and Ch. 3\
 5) [The Effect Ch. 6](https://theeffectbook.net/ch-CausalDiagrams.html)
 
@@ -46,7 +46,7 @@ Optional: Morgan & Winship Book, Ch. 2
 
 Optional: [Mixtape: 4.4 Randomization](https://mixtape.scunning.com/04-potential_outcomes_and_randomization#randomization)
 
-## Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions
+## Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions \[Discussion lead: \_\_\_\]
 
 1)  [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)
 2)  [Mixtape: 4.5 SUTVA](https://mixtape.scunning.com/04-potential_outcomes_and_randomization#randomization)
