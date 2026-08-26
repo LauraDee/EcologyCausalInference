@@ -78,7 +78,7 @@ Why is this important? *Part of learning this material well is learning it to th
 
 ## Readings
 
-The course reading list will include journal articles and book chapters that we will make available to you on our course website. Throughout the semester, the class will compile a running [glossary](https://docs.google.com/document/d/1xX4oVDA8wKwlI5HFK8FcSJGba88oYzpfn-PcEAPcYII/edit?usp=sharing) of “jargon” and terms and concepts in causal inference to provide notes as reference. We (the instructors) will provide a bibliography of additional readings and coding resources on various topics for students as reference.
+The course reading list will include journal articles and book chapters that we will make available to you on our course website. Throughout the semester, the class will compile a running glossary of “jargon” and terms and concepts in causal inference to provide notes as reference. We (the instructors) will provide a bibliography of additional readings and coding resources on various topics for students as reference.
 
 The readings differ in their depth and use of math and notation. *You do not need to understand all the equations and notation to gain intuition about the material and concepts.* Try to learn it but try not to be too stressed by it.
 
