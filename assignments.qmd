@@ -84,7 +84,7 @@ The readings differ in their depth and use of math and notation. *You do not nee
 
 ## Course glossary
 
-As noted above, as a class we will compile a running [glossary](https://docs.google.com/document/d/1xX4oVDA8wKwlI5HFK8FcSJGba88oYzpfn-PcEAPcYII/edit?usp=sharing) of “jargon” and terms and concepts in causal inference to provide notes as reference.
+As noted above, as a class we will compile a running [glossary](https://docs.google.com/document/d/1HV2mUU-gQSzwEqg2KrKi2-I3zWorCK94xQmfw5ixig0/edit?usp=drive_link) of “jargon” and terms and concepts in causal inference to provide notes as reference.
 
 ## Ideas for literature review topics (Final project option 2)
 
