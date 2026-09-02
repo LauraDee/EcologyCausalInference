@@ -42,20 +42,22 @@ Optional: Morgan & Winship Book, Ch. 2
 
 1)  Gerber & Green, Chapter 1
 2)  Gerber & Green, Chapter 2
-3)  [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)\
+3)  [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/)
 
 Optional: [Mixtape: 4.4 Randomization](https://mixtape.scunning.com/04-potential_outcomes_and_randomization#randomization)
 
-## Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions \[Discussion lead: \_\_\_\]
+## Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions \[Discussion lead: Emily & Kate B\]
 
 1)  [Arif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs](https://onlinelibrary.wiley.com/doi/full/10.1002/ece3.9947)
 2)  [Mixtape: 4.5 SUTVA](https://mixtape.scunning.com/04-potential_outcomes_and_randomization#randomization)
 
 Note: Please read [Kimmel et al. 2021](https://pubmed.ncbi.nlm.nih.gov/34538502/) if you didn't for last class
 
-## Due Wed 9/16 Target Validity, External Validity, Transportability
+## Due Wed 9/16 Target Validity, External Validity, Transportability \[Discussion lead: Audrey & Charlotte\]
 
-TBD something on external validity: transportability, target validity,
+[Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)
+
+Optional: TBD something more on external validity: transportability, target validity from epi.
 
 ## Due Mon. 9/21 Introduction to Challenges of Observational Data
 
@@ -210,9 +212,9 @@ For a deeper dive on standard error estimation, read [Cameron and Miller. A prac
 
 Read:
 
-1\) [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z)
+1\) [Spake et al. 2025](https://www.nature.com/articles/s41559-025-02733-4)
 
-2\) [Spake et al. 2025](https://www.nature.com/articles/s41559-025-02733-4)
+(and [Spake et al. 2022](https://www.nature.com/articles/s41559-022-01891-z) if you didn't before)
 
 ## Due Mon. 11/16 Mediation
 
