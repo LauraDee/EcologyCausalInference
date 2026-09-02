@@ -72,7 +72,7 @@ d)  brief conclusions.
 
 In addition to the project/literature review, each student will also lead at least one paper discussion during the semester, which will be either a discussion of a paper describing or applying a study design or a critique of a paper aiming to address a causal question. When leading the paper discussions, we recommend starting off with drawing a diagram of the causal relationships in question in the paper.
 
-Why is this important? *Part of learning this material well is learning it to the point where you can explain it to other people.* This is true in general in graduate or post-graduate school as you move towards becoming experts and in this class when presenting technical things. The presentations offer an opportunity to practice these skills in a friendly setting.
+**Why is this important?** *Part of learning this material well is learning it to the point where you can explain it to other people.* This is true in general in graduate or post-graduate school as you move towards becoming experts and in this class when presenting technical things. The presentations offer an opportunity to practice these skills in a friendly setting.
 
 [Presentation Sign Ups](https://docs.google.com/document/d/1p3HhuCjIvvFFjicAWgXYzUZQgM6H-7r_5JZXaA5sCRM/edit?usp=sharing)
 
@@ -112,7 +112,7 @@ You are not limited to these topics, but here are some ideas:
 | Assignment | Deadline |
 |:---------------------------------:|:-----------------------------------:|
 | [Pre-course survey](https://forms.gle/RMQfEYqwvuioHab58) | Wednesday 8/26 |
-| Identify project focus (option 1 or 2). Identify research questions + create a first draft of a DAG for our in class DAG workshop on 9/20 | **Prior to class:** Due 9/20 (by email) |
+| Identify project focus (option 1 or 2). Identify research questions, estimand(s), and a first draft of a DAG for our in class DAG workshop on 9/20 | **Prior to class:** Due 9/20 (by email) |
 | Revised draft of Project Question and revised DAG OR literature review proposal (2 page max) | 10/12 (by email) |
 | One on One Consultations: find 15 mins to meet with Laura | Before Thanksgiving Break |
 | Short presentation on research questions + DAG OR literature review topic, its significance, + proposed methods (prelim results) | Wednesday 11/2 **(bring to class for in class workshop day)** |
