@@ -2891,7 +2891,7 @@
     "href": "readings.html#due-wed.-99---experiments-and-randomization",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 9/9 - Experiments and Randomization",
-    "text": "Due Wed. 9/9 - Experiments and Randomization\n\nGerber & Green, Chapter 1\nGerber & Green, Chapter 2\nKimmel et al. 2021\n\n\nOptional: Mixtape: 4.4 Randomization",
+    "text": "Due Wed. 9/9 - Experiments and Randomization\n\nGerber & Green, Chapter 1\nGerber & Green, Chapter 2\nKimmel et al. 2021\n\nOptional: Mixtape: 4.4 Randomization",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3151,7 +3151,7 @@
     "href": "readings.html#due-wed.-1111-heterogeneity-and-generalizability",
     "title": "Readings by Class & Additional Materials",
     "section": "Due Wed. 11/11 Heterogeneity and Generalizability",
-    "text": "Due Wed. 11/11 Heterogeneity and Generalizability\nRead:\n1) Spake et al. 2022\n2) Spake et al. 2025",
+    "text": "Due Wed. 11/11 Heterogeneity and Generalizability\nRead:\n1) Spake et al. 2025\n(and Spake et al. 2022 if you didn’t before)",
     "crumbs": [
       "Readings & Additional Materials"
     ]
@@ -3252,6 +3252,26 @@
     "title": "Readings by Class & Additional Materials",
     "section": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: ___]",
     "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: ___]\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions-discussion-lead-emily-kate-b",
+    "href": "readings.html#due-mon.-914-designing-and-breaking-experiments-bias-and-solutions-discussion-lead-emily-kate-b",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: Emily & Kate B]",
+    "text": "Due Mon. 9/14 Designing and Breaking Experiments: bias and solutions [Discussion lead: Emily & Kate B]\n\nArif & Massey (2023) Reducing bias in experimental ecology through directed acyclic graphs\nMixtape: 4.5 SUTVA\n\nNote: Please read Kimmel et al. 2021 if you didn’t for last class",
+    "crumbs": [
+      "Readings & Additional Materials"
+    ]
+  },
+  {
+    "objectID": "readings.html#due-wed-916-target-validity-external-validity-transportability-discussion-lead-audrey-charlotte",
+    "href": "readings.html#due-wed-916-target-validity-external-validity-transportability-discussion-lead-audrey-charlotte",
+    "title": "Readings by Class & Additional Materials",
+    "section": "Due Wed 9/16 Target Validity, External Validity, Transportability [Discussion lead: Audrey & Charlotte]",
+    "text": "Due Wed 9/16 Target Validity, External Validity, Transportability [Discussion lead: Audrey & Charlotte]\nSpake et al. 2022\nOptional: TBD something more on external validity: transportability, target validity from epi.",
     "crumbs": [
       "Readings & Additional Materials"
     ]
