@@ -114,7 +114,6 @@ Optional: -[Chesnaye et al. 2022](https://pubmed.ncbi.nlm.nih.gov/35035932/)\
 Optional:
 
 1\) [Roth et al. (2023). What's trending in difference in difference?](https://www.sciencedirect.com/science/article/abs/pii/S0304407623001318)
-
 2\) Pedro Sant'Anna's DiD resources and [*Comprehensive Course on DiD*](https://psantanna.com/did-resources/)
 
 3)[Bell et al. 2019. Fixed and random effects models making an informed choice](https://link.springer.com/article/10.1007/s11135-018-0802-x)
@@ -127,7 +126,6 @@ Optional:
 *Fixed Effects Applications in Ecology for Discussion:*
 
 1\) [Dudney et al. 2021](https://www.nature.com/articles/s41467-021-25182-6) 
-
 2\) [Dee et al., 2023](https://www.nature.com/articles/s41467-023-37194-5)
 
 *demo* Brynes & Dee Rmarkdown on \[GitHub here\](https://github.com/jebyrnes/ovb_yeah_you_know_me/tree/v1.0.2)
@@ -163,7 +161,6 @@ Other Applications:
 1)  [The Effect Ch. 20](https://theeffectbook.net/ch-RegressionDiscontinuity.html)
 
 Optional: Angrist & Pischke **2015**, Chapter 4 (note: this is in *Mastering ‘Metrics* in the GDrive)
-
 
 ## Due Monday 11/2 RDD Applications \[Discussion lead(s): \]
 
